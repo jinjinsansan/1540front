@@ -100,6 +100,7 @@ const translations = {
     payments: {
       title: "Crypto Deposit Options",
       subtitle: "Multiple cryptocurrencies supported",
+      note: "Withdrawals settle in seconds—limited only by each chain's network speed.",
     },
     testimonials: {
       title: "Crypto NEWS",
@@ -229,8 +230,9 @@ const translations = {
       },
     },
     payments: {
-      title: "暗号資産入金オプション",
+      title: "暗号資産入出金オプション",
       subtitle: "複数の暗号資産を取り扱い",
+      note: "暗号資産の出金スピードはわずか数秒以内（各ネットワークの処理速度のみ）",
     },
     testimonials: {
       title: "暗号資産NEWS",
@@ -368,6 +370,7 @@ const translations = {
     payments: {
       title: "ตัวเลือกการฝากด้วยคริปโต",
       subtitle: "รองรับคริปโตหลายสกุล",
+      note: "การถอนคริปโตใช้เวลาเพียงไม่กี่วินาที ขึ้นอยู่กับความเร็วของเครือข่าย",
     },
     testimonials: {
       title: "ข่าวคริปโต",
