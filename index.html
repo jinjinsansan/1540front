@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VelocityFX | Digital Options Trading</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="container">
+        <div class="brand">1540<span>BO</span></div>
+        <nav class="nav-links">
+          <a href="#features" data-i18n="nav.features"></a>
+          <a href="#platform" data-i18n="nav.platform"></a>
+          <a href="#steps" data-i18n="nav.howItWorks"></a>
+          <a href="#payments" data-i18n="nav.payments"></a>
+          <a href="#support" data-i18n="nav.support"></a>
+        </nav>
+        <div class="cta-group">
+          <button class="btn ghost" data-i18n="cta.demo"></button>
+          <button class="btn primary" data-i18n="cta.start"></button>
+          <div class="lang-switch">
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="ja">日本語</button>
+            <button data-lang="th">ภาษาไทย</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 data-i18n="hero.title"></h1>
+            <p data-i18n="hero.subtitle"></p>
+            <div class="hero-actions">
+              <button class="btn primary" data-i18n="cta.start"></button>
+              <button class="btn outline" data-i18n="cta.demo"></button>
+            </div>
+            <div class="trust-badges" data-i18n="hero.badges"></div>
+          </div>
+          <div class="hero-visual">
+            <figure class="hero-image">
+              <img
+                src="./男性jpg.jpg"
+                alt="Senior broker in suit"
+                loading="lazy"
+              />
+              <div class="hero-glow"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" id="rates">
+        <div class="container">
+          <div class="ticker-header">
+            <h2 data-i18n="rates.title"></h2>
+            <span data-i18n="rates.subtitle"></span>
+          </div>
+          <div class="ticker-track" id="ticker-track"></div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2 data-i18n="features.title"></h2>
+          <p class="section-lead" data-i18n="features.subtitle"></p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon icon-speed">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2L5 13h4l-1 9 7-12h-4l1-8z" />
+                </svg>
+              </div>
+              <h3 data-i18n="features.cards.speed.title"></h3>
+              <p data-i18n="features.cards.speed.text"></p>
+            </article>
+            <article class="feature-card">
+              <div class="icon icon-security">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2l8 3v6c0 5-3.2 9.8-8 11-4.8-1.2-8-6-8-11V5z"
+                  />
+                </svg>
+              </div>
+              <h3 data-i18n="features.cards.security.title"></h3>
+              <p data-i18n="features.cards.security.text"></p>
+            </article>
+            <article class="feature-card">
+              <div class="icon icon-analytics">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 20V9h2v11H6zm5 0V4h2v16h-2zm5 0v-7h2v7h-2z" />
+                </svg>
+              </div>
+              <h3 data-i18n="features.cards.analytics.title"></h3>
+              <p data-i18n="features.cards.analytics.text"></p>
+            </article>
+            <article class="feature-card">
+              <div class="icon icon-support">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3a9 9 0 109 9h-2a7 7 0 11-7-7V3zm0 4a5 5 0 105 5h-2a3 3 0 11-3-3V7zm1 3v1.59l1.7 1.7-1.4 1.42L11 12.41V10h2z"
+                  />
+                </svg>
+              </div>
+              <h3 data-i18n="features.cards.support.title"></h3>
+              <p data-i18n="features.cards.support.text"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="platform" id="platform">
+        <div class="container">
+          <div class="platform-copy">
+            <h2 data-i18n="platform.title"></h2>
+            <p data-i18n="platform.subtitle"></p>
+            <div class="platform-highlights">
+              <div class="highlight">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 7h2v10H4zm7 0h2v10h-2zm7 0h2v10h-2z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="platform.points.one"></h4>
+                  <p data-i18n="platform.points.meta.one"></p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5h8l2 4-6 10-6-10z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="platform.points.two"></h4>
+                  <p data-i18n="platform.points.meta.two"></p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3l8 4v6c0 4.6-3.1 8.8-8 10-4.9-1.2-8-5.4-8-10V7z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="platform.points.three"></h4>
+                  <p data-i18n="platform.points.meta.three"></p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 4h10v2H7zm-2 4h14v2H5zm3 4h8v2H8zm-2 4h12v2H6z" />
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="platform.points.four"></h4>
+                  <p data-i18n="platform.points.meta.four"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="platform-visual">
+            <figure class="platform-image">
+              <img src="./btcupdown.jpg" alt="BTC up/down interface" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps" id="steps">
+        <div class="container">
+          <h2 data-i18n="steps.title"></h2>
+          <div class="step-grid">
+            <div class="step">
+              <span class="badge">1</span>
+              <h3 data-i18n="steps.items.one.title"></h3>
+              <p data-i18n="steps.items.one.text"></p>
+            </div>
+            <div class="step">
+              <span class="badge">2</span>
+              <h3 data-i18n="steps.items.two.title"></h3>
+              <p data-i18n="steps.items.two.text"></p>
+            </div>
+            <div class="step">
+              <span class="badge">3</span>
+              <h3 data-i18n="steps.items.three.title"></h3>
+              <p data-i18n="steps.items.three.text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="payments" id="payments">
+        <div class="container">
+          <h2 data-i18n="payments.title"></h2>
+          <p class="section-lead" data-i18n="payments.subtitle"></p>
+          <div class="payment-grid">
+            <div class="payment-chip">Visa</div>
+            <div class="payment-chip">Mastercard</div>
+            <div class="payment-chip">Skrill</div>
+            <div class="payment-chip">Neteller</div>
+            <div class="payment-chip">Bank Wire</div>
+            <div class="payment-chip">Crypto</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="support">
+        <div class="container">
+          <h2 data-i18n="testimonials.title"></h2>
+          <p class="section-lead" data-i18n="testimonials.subtitle"></p>
+          <div class="testimonial-grid">
+            <article class="testimonial">
+              <p data-i18n="testimonials.items.one.text"></p>
+              <span class="name" data-i18n="testimonials.items.one.name"></span>
+            </article>
+            <article class="testimonial">
+              <p data-i18n="testimonials.items.two.text"></p>
+              <span class="name" data-i18n="testimonials.items.two.name"></span>
+            </article>
+            <article class="testimonial">
+              <p data-i18n="testimonials.items.three.text"></p>
+              <span class="name" data-i18n="testimonials.items.three.name"></span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-copy">
+          <div class="brand">1540<span>BO</span></div>
+          <p data-i18n="footer.disclaimer"></p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-i18n="footer.links.terms"></a>
+          <a href="#" data-i18n="footer.links.privacy"></a>
+          <a href="#" data-i18n="footer.links.security"></a>
+          <a href="#" data-i18n="footer.links.contact"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
