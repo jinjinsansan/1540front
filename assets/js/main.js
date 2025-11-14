@@ -85,7 +85,7 @@ const translations = {
       items: {
         one: {
           title: "Register",
-          text: "Open your account in under two minutes with digital KYC.",
+          text: "Account opens in just 2 minutes",
         },
         two: {
           title: "Practice",
@@ -98,12 +98,12 @@ const translations = {
       },
     },
     payments: {
-      title: "Flexible deposits & withdrawals",
-      subtitle: "Process payments instantly with banking, cards, wallets, or digital assets.",
+      title: "Crypto Deposit Options",
+      subtitle: "Multiple cryptocurrencies supported",
     },
     testimonials: {
-      title: "Traders scaling with VelocityFX",
-      subtitle: "Built for high-frequency options, swing hedging, and professional prop desks.",
+      title: "Crypto NEWS",
+      subtitle: "Check Bloomberg, CoinTelegraph, CoinMarketCap, and other crypto news sources",
       items: {
         one: {
           text: "“Execution speed is unreal—hedging my FX exposure now takes seconds, not minutes.”",
@@ -216,7 +216,7 @@ const translations = {
       items: {
         one: {
           title: "アカウント登録",
-          text: "オンラインKYCで2分以内に開設完了。",
+          text: "わずか２分で口座開設完了",
         },
         two: {
           title: "デモで練習",
@@ -229,24 +229,30 @@ const translations = {
       },
     },
     payments: {
-      title: "柔軟な入出金オプション",
-      subtitle: "銀行・カード・電子ウォレット・暗号資産から即時処理。",
+      title: "暗号資産入金オプション",
+      subtitle: "複数の暗号資産を取り扱い",
     },
     testimonials: {
-      title: "VelocityFXで成長するトレーダー",
-      subtitle: "ハイフリークエンシーからスイングヘッジまで、プロ用途にも対応。",
+      title: "暗号資産NEWS",
+      subtitle: "ブルームバーグ・コインテレグラフ・コインマーケットキャップ・その他の暗号資産NEWSをチェック",
       items: {
         one: {
-          text: "「ヘッジが数分から数秒になり、FXエクスポージャー管理が劇的に効率化しました。」",
-          name: "香織 A. ／ 東京",
+          title: "ビットコイン、史上最高値を更新",
+          text: "機関投資家の関心が高まる中、ビットコインが新たな価格水準に到達。市場アナリストは今後数ヶ月でさらなる上昇を予測している。",
+          date: "2025年11月14日",
+          link: "続きを読む →",
         },
         two: {
-          text: "「透明な価格と迅速な出金がクライアントの信頼を高めてくれます。」",
-          name: "Michael R. ／ シンガポール",
+          title: "イーサリアム2.0アップデート完了",
+          text: "イーサリアムネットワークの大規模アップグレードが成功裏に完了。取引速度の向上とガス代の削減が実現され、DeFiエコシステムに新たな可能性をもたらす。",
+          date: "2025年11月13日",
+          link: "続きを読む →",
         },
         three: {
-          text: "「多言語デスクが各国規制を理解しており、コンプライアンスが常にクリアです。」",
-          name: "Supalak P. ／ バンコク",
+          title: "暗号資産市場、時価総額3兆ドル突破",
+          text: "世界的な採用拡大により、暗号資産市場全体の時価総額が過去最高を記録。主要アルトコインも軒並み上昇し、市場の成熟度を示している。",
+          date: "2025年11月12日",
+          link: "続きを読む →",
         },
       },
     },
@@ -347,7 +353,7 @@ const translations = {
       items: {
         one: {
           title: "ลงทะเบียน",
-          text: "เปิดบัญชีภายใน 2 นาทีด้วย KYC ดิจิทัล",
+          text: "เปิดบัญชีได้ภายใน 2 นาที",
         },
         two: {
           title: "ทดลอง",
@@ -360,12 +366,12 @@ const translations = {
       },
     },
     payments: {
-      title: "การฝากถอนที่ยืดหยุ่น",
-      subtitle: "รองรับธนาคาร บัตร วอลเล็ต และสินทรัพย์ดิจิทัลแบบทันที",
+      title: "ตัวเลือกการฝากด้วยคริปโต",
+      subtitle: "รองรับคริปโตหลายสกุล",
     },
     testimonials: {
-      title: "เทรดเดอร์ที่เติบโตกับ VelocityFX",
-      subtitle: "ตอบโจทย์ทั้งสายความถี่สูง การป้องกันความเสี่ยง และกองทุนมืออาชีพ",
+      title: "ข่าวคริปโต",
+      subtitle: "ตรวจสอบ Bloomberg, CoinTelegraph, CoinMarketCap และแหล่งข่าวคริปโตอื่นๆ",
       items: {
         one: {
           text: "“ความเร็วในการส่งคำสั่งสุดยอด ทำให้การป้องกันความเสี่ยง FX ใช้เวลาเพียงไม่กี่วินาที”",
@@ -516,22 +522,43 @@ async function fetchLiveRates() {
   }
 }
 
+function syncLangActiveState(lang) {
+  document.querySelectorAll(".lang-switch button, .mobile-lang-switch button").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+}
+
 function initLanguageSwitcher() {
-  const switcher = document.querySelector(".lang-switch");
-  if (!switcher) return;
-  switcher.addEventListener("click", (event) => {
+  const desktopSwitcher = document.querySelector(".lang-switch");
+  desktopSwitcher?.addEventListener("click", (event) => {
     const target = event.target;
     if (!(target instanceof HTMLButtonElement)) return;
     const lang = target.dataset.lang;
     if (!lang || !translations[lang]) return;
-    switcher.querySelectorAll("button").forEach((btn) => btn.classList.toggle("active", btn === target));
     applyTranslations(lang);
+    syncLangActiveState(lang);
+  });
+
+  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  document.querySelectorAll(".mobile-lang-switch button").forEach((button) => {
+    button.addEventListener("click", () => {
+      const lang = button.getAttribute("data-lang");
+      if (!lang || !translations[lang]) return;
+      applyTranslations(lang);
+      syncLangActiveState(lang);
+      mobileMenuToggle?.classList.remove("active");
+      mobileMenu?.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    });
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   initLanguageSwitcher();
   applyTranslations(currentLang);
+  syncLangActiveState(currentLang);
   setInterval(() => {
     if (API_ENDPOINT) {
       fetchLiveRates();
@@ -541,5 +568,34 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000);
   if (API_ENDPOINT) {
     fetchLiveRates();
+  }
+
+  // Mobile Menu Toggle
+  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav a");
+
+  if (mobileMenuToggle && mobileMenu) {
+    mobileMenuToggle.addEventListener("click", () => {
+      mobileMenuToggle.classList.toggle("active");
+      mobileMenu.classList.toggle("active");
+      document.body.classList.toggle("no-scroll", mobileMenu.classList.contains("active"));
+    });
+
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenuToggle.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 980 && document.body.classList.contains("no-scroll")) {
+        mobileMenuToggle.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      }
+    });
   }
 });
