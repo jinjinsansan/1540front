@@ -550,7 +550,7 @@ function initLanguageSwitcher() {
       syncLangActiveState(lang);
       mobileMenuToggle?.classList.remove("active");
       mobileMenu?.classList.remove("active");
-      document.body.classList.remove("no-scroll");
+      document.body.classList.remove("locked-scroll");
     });
   });
 }
@@ -579,22 +579,22 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenuToggle.addEventListener("click", () => {
       mobileMenuToggle.classList.toggle("active");
       mobileMenu.classList.toggle("active");
-      document.body.classList.toggle("no-scroll", mobileMenu.classList.contains("active"));
+      document.body.classList.toggle("locked-scroll", mobileMenu.classList.contains("active"));
     });
 
     mobileNavLinks.forEach((link) => {
       link.addEventListener("click", () => {
         mobileMenuToggle.classList.remove("active");
         mobileMenu.classList.remove("active");
-        document.body.classList.remove("no-scroll");
+        document.body.classList.remove("locked-scroll");
       });
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 980 && document.body.classList.contains("no-scroll")) {
+      if (window.innerWidth > 980 && document.body.classList.contains("locked-scroll")) {
         mobileMenuToggle.classList.remove("active");
         mobileMenu.classList.remove("active");
-        document.body.classList.remove("no-scroll");
+        document.body.classList.remove("locked-scroll");
       }
     });
   }
