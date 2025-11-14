@@ -675,6 +675,9 @@ a {
 
 .payment-note {
   margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
@@ -684,7 +687,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 14px 20px;
   border-radius: 999px;
-  display: inline-block;
   width: 100%;
   max-width: 720px;
   margin-left: auto;
@@ -905,6 +907,7 @@ a {
 
   .payment-note {
     font-size: 0.88rem;
+    justify-content: center;
     padding: 12px 16px;
   }
   .top-bar .container {
@@ -999,6 +1002,7 @@ a {
 
   .payment-note {
     font-size: 0.85rem;
+    justify-content: center;
     max-width: 90%;
   }
 
@@ -1254,6 +1258,7 @@ a {
 
   .payment-note {
     font-size: 0.82rem;
+    justify-content: center;
     padding: 10px 14px;
   }
 
@@ -1395,6 +1400,11 @@ a {
   .payment-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+  }
+  .payment-note {
+    font-size: 0.78rem;
+    padding: 9px 12px;
+    justify-content: center;
   }
 
   .crypto-chip {
