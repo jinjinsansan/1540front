@@ -910,8 +910,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer:
-        "Trading digital options involves significant risk and may result in the loss of all invested capital. Consider whether you understand how the product works and whether you can afford the risk.",
+      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
       links: {
         terms: "Terms",
         privacy: "Privacy",
@@ -1831,8 +1830,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer:
-        "デジタルオプション取引には大きなリスクが伴い、投資資金の全額を失う可能性があります。仕組みの理解度とリスク許容度を十分にご確認ください。",
+      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
       links: {
         terms: "利用規約",
         privacy: "プライバシー",
@@ -2746,8 +2744,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer:
-        "การเทรดออปชันดิจิทัลมีความเสี่ยงสูง อาจสูญเสียเงินลงทุนทั้งหมด ควรทำความเข้าใจและประเมินความเสี่ยงก่อนตัดสินใจ",
+      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
       links: {
         terms: "ข้อกำหนด",
         privacy: "นโยบายความเป็นส่วนตัว",
