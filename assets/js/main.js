@@ -186,33 +186,229 @@ const translations = {
     vip: {
       hero: {
         badge: "VIP Program",
-        title: "Elevated rewards for elite traders",
-        subtitle: "We are putting the finishing touches on a loyalty program that unlocks bespoke tiers, personal desk support, and invitation-only market intelligence.",
-        ctaPrimary: "Request early access",
-        ctaSecondary: "Get notified",
+        title: "20-tier VIP rewards engineered for committed players",
+        subtitle:
+          "Advance through lifetime wagering to unlock daily rakeback, weekly and monthly cashback boosts, and one-time rank-up bonuses.",
+        ctaPrimary: "Request VIP access",
+        ctaSecondary: "Contact support",
+        card: {
+          title: "Program architecture",
+          items: [
+            "20 rank levels aligned to cumulative wagering milestones.",
+            "Four payout streams: daily rakeback, weekly cashback, monthly cashback, and rank-up bonuses.",
+            "Active boost incentives and monthly maintenance rules keep rewards aligned with activity.",
+          ],
+        },
       },
-      highlights: {
-        title: "What we are building",
-        subtitle: "The VIP framework focuses on clarity, speed, and meaningful advantages for high-volume clients.",
-        items: [
+      overview: {
+        heading: "VIP reward framework",
+        paragraphs: [
+          "The VIP reward program rewards players across a 20-level ladder determined entirely by lifetime wagering volume.",
+          "Higher ranks unlock stronger percentages and larger bonuses, with automatic recalculations driven by activity and monthly performance.",
+        ],
+        points: [
+          "Five tiers—Bronze, Silver, Gold, Platinum, Diamond—each containing four rank levels.",
+          "Four reward types that accumulate simultaneously: daily rakeback, weekly loss cashback, monthly loss cashback, and rank-up bonuses.",
+          "Two supporting rules govern extra boost percentages and monthly level maintenance.",
+        ],
+      },
+      rewards: {
+        types: [
           {
-            title: "Tiered multiplier boosts",
-            text: "Dynamic payout uplifts across binary windows, aligned with your rolling performance and volume milestones.",
+            badge: "① Daily",
+            title: "Wager rakeback",
+            text: "Applies the unlocked percentage to the day’s total wagered amount for instant grind-back value.",
           },
           {
-            title: "Concierge-level care",
-            text: "Direct access to senior desk managers with multilingual coverage and proactive risk monitoring.",
+            badge: "② Weekly",
+            title: "Loss cashback",
+            text: "Calculates on net weekly losses; baseline percentages are augmented by the weekly active boost when requirements are met.",
           },
           {
-            title: "Exclusive market access",
-            text: "Priority invites to strategy briefings, liquidity partner sessions, and limited-edition trading windows.",
+            badge: "③ Monthly",
+            title: "Loss cashback",
+            text: "Rewards net monthly losses with boosted percentages that scale higher for consistent traders via the monthly active boost.",
+          },
+          {
+            badge: "④ Rank-up",
+            title: "One-time bonus",
+            text: "A fixed cash reward is credited the first time each rank milestone is reached.",
+          },
+        ],
+        summary: {
+          label: "Rewards",
+          heading: "20 ranks & four payout streams",
+          text:
+            "Baseline percentages apply to cash wagering and net loss. As you climb, daily rakeback, weekly and monthly cashback, and rank-up bonuses increase dramatically.",
+          note: "Displayed percentages exclude active boost adjustments; see the program rules for boost details.",
+        },
+        table: {
+          headers: {
+            rank: "Rank",
+            tier: "Tier",
+            requirement: "Cumulative wagering requirement",
+            bonus: "Rank-up bonus",
+            daily: "Daily rakeback",
+            weekly: "Weekly cashback",
+            monthly: "Monthly cashback",
+          },
+          rows: [
+            { rank: "1", tier: "Bronze 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
+            { rank: "2", tier: "Bronze 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
+            { rank: "3", tier: "Bronze 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
+            { rank: "4", tier: "Bronze 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
+            { rank: "5", tier: "Silver 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
+            { rank: "6", tier: "Silver 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
+            { rank: "7", tier: "Silver 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
+            { rank: "8", tier: "Silver 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
+            { rank: "9", tier: "Gold 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
+            { rank: "10", tier: "Gold 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
+            { rank: "11", tier: "Gold 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
+            { rank: "12", tier: "Gold 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
+            { rank: "13", tier: "Platinum 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
+            { rank: "14", tier: "Platinum 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
+            { rank: "15", tier: "Platinum 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
+            { rank: "16", tier: "Platinum 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
+            { rank: "17", tier: "Diamond 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
+            { rank: "18", tier: "Diamond 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
+            { rank: "19", tier: "Diamond 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
+            { rank: "20", tier: "Diamond 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+          ],
+        },
+      },
+      rules: {
+        heading: "Program rules",
+        active: {
+          label: "Rule 1",
+          heading: "Active boost",
+          intro: "Consistent trading activity unlocks additional cashback percentages on top of the baseline table values.",
+          weekly: {
+            title: "Weekly active boost",
+            detail:
+              "Place wagers worth at least $0.1 on five or more days in a week to add +0.5% to the weekly loss-cashback rate for that week.",
+          },
+          monthly: {
+            title: "Monthly active boost",
+            detail:
+              "Place wagers worth at least $0.1 on twenty or more days in a month to add +1.0% to the monthly loss-cashback rate for that month.",
+          },
+        },
+        downgrade: {
+          label: "Rule 2",
+          heading: "Rank maintenance",
+          intro: "Rank promotions are instant once lifetime wagering meets the requirement. Maintenance is reviewed monthly per level.",
+          bullets: [
+            "Promotion occurs immediately when cumulative wagering satisfies the next rank threshold.",
+            "Tier protection: once you enter a tier (Bronze, Silver, Gold, Platinum, Diamond) you never drop to a lower tier.",
+            "Level maintenance is evaluated on the first day of each month using the previous month's wagering volume.",
+            "If the maintenance requirement is missed, the level decreases within the current tier, but never below Level 1 of that tier.",
+          ],
+          reminder: "Maintenance is calculated on cash wagering only. Level 1 within the reached tier is the minimum floor after review.",
+        },
+        maintenanceTable: {
+          headers: {
+            rank: "Rank",
+            tier: "Tier",
+            requirement: "Monthly wagering to maintain level",
+          },
+          rows: [
+            { rank: "1", tier: "Bronze 1", requirement: "$0" },
+            { rank: "2", tier: "Bronze 2", requirement: "$100" },
+            { rank: "3", tier: "Bronze 3", requirement: "$250" },
+            { rank: "4", tier: "Bronze 4", requirement: "$500" },
+            { rank: "5", tier: "Silver 1", requirement: "$1,000" },
+            { rank: "6", tier: "Silver 2", requirement: "$2,500" },
+            { rank: "7", tier: "Silver 3", requirement: "$5,000" },
+            { rank: "8", tier: "Silver 4", requirement: "$10,000" },
+            { rank: "9", tier: "Gold 1", requirement: "$20,000" },
+            { rank: "10", tier: "Gold 2", requirement: "$30,000" },
+            { rank: "11", tier: "Gold 3", requirement: "$50,000" },
+            { rank: "12", tier: "Gold 4", requirement: "$75,000" },
+            { rank: "13", tier: "Platinum 1", requirement: "$100,000" },
+            { rank: "14", tier: "Platinum 2", requirement: "$150,000" },
+            { rank: "15", tier: "Platinum 3", requirement: "$200,000" },
+            { rank: "16", tier: "Platinum 4", requirement: "$300,000" },
+            { rank: "17", tier: "Diamond 1", requirement: "$500,000" },
+            { rank: "18", tier: "Diamond 2", requirement: "$750,000" },
+            { rank: "19", tier: "Diamond 3", requirement: "$1,000,000" },
+            { rank: "20", tier: "Diamond 4", requirement: "$1,500,000" },
+          ],
+        },
+      },
+      terms: {
+        heading: "VIP program terms",
+        subtitle: "Participating in the VIP program constitutes acceptance of these terms and the general site terms.",
+        articles: [
+          {
+            label: "Article 1",
+            heading: "Program participation",
+            items: [
+              "All registered players are automatically eligible for the VIP program.",
+              "Only one account per player is eligible; duplicate or linked accounts are not considered.",
+              "The company reserves the right to refuse or revoke participation at its sole discretion.",
+            ],
+          },
+          {
+            label: "Article 2",
+            heading: "VIP rank system",
+            items: [
+              "The program consists of 20 ranks organised into tiers (Bronze, Silver, Gold, Platinum, Diamond) and levels 1–4 within each tier.",
+              "Rank promotion is determined by cumulative wagering volume and is applied immediately upon meeting each threshold.",
+              "Tier downgrades never occur once a tier is reached; only level adjustments within the tier are possible.",
+              "Monthly level reviews occur on the first day of each month using the previous month’s wagering and the maintenance table.",
+            ],
+          },
+          {
+            label: "Article 3",
+            heading: "Reward categories",
+            items: [
+              "Daily reward (wager rakeback): percentage applied to the day’s total wagered amount and credited daily.",
+              "Weekly reward (loss cashback): percentage applied to the week’s net loss (total wagers minus total wins) and credited once per week.",
+              "Monthly reward (loss cashback): percentage applied to the month’s net loss and credited once per month.",
+              "Rank-up bonus: a fixed amount credited the first time each rank is achieved.",
+            ],
+          },
+          {
+            label: "Article 4",
+            heading: "Active boost",
+            items: [
+              "Weekly boost: wagering at least $0.1 on five or more days in a week adds +0.5% to the weekly cashback rate.",
+              "Monthly boost: wagering at least $0.1 on twenty or more days in a month adds +1.0% to the monthly cashback rate.",
+            ],
+          },
+          {
+            label: "Article 5",
+            heading: "Reward conditions",
+            items: [
+              "Unless otherwise stated, calculations are based on cash wagers and cash net losses; bonus wagers may be excluded.",
+              "Rank-up bonuses are credited as bonus funds; wagering requirements or expiry may apply.",
+              "The company may define additional conditions such as rollover requirements, validity periods, or caps.",
+            ],
+          },
+          {
+            label: "Article 6",
+            heading: "Prohibited conduct",
+            items: [
+              "Creating multiple accounts, exploiting system issues, colluding with other players, or any behaviour deemed abusive is forbidden.",
+              "Betting patterns designed solely to generate rewards (e.g., extremely low-risk looping) may be considered abuse.",
+              "Detected abuse may result in VIP removal, rank reduction, forfeiture of rewards, or account suspension.",
+            ],
+          },
+          {
+            label: "Article 7",
+            heading: "General provisions",
+            items: [
+              "The company may modify, suspend, or terminate the program—or its reward rates and conditions—without prior notice.",
+              "All decisions regarding eligibility, calculations, and interpretation are final and binding.",
+              "If these terms conflict with the general site terms, the general site terms take precedence.",
+            ],
           },
         ],
       },
-      status: {
-        title: "Program launch",
-        text: "VIP enrolment is currently in private beta with select partners. Share your details and we will reach out as tiers open.",
-        contact: "vip@1540bo.io",
+      update: {
+        label: "Last updated",
+        date: "11 November 2025",
+        note: "Program specifications are subject to change without notice. Refer to official communications for the latest details.",
       },
     },
     hero: {
@@ -519,33 +715,227 @@ const translations = {
     vip: {
       hero: {
         badge: "VIP Program",
-        title: "ハイボリュームトレーダーのための特別プログラム",
-        subtitle: "現在、段階的な特典、専任サポート、限定イベントを備えたロイヤリティプログラムを最終調整中です。",
-        ctaPrimary: "先行アクセスを申し込む",
-        ctaSecondary: "最新情報を受け取る",
+        title: "20段階のVIPリワードでハイボリューム取引を最大化",
+        subtitle:
+          "累計ベット額に応じてランクが即時昇格し、デイリーリワード・ウィークリー／マンスリーキャッシュバック・昇格ボーナスが拡大します。",
+        ctaPrimary: "VIPアクセスを申請",
+        ctaSecondary: "サポートに問い合わせる",
+        card: {
+          title: "プログラム構成",
+          items: [
+            "累計ベット額に応じた20段階のランクシステム。",
+            "デイリー、ウィークリー、マンスリー、昇格ボーナスの4種の報酬が同時に進行。",
+            "アクティブブーストと月次レベル判定で、活動量に応じて還元率が調整されます。",
+          ],
+        },
       },
-      highlights: {
-        title: "予定している特典",
-        subtitle: "VIP設計は、明確な仕組み、迅速なレスポンス、ハイボリューム顧客にとって価値ある優遇を重視しています。",
-        items: [
+      overview: {
+        heading: "VIPリワードの仕組み",
+        paragraphs: [
+          "本VIPプログラムは累計ベット額に応じて20段階のランクを設定し、プレイヤーの継続的な取引を報酬化します。",
+          "ランクが上がるほど還元率・ボーナス額が強化され、活動状況と月次判定により自動的に再計算されます。",
+        ],
+        points: [
+          "5つのティア（ブロンズ／シルバー／ゴールド／プラチナ／ダイアモンド）×4レベル構成。",
+          "デイリーリワード、ウィークリーロスキャッシュバック、マンスリーロスキャッシュバック、昇格ボーナスの4種の報酬。",
+          "アクティブブーストとレベル維持ルールという2つの特別ルールを採用。",
+        ],
+      },
+      rewards: {
+        types: [
           {
-            title: "ティア別ペイアウトブースト",
-            text: "取引実績と出来高に応じてバイナリーウィンドウのペイアウト倍率を段階的に強化。",
+            badge: "① Daily",
+            title: "デイリーリワード（ベット額リベート）",
+            text: "各ランクの料率を当日の総ベット額に掛け合わせ、即時にベットバックを獲得できます。",
           },
           {
-            title: "コンシェルジュ対応",
-            text: "マルチリンガルのシニアデスクへダイレクトにアクセスし、先回りのリスクモニタリングを提供。",
+            badge: "② Weekly",
+            title: "ウィークリーロスキャッシュバック",
+            text: "週間純損失額に対して料率が適用され、条件を満たすとアクティブブーストで+0.5%が加算されます。",
           },
           {
-            title: "限定マーケットアクセス",
-            text: "戦略ブリーフィング、流動性パートナーセッション、限定トレーディングウィンドウへの優先招待。",
+            badge: "③ Monthly",
+            title: "マンスリーロスキャッシュバック",
+            text: "月間純損失額に対して料率が適用され、月間稼働日数に応じて最大+1.0%のブーストが付与されます。",
+          },
+          {
+            badge: "④ Rank-up",
+            title: "昇格ボーナス（ワンタイム）",
+            text: "各ランクに初めて到達した際に、一度だけ固定額のボーナスが付与されます。",
+          },
+        ],
+        summary: {
+          label: "Rewards",
+          heading: "20ランクと4種類の報酬ストリーム",
+          text:
+            "還元率は現金ベットと純損失を基準に計算され、ランクが上がるほどデイリー・ウィークリー・マンスリーのキャッシュバックと昇格ボーナスが増加します。",
+          note: "表示パーセンテージはアクティブブースト適用前の数値です。詳細は下記ルールをご確認ください。",
+        },
+        table: {
+          headers: {
+            rank: "ランク",
+            tier: "ティア",
+            requirement: "昇格条件（累計ベット額）",
+            bonus: "昇格ボーナス",
+            daily: "デイリー（賭け額）",
+            weekly: "ウィークリー（負け額）",
+            monthly: "マンスリー（負け額）",
+          },
+          rows: [
+            { rank: "1", tier: "ブロンズ 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
+            { rank: "2", tier: "ブロンズ 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
+            { rank: "3", tier: "ブロンズ 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
+            { rank: "4", tier: "ブロンズ 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
+            { rank: "5", tier: "シルバー 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
+            { rank: "6", tier: "シルバー 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
+            { rank: "7", tier: "シルバー 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
+            { rank: "8", tier: "シルバー 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
+            { rank: "9", tier: "ゴールド 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
+            { rank: "10", tier: "ゴールド 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
+            { rank: "11", tier: "ゴールド 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
+            { rank: "12", tier: "ゴールド 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
+            { rank: "13", tier: "プラチナ 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
+            { rank: "14", tier: "プラチナ 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
+            { rank: "15", tier: "プラチナ 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
+            { rank: "16", tier: "プラチナ 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
+            { rank: "17", tier: "ダイアモンド 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
+            { rank: "18", tier: "ダイアモンド 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
+            { rank: "19", tier: "ダイアモンド 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
+            { rank: "20", tier: "ダイアモンド 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+          ],
+        },
+      },
+      rules: {
+        heading: "適用ルール",
+        active: {
+          label: "ルール1",
+          heading: "アクティブブースト",
+          intro: "一定の稼働日数を満たすことで、ウィークリー／マンスリーのキャッシュバック率に上乗せが発生します。",
+          weekly: {
+            title: "ウィークリー・アクティブブースト",
+            detail: "1週間のうち5日以上（1日$0.1以上のベット）で+0.5%を加算。",
+          },
+          monthly: {
+            title: "マンスリー・アクティブブースト",
+            detail: "1ヶ月のうち20日以上（1日$0.1以上のベット）で+1.0%を加算。",
+          },
+        },
+        downgrade: {
+          label: "ルール2",
+          heading: "ランク維持と降格判定",
+          intro: "昇格は累計ベット額を達成した時点で即時に行われ、維持判定は毎月1日に実施されます。",
+          bullets: [
+            "累計ベット額が条件を満たした時点で即時昇格。",
+            "一度到達したティア（ブロンズ〜ダイアモンド）から下位ティアへ降格することはありません。",
+            "毎月1日に前月のベット額を基準として各レベルの維持判定を実施します。",
+            "条件未達の場合は同一ティア内で降格し、レベル1が最低ラインとなります。",
+          ],
+          reminder: "判定は現金ベット額を基準とし、各ティアのレベル1が降格後の下限となります。",
+        },
+        maintenanceTable: {
+          headers: {
+            rank: "ランク",
+            tier: "ティア",
+            requirement: "レベル維持条件（月間ベット額）",
+          },
+          rows: [
+            { rank: "1", tier: "ブロンズ 1", requirement: "$0" },
+            { rank: "2", tier: "ブロンズ 2", requirement: "$100" },
+            { rank: "3", tier: "ブロンズ 3", requirement: "$250" },
+            { rank: "4", tier: "ブロンズ 4", requirement: "$500" },
+            { rank: "5", tier: "シルバー 1", requirement: "$1,000" },
+            { rank: "6", tier: "シルバー 2", requirement: "$2,500" },
+            { rank: "7", tier: "シルバー 3", requirement: "$5,000" },
+            { rank: "8", tier: "シルバー 4", requirement: "$10,000" },
+            { rank: "9", tier: "ゴールド 1", requirement: "$20,000" },
+            { rank: "10", tier: "ゴールド 2", requirement: "$30,000" },
+            { rank: "11", tier: "ゴールド 3", requirement: "$50,000" },
+            { rank: "12", tier: "ゴールド 4", requirement: "$75,000" },
+            { rank: "13", tier: "プラチナ 1", requirement: "$100,000" },
+            { rank: "14", tier: "プラチナ 2", requirement: "$150,000" },
+            { rank: "15", tier: "プラチナ 3", requirement: "$200,000" },
+            { rank: "16", tier: "プラチナ 4", requirement: "$300,000" },
+            { rank: "17", tier: "ダイアモンド 1", requirement: "$500,000" },
+            { rank: "18", tier: "ダイアモンド 2", requirement: "$750,000" },
+            { rank: "19", tier: "ダイアモンド 3", requirement: "$1,000,000" },
+            { rank: "20", tier: "ダイアモンド 4", requirement: "$1,500,000" },
+          ],
+        },
+      },
+      terms: {
+        heading: "VIPプログラム利用規約",
+        subtitle: "本プログラムへの参加には、本規約および一般利用規約への同意が必要です。",
+        articles: [
+          {
+            label: "第1条",
+            heading: "プログラムへの参加",
+            items: [
+              "本プログラムは当社に登録されたすべてのプレイヤーが自動的に対象となります。",
+              "1プレイヤーにつき1アカウントのみ有効です。",
+              "当社は、理由の如何を問わず、参加を拒否・取り消しする権利を有します。",
+            ],
+          },
+          {
+            label: "第2条",
+            heading: "VIPランクシステム",
+            items: [
+              "本プログラムは20段階のランクで構成され、ティア（ブロンズ〜ダイアモンド）とレベル（各ティア1〜4）で表されます。",
+              "累計ベット額が条件を満たすと、ランクは即時昇格します。",
+              "一度到達したティアから下位ティアへ降格することはありません。", 
+              "各レベルの維持判定は毎月1日に前月のベット額を基準に実施します。",
+            ],
+          },
+          {
+            label: "第3条",
+            heading: "報酬の種類と計算",
+            items: [
+              "デイリーリワード（ベット額リベート）：ランクに応じた料率を当日の総ベット額に適用し、毎日付与します。",
+              "ウィークリーロスキャッシュバック：週間純損失額にランク料率を乗じ、所定の曜日に付与します。",
+              "マンスリーロスキャッシュバック：月間純損失額にランク料率を乗じ、所定の日に付与します。",
+              "昇格ボーナス：ランク2以上に初めて到達した際、一度だけ固定額のボーナスを付与します。",
+            ],
+          },
+          {
+            label: "第4条",
+            heading: "アクティブブースト",
+            items: [
+              "ウィークリー・アクティブブースト：週5日以上（1日$0.1以上）のベットで、その週のウィークリー料率に+0.5%。",
+              "マンスリー・アクティブブースト：月20日以上の稼働で、その月のマンスリー料率に+1.0%。",
+            ],
+          },
+          {
+            label: "第5条",
+            heading: "報酬の条件",
+            items: [
+              "特に明記がない限り、計算対象は現金ベットおよび現金ベースの純損失です。ボーナスベットは対象外となる場合があります。",
+              "昇格ボーナスはボーナスとして付与され、賭け条件や有効期限が設定される場合があります。",
+              "当社は賭け条件・有効期限・上限など追加条件を設定する権利を有します。",
+            ],
+          },
+          {
+            label: "第6条",
+            heading: "禁止事項と悪用",
+            items: [
+              "複数アカウントの作成、システム不具合の悪用、他プレイヤーとの共謀など、不正とみなされる行為を禁止します。",
+              "リワード獲得のみを目的とした異常なベットパターンは、乱用と判断される場合があります。",
+              "不正・乱用が発覚した場合、VIP資格の剥奪、ランク降格、報酬没収、アカウント凍結などを行う権利を有します。",
+            ],
+          },
+          {
+            label: "第7条",
+            heading: "一般条項",
+            items: [
+              "当社は独自の裁量により、事前通知なく本プログラムや報酬内容を変更・中断・終了する権利を有します。",
+              "本プログラムの運営・資格・計算・解釈に関する当社の決定は最終的なものとします。",
+              "本規約と一般利用規約が矛盾する場合は、一般利用規約が優先されます。",
+            ],
           },
         ],
       },
-      status: {
-        title: "ローンチ状況",
-        text: "現在VIPプログラムは一部パートナー向けのクローズドベータ段階です。詳細公開の際にご案内できるよう、ご希望の方はご連絡ください。",
-        contact: "vip@1540bo.io",
+      update: {
+        label: "最終更新日",
+        date: "2025年11月11日",
+        note: "本プログラムの仕様は予告なく変更される場合があります。最新情報は公式アナウンスをご確認ください。",
       },
     },
     hero: {
@@ -858,33 +1248,227 @@ const translations = {
     vip: {
       hero: {
         badge: "VIP Program",
-        title: "สิทธิประโยชน์ระดับสูงสำหรับนักเทรดตัวจริง",
-        subtitle: "เรากำลังเตรียมโปรแกรมสะสมแต้มพรีเมียมที่มาพร้อมสิทธิพิเศษหลายระดับ ทีมดูแลเฉพาะ และกิจกรรมสุดเอ็กซ์คลูซีฟ",
-        ctaPrimary: "ขอสิทธิ์เข้าร่วมล่วงหน้า",
-        ctaSecondary: "รับการแจ้งเตือน",
+        title: "โปรแกรม VIP 20 ระดับเพื่อผู้เล่นที่เทรดจริงจัง",
+        subtitle:
+          "ไต่ระดับจากยอดเดิมพันสะสมเพื่อปลดล็อกเงินคืนรายวัน เงินคืนขาดทุนรายสัปดาห์/รายเดือน และโบนัสเลื่อนระดับแบบครั้งเดียว",
+        ctaPrimary: "ขอสิทธิ์เข้าร่วม VIP",
+        ctaSecondary: "ติดต่อฝ่ายสนับสนุน",
+        card: {
+          title: "โครงสร้างโปรแกรม",
+          items: [
+            "บันได VIP 20 ระดับอิงจากยอดเดิมพันสะสมทั้งหมด",
+            "สิทธิประโยชน์ 4 ประเภท: เงินคืนรายวัน รายสัปดาห์ รายเดือน และโบนัสเลื่อนระดับ",
+            "มีกฎ Active Boost และกฎดูแลสถานะรายเดือนเพื่อให้ผลตอบแทนสอดคล้องกับกิจกรรม",
+          ],
+        },
       },
-      highlights: {
-        title: "สิ่งที่กำลังพัฒนา",
-        subtitle: "โครงสร้าง VIP มุ่งเน้นความโปร่งใส ความรวดเร็ว และประโยชน์ที่จับต้องได้สำหรับลูกค้าปริมาณสูง",
-        items: [
+      overview: {
+        heading: "โครงสร้างรางวัล VIP",
+        paragraphs: [
+          "โปรแกรม VIP ให้รางวัลตามยอดเดิมพันสะสมทั้งหมด โดยกำหนด 20 ระดับที่เลื่อนให้โดยอัตโนมัติ",
+          "เมื่อระดับสูงขึ้น อัตราเงินคืนและโบนัสจะเพิ่มขึ้น พร้อมการประเมินอัตโนมัติจากกิจกรรมและผลงานรายเดือน",
+        ],
+        points: [
+          "5 ช่วงชั้น Bronze, Silver, Gold, Platinum และ Diamond โดยแต่ละช่วงมี 4 ระดับ",
+          "รางวัล 4 ประเภททำงานพร้อมกัน: เงินคืนรายวัน รายสัปดาห์ รายเดือน และโบนัสเลื่อนระดับ",
+          "มีกฎพิเศษ 2 ข้อ ได้แก่ Active Boost และเกณฑ์รักษาระดับรายเดือน",
+        ],
+      },
+      rewards: {
+        types: [
           {
-            title: "ตัวคูณผลตอบแทนแบบขั้น",
-            text: "เพิ่มอัตราจ่ายของออปชันตามผลงานและปริมาณการเทรดสะสม",
+            badge: "① Daily",
+            title: "เงินคืนรายวัน (Wager Rakeback)",
+            text: "คำนวณจากเปอร์เซ็นต์ที่ปลดล็อกแล้วคูณกับยอดเดิมพันรวมของวัน เพื่อคืนมูลค่าทันที",
           },
           {
-            title: "การดูแลระดับคอนเซียร์จ",
-            text: "ติดต่อผู้จัดการโต๊ะอาวุโสได้โดยตรง พร้อมบริการหลายภาษาและการติดตามความเสี่ยงเชิงรุก",
+            badge: "② Weekly",
+            title: "เงินคืนขาดทุนรายสัปดาห์",
+            text: "พิจารณาจากผลขาดทุนสุทธิรายสัปดาห์ และเพิ่ม +0.5% เมื่อผ่านเงื่อนไข Active Boost",
           },
           {
-            title: "สิทธิเข้าถึงข้อมูลพิเศษ",
-            text: "รับเชิญร่วมบรีฟกลยุทธ์ เซสชันกับพาร์ทเนอร์สภาพคล่อง และหน้าต่างการเทรดที่จำกัดจำนวน",
+            badge: "③ Monthly",
+            title: "เงินคืนขาดทุนรายเดือน",
+            text: "คำนวณจากผลขาดทุนสุทธิรายเดือน พร้อมโอกาสรับ +1.0% ผ่านเงื่อนไข Active Boost รายเดือน",
+          },
+          {
+            badge: "④ Rank-up",
+            title: "โบนัสเลื่อนระดับ",
+            text: "รับโบนัสเงินสดตามที่กำหนดครั้งเดียวเมื่อเลื่อนถึงแต่ละระดับครั้งแรก",
+          },
+        ],
+        summary: {
+          label: "Rewards",
+          heading: "20 ระดับ & 4 ช่องทางรางวัล",
+          text:
+            "อัตราที่แสดงคำนวณจากยอดเดิมพันเงินสดและผลขาดทุนสุทธิ ยิ่งระดับสูง ยิ่งได้รับเงินคืนรายวัน รายสัปดาห์ รายเดือน และโบนัสเลื่อนระดับมากขึ้น",
+          note: "เปอร์เซ็นต์ที่แสดงยังไม่รวม Active Boost โปรดอ่านกฎโปรแกรมสำหรับรายละเอียด",
+        },
+        table: {
+          headers: {
+            rank: "ระดับ",
+            tier: "ช่วงชั้น",
+            requirement: "ยอดเดิมพันสะสมเพื่อเลื่อนระดับ",
+            bonus: "โบนัสเลื่อนระดับ",
+            daily: "เงินคืนรายวัน",
+            weekly: "เงินคืนรายสัปดาห์",
+            monthly: "เงินคืนรายเดือน",
+          },
+          rows: [
+            { rank: "1", tier: "บรอนซ์ 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
+            { rank: "2", tier: "บรอนซ์ 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
+            { rank: "3", tier: "บรอนซ์ 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
+            { rank: "4", tier: "บรอนซ์ 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
+            { rank: "5", tier: "ซิลเวอร์ 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
+            { rank: "6", tier: "ซิลเวอร์ 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
+            { rank: "7", tier: "ซิลเวอร์ 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
+            { rank: "8", tier: "ซิลเวอร์ 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
+            { rank: "9", tier: "โกลด์ 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
+            { rank: "10", tier: "โกลด์ 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
+            { rank: "11", tier: "โกลด์ 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
+            { rank: "12", tier: "โกลด์ 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
+            { rank: "13", tier: "แพลทินัม 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
+            { rank: "14", tier: "แพลทินัม 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
+            { rank: "15", tier: "แพลทินัม 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
+            { rank: "16", tier: "แพลทินัม 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
+            { rank: "17", tier: "ไดมอนด์ 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
+            { rank: "18", tier: "ไดมอนด์ 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
+            { rank: "19", tier: "ไดมอนด์ 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
+            { rank: "20", tier: "ไดมอนด์ 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+          ],
+        },
+      },
+      rules: {
+        heading: "กฎการใช้งาน",
+        active: {
+          label: "กฎข้อที่ 1",
+          heading: "Active Boost",
+          intro: "การมีกิจกรรมต่อเนื่องช่วยเพิ่มเปอร์เซ็นต์เงินคืนให้สูงกว่าตารางพื้นฐาน",
+          weekly: {
+            title: "Weekly Active Boost",
+            detail: "วางเดิมพันอย่างน้อย $0.1 ใน 5 วันขึ้นไปภายในสัปดาห์เดียว จะได้รับ +0.5% เพิ่มเติมในเงินคืนรายสัปดาห์",
+          },
+          monthly: {
+            title: "Monthly Active Boost",
+            detail: "วางเดิมพันอย่างน้อย $0.1 ใน 20 วันขึ้นไปภายในเดือน จะได้รับ +1.0% เพิ่มเติมในเงินคืนรายเดือน",
+          },
+        },
+        downgrade: {
+          label: "กฎข้อที่ 2",
+          heading: "การรักษาระดับ",
+          intro: "เมื่อยอดเดิมพันสะสมถึงเกณฑ์ จะเลื่อนระดับทันที แต่การรักษาระดับจะตรวจสอบรายเดือน",
+          bullets: [
+            "เลื่อนระดับทันทีเมื่อยอดเดิมพันสะสมถึงเกณฑ์ถัดไป",
+            "สิทธิ์ช่วงชั้นได้รับการคุ้มครอง เมื่อเข้าช่วงชั้นแล้วจะไม่ถูกลดลง",
+            "ตรวจสอบสถานะในวันแรกของเดือนโดยใช้ยอดเดิมพันเดือนก่อนหน้า",
+            "หากไม่ถึงเกณฑ์ จะลดระดับเฉพาะภายในช่วงชั้นนั้น และระดับ 1 คือขั้นต่ำ",
+          ],
+          reminder: "คำนวณเฉพาะยอดเดิมพันเงินสด ระดับ 1 ในช่วงชั้นที่เข้าถึงแล้วคือจุดต่ำสุดหลังการประเมิน",
+        },
+        maintenanceTable: {
+          headers: {
+            rank: "ระดับ",
+            tier: "ช่วงชั้น",
+            requirement: "ยอดเดิมพันรายเดือนเพื่อรักษาระดับ",
+          },
+          rows: [
+            { rank: "1", tier: "บรอนซ์ 1", requirement: "$0" },
+            { rank: "2", tier: "บรอนซ์ 2", requirement: "$100" },
+            { rank: "3", tier: "บรอนซ์ 3", requirement: "$250" },
+            { rank: "4", tier: "บรอนซ์ 4", requirement: "$500" },
+            { rank: "5", tier: "ซิลเวอร์ 1", requirement: "$1,000" },
+            { rank: "6", tier: "ซิลเวอร์ 2", requirement: "$2,500" },
+            { rank: "7", tier: "ซิลเวอร์ 3", requirement: "$5,000" },
+            { rank: "8", tier: "ซิลเวอร์ 4", requirement: "$10,000" },
+            { rank: "9", tier: "โกลด์ 1", requirement: "$20,000" },
+            { rank: "10", tier: "โกลด์ 2", requirement: "$30,000" },
+            { rank: "11", tier: "โกลด์ 3", requirement: "$50,000" },
+            { rank: "12", tier: "โกลด์ 4", requirement: "$75,000" },
+            { rank: "13", tier: "แพลทินัม 1", requirement: "$100,000" },
+            { rank: "14", tier: "แพลทินัม 2", requirement: "$150,000" },
+            { rank: "15", tier: "แพลทินัม 3", requirement: "$200,000" },
+            { rank: "16", tier: "แพลทินัม 4", requirement: "$300,000" },
+            { rank: "17", tier: "ไดมอนด์ 1", requirement: "$500,000" },
+            { rank: "18", tier: "ไดมอนด์ 2", requirement: "$750,000" },
+            { rank: "19", tier: "ไดมอนด์ 3", requirement: "$1,000,000" },
+            { rank: "20", tier: "ไดมอนด์ 4", requirement: "$1,500,000" },
+          ],
+        },
+      },
+      terms: {
+        heading: "ข้อกำหนดโปรแกรม VIP",
+        subtitle: "การเข้าร่วมโปรแกรมแสดงว่าคุณยอมรับข้อกำหนดนี้และข้อกำหนดการใช้งานเว็บไซต์",
+        articles: [
+          {
+            label: "มาตรา 1",
+            heading: "การเข้าร่วมโปรแกรม",
+            items: [
+              "ผู้เล่นที่ลงทะเบียนกับบริษัทจะถูกเพิ่มในโปรแกรมโดยอัตโนมัติ",
+              "จำกัด 1 บัญชีต่อผู้เล่นต่อโปรแกรม",
+              "บริษัทสงวนสิทธิ์ปฏิเสธหรือยกเลิกการเข้าร่วมตามดุลยพินิจ",
+            ],
+          },
+          {
+            label: "มาตรา 2",
+            heading: "ระบบระดับ VIP",
+            items: [
+              "ประกอบด้วย 20 ระดับ แบ่งเป็นช่วงชั้น Bronze, Silver, Gold, Platinum และ Diamond โดยแต่ละช่วงมี 4 ระดับย่อย",
+              "เลื่อนระดับโดยอัตโนมัติเมื่อยอดเดิมพันสะสมถึงเกณฑ์",
+              "เมื่อเข้าสู่ช่วงชั้นแล้วจะไม่ถูกลดลงไปช่วงชั้นล่าง",
+              "ตรวจสอบระดับในวันแรกของเดือนโดยใช้งานเดิมพันเดือนก่อนและตารางเกณฑ์รักษาระดับ",
+            ],
+          },
+          {
+            label: "มาตรา 3",
+            heading: "ประเภทรางวัล",
+            items: [
+              "เงินคืนรายวัน: ใช้อัตราตามระดับคูณยอดเดิมพันรวมของวัน และเครดิตทุกวัน",
+              "เงินคืนรายสัปดาห์: ใช้อัตราตามระดับคูณผลขาดทุนสุทธิรายสัปดาห์ (ยอดเดิมพันรวมลบยอดชนะ) และเครดิตตามรอบที่กำหนด",
+              "เงินคืนรายเดือน: ใช้อัตราตามระดับคูณผลขาดทุนสุทธิรายเดือน และเครดิตตามรอบที่กำหนด",
+              "โบนัสเลื่อนระดับ: เงินสดจำนวนคงที่เมื่อเลื่อนถึงระดับใหม่ครั้งแรก",
+            ],
+          },
+          {
+            label: "มาตรา 4",
+            heading: "Active Boost",
+            items: [
+              "Weekly Active Boost: เดิมพันอย่างน้อย $0.1 ใน 5 วันขึ้นไปภายในสัปดาห์ เพิ่ม +0.5% ให้เงินคืนรายสัปดาห์",
+              "Monthly Active Boost: เดิมพันอย่างน้อย $0.1 ใน 20 วันขึ้นไปภายในเดือน เพิ่ม +1.0% ให้เงินคืนรายเดือน",
+            ],
+          },
+          {
+            label: "มาตรา 5",
+            heading: "เงื่อนไขรางวัล",
+            items: [
+              "เว้นแต่จะระบุเป็นอย่างอื่น การคำนวณจะใช้ยอดเดิมพันเงินสดและผลขาดทุนสุทธิจากเงินสด โบนัสอาจถูกตัดออก",
+              "โบนัสเลื่อนระดับจะเครดิตเป็นโบนัสและอาจมีเงื่อนไขการทำเทิร์นหรือวันหมดอายุ",
+              "บริษัทอาจกำหนดเงื่อนไขเพิ่มเติม เช่น ยอดหมุนเวียน ระยะเวลาใช้สิทธิ์ หรือเพดานจ่าย",
+            ],
+          },
+          {
+            label: "มาตรา 6",
+            heading: "การกระทำที่ห้าม",
+            items: [
+              "ห้ามสร้างบัญชีหลายบัญชี ใช้ช่องโหว่ของระบบ สมรู้ร่วมคิด หรือการกระทำที่บริษัทเห็นว่าเป็นการทุจริต",
+              "ห้ามวางเดิมพันผิดธรรมชาติที่มุ่งหวังสร้างรางวัลเท่านั้น เช่น การวนเดิมพันความเสี่ยงต่ำ",
+              "หากพบการทุจริต บริษัทอาจตัดสิทธิ์ VIP ลดระดับ ยึดรางวัล หรือระงับบัญชี",
+            ],
+          },
+          {
+            label: "มาตรา 7",
+            heading: "ข้อกำหนดทั่วไป",
+            items: [
+              "บริษัทอาจแก้ไข ระงับ หรือยุติโปรแกรม รวมถึงอัตรารางวัล ได้โดยไม่ต้องแจ้งล่วงหน้า",
+              "การตัดสินของบริษัทเกี่ยวกับคุณสมบัติ การคำนวณ และการตีความถือเป็นที่สิ้นสุด",
+              "หากข้อกำหนดนี้ขัดแย้งกับข้อกำหนดการใช้งานเว็บไซต์ ให้ยึดข้อกำหนดการใช้งานเป็นหลัก",
+            ],
           },
         ],
       },
-      status: {
-        title: "สถานะการเปิดตัว",
-        text: "ขณะนี้โปรแกรม VIP เปิดให้บริการแบบเบต้าสำหรับพาร์ทเนอร์ที่ได้รับเชิญ หากต้องการรับข้อมูลอัปเดตเมื่อเปิดรับรอบถัดไป โปรดแจ้งความประสงค์ไว้",
-        contact: "vip@1540bo.io",
+      update: {
+        label: "อัปเดตล่าสุด",
+        date: "11 พฤศจิกายน 2025",
+        note: "รายละเอียดโปรแกรมอาจเปลี่ยนแปลงโดยไม่แจ้งล่วงหน้า โปรดติดตามประกาศอย่างเป็นทางการเสมอ",
       },
     },
     hero: {
@@ -1073,6 +1657,7 @@ function applyTranslations(lang) {
     const key = el.dataset.i18n;
     el.textContent = translate(key, lang);
   });
+  renderVipContent(lang);
   renderTicker();
 }
 
@@ -1087,6 +1672,44 @@ function formatPrice(price, decimals) {
 function formatChange(change) {
   const sign = change >= 0 ? "+" : "";
   return `${sign}${change.toFixed(2)}%`;
+}
+
+function renderVipContent(lang) {
+  if (document.body.dataset.page !== "vip") return;
+
+  const rewardTableBody = document.querySelector("#vip-rewards-table tbody");
+  if (rewardTableBody) {
+    const rows = translate("vip.rewards.table.rows", lang);
+    if (Array.isArray(rows)) {
+      rewardTableBody.innerHTML = "";
+      rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        ["rank", "tier", "requirement", "bonus", "daily", "weekly", "monthly"].forEach((key) => {
+          const td = document.createElement("td");
+          td.textContent = row && row[key] !== undefined ? row[key] : "";
+          tr.appendChild(td);
+        });
+        rewardTableBody.appendChild(tr);
+      });
+    }
+  }
+
+  const maintenanceTableBody = document.querySelector("#vip-maintenance-table tbody");
+  if (maintenanceTableBody) {
+    const rows = translate("vip.rules.maintenanceTable.rows", lang);
+    if (Array.isArray(rows)) {
+      maintenanceTableBody.innerHTML = "";
+      rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        ["rank", "tier", "requirement"].forEach((key) => {
+          const td = document.createElement("td");
+          td.textContent = row && row[key] !== undefined ? row[key] : "";
+          tr.appendChild(td);
+        });
+        maintenanceTableBody.appendChild(tr);
+      });
+    }
+  }
 }
 
 function renderTicker() {

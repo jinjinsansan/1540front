@@ -77,9 +77,28 @@
           </div>
           <div class="vip-hero__panel">
             <div class="vip-hero__card">
-              <h2 data-i18n="vip.highlights.title"></h2>
-              <p data-i18n="vip.highlights.subtitle"></p>
+              <h2 data-i18n="vip.hero.card.title"></h2>
+              <ul class="terms-list">
+                <li data-i18n="vip.hero.card.items.0"></li>
+                <li data-i18n="vip.hero.card.items.1"></li>
+                <li data-i18n="vip.hero.card.items.2"></li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vip-overview" id="vip-overview">
+        <div class="container">
+          <div class="intro-card">
+            <h2 data-i18n="vip.overview.heading"></h2>
+            <p data-i18n="vip.overview.paragraphs.0"></p>
+            <p data-i18n="vip.overview.paragraphs.1"></p>
+            <ul class="terms-list">
+              <li data-i18n="vip.overview.points.0"></li>
+              <li data-i18n="vip.overview.points.1"></li>
+              <li data-i18n="vip.overview.points.2"></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -88,16 +107,197 @@
         <div class="container">
           <div class="vip-highlights__grid">
             <article class="vip-highlight-card">
-              <h3 data-i18n="vip.highlights.items.0.title"></h3>
-              <p data-i18n="vip.highlights.items.0.text"></p>
+              <span class="vip-highlight-card__label" data-i18n="vip.rewards.types.0.badge"></span>
+              <h3 data-i18n="vip.rewards.types.0.title"></h3>
+              <p data-i18n="vip.rewards.types.0.text"></p>
             </article>
             <article class="vip-highlight-card">
-              <h3 data-i18n="vip.highlights.items.1.title"></h3>
-              <p data-i18n="vip.highlights.items.1.text"></p>
+              <span class="vip-highlight-card__label" data-i18n="vip.rewards.types.1.badge"></span>
+              <h3 data-i18n="vip.rewards.types.1.title"></h3>
+              <p data-i18n="vip.rewards.types.1.text"></p>
             </article>
             <article class="vip-highlight-card">
-              <h3 data-i18n="vip.highlights.items.2.title"></h3>
-              <p data-i18n="vip.highlights.items.2.text"></p>
+              <span class="vip-highlight-card__label" data-i18n="vip.rewards.types.2.badge"></span>
+              <h3 data-i18n="vip.rewards.types.2.title"></h3>
+              <p data-i18n="vip.rewards.types.2.text"></p>
+            </article>
+            <article class="vip-highlight-card">
+              <span class="vip-highlight-card__label" data-i18n="vip.rewards.types.3.badge"></span>
+              <h3 data-i18n="vip.rewards.types.3.title"></h3>
+              <p data-i18n="vip.rewards.types.3.text"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="vip-rewards" id="vip-rewards">
+        <div class="container">
+          <div class="terms-grid">
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.rewards.summary.label"></span>
+                <h2 data-i18n="vip.rewards.summary.heading"></h2>
+              </div>
+              <p data-i18n="vip.rewards.summary.text"></p>
+            </article>
+          </div>
+          <div class="table-wrapper">
+            <table class="terms-table" id="vip-rewards-table">
+              <thead>
+                <tr>
+                  <th data-i18n="vip.rewards.table.headers.rank"></th>
+                  <th data-i18n="vip.rewards.table.headers.tier"></th>
+                  <th data-i18n="vip.rewards.table.headers.requirement"></th>
+                  <th data-i18n="vip.rewards.table.headers.bonus"></th>
+                  <th data-i18n="vip.rewards.table.headers.daily"></th>
+                  <th data-i18n="vip.rewards.table.headers.weekly"></th>
+                  <th data-i18n="vip.rewards.table.headers.monthly"></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="note-text" data-i18n="vip.rewards.summary.note"></p>
+        </div>
+      </section>
+
+      <section class="vip-rules" id="vip-rules">
+        <div class="container">
+          <div class="vip-rules__intro">
+            <h2 data-i18n="vip.rules.heading"></h2>
+          </div>
+          <div class="terms-grid">
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.rules.active.label"></span>
+                <h2 data-i18n="vip.rules.active.heading"></h2>
+              </div>
+              <p data-i18n="vip.rules.active.intro"></p>
+              <ul class="terms-list">
+                <li>
+                  <span class="term" data-i18n="vip.rules.active.weekly.title"></span>
+                  <span class="desc" data-i18n="vip.rules.active.weekly.detail"></span>
+                </li>
+                <li>
+                  <span class="term" data-i18n="vip.rules.active.monthly.title"></span>
+                  <span class="desc" data-i18n="vip.rules.active.monthly.detail"></span>
+                </li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.rules.downgrade.label"></span>
+                <h2 data-i18n="vip.rules.downgrade.heading"></h2>
+              </div>
+              <p data-i18n="vip.rules.downgrade.intro"></p>
+              <ul class="terms-list">
+                <li data-i18n="vip.rules.downgrade.bullets.0"></li>
+                <li data-i18n="vip.rules.downgrade.bullets.1"></li>
+                <li data-i18n="vip.rules.downgrade.bullets.2"></li>
+                <li data-i18n="vip.rules.downgrade.bullets.3"></li>
+              </ul>
+              <p class="note-text" data-i18n="vip.rules.downgrade.reminder"></p>
+            </article>
+          </div>
+          <div class="table-wrapper">
+            <table class="terms-table" id="vip-maintenance-table">
+              <thead>
+                <tr>
+                  <th data-i18n="vip.rules.maintenanceTable.headers.rank"></th>
+                  <th data-i18n="vip.rules.maintenanceTable.headers.tier"></th>
+                  <th data-i18n="vip.rules.maintenanceTable.headers.requirement"></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="vip-terms" id="vip-terms">
+        <div class="container">
+          <div class="vip-terms__intro">
+            <h2 data-i18n="vip.terms.heading"></h2>
+            <p data-i18n="vip.terms.subtitle"></p>
+          </div>
+          <div class="terms-grid">
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.0.label"></span>
+                <h2 data-i18n="vip.terms.articles.0.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.0.items.0"></li>
+                <li data-i18n="vip.terms.articles.0.items.1"></li>
+                <li data-i18n="vip.terms.articles.0.items.2"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.1.label"></span>
+                <h2 data-i18n="vip.terms.articles.1.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.1.items.0"></li>
+                <li data-i18n="vip.terms.articles.1.items.1"></li>
+                <li data-i18n="vip.terms.articles.1.items.2"></li>
+                <li data-i18n="vip.terms.articles.1.items.3"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.2.label"></span>
+                <h2 data-i18n="vip.terms.articles.2.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.2.items.0"></li>
+                <li data-i18n="vip.terms.articles.2.items.1"></li>
+                <li data-i18n="vip.terms.articles.2.items.2"></li>
+                <li data-i18n="vip.terms.articles.2.items.3"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.3.label"></span>
+                <h2 data-i18n="vip.terms.articles.3.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.3.items.0"></li>
+                <li data-i18n="vip.terms.articles.3.items.1"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.4.label"></span>
+                <h2 data-i18n="vip.terms.articles.4.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.4.items.0"></li>
+                <li data-i18n="vip.terms.articles.4.items.1"></li>
+                <li data-i18n="vip.terms.articles.4.items.2"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.5.label"></span>
+                <h2 data-i18n="vip.terms.articles.5.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.5.items.0"></li>
+                <li data-i18n="vip.terms.articles.5.items.1"></li>
+                <li data-i18n="vip.terms.articles.5.items.2"></li>
+              </ul>
+            </article>
+            <article class="terms-card">
+              <div class="terms-card-header">
+                <span class="article-label" data-i18n="vip.terms.articles.6.label"></span>
+                <h2 data-i18n="vip.terms.articles.6.heading"></h2>
+              </div>
+              <ul class="terms-list">
+                <li data-i18n="vip.terms.articles.6.items.0"></li>
+                <li data-i18n="vip.terms.articles.6.items.1"></li>
+                <li data-i18n="vip.terms.articles.6.items.2"></li>
+              </ul>
             </article>
           </div>
         </div>
@@ -106,9 +306,9 @@
       <section class="vip-status" id="vip-status">
         <div class="container">
           <div class="vip-status__card">
-            <h2 data-i18n="vip.status.title"></h2>
-            <p data-i18n="vip.status.text"></p>
-            <a class="vip-status__contact" href="mailto:vip@1540bo.io" data-i18n="vip.status.contact"></a>
+            <span data-i18n="vip.update.label"></span>
+            <strong data-i18n="vip.update.date"></strong>
+            <p data-i18n="vip.update.note"></p>
           </div>
         </div>
       </section>
