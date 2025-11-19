@@ -79,25 +79,50 @@ body.privacy-page {
   flex-wrap: wrap;
 }
 
-.privacy-hero__card {
-  padding: clamp(26px, 4vw, 36px);
-  border-radius: 26px;
-  border: 1px solid var(--privacy-border);
-  background: rgba(10, 14, 30, 0.9);
-  box-shadow: 0 32px 80px rgba(2, 4, 12, 0.5);
+.privacy-hero__alert {
   display: grid;
-  gap: 14px;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  padding: clamp(24px, 4vw, 32px);
+  border-radius: 24px;
+  border: 1px solid var(--privacy-border);
+  background: rgba(10, 12, 28, 0.88);
+  box-shadow: 0 32px 80px rgba(2, 4, 12, 0.55);
+  position: relative;
 }
 
-.privacy-hero__card h2 {
-  margin: 0;
-  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+.privacy-hero__alert::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 221, 255, 0.28);
+  pointer-events: none;
 }
 
-.privacy-hero__card p {
+.privacy-hero__alert-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: rgba(0, 221, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ddff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  box-shadow: 0 0 0 6px rgba(0, 221, 255, 0.1);
+}
+
+.privacy-hero__alert-copy h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
+
+.privacy-hero__alert-copy p {
   margin: 0;
   color: rgba(247, 249, 255, 0.78);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .privacy-overview {
@@ -202,6 +227,28 @@ body.privacy-page {
   font-size: clamp(1.4rem, 2.2vw, 1.7rem);
 }
 
+.privacy-card__group {
+  display: grid;
+  gap: 10px;
+}
+
+.privacy-card__group h4 {
+  margin: 10px 0 0;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.privacy-card__note {
+  margin-top: 4px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: rgba(0, 221, 255, 0.08);
+  color: rgba(247, 249, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
 .privacy-card p {
   margin: 0;
   color: rgba(247, 249, 255, 0.78);
@@ -218,6 +265,20 @@ body.privacy-page {
 }
 
 .privacy-list li::marker {
+  color: #00ddff;
+  font-weight: 600;
+}
+
+.privacy-ordered-list {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 10px;
+  color: rgba(247, 249, 255, 0.82);
+  line-height: 1.65;
+}
+
+.privacy-ordered-list li::marker {
   color: #00ddff;
   font-weight: 600;
 }
@@ -271,6 +332,16 @@ body.privacy-page {
 
   .privacy-hero__actions .btn {
     width: 100%;
+  }
+
+  .privacy-hero__alert {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-hero__alert-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }
 

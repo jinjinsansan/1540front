@@ -640,73 +640,167 @@ const translations = {
     privacy: {
       hero: {
         badge: "Privacy Policy",
-        title: "Protecting your data on 1540bo.io",
+        title: "1540bo.io Privacy Policy",
         subtitle:
-          "This policy explains how we collect, use, and safeguard personal information across our trading services. Review it carefully before sharing data with us.",
-        ctaPrimary: "Contact data protection",
-        ctaSecondary: "View legal center",
-        highlightHeading: "Placeholder notice",
-        highlightBody:
-          "The final privacy policy text will be inserted soon. The structure already supports English, Japanese, and Thai for immediate localisation.",
+          "This policy describes how 1540bo collects, uses, shares, and safeguards personal information when you use our trading services.",
+        ctaPrimary: "Contact support",
+        ctaSecondary: "View Terms of Service",
+        alertTitle: "Read before sharing personal data",
+        alertBody:
+          "Compliance with this policy is mandatory for all account holders. Provide documents only after understanding how your information is processed and protected.",
       },
       overview: {
-        heading: "What this policy covers",
+        heading: "How we handle your personal information",
         paragraphs: [
-          "These sections outline the categories of data we collect, the purposes for processing, and the safeguards we apply to protect your privacy.",
-          "We will replace the placeholder copy with the definitive policy once approved. Until then, this layout keeps language switching ready.",
+          "The sections below set out the rules that govern personal data handled through 1540bo.io, from acquisition to disposal.",
+          "They align with the Act on the Protection of Personal Information of Japan and apply to every user of the service.",
         ],
         highlights: [
-          "Personal data collection overview",
-          "Usage, legal basis, and retention principles",
-          "Your rights and contact channels",
+          "Legal basis and scope of personal data we obtain",
+          "Purposes of use, third-party sharing, and joint utilisation",
+          "Your rights regarding disclosure, correction, and complaints",
         ],
       },
       sections: {
-        label: "Overview",
-        heading: "Core privacy principles",
-        subtitle: "Each card below will expand with the final policy language covering collection, usage, and the rights available to every user.",
-        collection: {
-          heading: "Data we collect",
-          items: [
-            "Registration details, identity verification documents, and account preferences.",
-            "Trading telemetry, transaction history, and device diagnostics used to keep sessions secure.",
-            "Support conversations, compliance correspondence, and risk management outcomes.",
-          ],
-        },
-        usage: {
-          heading: "How we use your data",
-          items: [
-            "To deliver platform functionality and maintain account integrity across devices.",
-            "To satisfy legal and regulatory obligations, including anti-money laundering controls.",
-            "To provide customer support, notify you of changes, and optimise platform operations.",
-          ],
-        },
-        rights: {
-          heading: "Your rights",
-          items: [
-            "Request access to personal information we hold about you.",
-            "Ask us to correct inaccurate records or restrict certain processing.",
-            "Contact our data protection team with questions or objections at any time.",
-          ],
-        },
-        retention: {
-          heading: "Retention and deletion",
+        section1: {
+          label: "Section 1",
+          heading: "General provisions",
           body: [
-            "We store personal data only for as long as required to fulfil statutory retention periods and deliver the services you request.",
-            "When those periods expire, data is securely deleted or anonymised unless continued storage is mandated by law or legitimate interest.",
+            "1540bo (the “Company”) establishes this Privacy Policy to govern the handling of user information, including personal data, within the service “1540bo.io”.",
           ],
         },
-        security: {
-          heading: "Security controls",
+        section2: {
+          label: "Section 2",
+          heading: "Definition of personal information",
           body: [
-            "Encryption, access controls, continuous monitoring, and incident response protocols protect your information throughout its lifecycle.",
+            "“Personal information” refers to information about a living individual that can identify a specific person, as defined by the Act on the Protection of Personal Information of Japan, including data that can be easily matched with other information to enable identification.",
+          ],
+        },
+        section3: {
+          label: "Section 3",
+          heading: "Methods of gathering personal information",
+          intro:
+            "We obtain personal data through lawful and fair means and never by deceitful or otherwise improper methods. The main categories are as follows.",
+          groups: [
+            {
+              title: "Information provided directly by users",
+              items: [
+                "Name, address, date of birth, telephone number, email address, and other registration details.",
+                "Information contained in identity verification documents such as passports or driver’s licences.",
+                "Any other information voluntarily submitted via application forms or support communications.",
+              ],
+            },
+            {
+              title: "Information collected automatically when the service is used",
+              items: [
+                "Trading history and account balances recorded on 1540bo.io.",
+                "IP addresses, cookie identifiers, device information, and similar technical telemetry.",
+              ],
+            },
+          ],
+        },
+        section4: {
+          label: "Section 4",
+          heading: "Purposes of use",
+          items: [
+            "To provide and operate the service.",
+            "To accept identity verification, account-opening requests, and trading instructions from users.",
+            "To report trading results, custody balances, and related information to users.",
+            "To respond to enquiries and provide customer support, including identity confirmation.",
+            "To send emails announcing new features, updates, campaigns, and other services offered by the Company.",
+            "To deliver maintenance notices, important announcements, and other necessary communications.",
+            "To identify users who violate the Terms of Service or attempt to use the service for fraudulent or improper purposes and to refuse their access.",
+            "To comply with laws and regulations, including identity verification under the Act on Prevention of Transfer of Criminal Proceeds.",
+            "For purposes incidental to the uses listed above.",
+          ],
+        },
+        section5: {
+          label: "Section 5",
+          heading: "Provision of personal information to third parties",
+          intro:
+            "We do not provide personal information to third parties without prior consent from the user, except in the following cases or when permitted under applicable laws and regulations.",
+          items: [
+            "When it is necessary to protect a person’s life, body, or property and obtaining consent is difficult.",
+            "When it is especially necessary to improve public health or promote the sound upbringing of children and obtaining consent is difficult.",
+            "When cooperation with national or local governmental bodies is required to execute matters prescribed by law, and obtaining consent could impede such execution.",
+            "When advance notice or publication of prescribed matters has been made and a notification has been filed with the Personal Information Protection Commission.",
+          ],
+          note:
+            "Any provision of personal data to third parties will be carried out strictly in accordance with the Act on the Protection of Personal Information and related regulations.",
+        },
+        section6: {
+          label: "Section 6",
+          heading: "Joint use of personal information",
+          intro: "We may share personal data within the scope described below.",
+          groups: [
+            {
+              title: "Items subject to joint use",
+              items: [
+                "Name, address, date of birth, telephone number, email address, and similar contact details.",
+                "Identity verification results and information related to transactions on 1540bo.io.",
+                "Other data necessary to achieve the purposes described in Section 4.",
+              ],
+            },
+            {
+              title: "Scope of joint users",
+              body: "Companies that belong to the 1540bo corporate group.",
+            },
+            {
+              title: "Purposes of joint use",
+              body: "The same purposes listed in Section 4 of this Privacy Policy.",
+            },
+            {
+              title: "Party responsible for management",
+              body: "1540bo, which oversees the secure management of jointly used data.",
+            },
+          ],
+        },
+        section7: {
+          label: "Section 7",
+          heading: "Security control measures",
+          body: [
+            "We implement appropriate organisational, physical, and technical safeguards to prevent leakage, loss, or damage of personal data and to ensure secure management.",
+          ],
+        },
+        section8: {
+          label: "Section 8",
+          heading: "Disclosure, correction, and suspension of use",
+          body: [
+            "When we receive a request from a user to disclose, correct, add to, delete, suspend the use of, or erase personal data, we will respond without delay after confirming the requester’s identity, unless an exemption under law applies.",
+            "If we determine that we are not obligated to respond under applicable law, we will notify the requester accordingly.",
+          ],
+          fee:
+            "A handling fee of JPY 1,000 (tax inclusive) is charged for each disclosure request.",
+        },
+        section9: {
+          label: "Section 9",
+          heading: "Use of cookies and similar technologies",
+          body: [
+            "We may use cookies and similar technologies to enhance convenience, understand usage trends, and measure advertising effectiveness.",
+            "You can disable cookies through your browser settings, but doing so may prevent you from using parts of the service.",
+          ],
+        },
+        section10: {
+          label: "Section 10",
+          heading: "Changes to the Privacy Policy",
+          body: [
+            "We may revise this Privacy Policy whenever necessary.",
+            "If a revision requires user consent under law, the revised policy will apply only to users who agree through the method specified by the Company. We will announce the effective date and details of revisions via our website or other appropriate means.",
+          ],
+        },
+        section11: {
+          label: "Section 11",
+          heading: "Contact",
+          body: [
+            "For questions regarding this Privacy Policy, please contact us via the support centre available within 1540bo.io.",
+            "We will respond after verifying your identity when necessary and will handle enquiries in accordance with this Policy.",
           ],
         },
       },
       update: {
         label: "Status",
-        date: "Pending publication",
-        note: "This page currently contains placeholder copy. Final legal wording will replace it once compliance review is complete.",
+        date: "19 November 2025",
+        note: "This Privacy Policy is effective as of the date above and may be updated in line with future regulatory guidance.",
       },
     },
     hero: {
@@ -1465,73 +1559,163 @@ const translations = {
     privacy: {
       hero: {
         badge: "プライバシーポリシー",
-        title: "1540bo.ioにおける個人情報の保護",
+        title: "1540bo.io プライバシーポリシー",
         subtitle:
-          "本ポリシーは、当社が提供する取引サービス全般において、どのように個人情報を取得し、利用し、保護するのかを説明するものです。情報をご提供いただく前に必ずご確認ください。",
-        ctaPrimary: "個人情報保護窓口に連絡",
-        ctaSecondary: "リーガルセンターを見る",
-        highlightHeading: "プレースホルダーのお知らせ",
-        highlightBody:
-          "最終的なプライバシーポリシー本文は後日掲載されます。英語・日本語・タイ語の切り替え構造はすでに整備されています。",
+          "本ポリシーは、1540boが取引サービスの提供に際して取得・利用・共有・保護する個人情報の取扱いを説明します。",
+        ctaPrimary: "サポートに問い合わせる",
+        ctaSecondary: "利用規約を見る",
+        alertTitle: "個人情報提供前の重要な確認",
+        alertBody:
+          "本ポリシーはすべての口座保有者に適用されます。情報の取扱いと保護内容を理解したうえで書類をご提出ください。",
       },
       overview: {
-        heading: "このポリシーが対象とする内容",
+        heading: "個人情報の取扱い方針",
         paragraphs: [
-          "以下のセクションでは、取得するデータの種類、利用目的、そして利用者のプライバシーを守るための管理体制を概説します。",
-          "コンプライアンス承認後、プレースホルダー文を正式な本文に差し替えます。それまでの間も多言語レイアウトは維持されます。",
+          "以下の各条項は、1540bo.ioにおける個人情報の取得から廃棄までの取扱い規範を定めています。",
+          "日本の個人情報保護法に準拠し、本サービスをご利用いただくすべての方に適用されます。",
         ],
         highlights: [
-          "取得する個人情報の概要",
-          "利用目的・法的根拠・保存方針",
-          "利用者の権利と問い合わせ窓口",
+          "取得する個人情報とその法的根拠",
+          "利用目的・第三者提供・共同利用の範囲",
+          "開示・訂正等の権利とお問い合わせ窓口",
         ],
       },
       sections: {
-        label: "概要",
-        heading: "プライバシー保護の基本原則",
-        subtitle: "以下のカードには、最終版の本文で拡充される予定の「取得」「利用」「権利」に関する主要な論点を示しています。",
-        collection: {
-          heading: "取得するデータ",
-          items: [
-            "登録情報、本人確認書類、アカウント設定などの基本情報。",
-            "取引テレメトリー、トランザクション履歴、端末識別子などセッション保護に利用する情報。",
-            "サポートでのやり取り、コンプライアンス上の連絡、リスク管理結果。",
-          ],
-        },
-        usage: {
-          heading: "データの利用目的",
-          items: [
-            "プラットフォーム機能を提供し、マルチデバイスでアカウント整合性を維持するため。",
-            "マネーロンダリング対策を含む法令・規制上の義務を履行するため。",
-            "サポート対応、ポリシー変更のお知らせ、運用改善のために利用するため。",
-          ],
-        },
-        rights: {
-          heading: "利用者の権利",
-          items: [
-            "当社が保有する個人情報へのアクセスや写しの交付を請求できます。",
-            "不正確な情報の訂正や、一部処理の制限を求めることができます。",
-            "疑問点や異議はいつでも個人情報保護チームへご連絡ください。",
-          ],
-        },
-        retention: {
-          heading: "保存期間と削除",
+        section1: {
+          label: "第1条",
+          heading: "総則",
           body: [
-            "法定保存期間の遵守およびサービス提供に必要な期間に限り個人情報を保管します。",
-            "保存期間満了後は、法的義務や正当な利益が認められる場合を除き、情報を安全に削除または匿名化します。",
+            "1540bo（以下「当社」といいます。）は、本サービス「1540bo.io」における利用者情報（個人情報を含みます。）の取扱いについて、本プライバシーポリシーを定めます。",
           ],
         },
-        security: {
-          heading: "セキュリティ管理",
+        section2: {
+          label: "第2条",
+          heading: "個人情報の定義",
           body: [
-            "暗号化、アクセス制御、常時モニタリング、インシデント対応手順などにより、ライフサイクル全体を通じて情報を保護します。",
+            "「個人情報」とは、個人情報保護法に定める生存する個人に関する情報であり、氏名、生年月日その他の記述等により特定の個人を識別できるもの、または他の情報と照合することで容易に特定の個人を識別できるものをいいます。",
+          ],
+        },
+        section3: {
+          label: "第3条",
+          heading: "個人情報の取得方法",
+          intro: "当社は、適法かつ公正な手段により個人情報を取得し、偽りその他不正の手段による取得は行いません。主な取得情報は次のとおりです。",
+          groups: [
+            {
+              title: "利用者から直接ご提供いただく情報",
+              items: [
+                "氏名、住所、生年月日、電話番号、メールアドレスその他の登録情報。",
+                "パスポート、運転免許証等の本人確認書類に記載された情報。",
+                "各種申込フォームやサポート対応を通じて任意にご提供いただくその他の情報。",
+              ],
+            },
+            {
+              title: "本サービス利用に伴い自動的に取得する情報",
+              items: [
+                "1540bo.io上で記録される取引履歴および口座残高。",
+                "IPアドレス、Cookie識別子、端末情報等の技術的テレメトリー。",
+              ],
+            },
+          ],
+        },
+        section4: {
+          label: "第4条",
+          heading: "個人情報の利用目的",
+          items: [
+            "本サービスを提供・運営するため。",
+            "本人確認、口座開設申込、取引指図等を受け付けるため。",
+            "取引結果、預り残高等を利用者へ報告するため。",
+            "お問い合わせへの回答および本人確認を行うため。",
+            "本サービスの新機能、更新情報、キャンペーン等並びに当社の他サービス案内のメールを送信するため。",
+            "メンテナンスや重要なお知らせ等を必要に応じて連絡するため。",
+            "利用規約等に違反した利用者、不正・不当な目的で本サービスを利用しようとする利用者を特定し、ご利用をお断りするため。",
+            "犯罪による収益の移転防止法に基づく本人確認等、法令等を遵守するため。",
+            "上記利用目的に付随する目的のため。",
+          ],
+        },
+        section5: {
+          label: "第5条",
+          heading: "個人情報の第三者提供",
+          intro: "当社は、以下の場合または法令で認められる場合を除き、あらかじめ利用者の同意を得ることなく個人情報を第三者に提供しません。",
+          items: [
+            "人の生命、身体または財産の保護のために必要がある場合で本人の同意を得ることが困難なとき。",
+            "公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合で本人の同意を得ることが困難なとき。",
+            "国の機関または地方公共団体等が法令に定める事務を遂行するために協力する必要があり、本人の同意取得によって当該事務の遂行に支障を及ぼすおそれがあるとき。",
+            "あらかじめ定められた事項を告知または公表し、個人情報保護委員会に届出をしたとき。",
+          ],
+          note: "個人情報の第三者提供は、個人情報保護法その他関係法令に従い適切に実施します。",
+        },
+        section6: {
+          label: "第6条",
+          heading: "個人情報の共同利用",
+          intro: "当社は、以下の範囲で個人情報を共同利用することがあります。",
+          groups: [
+            {
+              title: "共同利用される項目",
+              items: [
+                "氏名、住所、生年月日、電話番号、メールアドレス等の連絡先情報。",
+                "本人確認結果および1540bo.io上の取引に関する情報。",
+                "第4条に定める利用目的を達成するために必要なその他のデータ。",
+              ],
+            },
+            {
+              title: "共同利用者の範囲",
+              body: "1540boグループ各社。",
+            },
+            {
+              title: "共同利用の目的",
+              body: "本プライバシーポリシー第4条に記載の利用目的と同一です。",
+            },
+            {
+              title: "個人情報管理責任者",
+              body: "共同利用されるデータの安全管理を統括する1540bo。",
+            },
+          ],
+        },
+        section7: {
+          label: "第7条",
+          heading: "個人情報の安全管理措置",
+          body: [
+            "当社は個人情報の漏えい、滅失またはき損を防止し、安全管理を図るため、組織的・人的・物理的・技術的な必要かつ適切な措置を講じます。",
+          ],
+        },
+        section8: {
+          label: "第8条",
+          heading: "個人情報の開示・訂正・利用停止等",
+          body: [
+            "利用者から個人情報の開示、訂正、追加、削除、利用停止または消去を求められた場合、法令に定める例外を除き、ご本人確認のうえ遅滞なく対応します。",
+            "法令により当社が応じる義務がないと判断した場合には、その旨を速やかに通知します。",
+          ],
+          fee: "開示請求1件につき1,000円（税込）の手数料をご負担いただきます。",
+        },
+        section9: {
+          label: "第9条",
+          heading: "Cookie等の利用",
+          body: [
+            "当社は、利便性の向上、利用状況の把握、広告効果測定等を目的としてCookieおよび類似技術を利用することがあります。",
+            "ブラウザの設定でCookieを無効にすることができますが、その場合本サービスの一部がご利用いただけないことがあります。",
+          ],
+        },
+        section10: {
+          label: "第10条",
+          heading: "プライバシーポリシーの変更",
+          body: [
+            "当社は必要に応じて本ポリシーを変更することがあります。",
+            "法令上利用者の同意が必要となる変更を行う場合、変更後のポリシーは所定の方法で同意した利用者にのみ適用し、施行時期および内容を当社ウェブサイト等で周知または通知します。",
+          ],
+        },
+        section11: {
+          label: "第11条",
+          heading: "お問い合わせ窓口",
+          body: [
+            "本ポリシーに関するお問い合わせは、1540bo.io内のサポートセンターよりご連絡ください。",
+            "必要に応じてご本人確認を行ったうえで、本ポリシーに従い迅速に対応いたします。",
           ],
         },
       },
       update: {
         label: "ステータス",
-        date: "公開準備中",
-        note: "現在はプレースホルダーの文言です。コンプライアンス承認後に正式な文章へ差し替えます。",
+        date: "2025年11月19日",
+        note: "本プライバシーポリシーは上記日付現在のものであり、規制動向に合わせて更新される場合があります。",
       },
     },
     hero: {
@@ -2296,73 +2480,163 @@ const translations = {
     privacy: {
       hero: {
         badge: "นโยบายความเป็นส่วนตัว",
-        title: "การคุ้มครองข้อมูลของคุณบน 1540bo.io",
+        title: "นโยบายความเป็นส่วนตัวของ 1540bo.io",
         subtitle:
-          "นโยบายนี้อธิบายวิธีที่เรารวบรวม ใช้งาน และปกป้องข้อมูลส่วนบุคคลในบริการเทรดทั้งหมดของเรา โปรดอ่านอย่างละเอียดก่อนส่งข้อมูลให้เรา",
-        ctaPrimary: "ติดต่อทีมคุ้มครองข้อมูล",
-        ctaSecondary: "ดูศูนย์ข้อมูลด้านกฎหมาย",
-        highlightHeading: "ประกาศชั่วคราว",
-        highlightBody:
-          "เนื้อหาฉบับสมบูรณ์จะถูกเพิ่มในไม่ช้า โครงสร้างภาษาสามารถสลับได้ทั้งอังกฤษ ญี่ปุ่น และไทยแล้ว",
+          "นโยบายนี้อธิบายวิธีที่ 1540bo รวบรวม ใช้งาน แบ่งปัน และปกป้องข้อมูลส่วนบุคคลเมื่อคุณใช้บริการเทรดของเรา",
+        ctaPrimary: "ติดต่อฝ่ายสนับสนุน",
+        ctaSecondary: "ดูข้อกำหนดการให้บริการ",
+        alertTitle: "โปรดอ่านก่อนส่งข้อมูลส่วนบุคคล",
+        alertBody:
+          "นโยบายนี้มีผลกับผู้ถือบัญชีทุกคน โปรดส่งเอกสารหลังจากเข้าใจกระบวนการจัดการและการปกป้องข้อมูลของคุณแล้ว",
       },
       overview: {
-        heading: "นโยบายนี้ครอบคลุมอะไรบ้าง",
+        heading: "แนวทางการจัดการข้อมูลส่วนบุคคล",
         paragraphs: [
-          "หัวข้อต่อไปนี้สรุปประเภทข้อมูลที่เราเก็บ วัตถุประสงค์ในการประมวลผล และกลไกที่ใช้คุ้มครองความเป็นส่วนตัวของคุณ",
-          "เราจะเปลี่ยนข้อความชั่วคราวนี้เป็นฉบับสมบูรณ์ทันทีที่ได้รับอนุมัติ จากนี้ไปสามารถใช้งานได้ทั้งสามภาษาแล้ว",
+          "หัวข้อด้านล่างกำหนดหลักเกณฑ์การจัดการข้อมูลส่วนบุคคลใน 1540bo.io ตั้งแต่การเก็บ การใช้ ไปจนถึงการลบทำลาย",
+          "นโยบายนี้สอดคล้องกับกฎหมายคุ้มครองข้อมูลส่วนบุคคลของญี่ปุ่นและใช้กับผู้ใช้ทุกคนของบริการ",
         ],
         highlights: [
-          "ภาพรวมข้อมูลส่วนบุคคลที่จัดเก็บ",
-          "หลักเกณฑ์การใช้งาน ฐานกฎหมาย และการเก็บรักษา",
-          "สิทธิของผู้ใช้และช่องทางการติดต่อ",
+          "ขอบเขตข้อมูลและฐานกฎหมายที่เราเก็บ",
+          "วัตถุประสงค์การใช้งาน การเปิดเผยแก่บุคคลที่สาม และการใช้ร่วมกัน",
+          "สิทธิในการขอเปิดเผย แก้ไข และช่องทางการสอบถาม",
         ],
       },
       sections: {
-        label: "ภาพรวม",
-        heading: "หลักการคุ้มครองความเป็นส่วนตัว",
-        subtitle: "การ์ดต่อไปนี้จะแสดงประเด็นสำคัญเกี่ยวกับการเก็บ การใช้งาน และสิทธิของผู้ใช้ ซึ่งจะมีการเติมข้อความฉบับเต็มในภายหลัง",
-        collection: {
-          heading: "ข้อมูลที่เราเก็บ",
-          items: [
-            "ข้อมูลลงทะเบียน เอกสารยืนยันตัวตน และการตั้งค่าบัญชี",
-            "เทเลเมทรีการเทรด ประวัติคำสั่ง และตัวระบุอุปกรณ์ที่ใช้รักษาความปลอดภัยของเซสชัน",
-            "บทสนทนากับฝ่ายสนับสนุน การติดต่อด้านกำกับดูแล และผลการประเมินความเสี่ยง",
-          ],
-        },
-        usage: {
-          heading: "เหตุผลในการใช้ข้อมูล",
-          items: [
-            "เพื่อให้บริการฟังก์ชันของแพลตฟอร์มและรักษาความปลอดภัยบัญชีบนทุกอุปกรณ์",
-            "เพื่อปฏิบัติตามกฎหมายและข้อบังคับ รวมถึงมาตรการป้องกันการฟอกเงิน",
-            "เพื่อให้การสนับสนุนลูกค้า แจ้งการเปลี่ยนแปลง และปรับปรุงการทำงานของแพลตฟอร์ม",
-          ],
-        },
-        rights: {
-          heading: "สิทธิของคุณ",
-          items: [
-            "ร้องขอสำเนาข้อมูลส่วนบุคคลที่เรามีเกี่ยวกับคุณ",
-            "ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง หรือจำกัดการประมวลผลบางประเภท",
-            "สอบถามทีมคุ้มครองข้อมูลของเราได้ทุกเมื่อหากมีข้อสงสัย",
-          ],
-        },
-        retention: {
-          heading: "การเก็บรักษาและการลบ",
+        section1: {
+          label: "มาตรา 1",
+          heading: "บททั่วไป",
           body: [
-            "เราจะเก็บข้อมูลส่วนบุคคลเท่าที่จำเป็นเพื่อให้บริการและปฏิบัติตามระยะเวลาตามกฎหมาย",
-            "เมื่อครบกำหนดแล้ว เราจะลบหรือทำให้ข้อมูลไม่สามารถระบุตัวตนได้ เว้นแต่กฎหมายหรือผลประโยชน์อันชอบธรรมกำหนดให้เก็บต่อ",
+            "1540bo (เรียกว่า “บริษัท”) จัดทำนโยบายฉบับนี้เพื่อกำกับการจัดการข้อมูลผู้ใช้ รวมถึงข้อมูลส่วนบุคคล ภายในบริการ “1540bo.io”.",
           ],
         },
-        security: {
-          heading: "การควบคุมด้านความปลอดภัย",
+        section2: {
+          label: "มาตรา 2",
+          heading: "ความหมายของข้อมูลส่วนบุคคล",
           body: [
-            "เราใช้การเข้ารหัส การควบคุมการเข้าถึง การเฝ้าระวังต่อเนื่อง และขั้นตอนตอบสนองเหตุการณ์เพื่อปกป้องข้อมูลของคุณ",
+            "“ข้อมูลส่วนบุคคล” หมายถึงข้อมูลเกี่ยวกับบุคคลธรรมดาที่มีชีวิตตามที่กฎหมายคุ้มครองข้อมูลส่วนบุคคลของญี่ปุ่นกำหนด ซึ่งสามารถระบุตัวบุคคลได้จากข้อมูลนั้นเอง หรือเมื่อพิจารณาร่วมกับข้อมูลอื่นที่สามารถนำมาจับคู่ได้โดยง่าย.",
+          ],
+        },
+        section3: {
+          label: "มาตรา 3",
+          heading: "วิธีการเก็บข้อมูลส่วนบุคคล",
+          intro: "บริษัทจะเก็บข้อมูลผ่านวิธีที่ชอบด้วยกฎหมายและเป็นธรรมเท่านั้น และจะไม่ใช้วิธีการหลอกลวงหรือไม่สุจริต ข้อมูลหลักที่ได้รับมีดังนี้",
+          groups: [
+            {
+              title: "ข้อมูลที่ผู้ใช้ส่งให้โดยตรง",
+              items: [
+                "ชื่อ ที่อยู่ วันเกิด หมายเลขโทรศัพท์ ที่อยู่อีเมล และข้อมูลลงทะเบียนอื่นๆ.",
+                "รายละเอียดในเอกสารยืนยันตัวตน เช่น หนังสือเดินทางหรือใบขับขี่.",
+                "ข้อมูลเพิ่มเติมที่ผู้ใช้ส่งผ่านแบบฟอร์มสมัครหรือการสื่อสารกับทีมสนับสนุน.",
+              ],
+            },
+            {
+              title: "ข้อมูลที่เก็บอัตโนมัติเมื่อใช้บริการ",
+              items: [
+                "ประวัติการเทรดและยอดคงเหลือในบัญชีบน 1540bo.io.",
+                "ที่อยู่ IP ตัวระบุคุกกี้ ข้อมูลอุปกรณ์ และเทเลเมทรีทางเทคนิคอื่นๆ.",
+              ],
+            },
+          ],
+        },
+        section4: {
+          label: "มาตรา 4",
+          heading: "วัตถุประสงค์ในการใช้ข้อมูล",
+          items: [
+            "เพื่อให้บริการและดำเนินแพลตฟอร์ม.",
+            "เพื่อรับคำขอยืนยันตัวตน การเปิดบัญชี และคำสั่งเทรดจากผู้ใช้.",
+            "เพื่อรายงานผลการเทรด ยอดเงินคงเหลือ และข้อมูลที่เกี่ยวข้องให้ผู้ใช้ทราบ.",
+            "เพื่อตอบคำถามและให้บริการลูกค้า รวมถึงการตรวจสอบตัวตน.",
+            "เพื่อส่งอีเมลเกี่ยวกับฟีเจอร์ใหม่ การอัปเดต แคมเปญ และบริการอื่นของบริษัท.",
+            "เพื่อแจ้งประกาศสำคัญหรือการบำรุงรักษาตามความจำเป็น.",
+            "เพื่อระบุตัวผู้ใช้ที่ฝ่าฝืนข้อกำหนดหรือพยายามใช้บริการในทางที่ไม่เหมาะสมและปฏิเสธการให้บริการ.",
+            "เพื่อปฏิบัติตามกฎหมายและข้อบังคับ รวมถึงการยืนยันตัวตนตามกฎหมายป้องกันการฟอกเงินของญี่ปุ่น.",
+            "เพื่อวัตถุประสงค์อื่นที่เกี่ยวเนื่องกับการใช้งานข้างต้น.",
+          ],
+        },
+        section5: {
+          label: "มาตรา 5",
+          heading: "การเปิดเผยข้อมูลให้บุคคลที่สาม",
+          intro: "บริษัทจะไม่เปิดเผยข้อมูลส่วนบุคคลให้บุคคลที่สามโดยไม่ได้รับความยินยอมจากผู้ใช้ ยกเว้นกรณีต่อไปนี้หรือในกรณีที่กฎหมายอนุญาต.",
+          items: [
+            "เมื่อจำเป็นเพื่อคุ้มครองชีวิต ร่างกาย หรือทรัพย์สินของบุคคล และไม่สามารถขอความยินยอมได้.",
+            "เมื่อจำเป็นอย่างยิ่งต่อการส่งเสริมสุขภาพสาธารณะหรือการเลี้ยงดูเด็กให้เติบโตอย่างเหมาะสม และไม่สามารถขอความยินยอมได้.",
+            "เมื่อจำเป็นต้องให้ความร่วมมือกับหน่วยงานของรัฐหรือท้องถิ่นในการปฏิบัติหน้าที่ตามกฎหมาย และการขอความยินยอมอาจเป็นอุปสรรคต่อการปฏิบัติหน้าที่นั้น.",
+            "เมื่อบริษัทได้แจ้งหรือประกาศรายละเอียดที่กฎหมายกำหนดล่วงหน้า และได้ยื่นแจ้งต่อคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลแล้ว.",
+          ],
+          note: "การเปิดเผยข้อมูลส่วนบุคคลแก่บุคคลที่สามจะดำเนินการตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลของญี่ปุ่นและกฎหมายที่เกี่ยวข้องอย่างเคร่งครัด.",
+        },
+        section6: {
+          label: "มาตรา 6",
+          heading: "การใช้ข้อมูลร่วมกัน",
+          intro: "บริษัทอาจใช้ข้อมูลส่วนบุคคลร่วมกับหน่วยงานในเครือภายใต้ขอบเขตดังต่อไปนี้.",
+          groups: [
+            {
+              title: "รายการข้อมูลที่ใช้ร่วมกัน",
+              items: [
+                "ชื่อ ที่อยู่ วันเกิด หมายเลขโทรศัพท์ อีเมล และข้อมูลการติดต่ออื่นๆ.",
+                "ผลการยืนยันตัวตนและข้อมูลเกี่ยวกับธุรกรรมที่ทำบน 1540bo.io.",
+                "ข้อมูลอื่นที่จำเป็นเพื่อให้เป็นไปตามวัตถุประสงค์ในมาตรา 4.",
+              ],
+            },
+            {
+              title: "หน่วยงานที่ใช้ร่วมกัน",
+              body: "บริษัทในเครือของ 1540bo.",
+            },
+            {
+              title: "วัตถุประสงค์ในการใช้ร่วมกัน",
+              body: "เป็นไปตามวัตถุประสงค์ที่ระบุไว้ในมาตรา 4 ของนโยบายฉบับนี้.",
+            },
+            {
+              title: "ผู้รับผิดชอบในการกำกับดูแล",
+              body: "1540bo เป็นผู้กำกับดูแลการจัดการข้อมูลที่ใช้ร่วมกัน.",
+            },
+          ],
+        },
+        section7: {
+          label: "มาตรา 7",
+          heading: "มาตรการด้านความปลอดภัย",
+          body: [
+            "บริษัทจะใช้มาตรการด้านองค์กร บุคลากร กายภาพ และเทคโนโลยีที่เหมาะสมเพื่อป้องกันการรั่วไหล สูญหาย หรือความเสียหายของข้อมูลส่วนบุคคลและจัดการข้อมูลอย่างปลอดภัย.",
+          ],
+        },
+        section8: {
+          label: "มาตรา 8",
+          heading: "การขอเปิดเผย แก้ไข และระงับการใช้ข้อมูล",
+          body: [
+            "หากผู้ใช้ร้องขอให้เปิดเผย แก้ไข เพิ่ม ลบ ระงับการใช้ หรือทำลายข้อมูลส่วนบุคคล บริษัทจะดำเนินการโดยไม่ล่าช้าหลังจากตรวจสอบตัวตน เว้นแต่กรณีที่เข้าข้อยกเว้นตามกฎหมาย.",
+            "หากบริษัทพิจารณาว่าไม่มีกฎหมายบังคับให้ต้องดำเนินการ จะมีการแจ้งให้ผู้ร้องขอทราบโดยเร็ว.",
+          ],
+          fee: "มีค่าธรรมเนียมการขอเปิดเผยข้อมูลครั้งละ 1,000 เยน (รวมภาษี).",
+        },
+        section9: {
+          label: "มาตรา 9",
+          heading: "การใช้คุกกี้และเทคโนโลยีที่เกี่ยวข้อง",
+          body: [
+            "บริษัทอาจใช้คุกกี้และเทคโนโลยีที่คล้ายกันเพื่อเพิ่มความสะดวก วิเคราะห์รูปแบบการใช้งาน และวัดผลโฆษณา.",
+            "ผู้ใช้สามารถปิดการใช้งานคุกกี้ได้ในเบราว์เซอร์ แต่การทำเช่นนั้นอาจทำให้ไม่สามารถใช้บางส่วนของบริการได้.",
+          ],
+        },
+        section10: {
+          label: "มาตรา 10",
+          heading: "การปรับปรุงนโยบายความเป็นส่วนตัว",
+          body: [
+            "บริษัทอาจปรับปรุงนโยบายฉบับนี้เมื่อเห็นสมควร.",
+            "หากการแก้ไขต้องได้รับความยินยอมตามกฎหมาย นโยบายที่แก้ไขจะใช้กับผู้ใช้ที่ให้ความยินยอมผ่านช่องทางที่บริษัทกำหนดเท่านั้น และบริษัทจะแจ้งวันมีผลและรายละเอียดผ่านเว็บไซต์หรือวิธีการที่เหมาะสม.",
+          ],
+        },
+        section11: {
+          label: "มาตรา 11",
+          heading: "ช่องทางการติดต่อ",
+          body: [
+            "หากมีคำถามเกี่ยวกับนโยบายนี้ โปรดติดต่อผ่านศูนย์บริการผู้ใช้ภายใน 1540bo.io.",
+            "บริษัทอาจตรวจสอบตัวตนตามความจำเป็นและจะตอบกลับภายใต้นโยบายฉบับนี้.",
           ],
         },
       },
       update: {
         label: "สถานะ",
-        date: "รอประกาศอย่างเป็นทางการ",
-        note: "ขณะนี้เป็นข้อความชั่วคราว เมื่อผ่านการตรวจสอบจากทีมกำกับดูแลจะอัปเดตด้วยข้อความฉบับสมบูรณ์",
+        date: "19 พฤศจิกายน 2025",
+        note: "นโยบายฉบับนี้มีผล ณ วันที่ระบุ และอาจได้รับการปรับปรุงตามแนวทางกำกับดูแลในอนาคต",
       },
     },
     hero: {
