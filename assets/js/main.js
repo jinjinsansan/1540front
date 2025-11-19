@@ -904,6 +904,30 @@ const translations = {
   },
 };
 
+const STORAGE_KEYS = {
+  lang: "1540bo:lang",
+};
+
+function persistLanguagePreference(lang) {
+  try {
+    window.localStorage.setItem(STORAGE_KEYS.lang, lang);
+  } catch (error) {
+    // localStorage might be unavailable (e.g., privacy mode); ignore.
+  }
+}
+
+function getStoredLanguagePreference() {
+  try {
+    const stored = window.localStorage.getItem(STORAGE_KEYS.lang);
+    if (stored && translations[stored]) {
+      return stored;
+    }
+  } catch (error) {
+    // ignore lookup errors and fall back to default language.
+  }
+  return null;
+}
+
 const assets = [
   { pair: "BTC/USD", price: 63250.23, change: 1.24, decimals: 2, volatility: 0.0018, categoryKey: "rates.categories.crypto" },
   { pair: "ETH/USD", price: 3420.58, change: -0.74, decimals: 2, volatility: 0.0024, categoryKey: "rates.categories.crypto" },
@@ -941,6 +965,7 @@ function applyTranslations(lang) {
     pageTitle = translate("meta.title", lang);
   }
   document.title = pageTitle;
+  persistLanguagePreference(lang);
   const elements = document.querySelectorAll("[data-i18n]");
   elements.forEach((el) => {
     const key = el.dataset.i18n;
@@ -1066,6 +1091,10 @@ function initLanguageSwitcher() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const storedLang = getStoredLanguagePreference();
+  if (storedLang && storedLang !== currentLang) {
+    currentLang = storedLang;
+  }
   initLanguageSwitcher();
   applyTranslations(currentLang);
   syncLangActiveState(currentLang);
