@@ -4,6 +4,7 @@ const translations = {
       title: "1540BO | Digital Options Trading",
       affiliateTitle: "1540BO | Affiliate Program Terms",
       vipTitle: "1540BO | VIP Program",
+      termsTitle: "1540BO | Terms of Service",
     },
     nav: {
       login: "Log in",
@@ -411,6 +412,230 @@ const translations = {
         note: "Program specifications are subject to change without notice. Refer to official communications for the latest details.",
       },
     },
+    terms: {
+      hero: {
+        badge: "Terms of Service",
+        title: "Know the rules before you trade binary options",
+        subtitle:
+          "These terms govern your access to 1540bo.io. Read every chapter carefully and proceed only after accepting the obligations and risks.",
+        ctaPrimary: "Contact compliance",
+        ctaSecondary: "Visit support center",
+        alertTitle: "High-risk financial product warning",
+        alertBody:
+          "Binary options are leveraged, time-sensitive instruments. Failing to follow these terms may result in account suspension and the total loss of your stake.",
+      },
+      overview: {
+        heading: "How to read these terms",
+        paragraphs: [
+          "This document is the legally binding agreement between you and 1540bo regarding the binary options platform 1540bo.io.",
+          "By using the service you agree to every clause below; if you cannot agree, do not create or use an account.",
+        ],
+        highlights: [
+          "Definitions establish how trades, underlying assets, and payout terminology are interpreted.",
+          "Account obligations cover identity verification, anti-social force exclusions, and ongoing change notifications.",
+          "Later chapters explain trading mechanics, funding rules, risk disclosures, prohibited conduct, and dispute handling.",
+        ],
+      },
+      chapters: {
+        chapter1: {
+          label: "Chapter 1",
+          heading: "General provisions",
+          articles: {
+            article1: {
+              heading: "Article 1 (Purpose of these terms)",
+              body: [
+                "These Terms of Service (the “Terms”) set out the conditions under which users may access and trade on the binary options service 1540bo.io operated by 1540bo. By using the service, you agree to be bound by the Terms.",
+              ],
+            },
+            article2: {
+              heading: "Article 2 (Definitions)",
+              intro: "The defined terms used in the Terms have the following meanings.",
+              items: [
+                "Binary options trading: Transactions that predict whether the price of a designated underlying asset will be above or below the strike price at a specified future time.",
+                "Underlying asset: The financial instrument that serves as the target of a binary options trade.",
+                "Strike price: The price of the underlying asset at the time the trade is initiated.",
+                "Determination time: The time at which the outcome of a trade is determined.",
+                "Purchase amount: The amount paid by the user per trade.",
+                "Payout amount: The amount the user receives if the prediction is correct.",
+              ],
+            },
+          },
+        },
+        chapter2: {
+          label: "Chapter 2",
+          heading: "Trading accounts",
+          articles: {
+            article3: {
+              heading: "Article 3 (Opening an account)",
+              body: [
+                "Applicants who wish to use the service must agree to these Terms and apply for an account using the method prescribed by the company.",
+                "The company reviews each application against its own criteria and, if approved, will notify the applicant that the account has been opened.",
+                "The company may refuse an application under its sole discretion in the following cases. The company shall have no obligation to disclose the reason for refusal.",
+              ],
+              items: [
+                "If the application contains any false statements, errors, or omissions.",
+                "If the applicant has previously had a contract with the company terminated.",
+                "If the company otherwise considers the applicant unsuitable.",
+              ],
+            },
+            article4: {
+              heading: "Article 4 (Identity verification)",
+              body: [
+                "In accordance with laws to prevent the transfer of criminal proceeds, the company conducts identity verification. Users must submit the identification documents specified by the company.",
+              ],
+            },
+            article5: {
+              heading: "Article 5 (Exclusion of anti-social forces)",
+              body: [
+                "Users represent and warrant that they are not, and will not become, members of organized crime groups or other anti-social forces.",
+              ],
+            },
+            article6: {
+              heading: "Article 6 (Changes to registered details)",
+              body: [
+                "If any registered information such as the user’s name, address, or contact details changes, the user must promptly notify the company using the prescribed procedure.",
+              ],
+            },
+          },
+        },
+        chapter3: {
+          label: "Chapter 3",
+          heading: "Trading",
+          articles: {
+            article7: {
+              heading: "Article 7 (Types of trades)",
+              body: [
+                "The service offers the following contract types.",
+              ],
+              items: [
+                "Binary BTC",
+                "ETH Channel",
+                "XRP Crypto",
+                "XRP Black hole",
+                "ETH SpeedUp",
+                "BTC High Roller",
+                "Any additional trades designated by the company.",
+              ],
+            },
+            article8: {
+              heading: "Article 8 (Orders)",
+              body: [
+                "Users place orders through the trading platform provided by the company and in the manner stipulated by the company.",
+              ],
+            },
+            article9: {
+              heading: "Article 9 (Execution)",
+              body: [
+                "An order is considered executed when it is accepted by the company’s system.",
+              ],
+            },
+            article10: {
+              heading: "Article 10 (Trading hours)",
+              body: [
+                "Trading is generally available 24 hours a day, 365 days a year; however, the service may be temporarily suspended for system maintenance or other reasons.",
+              ],
+            },
+            article11: {
+              heading: "Article 11 (Fees)",
+              body: [
+                "Trading fees are free of charge. Separate fees may be set for deposits or withdrawals.",
+              ],
+            },
+          },
+        },
+        chapter4: {
+          label: "Chapter 4",
+          heading: "Deposits and withdrawals",
+          articles: {
+            article12: {
+              heading: "Article 12 (Deposits)",
+              body: [
+                "Users may deposit funds denominated in the currencies specified by the company (USDT and other crypto assets) into their trading account using the prescribed method.",
+              ],
+            },
+            article13: {
+              heading: "Article 13 (Withdrawals)",
+              body: [
+                "Users may request withdrawals from their trading account using the method prescribed by the company.",
+              ],
+              items: [
+                "In principle, withdrawals will only be sent to an account held in the user’s own name.",
+                "If identity verification has not been completed, the company may withhold withdrawals.",
+              ],
+            },
+          },
+        },
+        chapter5: {
+          label: "Chapter 5",
+          heading: "Risk disclosure",
+          articles: {
+            article14: {
+              heading: "Article 14 (Understanding the risks)",
+              body: [
+                "Binary options trading can deliver high returns but also carries the risk of losing the entire investment principal.",
+                "Users must fully understand the mechanics and risks of the trades and participate at their own judgment and responsibility.",
+                "The company bears no liability for any losses incurred by users through trading.",
+              ],
+            },
+          },
+        },
+        chapter6: {
+          label: "Chapter 6",
+          heading: "Prohibited conduct",
+          articles: {
+            article15: {
+              heading: "Article 15 (Prohibited acts)",
+              body: [
+                "When using the service, users must not engage in the following conduct.",
+              ],
+              items: [
+                "Acts that violate laws or public order and morals.",
+                "Criminal acts or conduct connected to criminal activity.",
+                "Actions that damage or interfere with the company’s servers or networks.",
+                "Conduct that may hinder the operation of the service.",
+                "Collecting or storing personal information of other users.",
+                "Impersonating other users.",
+                "Providing benefits, directly or indirectly, to anti-social forces in connection with the service.",
+                "Any other conduct the company deems inappropriate.",
+              ],
+            },
+          },
+        },
+        chapter7: {
+          label: "Chapter 7",
+          heading: "Miscellaneous",
+          articles: {
+            article16: {
+              heading: "Article 16 (Disclaimers)",
+              items: [
+                "The company bears no liability for losses arising from system failures, communication outages, natural disasters, or other causes beyond the company’s control.",
+                "The company bears no liability for losses arising from changes, suspension, or termination of the service.",
+              ],
+            },
+            article17: {
+              heading: "Article 17 (Termination of contract)",
+              items: [
+                "If a user violates any clause of these Terms.",
+                "If it is discovered that the user’s registered details are false.",
+                "If the company otherwise judges that continued use of the service is inappropriate.",
+              ],
+            },
+            article18: {
+              heading: "Article 18 (Governing law and jurisdiction)",
+              items: [
+                "These Terms are governed by the laws of Japan.",
+                "Any disputes related to the service shall fall under the exclusive jurisdiction of the court having authority over the company’s head office.",
+              ],
+            },
+          },
+        },
+      },
+      update: {
+        label: "Last updated",
+        date: "11 November 2025",
+        note: "These Terms may be revised without prior notice. Check official announcements for the latest version.",
+      },
+    },
     hero: {
       title: "Ultra-short binary options around the clock",
       subtitle: "Capture every opportunity",
@@ -533,6 +758,7 @@ const translations = {
       title: "1540BO｜デジタルオプション取引",
       affiliateTitle: "1540BO｜アフィリエイトプログラム利用規約",
       vipTitle: "1540BO｜VIPプログラム",
+      termsTitle: "1540BO｜利用規約",
     },
     nav: {
       login: "ログイン",
@@ -938,6 +1164,230 @@ const translations = {
         note: "本プログラムの仕様は予告なく変更される場合があります。最新情報は公式アナウンスをご確認ください。",
       },
     },
+    terms: {
+      hero: {
+        badge: "利用規約",
+        title: "取引を始める前に必ず規約とリスクをご確認ください",
+        subtitle:
+          "本規約は1540bo.ioの利用条件を定めるものです。各章を丁寧に読み、内容に同意した場合のみ取引を行ってください。",
+        ctaPrimary: "コンプライアンス窓口に連絡",
+        ctaSecondary: "サポートセンターに戻る",
+        alertTitle: "ハイリスク商品に関する警告",
+        alertBody:
+          "バイナリーオプションは時間制限とレバレッジを伴う高リスク商品です。本規約に反した場合、口座停止や投資元本の全損リスクが生じます。",
+      },
+      overview: {
+        heading: "本規約の読み方",
+        paragraphs: [
+          "本規約は、1540bo（以下「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」に関する法的拘束力のある契約です。",
+          "本サービスを利用する利用者は、以下の条項すべてに同意したものとみなされます。同意できない場合は、口座を開設・利用しないでください。",
+        ],
+        highlights: [
+          "第1章では、取引や用語の定義を明確化し、解釈の基準を定めています。",
+          "第2章では、口座開設、本人確認、反社会的勢力の排除、届出事項変更など利用者の義務を規定しています。",
+          "以降の章で、取引ルール、入出金手続、リスク開示、禁止事項、紛争解決の枠組みを詳細に説明します。",
+        ],
+      },
+      chapters: {
+        chapter1: {
+          label: "第1章",
+          heading: "総則",
+          articles: {
+            article1: {
+              heading: "第1条（本約款の趣旨）",
+              body: [
+                "本利用規約（以下、「本規約」といいます。）は、1540bo（以下、「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」（以下、「本サービス」といいます。）の利用条件を定めるものです。本サービスの利用者（以下、「利用者」といいます。）は、本規約に同意の上、本サービスを利用するものとします。",
+              ],
+            },
+            article2: {
+              heading: "第2条（用語の定義）",
+              intro: "本規約で使用する用語の定義は、次の各号のとおりとします。",
+              items: [
+                "バイナリーオプション取引：特定の原資産について、一定時間後の価格が判定価格を上回るか下回るかを予測する取引をいいます。",
+                "原資産：バイナリーオプション取引の対象となる金融商品をいいます。",
+                "判定価格：取引開始時点の原資産の価格をいいます。",
+                "判定時刻：取引の結果を判定する時刻をいいます。",
+                "購入金額：利用者が取引1回あたりに支払う金額をいいます。",
+                "ペイアウト金額：予測が的中した場合に利用者が受け取る金額をいいます。",
+              ],
+            },
+          },
+        },
+        chapter2: {
+          label: "第2章",
+          heading: "取引口座",
+          articles: {
+            article3: {
+              heading: "第3条（取引口座の開設）",
+              body: [
+                "本サービスの利用を希望する者は、本規約に同意の上、当社所定の方法により取引口座の開設を申し込むものとします。",
+                "当社は、当社の基準に基づき申込者の審査を行い、口座開設を承認する場合には、申込者に対して口座開設完了の通知を行います。",
+                "当社は、申込者が以下の各号のいずれかに該当する場合、口座開設を拒否することができるものとします。この場合、当社はその理由を開示する義務を負わないものとします。",
+              ],
+              items: [
+                "申込内容に虚偽、誤記または記載漏れがあった場合",
+                "過去に当社から契約を解除されたことがある場合",
+                "その他、当社が不適当と判断した場合",
+              ],
+            },
+            article4: {
+              heading: "第4条（本人確認）",
+              body: [
+                "当社は、犯罪による収益の移転防止に関する法律に基づき、利用者の本人確認を行います。利用者は、当社が指定する本人確認書類を提出するものとします。",
+              ],
+            },
+            article5: {
+              heading: "第5条（反社会的勢力の排除）",
+              body: [
+                "利用者は、自らが暴力団、暴力団員、暴力団関係企業、総会屋、その他の反社会的勢力に該当しないことを表明し、かつ将来にわたっても該当しないことを確約するものとします。",
+              ],
+            },
+            article6: {
+              heading: "第6条（届出事項の変更）",
+              body: [
+                "利用者は、氏名、住所、連絡先など、当社への届出事項に変更があった場合、速やかに当社所定の方法により変更手続きを行うものとします。",
+              ],
+            },
+          },
+        },
+        chapter3: {
+          label: "第3章",
+          heading: "取引",
+          articles: {
+            article7: {
+              heading: "第7条（取引の種類）",
+              body: [
+                "本サービスで提供する取引の種類は、以下のとおりとします。",
+              ],
+              items: [
+                "Binary BTC",
+                "ETH Channel",
+                "XRP Crypto",
+                "XRP Black hole",
+                "ETH SpeedUp",
+                "BTC High Roller",
+                "その他、当社が別途定める取引",
+              ],
+            },
+            article8: {
+              heading: "第8条（注文）",
+              body: [
+                "利用者は、当社所定の取引プラットフォームを通じて、当社の定める方法で注文を行うものとします。",
+              ],
+            },
+            article9: {
+              heading: "第9条（約定）",
+              body: [
+                "注文は、当社システムで受け付けた時点で約定するものとします。",
+              ],
+            },
+            article10: {
+              heading: "第10条（取引時間）",
+              body: [
+                "本サービスの取引時間は、原則として24時間365日としますが、システムメンテナンス等のために一時的に停止することがあります。",
+              ],
+            },
+            article11: {
+              heading: "第11条（手数料）",
+              body: [
+                "取引手数料は無料とします。ただし、入出金にかかる手数料は、別途定めるものとします。",
+              ],
+            },
+          },
+        },
+        chapter4: {
+          label: "第4章",
+          heading: "入出金",
+          articles: {
+            article12: {
+              heading: "第12条（入金）",
+              body: [
+                "利用者は、当社所定の方法により、当社が指定する通貨（USDT、暗号資産）を取引口座に入金することができます。",
+              ],
+            },
+            article13: {
+              heading: "第13条（出金）",
+              body: [
+                "利用者は、当社所定の方法により、取引口座からの出金を請求することができます。",
+              ],
+              items: [
+                "出金は、原則として利用者本人名義の口座に対してのみ行われます。",
+                "当社は、本人確認手続きが完了していない場合、出金を留保することができるものとします。",
+              ],
+            },
+          },
+        },
+        chapter5: {
+          label: "第5章",
+          heading: "リスク",
+          articles: {
+            article14: {
+              heading: "第14条（リスクの理解）",
+              body: [
+                "バイナリーオプション取引は、高いリターンが期待できる一方で、投資元本を失うリスクがあります。",
+                "利用者は、本取引の仕組みやリスクを十分に理解し、自己の判断と責任において取引を行うものとします。",
+                "当社は、本取引によって利用者に生じたいかなる損害についても、一切の責任を負わないものとします。",
+              ],
+            },
+          },
+        },
+        chapter6: {
+          label: "第6章",
+          heading: "禁止事項",
+          articles: {
+            article15: {
+              heading: "第15条（禁止事項）",
+              body: [
+                "利用者は、本サービスの利用にあたり、以下の各号に該当する行為を行ってはならないものとします。",
+              ],
+              items: [
+                "法令または公序良俗に違反する行為",
+                "犯罪行為に関連する行為",
+                "当社のサーバーまたはネットワークの機能を破壊したり、妨害したりする行為",
+                "当社のサービスの運営を妨害するおそれのある行為",
+                "他の利用者に関する個人情報等を収集または蓄積する行為",
+                "他の利用者に成りすます行為",
+                "当社のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為",
+                "その他、当社が不適切と判断する行為",
+              ],
+            },
+          },
+        },
+        chapter7: {
+          label: "第7章",
+          heading: "その他",
+          articles: {
+            article16: {
+              heading: "第16条（免責事項）",
+              items: [
+                "当社は、システム障害、通信回線の障害、天災地変、その他当社の責に帰すことのできない事由により生じた損害について、一切の責任を負わないものとします。",
+                "当社は、本サービスの内容の変更、中断または終了によって利用者に生じた損害について、一切の責任を負わないものとします。",
+              ],
+            },
+            article17: {
+              heading: "第17条（契約の解除）",
+              items: [
+                "利用者が本規約のいずれかの条項に違反した場合",
+                "届出事項に虚偽の事実があることが判明した場合",
+                "その他、当社が本サービスの利用を適当でないと判断した場合",
+              ],
+            },
+            article18: {
+              heading: "第18条（準拠法及び合意管轄）",
+              items: [
+                "本規約の解釈にあたっては、日本法を準拠法とします。",
+                "本サービスに関して紛争が生じた場合には、当社の本店所在地を管轄する裁判所を専属的合意管轄とします。",
+              ],
+            },
+          },
+        },
+      },
+      update: {
+        label: "最終更新日",
+        date: "2025年11月11日",
+        note: "本規約は予告なく改定される場合があります。最新情報は公式アナウンスでご確認ください。",
+      },
+    },
     hero: {
       title: "超短時間バイナリーオプション取引を24時間365日提供",
       subtitle: "あらゆる機会に取引可能",
@@ -1066,6 +1516,7 @@ const translations = {
       title: "1540BO | แพลตฟอร์มดิจิทัลออปชัน",
       affiliateTitle: "1540BO | ข้อกำหนดโปรแกรมพันธมิตร",
       vipTitle: "1540BO | โปรแกรมวีไอพี",
+      termsTitle: "1540BO | ข้อกำหนดการให้บริการ",
     },
     nav: {
       login: "เข้าสู่ระบบ",
@@ -1469,6 +1920,230 @@ const translations = {
         label: "อัปเดตล่าสุด",
         date: "11 พฤศจิกายน 2025",
         note: "รายละเอียดโปรแกรมอาจเปลี่ยนแปลงโดยไม่แจ้งล่วงหน้า โปรดติดตามประกาศอย่างเป็นทางการเสมอ",
+      },
+    },
+    terms: {
+      hero: {
+        badge: "ข้อกำหนดการให้บริการ",
+        title: "โปรดอ่านข้อกำหนดและความเสี่ยงก่อนเริ่มเทรดไบนารีออปชัน",
+        subtitle:
+          "ข้อกำหนดฉบับนี้กำหนดเงื่อนไขการใช้งาน 1540bo.io โปรดอ่านทุกบทอย่างละเอียด และทำการเทรดเมื่อคุณยอมรับข้อผูกพันและความเสี่ยงทั้งหมดแล้วเท่านั้น.",
+        ctaPrimary: "ติดต่อทีมกำกับดูแล",
+        ctaSecondary: "กลับไปศูนย์ช่วยเหลือ",
+        alertTitle: "คำเตือนผลิตภัณฑ์ความเสี่ยงสูง",
+        alertBody:
+          "ไบนารี่ออปชันเป็นผลิตภัณฑ์ที่มีเลเวอเรจและจำกัดเวลา การละเมิดข้อกำหนดอาจนำไปสู่การระงับบัญชีและการสูญเสียเงินทุนทั้งหมด.",
+      },
+      overview: {
+        heading: "แนวทางการอ่านข้อกำหนดนี้",
+        paragraphs: [
+          "เอกสารนี้เป็นสัญญาที่มีผลผูกพันทางกฎหมายระหว่างคุณกับ 1540bo เกี่ยวกับแพลตฟอร์มไบนารีออปชัน 1540bo.io.",
+          "เมื่อใช้บริการถือว่าคุณยอมรับเงื่อนไขทุกข้อ หากไม่ยอมรับกรุณาอย่าสร้างหรือใช้งานบัญชี.",
+        ],
+        highlights: [
+          "บทที่ 1 อธิบายคำจำกัดความของคำสำคัญและกรอบการตีความธุรกรรม.",
+          "บทที่ 2 กำหนดหน้าที่ของผู้ใช้เกี่ยวกับการเปิดบัญชี การยืนยันตัวตน การปฏิเสธกลุ่มมิจฉาชีพ และการแจ้งเปลี่ยนแปลงข้อมูล.",
+          "บทถัดไปกล่าวถึงวิธีการเทรด กฎการเงิน การเปิดเผยความเสี่ยง ข้อห้าม และกระบวนการจัดการข้อพิพาท.",
+        ],
+      },
+      chapters: {
+        chapter1: {
+          label: "บทที่ 1",
+          heading: "บททั่วไป",
+          articles: {
+            article1: {
+              heading: "มาตรา 1 (วัตถุประสงค์ของข้อกำหนด)",
+              body: [
+                "ข้อกำหนดการใช้บริการฉบับนี้ (ต่อไปเรียกว่า “ข้อกำหนด”) กำหนดเงื่อนไขการใช้บริการเทรดไบนารี่ออปชัน “1540bo.io” (ต่อไปเรียกว่า “บริการ”) ซึ่งให้บริการโดย 1540bo (ต่อไปเรียกว่า “บริษัท”) ผู้ใช้บริการ (ต่อไปเรียกว่า “ผู้ใช้”) ต้องยอมรับข้อกำหนดนี้ก่อนใช้งานบริการ.",
+              ],
+            },
+            article2: {
+              heading: "มาตรา 2 (คำจำกัดความ)",
+              intro: "คำศัพท์ที่ใช้ในข้อกำหนดนี้มีความหมายดังต่อไปนี้.",
+              items: [
+                "การเทรดไบนารี่ออปชัน: การทำธุรกรรมเพื่อทายว่าราคาของสินทรัพย์อ้างอิงจะสูงหรือต่ำกว่าราคากำหนด ณ เวลาเฉพาะในอนาคต.",
+                "สินทรัพย์อ้างอิง: สินทรัพย์ทางการเงินที่ใช้เป็นเป้าหมายของการเทรดไบนารี่ออปชัน.",
+                "ราคากำหนด: ราคาของสินทรัพย์อ้างอิงในขณะที่เริ่มต้นสัญญา.",
+                "เวลาตัดสิน: เวลาที่ใช้ตัดสินผลของสัญญา.",
+                "จำนวนเงินซื้อ: จำนวนเงินที่ผู้ใช้ชำระต่อหนึ่งรายการ.",
+                "จำนวนเงินจ่ายออก: จำนวนเงินที่ผู้ใช้ได้รับเมื่อทายถูกต้อง.",
+              ],
+            },
+          },
+        },
+        chapter2: {
+          label: "บทที่ 2",
+          heading: "บัญชีเทรด",
+          articles: {
+            article3: {
+              heading: "มาตรา 3 (การเปิดบัญชี)",
+              body: [
+                "ผู้ที่ต้องการใช้บริการต้องยอมรับข้อกำหนดนี้และสมัครเปิดบัญชีตามวิธีการที่บริษัทกำหนด.",
+                "บริษัทจะพิจารณาใบสมัครตามเกณฑ์ภายใน และหากอนุมัติจะส่งแจ้งการเปิดบัญชีให้ผู้สมัครทราบ.",
+                "บริษัทอาจปฏิเสธใบสมัครได้ตามดุลยพินิจ และบริษัทไม่จำเป็นต้องเปิดเผยเหตุผลในการปฏิเสธ.",
+              ],
+              items: [
+                "กรณีมีข้อมูลเท็จ ข้อผิดพลาด หรือขาดตกบกพร่องในใบสมัคร",
+                "กรณีผู้สมัครเคยถูกบริษัทบอกเลิกสัญญามาก่อน",
+                "กรณีอื่นที่บริษัทเห็นว่าไม่เหมาะสม",
+              ],
+            },
+            article4: {
+              heading: "มาตรา 4 (การยืนยันตัวตน)",
+              body: [
+                "บริษัทจะดำเนินการยืนยันตัวตนตามกฎหมายป้องกันการฟอกเงิน ผู้ใช้ต้องส่งเอกสารยืนยันตัวตนตามที่บริษัทกำหนด.",
+              ],
+            },
+            article5: {
+              heading: "มาตรา 5 (การปฏิเสธกลุ่มมิจฉาชีพ)",
+              body: [
+                "ผู้ใช้ยืนยันว่าตนไม่ใช่ และจะไม่กลายเป็น สมาชิกของกลุ่มอาชญากรรม บริษัทนอมินี หรือองค์กรอื่นที่เข้าข่ายเป็นกลุ่มมิจฉาชีพ.",
+              ],
+            },
+            article6: {
+              heading: "มาตรา 6 (การเปลี่ยนแปลงข้อมูลที่แจ้งไว้)",
+              body: [
+                "หากข้อมูลที่แจ้งไว้กับบริษัท เช่น ชื่อ ที่อยู่ หรือข้อมูลติดต่อ มีการเปลี่ยนแปลง ผู้ใช้ต้องแจ้งแก้ไขตามวิธีที่บริษัทกำหนดโดยทันที.",
+              ],
+            },
+          },
+        },
+        chapter3: {
+          label: "บทที่ 3",
+          heading: "การเทรด",
+          articles: {
+            article7: {
+              heading: "มาตรา 7 (ประเภทของสัญญา)",
+              body: [
+                "บริการนี้มีสัญญาให้เลือกดังต่อไปนี้.",
+              ],
+              items: [
+                "Binary BTC",
+                "ETH Channel",
+                "XRP Crypto",
+                "XRP Black hole",
+                "ETH SpeedUp",
+                "BTC High Roller",
+                "รายการอื่น ๆ ที่บริษัทกำหนดเพิ่มเติม",
+              ],
+            },
+            article8: {
+              heading: "มาตรา 8 (การส่งคำสั่ง)",
+              body: [
+                "ผู้ใช้ต้องส่งคำสั่งผ่านแพลตฟอร์มของบริษัทตามวิธีที่บริษัทกำหนด.",
+              ],
+            },
+            article9: {
+              heading: "มาตรา 9 (การจับคู่คำสั่ง)",
+              body: [
+                "คำสั่งถือว่าเสร็จสมบูรณ์เมื่อระบบของบริษัทรับคำสั่งไว้แล้ว.",
+              ],
+            },
+            article10: {
+              heading: "มาตรา 10 (เวลาทำการ)",
+              body: [
+                "โดยหลักการ บริการพร้อมให้เทรดตลอด 24 ชั่วโมง 365 วัน แต่บริษัทอาจหยุดให้บริการชั่วคราวเพื่อซ่อมบำรุงระบบหรือเหตุอื่น.",
+              ],
+            },
+            article11: {
+              heading: "มาตรา 11 (ค่าธรรมเนียม)",
+              body: [
+                "ไม่มีการเรียกเก็บค่าธรรมเนียมการเทรด อย่างไรก็ตาม บริษัทอาจกำหนดค่าธรรมเนียมสำหรับการฝากหรือถอนเงิน.",
+              ],
+            },
+          },
+        },
+        chapter4: {
+          label: "บทที่ 4",
+          heading: "การฝากและถอน",
+          articles: {
+            article12: {
+              heading: "มาตรา 12 (การฝากเงิน)",
+              body: [
+                "ผู้ใช้สามารถฝากเงินในสกุลเงินที่บริษัทกำหนด (USDT และคริปโตเคอร์เรนซีอื่น) เข้าบัญชีเทรดได้ตามวิธีที่บริษัทระบุ.",
+              ],
+            },
+            article13: {
+              heading: "มาตรา 13 (การถอนเงิน)",
+              body: [
+                "ผู้ใช้สามารถยื่นคำขอถอนเงินจากบัญชีเทรดได้ตามวิธีที่บริษัทกำหนด.",
+              ],
+              items: [
+                "โดยหลักการ การถอนจะโอนไปยังบัญชีที่มีชื่อผู้ใช้เท่านั้น.",
+                "หากการยืนยันตัวตนยังไม่เสร็จสมบูรณ์ บริษัทอาจระงับการถอนได้ชั่วคราว.",
+              ],
+            },
+          },
+        },
+        chapter5: {
+          label: "บทที่ 5",
+          heading: "ความเสี่ยง",
+          articles: {
+            article14: {
+              heading: "มาตรา 14 (การทำความเข้าใจความเสี่ยง)",
+              body: [
+                "การเทรดไบนารี่ออปชันอาจให้ผลตอบแทนสูง แต่มีความเสี่ยงที่จะสูญเสียเงินลงทุนทั้งหมด.",
+                "ผู้ใช้ต้องศึกษากลไกและความเสี่ยงอย่างถี่ถ้วน และตัดสินใจเทรดด้วยดุลยพินิจและความรับผิดชอบของตนเอง.",
+                "บริษัทไม่รับผิดชอบต่อความเสียหายใด ๆ ที่เกิดกับผู้ใช้จากการเทรด.",
+              ],
+            },
+          },
+        },
+        chapter6: {
+          label: "บทที่ 6",
+          heading: "ข้อห้าม",
+          articles: {
+            article15: {
+              heading: "มาตรา 15 (การกระทำที่ห้าม)",
+              body: [
+                "เมื่อใช้บริการ ผู้ใช้ต้องไม่กระทำการดังต่อไปนี้.",
+              ],
+              items: [
+                "การกระทำที่ผิดกฎหมายหรือขัดต่อความสงบเรียบร้อย",
+                "การกระทำที่เกี่ยวข้องกับอาชญากรรม",
+                "การทำลายหรือรบกวนการทำงานของเซิร์ฟเวอร์หรือเครือข่ายของบริษัท",
+                "การกระทำที่อาจขัดขวางการให้บริการของบริษัท",
+                "การเก็บรวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลของผู้ใช้อื่นโดยไม่ได้รับอนุญาต",
+                "การสวมรอยหรือแอบอ้างเป็นผู้ใช้อื่น",
+                "การให้ผลประโยชน์ต่อกลุ่มมิจฉาชีพโดยตรงหรือโดยอ้อมผ่านบริการของบริษัท",
+                "การกระทำอื่นใดที่บริษัทเห็นว่าไม่เหมาะสม",
+              ],
+            },
+          },
+        },
+        chapter7: {
+          label: "บทที่ 7",
+          heading: "บทบัญญัติอื่น",
+          articles: {
+            article16: {
+              heading: "มาตรา 16 (ข้อจำกัดความรับผิด)",
+              items: [
+                "บริษัทไม่รับผิดชอบต่อความเสียหายที่เกิดจากความขัดข้องของระบบ การสื่อสาร ภัยพิบัติ หรือเหตุอื่นที่อยู่นอกเหนือการควบคุมของบริษัท.",
+                "บริษัทไม่รับผิดชอบต่อความเสียหายที่เกิดจากการเปลี่ยนแปลง ระงับ หรือยุติการให้บริการ.",
+              ],
+            },
+            article17: {
+              heading: "มาตรา 17 (การยกเลิกสัญญา)",
+              items: [
+                "เมื่อผู้ใช้ละเมิดข้อใดข้อหนึ่งของข้อกำหนดนี้",
+                "เมื่อพบว่าข้อมูลที่แจ้งไว้เป็นเท็จ",
+                "กรณีอื่นที่บริษัทเห็นว่าไม่เหมาะสมให้ผู้ใช้ใช้บริการต่อไป",
+              ],
+            },
+            article18: {
+              heading: "มาตรา 18 (กฎหมายที่ใช้บังคับและศาลที่มีอำนาจ)",
+              items: [
+                "ข้อกำหนดนี้อยู่ภายใต้กฎหมายญี่ปุ่น.",
+                "หากเกิดข้อพิพาท ให้ศาลที่มีเขตอำนาจเหนือสำนักงานใหญ่ของบริษัทเป็นศาลที่มีอำนาจพิจารณาแต่เพียงผู้เดียว.",
+              ],
+            },
+          },
+        },
+      },
+      update: {
+        label: "อัปเดตล่าสุด",
+        date: "11 พฤศจิกายน 2025",
+        note: "ข้อกำหนดนี้อาจปรับปรุงโดยไม่แจ้งล่วงหน้า โปรดติดตามประกาศอย่างเป็นทางการเสมอ",
       },
     },
     hero: {
