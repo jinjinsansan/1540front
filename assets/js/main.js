@@ -3,11 +3,13 @@ const translations = {
     meta: {
       title: "1540BO | Digital Options Trading",
       affiliateTitle: "1540BO | Affiliate Program Terms",
+      vipTitle: "1540BO | VIP Program",
     },
     nav: {
       login: "Log in",
       features: "Features",
       affiliate: "Affiliate",
+      vip: "VIP Program",
       terms: "Terms of Service",
       privacy: "Privacy Policy",
       support: "Support",
@@ -181,6 +183,38 @@ const translations = {
         note: "Terms may be amended without prior notice. Always consult our official channels for the latest information.",
       },
     },
+    vip: {
+      hero: {
+        badge: "VIP Program",
+        title: "Elevated rewards for elite traders",
+        subtitle: "We are putting the finishing touches on a loyalty program that unlocks bespoke tiers, personal desk support, and invitation-only market intelligence.",
+        ctaPrimary: "Request early access",
+        ctaSecondary: "Get notified",
+      },
+      highlights: {
+        title: "What we are building",
+        subtitle: "The VIP framework focuses on clarity, speed, and meaningful advantages for high-volume clients.",
+        items: [
+          {
+            title: "Tiered multiplier boosts",
+            text: "Dynamic payout uplifts across binary windows, aligned with your rolling performance and volume milestones.",
+          },
+          {
+            title: "Concierge-level care",
+            text: "Direct access to senior desk managers with multilingual coverage and proactive risk monitoring.",
+          },
+          {
+            title: "Exclusive market access",
+            text: "Priority invites to strategy briefings, liquidity partner sessions, and limited-edition trading windows.",
+          },
+        ],
+      },
+      status: {
+        title: "Program launch",
+        text: "VIP enrolment is currently in private beta with select partners. Share your details and we will reach out as tiers open.",
+        contact: "vip@1540bo.io",
+      },
+    },
     hero: {
       title: "Ultra-short binary options around the clock",
       subtitle: "Capture every opportunity",
@@ -302,11 +336,13 @@ const translations = {
     meta: {
       title: "1540BO｜デジタルオプション取引",
       affiliateTitle: "1540BO｜アフィリエイトプログラム利用規約",
+      vipTitle: "1540BO｜VIPプログラム",
     },
     nav: {
       login: "ログイン",
       features: "特長",
       affiliate: "アフィリエイト",
+      vip: "VIPプログラム",
       terms: "利用規約",
       privacy: "プライバシーポリシー",
       support: "サポート",
@@ -480,6 +516,38 @@ const translations = {
         note: "本規約内容は予告なく改定される場合があります。最新情報は常に当社公式チャネルでご確認ください。",
       },
     },
+    vip: {
+      hero: {
+        badge: "VIP Program",
+        title: "ハイボリュームトレーダーのための特別プログラム",
+        subtitle: "現在、段階的な特典、専任サポート、限定イベントを備えたロイヤリティプログラムを最終調整中です。",
+        ctaPrimary: "先行アクセスを申し込む",
+        ctaSecondary: "最新情報を受け取る",
+      },
+      highlights: {
+        title: "予定している特典",
+        subtitle: "VIP設計は、明確な仕組み、迅速なレスポンス、ハイボリューム顧客にとって価値ある優遇を重視しています。",
+        items: [
+          {
+            title: "ティア別ペイアウトブースト",
+            text: "取引実績と出来高に応じてバイナリーウィンドウのペイアウト倍率を段階的に強化。",
+          },
+          {
+            title: "コンシェルジュ対応",
+            text: "マルチリンガルのシニアデスクへダイレクトにアクセスし、先回りのリスクモニタリングを提供。",
+          },
+          {
+            title: "限定マーケットアクセス",
+            text: "戦略ブリーフィング、流動性パートナーセッション、限定トレーディングウィンドウへの優先招待。",
+          },
+        ],
+      },
+      status: {
+        title: "ローンチ状況",
+        text: "現在VIPプログラムは一部パートナー向けのクローズドベータ段階です。詳細公開の際にご案内できるよう、ご希望の方はご連絡ください。",
+        contact: "vip@1540bo.io",
+      },
+    },
     hero: {
       title: "超短時間バイナリーオプション取引を24時間365日提供",
       subtitle: "あらゆる機会に取引可能",
@@ -607,11 +675,13 @@ const translations = {
     meta: {
       title: "1540BO | แพลตฟอร์มดิจิทัลออปชัน",
       affiliateTitle: "1540BO | ข้อกำหนดโปรแกรมพันธมิตร",
+      vipTitle: "1540BO | โปรแกรมวีไอพี",
     },
     nav: {
       login: "เข้าสู่ระบบ",
       features: "จุดเด่น",
       affiliate: "พันธมิตร",
+      vip: "โปรแกรมวีไอพี",
       terms: "ข้อกำหนดการใช้บริการ",
       privacy: "นโยบายความเป็นส่วนตัว",
       support: "บริการ",
@@ -783,6 +853,38 @@ const translations = {
         label: "อัปเดตล่าสุด",
         date: "11 พฤศจิกายน 2025",
         note: "ข้อกำหนดอาจเปลี่ยนแปลงโดยไม่แจ้งล่วงหน้า โปรดตรวจสอบข้อมูลล่าสุดจากช่องทางอย่างเป็นทางการของบริษัทเสมอ.",
+      },
+    },
+    vip: {
+      hero: {
+        badge: "VIP Program",
+        title: "สิทธิประโยชน์ระดับสูงสำหรับนักเทรดตัวจริง",
+        subtitle: "เรากำลังเตรียมโปรแกรมสะสมแต้มพรีเมียมที่มาพร้อมสิทธิพิเศษหลายระดับ ทีมดูแลเฉพาะ และกิจกรรมสุดเอ็กซ์คลูซีฟ",
+        ctaPrimary: "ขอสิทธิ์เข้าร่วมล่วงหน้า",
+        ctaSecondary: "รับการแจ้งเตือน",
+      },
+      highlights: {
+        title: "สิ่งที่กำลังพัฒนา",
+        subtitle: "โครงสร้าง VIP มุ่งเน้นความโปร่งใส ความรวดเร็ว และประโยชน์ที่จับต้องได้สำหรับลูกค้าปริมาณสูง",
+        items: [
+          {
+            title: "ตัวคูณผลตอบแทนแบบขั้น",
+            text: "เพิ่มอัตราจ่ายของออปชันตามผลงานและปริมาณการเทรดสะสม",
+          },
+          {
+            title: "การดูแลระดับคอนเซียร์จ",
+            text: "ติดต่อผู้จัดการโต๊ะอาวุโสได้โดยตรง พร้อมบริการหลายภาษาและการติดตามความเสี่ยงเชิงรุก",
+          },
+          {
+            title: "สิทธิเข้าถึงข้อมูลพิเศษ",
+            text: "รับเชิญร่วมบรีฟกลยุทธ์ เซสชันกับพาร์ทเนอร์สภาพคล่อง และหน้าต่างการเทรดที่จำกัดจำนวน",
+          },
+        ],
+      },
+      status: {
+        title: "สถานะการเปิดตัว",
+        text: "ขณะนี้โปรแกรม VIP เปิดให้บริการแบบเบต้าสำหรับพาร์ทเนอร์ที่ได้รับเชิญ หากต้องการรับข้อมูลอัปเดตเมื่อเปิดรับรอบถัดไป โปรดแจ้งความประสงค์ไว้",
+        contact: "vip@1540bo.io",
       },
     },
     hero: {
