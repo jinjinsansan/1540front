@@ -262,8 +262,14 @@ body.affiliate-page {
   box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.12);
 }
 
-.terms-list strong {
+.terms-list .term {
+  font-weight: 700;
   color: #ffffff;
+  margin-right: 6px;
+}
+
+.terms-list .desc {
+  color: rgba(247, 249, 255, 0.82);
 }
 
 .table-wrapper {

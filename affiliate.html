@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1540BO | アフィリエイトプログラム利用規約</title>
+    <title>1540BO | Affiliate Program Terms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,28 +13,28 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/affiliate.css" />
   </head>
-  <body class="affiliate-page">
+  <body class="affiliate-page" data-page="affiliate">
     <header class="top-bar">
       <div class="container">
         <div class="brand">1540<span>BO</span></div>
         <nav class="nav-links">
-          <a href="./index.html#login">ログイン</a>
-          <a href="./index.html#features">特長</a>
-          <a href="./affiliate.html" class="active">アフィリエイト</a>
-          <a href="./index.html#terms">利用規約</a>
-          <a href="./index.html#privacy">プライバシーポリシー</a>
-          <a href="./index.html#support">サポート</a>
+          <a href="./index.html#login" data-i18n="nav.login"></a>
+          <a href="./index.html#features" data-i18n="nav.features"></a>
+          <a href="./affiliate.html" class="active" aria-current="page" data-i18n="nav.affiliate"></a>
+          <a href="./index.html#terms" data-i18n="nav.terms"></a>
+          <a href="./index.html#privacy" data-i18n="nav.privacy"></a>
+          <a href="./index.html#support" data-i18n="nav.support"></a>
         </nav>
         <div class="cta-group">
-          <button class="btn ghost">デモを試す</button>
-          <button class="btn primary">今すぐ参加</button>
+          <button class="btn ghost" data-i18n="cta.demo"></button>
+          <button class="btn primary" data-i18n="affiliate.cta.join"></button>
           <div class="lang-switch">
-            <button class="active">EN</button>
-            <button>日本語</button>
-            <button>ภาษาไทย</button>
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="ja">日本語</button>
+            <button data-lang="th">ภาษาไทย</button>
           </div>
         </div>
-        <button class="mobile-menu-toggle" aria-label="メニューの開閉">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
@@ -42,21 +42,21 @@
       </div>
       <div class="mobile-menu">
         <nav class="mobile-nav">
-          <a href="./index.html#login">ログイン</a>
-          <a href="./index.html#features">特長</a>
-          <a href="./affiliate.html" class="active">アフィリエイト</a>
-          <a href="./index.html#terms">利用規約</a>
-          <a href="./index.html#privacy">プライバシーポリシー</a>
-          <a href="./index.html#support">サポート</a>
+          <a href="./index.html#login" data-i18n="nav.login"></a>
+          <a href="./index.html#features" data-i18n="nav.features"></a>
+          <a href="./affiliate.html" class="active" aria-current="page" data-i18n="nav.affiliate"></a>
+          <a href="./index.html#terms" data-i18n="nav.terms"></a>
+          <a href="./index.html#privacy" data-i18n="nav.privacy"></a>
+          <a href="./index.html#support" data-i18n="nav.support"></a>
         </nav>
         <div class="mobile-actions">
-          <button class="btn ghost">デモを試す</button>
-          <button class="btn primary">今すぐ参加</button>
+          <button class="btn ghost" data-i18n="cta.demo"></button>
+          <button class="btn primary" data-i18n="affiliate.cta.join"></button>
         </div>
         <div class="mobile-lang-switch">
-          <button class="active">EN</button>
-          <button>日本語</button>
-          <button>ภาษาไทย</button>
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="ja">日本語</button>
+          <button data-lang="th">ภาษาไทย</button>
         </div>
       </div>
     </header>
@@ -65,39 +65,37 @@
       <section class="affiliate-hero" id="affiliate-hero">
         <div class="container">
           <div class="hero-copy">
-            <span class="hero-badge">Affiliate Agreement</span>
-            <h1>1540bo.io アフィリエイトプログラム利用規約</h1>
-            <p class="hero-lead">
-              本規約は、1540bo.io を宣伝しプレイヤーを紹介するアフィリエイターと当社との間で締結される法的拘束力のある契約です。プログラムへの参加申請をもって、本規約の全条項に同意したものとみなされます。
-            </p>
+            <span class="hero-badge" data-i18n="affiliate.hero.badge"></span>
+            <h1 data-i18n="affiliate.hero.title"></h1>
+            <p class="hero-lead" data-i18n="affiliate.hero.lead"></p>
             <div class="hero-metrics">
               <div class="metric-card">
-                <span>報酬モデル</span>
-                <strong>ベットシェア方式</strong>
-                <p>総ベット額に応じて日次で計算。</p>
+                <span data-i18n="affiliate.hero.metrics.model.label"></span>
+                <strong data-i18n="affiliate.hero.metrics.model.value"></strong>
+                <p data-i18n="affiliate.hero.metrics.model.desc"></p>
               </div>
               <div class="metric-card">
-                <span>支払サイクル</span>
-                <strong>毎日計算・翌々日反映</strong>
-                <p>世界標準時で決済、ウォレットに自動配分。</p>
+                <span data-i18n="affiliate.hero.metrics.cycle.label"></span>
+                <strong data-i18n="affiliate.hero.metrics.cycle.value"></strong>
+                <p data-i18n="affiliate.hero.metrics.cycle.desc"></p>
               </div>
               <div class="metric-card">
-                <span>ランク体系</span>
-                <strong>全9段階</strong>
-                <p>月間入金件数に応じて料率が決定。</p>
+                <span data-i18n="affiliate.hero.metrics.ranks.label"></span>
+                <strong data-i18n="affiliate.hero.metrics.ranks.value"></strong>
+                <p data-i18n="affiliate.hero.metrics.ranks.desc"></p>
               </div>
             </div>
           </div>
           <div class="hero-panel">
             <div class="panel-card">
-              <h2>パートナーとしての基本</h2>
+              <h2 data-i18n="affiliate.hero.panel.heading"></h2>
               <ul>
-                <li>正確な登録情報とアカウント管理</li>
-                <li>ブランド価値を守るプロモーション</li>
-                <li>関連法域の規制準拠</li>
-                <li>透明な報酬テーブルと支払い</li>
+                <li data-i18n="affiliate.hero.panel.items.0"></li>
+                <li data-i18n="affiliate.hero.panel.items.1"></li>
+                <li data-i18n="affiliate.hero.panel.items.2"></li>
+                <li data-i18n="affiliate.hero.panel.items.3"></li>
               </ul>
-              <a class="btn outline" href="#article-1">主要条項を読む</a>
+              <a class="btn outline" href="#article-1" data-i18n="affiliate.hero.panel.cta"></a>
             </div>
           </div>
         </div>
@@ -106,13 +104,9 @@
       <section class="terms-intro" id="overview">
         <div class="container">
           <div class="intro-card">
-            <h2>本規約について</h2>
-            <p>
-              当社のアフィリエイトプログラムは、透明性の高い報酬設計と企業レベルのリスク管理により、長期的なパートナーシップを構築することを目的としています。アフィリエイターは誠実で法令遵守のプロモーション活動を行い、被紹介者に対して責任ある取引環境を提供することが求められます。
-            </p>
-            <p>
-              以下の条項では、登録要件、禁止行為、報酬計算方法、契約終了条件までを詳細に定めています。アフィリエイト活動を開始する前に、必ず全文を確認してください。
-            </p>
+            <h2 data-i18n="affiliate.intro.heading"></h2>
+            <p data-i18n="affiliate.intro.paragraphs.0"></p>
+            <p data-i18n="affiliate.intro.paragraphs.1"></p>
           </div>
         </div>
       </section>
@@ -121,173 +115,179 @@
         <div class="container">
           <article class="terms-card" id="article-1">
             <div class="terms-card-header">
-              <span class="article-label">第1条</span>
-              <h2>定義</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article1.label"></span>
+              <h2 data-i18n="affiliate.articles.article1.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li><strong>アフィリエイター</strong>：本規約に同意し、当社から承認を受け、本プログラムに参加する個人または法人。</li>
-              <li><strong>被紹介者</strong>：アフィリエイター固有のトラッキングリンクを経由して 1540bo.io に新規登録し、入金およびプレイを行ったプレイヤー。</li>
-              <li><strong>アフィリエイト報酬（ベットシェア）</strong>：被紹介者の総ベット額に基づき、第4条に従ってアフィリエイターに支払われる報酬。</li>
-              <li><strong>総ベット額</strong>：被紹介者が行ったベットの合計金額。</li>
+              <li>
+                <span class="term" data-i18n="affiliate.articles.article1.items.0.term"></span>
+                <span class="desc" data-i18n="affiliate.articles.article1.items.0.desc"></span>
+              </li>
+              <li>
+                <span class="term" data-i18n="affiliate.articles.article1.items.1.term"></span>
+                <span class="desc" data-i18n="affiliate.articles.article1.items.1.desc"></span>
+              </li>
+              <li>
+                <span class="term" data-i18n="affiliate.articles.article1.items.2.term"></span>
+                <span class="desc" data-i18n="affiliate.articles.article1.items.2.desc"></span>
+              </li>
+              <li>
+                <span class="term" data-i18n="affiliate.articles.article1.items.3.term"></span>
+                <span class="desc" data-i18n="affiliate.articles.article1.items.3.desc"></span>
+              </li>
             </ul>
           </article>
 
           <article class="terms-card" id="article-2">
             <div class="terms-card-header">
-              <span class="article-label">第2条</span>
-              <h2>アフィリエイターの登録と承認</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article2.label"></span>
+              <h2 data-i18n="affiliate.articles.article2.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>本プログラムへの参加希望者は、当社指定の登録フォームから申請を行うものとします。</li>
-              <li>当社は独自の裁量により申請を審査し、承認または拒否する権利を有し、理由の開示義務を負いません。</li>
-              <li>アフィリエイターは登録情報を常に正確かつ最新の状態に維持する義務を負います。</li>
-              <li>アフィリエイターは自身のアカウントセキュリティ（パスワード管理など）に全責任を負います。</li>
+              <li data-i18n="affiliate.articles.article2.items.0"></li>
+              <li data-i18n="affiliate.articles.article2.items.1"></li>
+              <li data-i18n="affiliate.articles.article2.items.2"></li>
+              <li data-i18n="affiliate.articles.article2.items.3"></li>
             </ul>
           </article>
 
           <article class="terms-card" id="article-3">
             <div class="terms-card-header">
-              <span class="article-label">第3条</span>
-              <h2>アフィリエイターの義務とマーケティング活動</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article3.label"></span>
+              <h2 data-i18n="affiliate.articles.article3.heading"></h2>
             </div>
-            <p>
-              アフィリエイターは誠実かつ合法的な方法で当社サービスを宣伝し、ブランド価値や公序良俗を損なう行為を行ってはなりません。以下の活動は禁止されています。
-            </p>
+            <p data-i18n="affiliate.articles.article3.intro"></p>
             <ul class="terms-list">
-              <li>未成年者（居住国の法定年齢未満）を対象とする、または未成年者にアピールするマーケティング。</li>
-              <li>スパムメール、無差別ダイレクトメッセージなど迷惑行為とみなされる宣伝。</li>
-              <li>「必勝」「確実な利益」「損失なし」等の虚偽または誇張された表現の使用。</li>
-              <li>当社または第三者の知的財産権を侵害する行為。</li>
-              <li>アフィリエイター自身が当社であるかのように誤認させる行為。</li>
+              <li data-i18n="affiliate.articles.article3.items.0"></li>
+              <li data-i18n="affiliate.articles.article3.items.1"></li>
+              <li data-i18n="affiliate.articles.article3.items.2"></li>
+              <li data-i18n="affiliate.articles.article3.items.3"></li>
+              <li data-i18n="affiliate.articles.article3.items.4"></li>
             </ul>
-            <p>
-              すべての宣伝活動は、関連する法域の法律・規制・ガイドライン（広告表示規制、ギャンブル規制等）に準拠する必要があります。
-            </p>
+            <p data-i18n="affiliate.articles.article3.outro"></p>
           </article>
 
           <article class="terms-card" id="article-4">
             <div class="terms-card-header">
-              <span class="article-label">第4条</span>
-              <h2>アフィリエイト報酬の構造</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article4.label"></span>
+              <h2 data-i18n="affiliate.articles.article4.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>報酬モデル：被紹介者の総ベット額の一定割合を報酬として支払うベットシェアモデルを採用します。</li>
-              <li>報酬計算対象（A案）：総ベット額には、被紹介者が行ったキャッシュベットとリワードベットの両方が含まれます。</li>
-              <li>アフィリエイトランク：月間入金件数に基づき全9段階で料率を決定します。月間入金件数は、対象月における全被紹介者の入金回数の合計を指します。ランクは毎月1日に前月実績を基に再判定されます。</li>
+              <li data-i18n="affiliate.articles.article4.items.0"></li>
+              <li data-i18n="affiliate.articles.article4.items.1"></li>
+              <li data-i18n="affiliate.articles.article4.items.2"></li>
             </ul>
             <div class="table-wrapper">
               <table class="terms-table">
                 <thead>
                   <tr>
-                    <th>アフィリエイトランク</th>
-                    <th>月間入金件数</th>
-                    <th>ベットシェア率</th>
+                    <th data-i18n="affiliate.articles.article4.table.headers.rank"></th>
+                    <th data-i18n="affiliate.articles.article4.table.headers.deposits"></th>
+                    <th data-i18n="affiliate.articles.article4.table.headers.share"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>ランク 9</td>
-                    <td>41件 以上</td>
-                    <td>0.10%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.0.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.0.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.0.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 8</td>
-                    <td>36～40件</td>
-                    <td>0.09%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.1.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.1.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.1.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 7</td>
-                    <td>31～35件</td>
-                    <td>0.08%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.2.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.2.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.2.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 6</td>
-                    <td>26～30件</td>
-                    <td>0.07%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.3.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.3.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.3.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 5</td>
-                    <td>21～25件</td>
-                    <td>0.06%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.4.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.4.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.4.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 4</td>
-                    <td>16～20件</td>
-                    <td>0.05%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.5.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.5.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.5.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 3</td>
-                    <td>11～15件</td>
-                    <td>0.04%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.6.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.6.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.6.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 2</td>
-                    <td>6～10件</td>
-                    <td>0.03%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.7.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.7.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.7.share"></td>
                   </tr>
                   <tr>
-                    <td>ランク 1</td>
-                    <td>1～5件</td>
-                    <td>0.02%</td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.8.rank"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.8.deposits"></td>
+                    <td data-i18n="affiliate.articles.article4.table.rows.8.share"></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p class="note-text">※ 上記のベットシェア率は月間ランクに基づき決定されますが、実際の報酬支払いは第5条に基づきデイリーで行われます。</p>
+            <p class="note-text" data-i18n="affiliate.articles.article4.note"></p>
           </article>
 
           <article class="terms-card" id="article-5">
             <div class="terms-card-header">
-              <span class="article-label">第5条</span>
-              <h2>報酬の支払い</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article5.label"></span>
+              <h2 data-i18n="affiliate.articles.article5.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>計算期間：アフィリエイト報酬は毎日、世界標準時（UTC）00:00〜23:59を計算期間とします。</li>
-              <li>適用料率：日々の報酬計算には、その月のアフィリエイトランクのベットシェア率を適用します。</li>
-              <li>支払いタイミング：計算期間に発生した報酬は翌々日 UTC 08:00 にアフィリエイターの報酬ウォレットへ支払われます（例：11月11日分は11月13日 08:00 UTC に支払い）。</li>
-              <li>支払い条件：当社は最低支払額（例：$0.01）を設定する権利を有し、未達の場合は繰越となる場合があります。</li>
-              <li>引き出し制限：原則として引き出し制限を設けませんが、不正が疑われる場合や最低出金額に満たない場合はこの限りではありません。</li>
+              <li data-i18n="affiliate.articles.article5.items.0"></li>
+              <li data-i18n="affiliate.articles.article5.items.1"></li>
+              <li data-i18n="affiliate.articles.article5.items.2"></li>
+              <li data-i18n="affiliate.articles.article5.items.3"></li>
+              <li data-i18n="affiliate.articles.article5.items.4"></li>
             </ul>
           </article>
 
           <article class="terms-card" id="article-6">
             <div class="terms-card-header">
-              <span class="article-label">第6条</span>
-              <h2>禁止事項（不正行為）</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article6.label"></span>
+              <h2 data-i18n="affiliate.articles.article6.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>自己アフィリエイトの禁止：自身または密接な関係者による登録・プレイを通じた報酬獲得行為。</li>
-              <li>報酬の不正な水増し：被紹介者と共謀し、報酬発生のみを目的とする異常なベットやボーナス乱用。</li>
-              <li>当社が不正と判断する一切の行為。</li>
+              <li data-i18n="affiliate.articles.article6.items.0"></li>
+              <li data-i18n="affiliate.articles.article6.items.1"></li>
+              <li data-i18n="affiliate.articles.article6.items.2"></li>
             </ul>
-            <p>
-              上記不正行為が発覚した場合、当社はアフィリエイター資格の即時剥奪、未払い報酬の没収、過去に支払った報酬の返還請求を行う権利を有します。
-            </p>
+            <p data-i18n="affiliate.articles.article6.outro"></p>
           </article>
 
           <article class="terms-card" id="article-7">
             <div class="terms-card-header">
-              <span class="article-label">第7条</span>
-              <h2>契約期間と終了</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article7.label"></span>
+              <h2 data-i18n="affiliate.articles.article7.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>本契約は、当社がアフィリエイターの登録を承認した日に発効し、終了されるまで有効です。</li>
-              <li>いずれの当事者も、30日前の書面通知によって理由を問わず本契約を終了できます。</li>
-              <li>重大な違反（特に第3条・第6条）が認められた場合、当社は通知なしに本契約を即時終了できます。</li>
-              <li>契約終了後、アフィリエイターは当社のロゴ・バナー等すべてのマーケティング素材の使用を直ちに中止するものとします。</li>
+              <li data-i18n="affiliate.articles.article7.items.0"></li>
+              <li data-i18n="affiliate.articles.article7.items.1"></li>
+              <li data-i18n="affiliate.articles.article7.items.2"></li>
+              <li data-i18n="affiliate.articles.article7.items.3"></li>
             </ul>
           </article>
 
           <article class="terms-card" id="article-8">
             <div class="terms-card-header">
-              <span class="article-label">第8条</span>
-              <h2>一般条項</h2>
+              <span class="article-label" data-i18n="affiliate.articles.article8.label"></span>
+              <h2 data-i18n="affiliate.articles.article8.heading"></h2>
             </div>
             <ul class="terms-list">
-              <li>規約の変更：当社は本規約および報酬テーブルを随時変更する権利を有し、通知時点で効力を生じます。</li>
-              <li>関係：アフィリエイターは独立した契約者であり、当社の従業員・代理人・パートナー・合弁事業者ではありません。</li>
-              <li>免責事項：当社はアフィリエイト活動から生じる損失または損害について責任を負いません。</li>
-              <li>準拠法：本規約は、当社が定める法域の法律に準拠し、同法に従って解釈されます。</li>
+              <li data-i18n="affiliate.articles.article8.items.0"></li>
+              <li data-i18n="affiliate.articles.article8.items.1"></li>
+              <li data-i18n="affiliate.articles.article8.items.2"></li>
+              <li data-i18n="affiliate.articles.article8.items.3"></li>
             </ul>
           </article>
         </div>
@@ -296,9 +296,9 @@
       <section class="update-section">
         <div class="container">
           <div class="update-card">
-            <span>最終更新日</span>
-            <strong>2025年11月11日</strong>
-            <p>本規約内容は予告なく改定される場合があります。最新情報は常に当社公式チャネルでご確認ください。</p>
+            <span data-i18n="affiliate.update.label"></span>
+            <strong data-i18n="affiliate.update.date"></strong>
+            <p data-i18n="affiliate.update.note"></p>
           </div>
         </div>
       </section>
@@ -308,19 +308,18 @@
       <div class="container">
         <div class="footer-copy">
           <div class="brand">1540<span>BO</span></div>
-          <p>
-            デジタルオプション取引には大きなリスクが伴い、投資資金の全額を失う可能性があります。仕組みを十分に理解し、リスク許容度をご確認ください。
-          </p>
+          <p data-i18n="footer.disclaimer"></p>
         </div>
         <div class="footer-links">
-          <a href="./index.html#terms">利用規約</a>
-          <a href="./index.html#privacy">プライバシー</a>
-          <a href="./index.html#support">セキュリティ</a>
-          <a href="./index.html#support">お問い合わせ</a>
+          <a href="./index.html#terms" data-i18n="footer.links.terms"></a>
+          <a href="./index.html#privacy" data-i18n="footer.links.privacy"></a>
+          <a href="./index.html#support" data-i18n="footer.links.security"></a>
+          <a href="./index.html#support" data-i18n="footer.links.contact"></a>
         </div>
       </div>
     </footer>
 
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/affiliate.js"></script>
   </body>
 </html>
