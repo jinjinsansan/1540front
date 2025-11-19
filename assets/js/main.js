@@ -5,6 +5,7 @@ const translations = {
       affiliateTitle: "1540BO | Affiliate Program Terms",
       vipTitle: "1540BO | VIP Program",
       termsTitle: "1540BO | Terms of Service",
+      privacyTitle: "1540BO | Privacy Policy",
     },
     nav: {
       login: "Log in",
@@ -636,6 +637,78 @@ const translations = {
         note: "These Terms may be revised without prior notice. Check official announcements for the latest version.",
       },
     },
+    privacy: {
+      hero: {
+        badge: "Privacy Policy",
+        title: "Protecting your data on 1540bo.io",
+        subtitle:
+          "This policy explains how we collect, use, and safeguard personal information across our trading services. Review it carefully before sharing data with us.",
+        ctaPrimary: "Contact data protection",
+        ctaSecondary: "View legal center",
+        highlightHeading: "Placeholder notice",
+        highlightBody:
+          "The final privacy policy text will be inserted soon. The structure already supports English, Japanese, and Thai for immediate localisation.",
+      },
+      overview: {
+        heading: "What this policy covers",
+        paragraphs: [
+          "These sections outline the categories of data we collect, the purposes for processing, and the safeguards we apply to protect your privacy.",
+          "We will replace the placeholder copy with the definitive policy once approved. Until then, this layout keeps language switching ready.",
+        ],
+        highlights: [
+          "Personal data collection overview",
+          "Usage, legal basis, and retention principles",
+          "Your rights and contact channels",
+        ],
+      },
+      sections: {
+        label: "Overview",
+        heading: "Core privacy principles",
+        subtitle: "Each card below will expand with the final policy language covering collection, usage, and the rights available to every user.",
+        collection: {
+          heading: "Data we collect",
+          items: [
+            "Registration details, identity verification documents, and account preferences.",
+            "Trading telemetry, transaction history, and device diagnostics used to keep sessions secure.",
+            "Support conversations, compliance correspondence, and risk management outcomes.",
+          ],
+        },
+        usage: {
+          heading: "How we use your data",
+          items: [
+            "To deliver platform functionality and maintain account integrity across devices.",
+            "To satisfy legal and regulatory obligations, including anti-money laundering controls.",
+            "To provide customer support, notify you of changes, and optimise platform operations.",
+          ],
+        },
+        rights: {
+          heading: "Your rights",
+          items: [
+            "Request access to personal information we hold about you.",
+            "Ask us to correct inaccurate records or restrict certain processing.",
+            "Contact our data protection team with questions or objections at any time.",
+          ],
+        },
+        retention: {
+          heading: "Retention and deletion",
+          body: [
+            "We store personal data only for as long as required to fulfil statutory retention periods and deliver the services you request.",
+            "When those periods expire, data is securely deleted or anonymised unless continued storage is mandated by law or legitimate interest.",
+          ],
+        },
+        security: {
+          heading: "Security controls",
+          body: [
+            "Encryption, access controls, continuous monitoring, and incident response protocols protect your information throughout its lifecycle.",
+          ],
+        },
+      },
+      update: {
+        label: "Status",
+        date: "Pending publication",
+        note: "This page currently contains placeholder copy. Final legal wording will replace it once compliance review is complete.",
+      },
+    },
     hero: {
       title: "Ultra-short binary options around the clock",
       subtitle: "Capture every opportunity",
@@ -759,6 +832,7 @@ const translations = {
       affiliateTitle: "1540BO｜アフィリエイトプログラム利用規約",
       vipTitle: "1540BO｜VIPプログラム",
       termsTitle: "1540BO｜利用規約",
+      privacyTitle: "1540BO｜プライバシーポリシー",
     },
     nav: {
       login: "ログイン",
@@ -1388,6 +1462,78 @@ const translations = {
         note: "本規約は予告なく改定される場合があります。最新情報は公式アナウンスでご確認ください。",
       },
     },
+    privacy: {
+      hero: {
+        badge: "プライバシーポリシー",
+        title: "1540bo.ioにおける個人情報の保護",
+        subtitle:
+          "本ポリシーは、当社が提供する取引サービス全般において、どのように個人情報を取得し、利用し、保護するのかを説明するものです。情報をご提供いただく前に必ずご確認ください。",
+        ctaPrimary: "個人情報保護窓口に連絡",
+        ctaSecondary: "リーガルセンターを見る",
+        highlightHeading: "プレースホルダーのお知らせ",
+        highlightBody:
+          "最終的なプライバシーポリシー本文は後日掲載されます。英語・日本語・タイ語の切り替え構造はすでに整備されています。",
+      },
+      overview: {
+        heading: "このポリシーが対象とする内容",
+        paragraphs: [
+          "以下のセクションでは、取得するデータの種類、利用目的、そして利用者のプライバシーを守るための管理体制を概説します。",
+          "コンプライアンス承認後、プレースホルダー文を正式な本文に差し替えます。それまでの間も多言語レイアウトは維持されます。",
+        ],
+        highlights: [
+          "取得する個人情報の概要",
+          "利用目的・法的根拠・保存方針",
+          "利用者の権利と問い合わせ窓口",
+        ],
+      },
+      sections: {
+        label: "概要",
+        heading: "プライバシー保護の基本原則",
+        subtitle: "以下のカードには、最終版の本文で拡充される予定の「取得」「利用」「権利」に関する主要な論点を示しています。",
+        collection: {
+          heading: "取得するデータ",
+          items: [
+            "登録情報、本人確認書類、アカウント設定などの基本情報。",
+            "取引テレメトリー、トランザクション履歴、端末識別子などセッション保護に利用する情報。",
+            "サポートでのやり取り、コンプライアンス上の連絡、リスク管理結果。",
+          ],
+        },
+        usage: {
+          heading: "データの利用目的",
+          items: [
+            "プラットフォーム機能を提供し、マルチデバイスでアカウント整合性を維持するため。",
+            "マネーロンダリング対策を含む法令・規制上の義務を履行するため。",
+            "サポート対応、ポリシー変更のお知らせ、運用改善のために利用するため。",
+          ],
+        },
+        rights: {
+          heading: "利用者の権利",
+          items: [
+            "当社が保有する個人情報へのアクセスや写しの交付を請求できます。",
+            "不正確な情報の訂正や、一部処理の制限を求めることができます。",
+            "疑問点や異議はいつでも個人情報保護チームへご連絡ください。",
+          ],
+        },
+        retention: {
+          heading: "保存期間と削除",
+          body: [
+            "法定保存期間の遵守およびサービス提供に必要な期間に限り個人情報を保管します。",
+            "保存期間満了後は、法的義務や正当な利益が認められる場合を除き、情報を安全に削除または匿名化します。",
+          ],
+        },
+        security: {
+          heading: "セキュリティ管理",
+          body: [
+            "暗号化、アクセス制御、常時モニタリング、インシデント対応手順などにより、ライフサイクル全体を通じて情報を保護します。",
+          ],
+        },
+      },
+      update: {
+        label: "ステータス",
+        date: "公開準備中",
+        note: "現在はプレースホルダーの文言です。コンプライアンス承認後に正式な文章へ差し替えます。",
+      },
+    },
     hero: {
       title: "超短時間バイナリーオプション取引を24時間365日提供",
       subtitle: "あらゆる機会に取引可能",
@@ -1517,6 +1663,7 @@ const translations = {
       affiliateTitle: "1540BO | ข้อกำหนดโปรแกรมพันธมิตร",
       vipTitle: "1540BO | โปรแกรมวีไอพี",
       termsTitle: "1540BO | ข้อกำหนดการให้บริการ",
+      privacyTitle: "1540BO | นโยบายความเป็นส่วนตัว",
     },
     nav: {
       login: "เข้าสู่ระบบ",
@@ -2144,6 +2291,78 @@ const translations = {
         label: "อัปเดตล่าสุด",
         date: "11 พฤศจิกายน 2025",
         note: "ข้อกำหนดนี้อาจปรับปรุงโดยไม่แจ้งล่วงหน้า โปรดติดตามประกาศอย่างเป็นทางการเสมอ",
+      },
+    },
+    privacy: {
+      hero: {
+        badge: "นโยบายความเป็นส่วนตัว",
+        title: "การคุ้มครองข้อมูลของคุณบน 1540bo.io",
+        subtitle:
+          "นโยบายนี้อธิบายวิธีที่เรารวบรวม ใช้งาน และปกป้องข้อมูลส่วนบุคคลในบริการเทรดทั้งหมดของเรา โปรดอ่านอย่างละเอียดก่อนส่งข้อมูลให้เรา",
+        ctaPrimary: "ติดต่อทีมคุ้มครองข้อมูล",
+        ctaSecondary: "ดูศูนย์ข้อมูลด้านกฎหมาย",
+        highlightHeading: "ประกาศชั่วคราว",
+        highlightBody:
+          "เนื้อหาฉบับสมบูรณ์จะถูกเพิ่มในไม่ช้า โครงสร้างภาษาสามารถสลับได้ทั้งอังกฤษ ญี่ปุ่น และไทยแล้ว",
+      },
+      overview: {
+        heading: "นโยบายนี้ครอบคลุมอะไรบ้าง",
+        paragraphs: [
+          "หัวข้อต่อไปนี้สรุปประเภทข้อมูลที่เราเก็บ วัตถุประสงค์ในการประมวลผล และกลไกที่ใช้คุ้มครองความเป็นส่วนตัวของคุณ",
+          "เราจะเปลี่ยนข้อความชั่วคราวนี้เป็นฉบับสมบูรณ์ทันทีที่ได้รับอนุมัติ จากนี้ไปสามารถใช้งานได้ทั้งสามภาษาแล้ว",
+        ],
+        highlights: [
+          "ภาพรวมข้อมูลส่วนบุคคลที่จัดเก็บ",
+          "หลักเกณฑ์การใช้งาน ฐานกฎหมาย และการเก็บรักษา",
+          "สิทธิของผู้ใช้และช่องทางการติดต่อ",
+        ],
+      },
+      sections: {
+        label: "ภาพรวม",
+        heading: "หลักการคุ้มครองความเป็นส่วนตัว",
+        subtitle: "การ์ดต่อไปนี้จะแสดงประเด็นสำคัญเกี่ยวกับการเก็บ การใช้งาน และสิทธิของผู้ใช้ ซึ่งจะมีการเติมข้อความฉบับเต็มในภายหลัง",
+        collection: {
+          heading: "ข้อมูลที่เราเก็บ",
+          items: [
+            "ข้อมูลลงทะเบียน เอกสารยืนยันตัวตน และการตั้งค่าบัญชี",
+            "เทเลเมทรีการเทรด ประวัติคำสั่ง และตัวระบุอุปกรณ์ที่ใช้รักษาความปลอดภัยของเซสชัน",
+            "บทสนทนากับฝ่ายสนับสนุน การติดต่อด้านกำกับดูแล และผลการประเมินความเสี่ยง",
+          ],
+        },
+        usage: {
+          heading: "เหตุผลในการใช้ข้อมูล",
+          items: [
+            "เพื่อให้บริการฟังก์ชันของแพลตฟอร์มและรักษาความปลอดภัยบัญชีบนทุกอุปกรณ์",
+            "เพื่อปฏิบัติตามกฎหมายและข้อบังคับ รวมถึงมาตรการป้องกันการฟอกเงิน",
+            "เพื่อให้การสนับสนุนลูกค้า แจ้งการเปลี่ยนแปลง และปรับปรุงการทำงานของแพลตฟอร์ม",
+          ],
+        },
+        rights: {
+          heading: "สิทธิของคุณ",
+          items: [
+            "ร้องขอสำเนาข้อมูลส่วนบุคคลที่เรามีเกี่ยวกับคุณ",
+            "ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง หรือจำกัดการประมวลผลบางประเภท",
+            "สอบถามทีมคุ้มครองข้อมูลของเราได้ทุกเมื่อหากมีข้อสงสัย",
+          ],
+        },
+        retention: {
+          heading: "การเก็บรักษาและการลบ",
+          body: [
+            "เราจะเก็บข้อมูลส่วนบุคคลเท่าที่จำเป็นเพื่อให้บริการและปฏิบัติตามระยะเวลาตามกฎหมาย",
+            "เมื่อครบกำหนดแล้ว เราจะลบหรือทำให้ข้อมูลไม่สามารถระบุตัวตนได้ เว้นแต่กฎหมายหรือผลประโยชน์อันชอบธรรมกำหนดให้เก็บต่อ",
+          ],
+        },
+        security: {
+          heading: "การควบคุมด้านความปลอดภัย",
+          body: [
+            "เราใช้การเข้ารหัส การควบคุมการเข้าถึง การเฝ้าระวังต่อเนื่อง และขั้นตอนตอบสนองเหตุการณ์เพื่อปกป้องข้อมูลของคุณ",
+          ],
+        },
+      },
+      update: {
+        label: "สถานะ",
+        date: "รอประกาศอย่างเป็นทางการ",
+        note: "ขณะนี้เป็นข้อความชั่วคราว เมื่อผ่านการตรวจสอบจากทีมกำกับดูแลจะอัปเดตด้วยข้อความฉบับสมบูรณ์",
       },
     },
     hero: {
