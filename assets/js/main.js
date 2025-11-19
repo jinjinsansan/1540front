@@ -4,10 +4,11 @@ const translations = {
       title: "1540BO | Digital Options Trading",
     },
     nav: {
+      login: "Log in",
       features: "Features",
-      platform: "Platform",
-      howItWorks: "How it works",
-      payments: "Payments",
+      affiliate: "Affiliate",
+      terms: "Terms of Service",
+      privacy: "Privacy Policy",
       support: "Support",
     },
     cta: {
@@ -136,10 +137,11 @@ const translations = {
       title: "1540BO｜デジタルオプション取引",
     },
     nav: {
+      login: "ログイン",
       features: "特長",
-      platform: "プラットフォーム",
-      howItWorks: "始め方",
-      payments: "入出金",
+      affiliate: "アフィリエイト",
+      terms: "利用規約",
+      privacy: "プライバシーポリシー",
       support: "サポート",
     },
     cta: {
@@ -274,10 +276,11 @@ const translations = {
       title: "1540BO | แพลตฟอร์มดิจิทัลออปชัน",
     },
     nav: {
+      login: "เข้าสู่ระบบ",
       features: "จุดเด่น",
-      platform: "แพลตฟอร์ม",
-      howItWorks: "วิธีเริ่ม",
-      payments: "การฝากถอน",
+      affiliate: "พันธมิตร",
+      terms: "ข้อกำหนดการใช้บริการ",
+      privacy: "นโยบายความเป็นส่วนตัว",
       support: "บริการ",
     },
     cta: {
