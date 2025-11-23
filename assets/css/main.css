@@ -2,19 +2,19 @@
   overflow: hidden;
 }
 :root {
-  color-scheme: light only;
+  color-scheme: dark only;
   --font-base: "Manrope", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: "Sora", "Noto Sans JP", "Manrope", system-ui, sans-serif;
-  --color-bg: #0b0b0e;
-  --color-surface: rgba(18, 22, 45, 0.74);
-  --color-card: rgba(16, 19, 37, 0.5);
-  --color-primary: #7c5cff;
-  --color-primary-soft: rgba(124, 92, 255, 0.2);
-  --color-highlight: #5de2ff;
-  --color-text: #f7f9ff;
-  --color-muted: rgba(247, 249, 255, 0.6);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --shadow-soft: 0 30px 70px rgba(7, 10, 30, 0.6);
+  --color-bg: #0c0f16;
+  --color-surface: rgba(18, 26, 41, 0.9);
+  --color-card: rgba(22, 28, 43, 0.85);
+  --color-primary: #f34c44;
+  --color-primary-soft: rgba(243, 76, 68, 0.18);
+  --color-highlight: #04c48b;
+  --color-text: #f5f7fc;
+  --color-muted: #9ba3b5;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --shadow-soft: 0 30px 70px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -23,7 +23,7 @@
 
 body {
   margin: 0;
-  background: #0b0b0e;
+  background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   font-family: var(--font-base);
@@ -129,9 +129,9 @@ a {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #ff1f4b, #c40035);
+  background: linear-gradient(135deg, #f34c44, #c42c2e);
   color: var(--color-bg);
-  box-shadow: 0 10px 24px rgba(255, 31, 75, 0.25);
+  box-shadow: 0 10px 24px rgba(195, 43, 46, 0.35);
 }
 
 .btn.primary:hover {
@@ -474,7 +474,7 @@ a {
 }
 
 .change.positive {
-  color: #3de48f;
+  color: #2ce38f;
 }
 
 .change.negative {
@@ -498,10 +498,10 @@ a {
 }
 
 .feature-card {
-  background: rgba(14, 17, 34, 0.7);
+  background: var(--color-card);
   padding: 28px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -525,23 +525,23 @@ a {
 }
 
 .icon-speed {
-  color: #5de2ff;
-  box-shadow: 0 10px 30px rgba(93, 226, 255, 0.2);
+  color: #2ce38f;
+  box-shadow: 0 10px 30px rgba(44, 227, 143, 0.2);
 }
 
 .icon-security {
-  color: #8a7dff;
-  box-shadow: 0 10px 30px rgba(138, 125, 255, 0.2);
+  color: #28c5ff;
+  box-shadow: 0 10px 30px rgba(40, 197, 255, 0.2);
 }
 
 .icon-analytics {
-  color: #ffb347;
-  box-shadow: 0 10px 30px rgba(255, 179, 71, 0.2);
+  color: #f8c77e;
+  box-shadow: 0 10px 30px rgba(248, 199, 126, 0.2);
 }
 
 .icon-support {
-  color: #ff5da2;
-  box-shadow: 0 10px 30px rgba(255, 93, 162, 0.2);
+  color: #f34c44;
+  box-shadow: 0 10px 30px rgba(243, 76, 68, 0.25);
 }
 
 .platform {
@@ -567,8 +567,8 @@ a {
   gap: 16px;
   padding: 18px 20px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(19, 25, 38, 0.9);
+  border: 1px solid var(--color-border);
   align-items: center;
 }
 
@@ -576,10 +576,10 @@ a {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  background: rgba(93, 226, 255, 0.12);
+  background: rgba(4, 196, 139, 0.15);
   display: grid;
   place-items: center;
-  color: #5de2ff;
+  color: var(--color-highlight);
 }
 
 .highlight .icon svg {
@@ -636,9 +636,9 @@ a {
 }
 
 .step {
-  background: rgba(12, 14, 30, 0.7);
+  background: rgba(18, 24, 36, 0.9);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border);
   padding: 28px;
   position: relative;
 }
@@ -650,14 +650,14 @@ a {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ff1f4b, #c40035);
+  background: linear-gradient(135deg, #f34c44, #c42c2e);
   display: grid;
   place-items: center;
   font-weight: 800;
   font-size: 1.4rem;
-  border: 3px solid #0b0b0e;
-  box-shadow: 0 8px 24px rgba(255, 31, 75, 0.4),
-              0 0 40px rgba(255, 31, 75, 0.2);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 8px 24px rgba(195, 43, 46, 0.4),
+              0 0 40px rgba(195, 43, 46, 0.25);
   color: #ffffff;
 }
 
@@ -682,9 +682,9 @@ a {
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-muted);
+  background: rgba(19, 25, 38, 0.9);
+  border: 1px solid var(--color-border);
   padding: 14px 20px;
   border-radius: 999px;
   width: 100%;
@@ -702,16 +702,16 @@ a {
   gap: 16px;
   padding: 28px 20px;
   border-radius: 20px;
-  background: rgba(12, 14, 30, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(19, 25, 38, 0.85);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .crypto-chip:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  border-color: rgba(4, 196, 139, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 .crypto-icon {
@@ -754,9 +754,9 @@ a {
 }
 
 .testimonial {
-  background: rgba(12, 14, 30, 0.68);
+  background: rgba(19, 25, 38, 0.85);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--color-border);
   padding: 28px;
   color: var(--color-muted);
 }
@@ -770,9 +770,9 @@ a {
 
 /* News Cards */
 .news-card {
-  background: rgba(12, 14, 30, 0.7);
+  background: var(--color-card);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-border);
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -780,8 +780,8 @@ a {
 
 .news-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: rgba(4, 196, 139, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
 }
 
 .news-thumbnail {
@@ -806,7 +806,7 @@ a {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(12, 18, 30, 0.95);
   backdrop-filter: blur(10px);
   padding: 6px 14px;
   border-radius: 20px;
@@ -814,8 +814,8 @@ a {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00d4ff;
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  color: var(--color-highlight);
+  border: 1px solid rgba(4, 196, 139, 0.35);
 }
 
 .news-content {
@@ -857,13 +857,13 @@ a {
 .news-link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #00d4ff;
+  color: var(--color-highlight);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .news-link:hover {
-  color: #00ff88;
+  color: #2ce38f;
   text-decoration: underline;
 }
 
