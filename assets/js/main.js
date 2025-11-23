@@ -910,7 +910,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
+      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "Terms",
         privacy: "Privacy",
@@ -1830,7 +1830,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
+      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "利用規約",
         privacy: "プライバシー",
@@ -2744,7 +2744,7 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "authorised and regulated by JoumallandFRC 2487765 SDC170086",
+      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "ข้อกำหนด",
         privacy: "นโยบายความเป็นส่วนตัว",
