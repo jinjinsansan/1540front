@@ -1008,12 +1008,12 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 4px 2vw;
+    padding: 4px 3vw 4px 1vw;
   }
 
   .brand img {
-    height: 48px;
-    max-height: 48px;
+    height: 52px;
+    max-height: 52px;
   }
 
 
@@ -1239,16 +1239,16 @@ a {
   }
 
   .top-bar .container {
-    padding: 4px 2vw !important;
+    padding: 4px 3vw 4px 1vw !important;
   }
 
   .brand {
-    min-height: 48px !important;
+    min-height: 52px !important;
   }
 
   .brand img {
-    height: 48px !important;
-    max-height: 48px !important;
+    height: 52px !important;
+    max-height: 52px !important;
   }
 
   .mobile-menu {
