@@ -1008,7 +1008,7 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 2px 3vw 2px 0.5vw;
+    padding: 1px 3vw 3px 0.5vw;
     align-items: center;
   }
 
@@ -1245,7 +1245,7 @@ a {
   }
 
   .top-bar .container {
-    padding: 2px 3vw 2px 0.5vw !important;
+    padding: 1px 3vw 3px 0.5vw !important;
     align-items: center !important;
   }
 
