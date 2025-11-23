@@ -73,7 +73,7 @@ a {
   z-index: 100;
   background: var(--color-nav-bg);
   border-bottom: 1px solid var(--color-nav-border);
-  --topbar-height: clamp(58px, 5.5vh, 78px);
+  --topbar-height: 48px;
   box-shadow: 0 4px 16px rgba(10, 14, 20, 0.12);
 }
 
@@ -82,8 +82,8 @@ a {
   grid-template-columns: auto 1fr auto;
   grid-template-areas: "brand nav actions";
   align-items: center;
-  gap: clamp(12px, 1.4vw, 28px);
-  padding: clamp(6px, 1.1vw, 14px) clamp(24px, 3.2vw, 52px);
+  gap: 16px;
+  padding: 8px 32px;
   min-height: var(--topbar-height);
 }
 
@@ -92,14 +92,14 @@ a {
   grid-area: brand;
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
-  padding: 2px 0;
+  min-height: 32px;
+  padding: 0;
 }
 
 .brand img {
   display: block;
-  height: clamp(48px, 4.6vw, 62px);
-  max-height: 64px;
+  height: 32px;
+  max-height: 32px;
   width: auto;
 }
 
@@ -109,19 +109,19 @@ a {
 
 .nav-links {
   display: flex;
-  gap: clamp(18px, 1.8vw, 38px);
-  font-size: clamp(0.85rem, 1vw, 1rem);
+  gap: 10px;
+  font-size: 0.8rem;
   color: var(--color-nav-muted);
   font-weight: 500;
   justify-content: center;
   grid-area: nav;
-  flex-wrap: wrap;
-  white-space: normal;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   align-items: center;
   min-width: 0;
 }
 .nav-links a {
-  padding: 6px 16px;
+  padding: 4px 8px;
   border-radius: 999px;
   transition: color 0.2s ease, background 0.2s ease;
   color: inherit;
@@ -139,7 +139,7 @@ a {
 .cta-group {
   display: flex;
   align-items: center;
-  gap: clamp(8px, 1vw, 16px);
+  gap: 8px;
   grid-area: actions;
   flex-wrap: nowrap;
 }
@@ -158,10 +158,10 @@ a {
 }
 
 .top-bar .btn {
-  padding: 9px 18px;
+  padding: 6px 14px;
   border-radius: 999px;
-  font-size: 0.9rem;
-  min-height: 40px;
+  font-size: 0.8rem;
+  min-height: 32px;
 }
 
 .top-bar .btn.primary {
@@ -206,11 +206,11 @@ a {
 
 .lang-switch {
   display: inline-flex;
-  padding: 4px;
+  padding: 3px;
   border-radius: 999px;
   background: rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  gap: 4px;
+  gap: 3px;
   white-space: nowrap;
 }
 
@@ -218,9 +218,9 @@ a {
   border: none;
   background: transparent;
   color: var(--color-nav-muted);
-  padding: 6px 12px;
+  padding: 4px 8px;
   border-radius: 999px;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   cursor: pointer;
 }
 
@@ -244,7 +244,7 @@ a {
 }
 
 .mobile-menu-toggle span {
-  width: 24px;
+  width: 20px;
   height: 2px;
   background: var(--color-nav-text);
   transition: all 0.3s ease;
@@ -255,11 +255,11 @@ a {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: var(--topbar-height, 72px);
+  top: var(--topbar-height, 56px);
   left: 0;
   right: 0;
   background: var(--color-nav-bg);
-  padding: 24px clamp(20px, 5vw, 60px);
+  padding: 16px clamp(16px, 4vw, 40px);
   border-bottom: 1px solid var(--color-nav-border);
   z-index: 1000;
   max-height: 0;
@@ -286,11 +286,11 @@ a {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: var(--topbar-height, 72px);
+  top: var(--topbar-height, 56px);
   left: 0;
   right: 0;
   background: var(--color-nav-bg);
-  padding: 0 clamp(20px, 5vw, 60px);
+  padding: 0 clamp(16px, 4vw, 40px);
   border-bottom: 1px solid transparent;
   z-index: 1000;
   max-height: 0;
@@ -302,7 +302,7 @@ a {
 
 .mobile-menu.active {
   max-height: 90vh;
-  padding: 24px clamp(20px, 5vw, 60px);
+  padding: 16px clamp(16px, 4vw, 40px);
   border-bottom: 1px solid var(--color-nav-border);
   opacity: 1;
   pointer-events: auto;
@@ -311,16 +311,16 @@ a {
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 24px;
-  padding-top: 8px;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-top: 4px;
 }
 
 .mobile-nav a {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-nav-text);
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -339,17 +339,17 @@ a {
 
 .mobile-lang-switch {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   justify-content: center;
 }
 
 .mobile-lang-switch button {
-  padding: 10px 16px;
+  padding: 8px 12px;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.08);
   color: var(--color-nav-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -1008,11 +1008,12 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 12px 5vw;
+    padding: 8px 5vw;
   }
 
   .brand img {
-    height: 44px;
+    height: 28px;
+    max-height: 28px;
   }
 
 
@@ -1037,7 +1038,7 @@ a {
 
 @media (max-width: 768px) {
   .top-bar {
-    --topbar-height: 86px;
+    --topbar-height: 56px;
   }
   .platform {
     padding: 60px 0 !important;
@@ -1226,7 +1227,7 @@ a {
 
 @media (max-width: 600px) {
   .top-bar {
-    --topbar-height: 92px;
+    --topbar-height: 56px;
   }
   body {
     font-size: 0.95rem;
@@ -1238,27 +1239,34 @@ a {
   }
 
   .top-bar .container {
-    padding: 12px 5vw !important;
+    padding: 8px 5vw !important;
   }
 
   .brand {
-    min-height: 48px !important;
+    min-height: 28px !important;
   }
 
   .brand img {
-    height: 46px;
+    height: 28px !important;
+    max-height: 28px !important;
   }
 
   .mobile-menu {
-    padding: 22px 6vw;
+    padding: 14px 6vw;
+  }
+
+  .mobile-menu.active {
+    padding: 14px 6vw;
   }
 
   .mobile-nav a {
-    padding: 12px 0;
+    padding: 10px 0;
+    font-size: 0.9rem;
   }
 
   .mobile-lang-switch button {
-    padding: 10px 14px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
   }
 
   .hero {
