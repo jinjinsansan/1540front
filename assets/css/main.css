@@ -1008,7 +1008,13 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 4px 3vw 4px 1vw;
+    padding: 2px 3vw 2px 0.5vw;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
   }
 
   .brand img {
@@ -1239,11 +1245,14 @@ a {
   }
 
   .top-bar .container {
-    padding: 4px 3vw 4px 1vw !important;
+    padding: 2px 3vw 2px 0.5vw !important;
+    align-items: center !important;
   }
 
   .brand {
     min-height: 52px !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
   .brand img {
