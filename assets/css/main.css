@@ -1015,6 +1015,7 @@ a {
   .brand {
     display: flex;
     align-items: center;
+    margin-top: 4px;
   }
 
   .brand img {
@@ -1253,6 +1254,7 @@ a {
     min-height: 52px !important;
     display: flex !important;
     align-items: center !important;
+    margin-top: 4px !important;
   }
 
   .brand img {
