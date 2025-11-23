@@ -1008,14 +1008,15 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 0px 3vw 4px 0.5vw;
+    padding: 0px 3vw 2px 0px;
     align-items: flex-end;
   }
 
   .brand {
     display: flex;
     align-items: center;
-    margin-top: 4px;
+    margin-top: 8px;
+    margin-left: 0px;
   }
 
   .brand img {
@@ -1246,7 +1247,7 @@ a {
   }
 
   .top-bar .container {
-    padding: 0px 3vw 4px 0.5vw !important;
+    padding: 0px 3vw 2px 0px !important;
     align-items: flex-end !important;
   }
 
@@ -1254,7 +1255,8 @@ a {
     min-height: 52px !important;
     display: flex !important;
     align-items: center !important;
-    margin-top: 4px !important;
+    margin-top: 8px !important;
+    margin-left: 0px !important;
   }
 
   .brand img {
