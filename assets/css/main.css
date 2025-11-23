@@ -1008,8 +1008,8 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 1px 3vw 3px 0.5vw;
-    align-items: center;
+    padding: 0px 3vw 4px 0.5vw;
+    align-items: flex-end;
   }
 
   .brand {
@@ -1245,8 +1245,8 @@ a {
   }
 
   .top-bar .container {
-    padding: 1px 3vw 3px 0.5vw !important;
-    align-items: center !important;
+    padding: 0px 3vw 4px 0.5vw !important;
+    align-items: flex-end !important;
   }
 
   .brand {
