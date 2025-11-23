@@ -428,7 +428,7 @@ const translations = {
       overview: {
         heading: "How to read these terms",
         paragraphs: [
-          "This document is the legally binding agreement between you and 1540bo regarding the binary options platform 1540bo.io.",
+          "This document is the legally binding agreement between you and galactic-triablazers Ltd, registered at Sea Urchin Street, San Pedro, Ambergris Caye, Belize, regarding the binary options platform 1540bo.io.",
           "By using the service you agree to every clause below; if you cannot agree, do not create or use an account.",
         ],
         highlights: [
@@ -445,7 +445,7 @@ const translations = {
             article1: {
               heading: "Article 1 (Purpose of these terms)",
               body: [
-                "These Terms of Service (the “Terms”) set out the conditions under which users may access and trade on the binary options service 1540bo.io operated by 1540bo. By using the service, you agree to be bound by the Terms.",
+                "These Terms of Service (the “Terms”) set out the conditions under which users may access and trade on the binary options service 1540bo.io operated by galactic-triablazers Ltd (“galactic-triablazers”), whose registered address is Sea Urchin Street, San Pedro, Ambergris Caye, Belize. By using the service, you agree to be bound by the Terms.",
               ],
             },
             article2: {
@@ -642,7 +642,7 @@ const translations = {
         badge: "Privacy Policy",
         title: "1540bo.io Privacy Policy",
         subtitle:
-          "This policy describes how 1540bo collects, uses, shares, and safeguards personal information when you use our trading services.",
+          "This policy describes how galactic-triablazers Ltd collects, uses, shares, and safeguards personal information when you use our trading services for 1540bo.io.",
         ctaPrimary: "Contact support",
         ctaSecondary: "View Terms of Service",
         alertTitle: "Read before sharing personal data",
@@ -652,7 +652,7 @@ const translations = {
       overview: {
         heading: "How we handle your personal information",
         paragraphs: [
-          "The sections below set out the rules that govern personal data handled through 1540bo.io, from acquisition to disposal.",
+          "galactic-triablazers Ltd, registered at Sea Urchin Street, San Pedro, Ambergris Caye, Belize, operates 1540bo.io and is responsible for the personal data handling lifecycle described below, from acquisition to disposal.",
           "They align with the Act on the Protection of Personal Information of Japan and apply to every user of the service.",
         ],
         highlights: [
@@ -666,7 +666,7 @@ const translations = {
           label: "Section 1",
           heading: "General provisions",
           body: [
-            "1540bo (the “Company”) establishes this Privacy Policy to govern the handling of user information, including personal data, within the service “1540bo.io”.",
+            "galactic-triablazers Ltd (“galactic-triablazers” or the “Company”), registered at Sea Urchin Street, San Pedro, Ambergris Caye, Belize, establishes this Privacy Policy to govern the handling of user information, including personal data, within the service “1540bo.io”.",
           ],
         },
         section2: {
@@ -1346,7 +1346,7 @@ const translations = {
       overview: {
         heading: "本規約の読み方",
         paragraphs: [
-          "本規約は、1540bo（以下「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」に関する法的拘束力のある契約です。",
+          "本規約は、Sea Urchin Street, San Pedro, Ambergris Caye, Belize に登録された galactic-triablazers Ltd（以下「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」に関する法的拘束力のある契約です。",
           "本サービスを利用する利用者は、以下の条項すべてに同意したものとみなされます。同意できない場合は、口座を開設・利用しないでください。",
         ],
         highlights: [
@@ -1363,7 +1363,7 @@ const translations = {
             article1: {
               heading: "第1条（本約款の趣旨）",
               body: [
-                "本利用規約（以下、「本規約」といいます。）は、1540bo（以下、「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」（以下、「本サービス」といいます。）の利用条件を定めるものです。本サービスの利用者（以下、「利用者」といいます。）は、本規約に同意の上、本サービスを利用するものとします。",
+                "本利用規約（以下、「本規約」といいます。）は、所在地を Sea Urchin Street, San Pedro, Ambergris Caye, Belize に置く galactic-triablazers Ltd（以下、「当社」といいます。）が提供するバイナリーオプション取引サービス「1540bo.io」（以下、「本サービス」といいます。）の利用条件を定めるものです。本サービスの利用者（以下、「利用者」といいます。）は、本規約に同意の上、本サービスを利用するものとします。",
               ],
             },
             article2: {
@@ -1560,7 +1560,7 @@ const translations = {
         badge: "プライバシーポリシー",
         title: "1540bo.io プライバシーポリシー",
         subtitle:
-          "本ポリシーは、1540boが取引サービスの提供に際して取得・利用・共有・保護する個人情報の取扱いを説明します。",
+          "本ポリシーは、Sea Urchin Street, San Pedro, Ambergris Caye, Belize に所在する galactic-triablazers Ltd が、取引サービスの提供に際して取得・利用・共有・保護する個人情報の取扱いを説明します。",
         ctaPrimary: "サポートに問い合わせる",
         ctaSecondary: "利用規約を見る",
         alertTitle: "個人情報提供前の重要な確認",
@@ -1570,7 +1570,7 @@ const translations = {
       overview: {
         heading: "個人情報の取扱い方針",
         paragraphs: [
-          "以下の各条項は、1540bo.ioにおける個人情報の取得から廃棄までの取扱い規範を定めています。",
+          "galactic-triablazers Ltd（所在地：Sea Urchin Street, San Pedro, Ambergris Caye, Belize）が運営する 1540bo.io における個人情報の取得から廃棄までの取扱い規範を、以下の各条項で定めています。",
           "日本の個人情報保護法に準拠し、本サービスをご利用いただくすべての方に適用されます。",
         ],
         highlights: [
@@ -1584,7 +1584,7 @@ const translations = {
           label: "第1条",
           heading: "総則",
           body: [
-            "1540bo（以下「当社」といいます。）は、本サービス「1540bo.io」における利用者情報（個人情報を含みます。）の取扱いについて、本プライバシーポリシーを定めます。",
+            "galactic-triablazers Ltd（所在地：Sea Urchin Street, San Pedro, Ambergris Caye, Belize、以下「当社」といいます。）は、本サービス「1540bo.io」における利用者情報（個人情報を含みます。）の取扱いについて、本プライバシーポリシーを定めます。",
           ],
         },
         section2: {
@@ -2266,7 +2266,7 @@ const translations = {
       overview: {
         heading: "แนวทางการอ่านข้อกำหนดนี้",
         paragraphs: [
-          "เอกสารนี้เป็นสัญญาที่มีผลผูกพันทางกฎหมายระหว่างคุณกับ 1540bo เกี่ยวกับแพลตฟอร์มไบนารีออปชัน 1540bo.io.",
+          "เอกสารนี้เป็นสัญญาที่มีผลผูกพันทางกฎหมายระหว่างคุณกับ galactic-triablazers Ltd ซึ่งจดทะเบียนที่ Sea Urchin Street, San Pedro, Ambergris Caye, Belize เกี่ยวกับแพลตฟอร์มไบนารี่ออปชัน 1540bo.io.",
           "เมื่อใช้บริการถือว่าคุณยอมรับเงื่อนไขทุกข้อ หากไม่ยอมรับกรุณาอย่าสร้างหรือใช้งานบัญชี.",
         ],
         highlights: [
@@ -2283,7 +2283,7 @@ const translations = {
             article1: {
               heading: "มาตรา 1 (วัตถุประสงค์ของข้อกำหนด)",
               body: [
-                "ข้อกำหนดการใช้บริการฉบับนี้ (ต่อไปเรียกว่า “ข้อกำหนด”) กำหนดเงื่อนไขการใช้บริการเทรดไบนารี่ออปชัน “1540bo.io” (ต่อไปเรียกว่า “บริการ”) ซึ่งให้บริการโดย 1540bo (ต่อไปเรียกว่า “บริษัท”) ผู้ใช้บริการ (ต่อไปเรียกว่า “ผู้ใช้”) ต้องยอมรับข้อกำหนดนี้ก่อนใช้งานบริการ.",
+                "ข้อกำหนดการใช้บริการฉบับนี้ (ต่อไปเรียกว่า “ข้อกำหนด”) กำหนดเงื่อนไขการใช้บริการเทรดไบนารี่ออปชัน “1540bo.io” (ต่อไปเรียกว่า “บริการ”) ซึ่งให้บริการโดย galactic-triablazers Ltd (ต่อไปเรียกว่า “บริษัท”) ที่มีที่อยู่จดทะเบียนอยู่ที่ Sea Urchin Street, San Pedro, Ambergris Caye, Belize ผู้ใช้บริการ (ต่อไปเรียกว่า “ผู้ใช้”) ต้องยอมรับข้อกำหนดนี้ก่อนใช้งานบริการ.",
               ],
             },
             article2: {
@@ -2480,7 +2480,7 @@ const translations = {
         badge: "นโยบายความเป็นส่วนตัว",
         title: "นโยบายความเป็นส่วนตัวของ 1540bo.io",
         subtitle:
-          "นโยบายนี้อธิบายวิธีที่ 1540bo รวบรวม ใช้งาน แบ่งปัน และปกป้องข้อมูลส่วนบุคคลเมื่อคุณใช้บริการเทรดของเรา",
+          "นโยบายนี้อธิบายวิธีที่ galactic-triablazers Ltd จัดเก็บ ใช้งาน แบ่งปัน และปกป้องข้อมูลส่วนบุคคลเมื่อคุณใช้บริการเทรดของ 1540bo.io",
         ctaPrimary: "ติดต่อฝ่ายสนับสนุน",
         ctaSecondary: "ดูข้อกำหนดการให้บริการ",
         alertTitle: "โปรดอ่านก่อนส่งข้อมูลส่วนบุคคล",
@@ -2490,7 +2490,7 @@ const translations = {
       overview: {
         heading: "แนวทางการจัดการข้อมูลส่วนบุคคล",
         paragraphs: [
-          "หัวข้อด้านล่างกำหนดหลักเกณฑ์การจัดการข้อมูลส่วนบุคคลใน 1540bo.io ตั้งแต่การเก็บ การใช้ ไปจนถึงการลบทำลาย",
+          "galactic-triablazers Ltd ซึ่งมีที่อยู่ที่ Sea Urchin Street, San Pedro, Ambergris Caye, Belize เป็นผู้ดำเนินการ 1540bo.io และกำหนดหลักเกณฑ์การจัดการข้อมูลส่วนบุคคลตั้งแต่การเก็บ การใช้ ไปจนถึงการลบทำลายตามที่ระบุด้านล่าง",
           "นโยบายนี้สอดคล้องกับกฎหมายคุ้มครองข้อมูลส่วนบุคคลของญี่ปุ่นและใช้กับผู้ใช้ทุกคนของบริการ",
         ],
         highlights: [
@@ -2504,7 +2504,7 @@ const translations = {
           label: "มาตรา 1",
           heading: "บททั่วไป",
           body: [
-            "1540bo (เรียกว่า “บริษัท”) จัดทำนโยบายฉบับนี้เพื่อกำกับการจัดการข้อมูลผู้ใช้ รวมถึงข้อมูลส่วนบุคคล ภายในบริการ “1540bo.io”.",
+            "galactic-triablazers Ltd (เรียกว่า “บริษัท”) ซึ่งมีที่อยู่จดทะเบียนที่ Sea Urchin Street, San Pedro, Ambergris Caye, Belize จัดทำนโยบายฉบับนี้เพื่อกำกับการจัดการข้อมูลผู้ใช้ รวมถึงข้อมูลส่วนบุคคล ภายในบริการ “1540bo.io”.",
           ],
         },
         section2: {
