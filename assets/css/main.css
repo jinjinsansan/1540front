@@ -73,8 +73,8 @@ a {
   z-index: 100;
   background: var(--color-nav-bg);
   border-bottom: 1px solid var(--color-nav-border);
-  --topbar-height: clamp(64px, 6.5vh, 88px);
-  box-shadow: 0 8px 24px rgba(10, 14, 20, 0.12);
+  --topbar-height: clamp(56px, 5.2vh, 72px);
+  box-shadow: 0 6px 20px rgba(10, 14, 20, 0.12);
 }
 
 .top-bar .container {
@@ -82,8 +82,8 @@ a {
   grid-template-columns: auto 1fr auto;
   grid-template-areas: "brand nav actions";
   align-items: center;
-  gap: clamp(14px, 1.6vw, 32px);
-  padding: clamp(10px, 1.4vw, 16px) clamp(18px, 3.5vw, 50px);
+  gap: clamp(12px, 1.4vw, 28px);
+  padding: clamp(6px, 1vw, 12px) clamp(20px, 3vw, 42px);
   min-height: var(--topbar-height);
 }
 
@@ -92,12 +92,14 @@ a {
   grid-area: brand;
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
+  min-height: 40px;
+  padding: 2px 0;
 }
 
 .brand img {
   display: block;
-  height: 34px;
+  height: 42px;
+  max-height: 46px;
   width: auto;
 }
 
@@ -134,8 +136,9 @@ a {
 .cta-group {
   display: flex;
   align-items: center;
-  gap: clamp(10px, 1.2vw, 18px);
+  gap: clamp(8px, 1vw, 16px);
   grid-area: actions;
+  flex-wrap: nowrap;
 }
 
 .top-bar .btn.ghost,
@@ -149,6 +152,17 @@ a {
 
 .top-bar .btn.outline:hover {
   border-color: rgba(4, 196, 139, 0.6);
+}
+
+.top-bar .btn {
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  min-height: 40px;
+}
+
+.top-bar .btn.primary {
+  box-shadow: 0 8px 18px rgba(195, 43, 46, 0.25);
 }
 
 .btn {
@@ -989,11 +1003,11 @@ a {
 
 @media (max-width: 900px) {
   .top-bar .container {
-    padding: 14px 4vw;
+    padding: 10px 4vw;
   }
 
-  .brand {
-    font-size: 1.5rem;
+  .brand img {
+    height: 36px;
   }
 
 
@@ -1046,7 +1060,7 @@ a {
   }
 
   .top-bar .container {
-    padding: 10px 4vw !important;
+    padding: 8px 4vw !important;
     gap: 10px;
     grid-template-columns: auto auto;
     grid-template-areas:
@@ -1055,13 +1069,17 @@ a {
   }
 
   .brand {
-    font-size: 1.35rem;
+    min-height: 36px;
+  }
+
+  .brand img {
+    height: 32px;
   }
 
   .nav-links {
     justify-content: flex-start;
     padding-top: 6px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid var(--color-nav-border);
     order: 3;
     width: 100%;
     font-size: 0.85rem;
@@ -1204,11 +1222,27 @@ a {
   }
 
   .top-bar .container {
-    padding: 10px 3vw !important;
+    padding: 8px 3vw !important;
   }
 
   .brand {
-    font-size: 1.3rem !important;
+    min-height: 32px !important;
+  }
+
+  .brand img {
+    height: 28px;
+  }
+
+  .mobile-menu {
+    padding: 18px 5vw;
+  }
+
+  .mobile-nav a {
+    padding: 10px 0;
+  }
+
+  .mobile-lang-switch button {
+    padding: 8px 12px;
   }
 
   .hero {
