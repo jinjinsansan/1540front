@@ -287,6 +287,169 @@
   color: var(--color-muted);
 }
 
+/* Detail content sections */
+.help-detail-content {
+  padding: clamp(40px, 6vw, 80px) 0;
+}
+
+.help-content-section {
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.help-content-section h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+}
+
+.help-content-section p {
+  color: var(--color-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Table styles */
+.help-table {
+  overflow-x: auto;
+  margin: 24px 0;
+  border-radius: 12px;
+  background: rgba(12, 18, 30, 0.6);
+  border: 1px solid var(--color-border);
+}
+
+.help-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.help-table th,
+.help-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.help-table th {
+  background: rgba(4, 196, 139, 0.08);
+  font-weight: 600;
+  color: var(--color-highlight);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.help-table td {
+  color: var(--color-muted);
+}
+
+.help-table tr:last-child td {
+  border-bottom: none;
+}
+
+.help-table tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Note/Callout styles */
+.help-note {
+  background: rgba(4, 196, 139, 0.08);
+  border-left: 3px solid var(--color-highlight);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.help-note strong {
+  color: var(--color-highlight);
+  font-size: 0.9rem;
+}
+
+.help-note span {
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* List styles */
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.help-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.help-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+
+/* Related links */
+.help-related-links {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.help-related-links h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+  color: var(--color-highlight);
+}
+
+.help-related-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.help-related-links a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.help-related-links a::before {
+  content: "→";
+  color: var(--color-highlight);
+}
+
+.help-related-links a:hover {
+  color: var(--color-highlight);
+}
+
+/* Badge for detail pages */
+.help-detail-badge {
+  display: inline-flex !important;
+  align-items: center;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-highlight) !important;
+  background: rgba(4, 196, 139, 0.15) !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+  margin-bottom: 14px !important;
+}
+
 @media (max-width: 768px) {
   .help-index-support__card,
   .help-detail-callout__card,
@@ -299,5 +462,14 @@
   .help-detail-callout__card .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .help-table {
+    font-size: 0.9rem;
+  }
+
+  .help-table th,
+  .help-table td {
+    padding: 12px 14px;
   }
 }
