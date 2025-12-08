@@ -6,6 +6,7 @@ const translations = {
       vipTitle: "1540BO | VIP Program",
       termsTitle: "1540BO | Terms of Service",
       privacyTitle: "1540BO | Privacy Policy",
+      helpTitle: "1540BO | Help Center",
     },
     nav: {
       login: "Log in",
@@ -14,6 +15,7 @@ const translations = {
       vip: "VIP Program",
       terms: "Terms of Service",
       privacy: "Privacy Policy",
+      help: "Help Center",
       support: "Support",
     },
     cta: {
@@ -803,6 +805,125 @@ const translations = {
         note: "This Privacy Policy is effective as of the date above and may be updated in line with future regulatory guidance.",
       },
     },
+    help: {
+      hero: {
+        badge: "Help Center",
+        title: "Resolve questions fast and trade with confidence",
+        subtitle:
+          "Step-by-step guidance for onboarding, deposits, withdrawals, and risk management.",
+        ctaPrimary: "Contact support",
+        ctaSecondary: "Read FAQs",
+        highlights: [
+          "First response target: under 12 hours",
+          "Native Japanese & English desk coverage",
+          "Service updates posted daily inside the app",
+        ],
+        card: {
+          title: "Support status",
+          subtitle: "Core channels · JST",
+          stats: [
+            "Average email reply: 12h",
+            "Live chat: 10:00–02:00 JST",
+            "Emergency wallet freeze: 24/7",
+          ],
+          note: "Always include your UID, registered email, and latest login time when contacting support.",
+        },
+      },
+      steps: {
+        heading: "Get started in three guided flows",
+        subtitle: "Follow the same checklist most traders complete during their first week.",
+        items: [
+          {
+            badge: "Step 1",
+            title: "Open and secure your account",
+            text: "Complete onboarding and lock down security controls before moving funds.",
+            bullets: [
+              "Upload ID + selfie for KYC directly inside the dashboard.",
+              "Enable two-factor authentication for both logins and withdrawals.",
+              "Bookmark status.1540bo.io to monitor system health notices.",
+            ],
+          },
+          {
+            badge: "Step 2",
+            title: "Deposit and verify balances",
+            text: "Use on-chain transfers and keep the transaction hash handy for tracing.",
+            bullets: [
+              "Supported assets: USDT-TRC20, BTC, ETH, TRX, XRP, LTC.",
+              "Copy a fresh deposit address every time—addresses may rotate for security.",
+              "If funds are missing after 30 minutes, submit the TXID via live chat.",
+            ],
+          },
+          {
+            badge: "Step 3",
+            title: "Escalate issues the smart way",
+            text: "Collect evidence so the desk can resolve cases without back-and-forth.",
+            bullets: [
+              "Log the exact timestamp, asset/pair, payout ID, and screenshots.",
+              "Pause trading if you notice price mismatches until support responds.",
+              "Follow up by email only when chat has been silent for 2+ hours.",
+            ],
+          },
+        ],
+      },
+      faq: {
+        heading: "Frequently asked questions",
+        subtitle: "Short answers to the incidents we see most often.",
+        items: [
+          {
+            question: "My deposit hash shows \"success\" but the balance is still zero. What should I do?",
+            answer:
+              "Confirm you used the correct network (e.g., TRC20 for USDT). Share the TXID, token, amount, and destination address—the wallet credits automatically after one block confirmation.",
+          },
+          {
+            question: "How long do withdrawals take?",
+            answer:
+              "Security checks finish within 5–30 minutes. After approval, blockchain confirmation times apply. Requests above 10,000 USDT may require a quick video call.",
+          },
+          {
+            question: "How can I keep my account safe?",
+            answer:
+              "Enable 2FA, avoid logging in from shared devices, never reuse passwords, and do not approve unknown API keys. Support will never ask for your password or seed phrase.",
+          },
+          {
+            question: "Are option outcomes audited?",
+            answer:
+              "Yes. Price feeds are aggregated from multiple liquidity partners and every expiry is hashed with a timestamp. You can request the settlement log through support at any time.",
+          },
+        ],
+      },
+      support: {
+        heading: "Support channels",
+        subtitle: "Pick the lane that matches your urgency.",
+        channels: [
+          {
+            label: "Live chat",
+            detail: "In-app widget / LINE mini app",
+            hours: "10:00–02:00 JST (daily)",
+            response: "Average wait 2–5 minutes",
+          },
+          {
+            label: "Email",
+            detail: "support@1540bo.io",
+            hours: "24/7 intake",
+            response: "First reply under 12 hours",
+          },
+          {
+            label: "LINE / Telegram alert",
+            detail: "@1540bo_support / @bo1540_alert",
+            hours: "24/7 automated",
+            response: "Instant maintenance notices",
+          },
+        ],
+        note: "Always attach your UID, registered email, transaction hash, and screenshots to speed up investigations.",
+        escalation: {
+          title: "When to escalate",
+          steps: [
+            "If there is no update after 12 hours, reply to the ticket with “/status” plus your UID.",
+            "For urgent freezes, email security@1540bo.io with subject “URGENT FREEZE” and include your UID, TXID, and reason.",
+          ],
+        },
+      },
+    },
     hero: {
       title: "Ultra-short binary options around the clock",
       subtitle: "Capture every opportunity",
@@ -926,6 +1047,7 @@ const translations = {
       vipTitle: "1540BO｜VIPプログラム",
       termsTitle: "1540BO｜利用規約",
       privacyTitle: "1540BO｜プライバシーポリシー",
+      helpTitle: "1540BO｜ヘルプセンター",
     },
     nav: {
       login: "ログイン",
@@ -934,6 +1056,7 @@ const translations = {
       vip: "VIPプログラム",
       terms: "利用規約",
       privacy: "プライバシーポリシー",
+      help: "ヘルプ",
       support: "サポート",
     },
     cta: {
@@ -1717,6 +1840,125 @@ const translations = {
         note: "本プライバシーポリシーは上記日付現在のものであり、規制動向に合わせて更新される場合があります。",
       },
     },
+    help: {
+      hero: {
+        badge: "ヘルプセンター",
+        title: "疑問をすぐに解決し、安心して1540BOを使う",
+        subtitle:
+          "口座開設・入金・出金・リスク管理まで一連の手順を日本語で案内します。",
+        ctaPrimary: "サポートに連絡する",
+        ctaSecondary: "FAQを見る",
+        highlights: [
+          "初回回答目標：12時間以内",
+          "日本語／英語デスクが常駐",
+          "日次で稼働状況をアプリ内に掲示",
+        ],
+        card: {
+          title: "サポート稼働情報",
+          subtitle: "主要チャネル（JST）",
+          stats: [
+            "メール平均返信：12時間",
+            "ライブチャット：10:00〜02:00",
+            "緊急ウォレット凍結：24時間受付",
+          ],
+          note: "お問い合わせ時は必ず UID・登録メール・直近ログイン時刻を添えてください。",
+        },
+      },
+      steps: {
+        heading: "3つのステップで迷わずスタート",
+        subtitle: "多くのトレーダーが初週に完了するチェックリストです。",
+        items: [
+          {
+            badge: "STEP 1",
+            title: "口座を作成しセキュリティを強化",
+            text: "資金を動かす前に本人確認と保護設定を完了させます。",
+            bullets: [
+              "ダッシュボードから本人確認書類＋セルフィーを提出。",
+              "ログインと出金の両方に二段階認証を設定。",
+              "status.1540bo.io をブックマークしシステム状況を把握。",
+            ],
+          },
+          {
+            badge: "STEP 2",
+            title: "入金して残高を確認",
+            text: "オンチェーン送金を行い、追跡用にトランザクションハッシュを控えます。",
+            bullets: [
+              "対応通貨：USDT(TRC20)／BTC／ETH／TRX／XRP／LTC。",
+              "安全のため入金アドレスは毎回コピーし直してください。",
+              "30分以上反映しない場合はTXIDを添えてチャットで報告。",
+            ],
+          },
+          {
+            badge: "STEP 3",
+            title: "問題発生時はスマートにエスカレーション",
+            text: "証跡を揃えてから連絡するとやり取りが最小限で済みます。",
+            bullets: [
+              "発生日時・銘柄・配当ID・スクリーンショットを控える。",
+              "価格乖離に気付いたら返信が来るまで一旦取引を停止。",
+              "チャットが2時間以上無応答のときのみメールで追跡。",
+            ],
+          },
+        ],
+      },
+      faq: {
+        heading: "よくある質問",
+        subtitle: "問い合わせ頻度の高いトピックを簡潔にまとめました。",
+        items: [
+          {
+            question: "入金がブロックチェーンで成功になっているのに残高が増えません。",
+            answer:
+              "送金ネットワーク（例：USDTはTRC20）を確認し、TXID・通貨・金額・送付先アドレスを共有してください。1ブロック確認後に自動で残高へ反映されます。",
+          },
+          {
+            question: "出金にはどれくらい時間がかかりますか？",
+            answer:
+              "セキュリティ審査は通常5〜30分で完了し、その後はチェーンの確認時間次第です。1万USDT以上の出金はビデオ通話での確認をお願いする場合があります。",
+          },
+          {
+            question: "アカウントを安全に保つには？",
+            answer:
+              "二段階認証を有効化し、共有端末でのログインを避け、パスワードの使い回しをしないでください。不明なAPIキーの承認もしないでください。サポートがパスワードやシードを要求することはありません。",
+          },
+          {
+            question: "オプションの判定は本当に公正ですか？",
+            answer:
+              "はい。複数の流動性プロバイダーから価格を取得し、各判定はタイムスタンプ付きでハッシュ化されています。サポートに依頼すれば決済ログをいつでも提供します。",
+          },
+        ],
+      },
+      support: {
+        heading: "サポート窓口",
+        subtitle: "緊急度に合わせて連絡チャネルを選択してください。",
+        channels: [
+          {
+            label: "ライブチャット",
+            detail: "アプリ内ウィジェット／LINEミニアプリ",
+            hours: "毎日 10:00〜02:00（JST）",
+            response: "平均待ち時間 2〜5分",
+          },
+          {
+            label: "メール",
+            detail: "support@1540bo.io",
+            hours: "24時間受付",
+            response: "初回返信は12時間以内",
+          },
+          {
+            label: "LINE／Telegram通知",
+            detail: "@1540bo_support ／ @bo1540_alert",
+            hours: "24時間自動配信",
+            response: "メンテナンス情報を即時取得",
+          },
+        ],
+        note: "毎回 UID・登録メール・トランザクションハッシュ・スクショを添付すると調査が早く進みます。",
+        escalation: {
+          title: "エスカレーションが必要なケース",
+          steps: [
+            "12時間以上更新がない場合は、チケットに「/status」とUIDを追記して返信してください。",
+            "緊急でウォレット凍結が必要な場合は security@1540bo.io へ件名「URGENT FREEZE」で連絡し、UID・TXID・理由を記載してください。",
+          ],
+        },
+      },
+    },
     hero: {
       title: "超短時間バイナリーオプション取引を24時間365日提供",
       subtitle: "あらゆる機会に取引可能",
@@ -1846,6 +2088,7 @@ const translations = {
       vipTitle: "1540BO | โปรแกรมวีไอพี",
       termsTitle: "1540BO | ข้อกำหนดการให้บริการ",
       privacyTitle: "1540BO | นโยบายความเป็นส่วนตัว",
+      helpTitle: "1540BO | ศูนย์ช่วยเหลือ",
     },
     nav: {
       login: "เข้าสู่ระบบ",
@@ -1854,6 +2097,7 @@ const translations = {
       vip: "โปรแกรมวีไอพี",
       terms: "ข้อกำหนดการใช้บริการ",
       privacy: "นโยบายความเป็นส่วนตัว",
+      help: "ศูนย์ช่วยเหลือ",
       support: "บริการ",
     },
     cta: {
