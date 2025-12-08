@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/help.css" />
   </head>
-  <body class="help-page" data-page="help">
+  <body class="help-page help-index" data-page="help">
     <header class="top-bar">
       <div class="container">
         <a class="brand" href="./index.html"
@@ -35,7 +35,11 @@
         </nav>
         <div class="cta-group">
           <button class="btn ghost" data-i18n="cta.demo"></button>
-          <button class="btn primary" data-i18n="help.hero.ctaPrimary"></button>
+          <a
+            class="btn primary"
+            href="#catalog"
+            data-i18n="help.index.hero.cta"
+          ></a>
           <div class="lang-switch">
             <button data-lang="en" class="active">EN</button>
             <button data-lang="ja">日本語</button>
@@ -65,7 +69,11 @@
         </nav>
         <div class="mobile-actions">
           <button class="btn ghost" data-i18n="cta.demo"></button>
-          <button class="btn primary" data-i18n="help.hero.ctaPrimary"></button>
+          <a
+            class="btn primary"
+            href="#catalog"
+            data-i18n="help.index.hero.cta"
+          ></a>
         </div>
         <div class="mobile-lang-switch">
           <button data-lang="en" class="active">EN</button>
@@ -76,185 +84,121 @@
     </header>
 
     <main>
-      <section class="help-hero" id="help-hero">
+      <section class="help-index-hero" id="help-hero">
         <div class="container">
-          <div class="help-hero__copy">
-            <span class="help-hero__badge" data-i18n="help.hero.badge"></span>
-            <h1 data-i18n="help.hero.title"></h1>
-            <p class="help-hero__lead" data-i18n="help.hero.subtitle"></p>
-            <div class="help-hero__actions">
+          <div class="help-index-hero__copy">
+            <span
+              class="help-index-hero__badge"
+              data-i18n="help.index.hero.badge"
+            ></span>
+            <h1 data-i18n="help.index.hero.title"></h1>
+            <p data-i18n="help.index.hero.subtitle"></p>
+            <div class="help-index-hero__note">
+              <p data-i18n="help.index.hero.note"></p>
+              <span data-i18n="help.index.hero.meta"></span>
+            </div>
+          </div>
+          <div class="help-index-hero__panel">
+            <div class="help-index-panel">
+              <h2 data-i18n="help.index.panel.title"></h2>
+              <ul>
+                <li data-i18n="help.index.panel.items.0"></li>
+                <li data-i18n="help.index.panel.items.1"></li>
+                <li data-i18n="help.index.panel.items.2"></li>
+              </ul>
+              <p
+                class="help-index-panel__note"
+                data-i18n="help.index.panel.note"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="help-index-catalog" id="catalog">
+        <div class="container">
+          <div class="help-section-header">
+            <h2 data-i18n="help.index.catalog.heading"></h2>
+            <p data-i18n="help.index.catalog.subtitle"></p>
+          </div>
+          <div class="help-index-grid">
+            <a class="help-index-card" href="./help-account.html">
+              <span data-i18n="help.index.cards.account.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.account.title"></h3>
+              <p data-i18n="help.index.cards.account.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.account.cta"
+              ></span>
+            </a>
+            <a class="help-index-card" href="./help-trading.html">
+              <span data-i18n="help.index.cards.trading.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.trading.title"></h3>
+              <p data-i18n="help.index.cards.trading.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.trading.cta"
+              ></span>
+            </a>
+            <a class="help-index-card" href="./help-deposit.html">
+              <span data-i18n="help.index.cards.deposit.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.deposit.title"></h3>
+              <p data-i18n="help.index.cards.deposit.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.deposit.cta"
+              ></span>
+            </a>
+            <a class="help-index-card" href="./help-withdrawal.html">
+              <span data-i18n="help.index.cards.withdrawal.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.withdrawal.title"></h3>
+              <p data-i18n="help.index.cards.withdrawal.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.withdrawal.cta"
+              ></span>
+            </a>
+            <a class="help-index-card" href="./help-affiliate.html">
+              <span data-i18n="help.index.cards.affiliate.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.affiliate.title"></h3>
+              <p data-i18n="help.index.cards.affiliate.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.affiliate.cta"
+              ></span>
+            </a>
+            <a class="help-index-card" href="./help-other.html">
+              <span data-i18n="help.index.cards.other.eyebrow"></span>
+              <h3 data-i18n="help.index.cards.other.title"></h3>
+              <p data-i18n="help.index.cards.other.body"></p>
+              <span
+                class="help-index-card__cta"
+                data-i18n="help.index.cards.other.cta"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="help-index-support" id="contact">
+        <div class="container">
+          <div class="help-index-support__card">
+            <div>
+              <h2 data-i18n="help.index.support.heading"></h2>
+              <p data-i18n="help.index.support.body"></p>
+            </div>
+            <div class="help-index-support__actions">
               <a
                 class="btn primary"
-                href="#support"
-                data-i18n="help.hero.ctaPrimary"
+                href="mailto:support@1540bo.io"
+                data-i18n="help.index.support.cta"
               ></a>
               <a
                 class="btn outline"
-                href="#faq"
-                data-i18n="help.hero.ctaSecondary"
+                href="./index.html#support"
+                data-i18n="help.index.support.secondary"
               ></a>
             </div>
-            <ul class="help-hero__highlights">
-              <li data-i18n="help.hero.highlights.0"></li>
-              <li data-i18n="help.hero.highlights.1"></li>
-              <li data-i18n="help.hero.highlights.2"></li>
-            </ul>
-          </div>
-          <div class="help-hero__panel">
-            <div class="help-card">
-              <h2 data-i18n="help.hero.card.title"></h2>
-              <p
-                class="help-card__subtitle"
-                data-i18n="help.hero.card.subtitle"
-              ></p>
-              <ul class="help-card__stats">
-                <li data-i18n="help.hero.card.stats.0"></li>
-                <li data-i18n="help.hero.card.stats.1"></li>
-                <li data-i18n="help.hero.card.stats.2"></li>
-              </ul>
-              <p class="help-card__note" data-i18n="help.hero.card.note"></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="help-steps" id="guide">
-        <div class="container">
-          <div class="help-section-header">
-            <h2 data-i18n="help.steps.heading"></h2>
-            <p data-i18n="help.steps.subtitle"></p>
-          </div>
-          <div class="help-step-grid">
-            <article class="help-step-card">
-              <span
-                class="help-step-card__badge"
-                data-i18n="help.steps.items.0.badge"
-              ></span>
-              <h3 data-i18n="help.steps.items.0.title"></h3>
-              <p data-i18n="help.steps.items.0.text"></p>
-              <ul>
-                <li data-i18n="help.steps.items.0.bullets.0"></li>
-                <li data-i18n="help.steps.items.0.bullets.1"></li>
-                <li data-i18n="help.steps.items.0.bullets.2"></li>
-              </ul>
-            </article>
-            <article class="help-step-card">
-              <span
-                class="help-step-card__badge"
-                data-i18n="help.steps.items.1.badge"
-              ></span>
-              <h3 data-i18n="help.steps.items.1.title"></h3>
-              <p data-i18n="help.steps.items.1.text"></p>
-              <ul>
-                <li data-i18n="help.steps.items.1.bullets.0"></li>
-                <li data-i18n="help.steps.items.1.bullets.1"></li>
-                <li data-i18n="help.steps.items.1.bullets.2"></li>
-              </ul>
-            </article>
-            <article class="help-step-card">
-              <span
-                class="help-step-card__badge"
-                data-i18n="help.steps.items.2.badge"
-              ></span>
-              <h3 data-i18n="help.steps.items.2.title"></h3>
-              <p data-i18n="help.steps.items.2.text"></p>
-              <ul>
-                <li data-i18n="help.steps.items.2.bullets.0"></li>
-                <li data-i18n="help.steps.items.2.bullets.1"></li>
-                <li data-i18n="help.steps.items.2.bullets.2"></li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="help-faq" id="faq">
-        <div class="container">
-          <div class="help-section-header">
-            <h2 data-i18n="help.faq.heading"></h2>
-            <p data-i18n="help.faq.subtitle"></p>
-          </div>
-          <div class="help-faq-grid">
-            <article class="help-faq-card">
-              <h3 data-i18n="help.faq.items.0.question"></h3>
-              <p data-i18n="help.faq.items.0.answer"></p>
-            </article>
-            <article class="help-faq-card">
-              <h3 data-i18n="help.faq.items.1.question"></h3>
-              <p data-i18n="help.faq.items.1.answer"></p>
-            </article>
-            <article class="help-faq-card">
-              <h3 data-i18n="help.faq.items.2.question"></h3>
-              <p data-i18n="help.faq.items.2.answer"></p>
-            </article>
-            <article class="help-faq-card">
-              <h3 data-i18n="help.faq.items.3.question"></h3>
-              <p data-i18n="help.faq.items.3.answer"></p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="help-support" id="support">
-        <div class="container">
-          <div class="help-section-header">
-            <h2 data-i18n="help.support.heading"></h2>
-            <p data-i18n="help.support.subtitle"></p>
-          </div>
-          <div class="help-support-grid">
-            <article class="help-support-card">
-              <span
-                class="help-support-card__label"
-                data-i18n="help.support.channels.0.label"
-              ></span>
-              <h3 data-i18n="help.support.channels.0.detail"></h3>
-              <p
-                class="help-support-card__meta"
-                data-i18n="help.support.channels.0.hours"
-              ></p>
-              <p
-                class="help-support-card__response"
-                data-i18n="help.support.channels.0.response"
-              ></p>
-            </article>
-            <article class="help-support-card">
-              <span
-                class="help-support-card__label"
-                data-i18n="help.support.channels.1.label"
-              ></span>
-              <h3 data-i18n="help.support.channels.1.detail"></h3>
-              <p
-                class="help-support-card__meta"
-                data-i18n="help.support.channels.1.hours"
-              ></p>
-              <p
-                class="help-support-card__response"
-                data-i18n="help.support.channels.1.response"
-              ></p>
-            </article>
-            <article class="help-support-card">
-              <span
-                class="help-support-card__label"
-                data-i18n="help.support.channels.2.label"
-              ></span>
-              <h3 data-i18n="help.support.channels.2.detail"></h3>
-              <p
-                class="help-support-card__meta"
-                data-i18n="help.support.channels.2.hours"
-              ></p>
-              <p
-                class="help-support-card__response"
-                data-i18n="help.support.channels.2.response"
-              ></p>
-            </article>
-          </div>
-          <p class="help-support__note" data-i18n="help.support.note"></p>
-          <div class="help-escalation">
-            <h3 data-i18n="help.support.escalation.title"></h3>
-            <ul>
-              <li data-i18n="help.support.escalation.steps.0"></li>
-              <li data-i18n="help.support.escalation.steps.1"></li>
-            </ul>
           </div>
         </div>
       </section>

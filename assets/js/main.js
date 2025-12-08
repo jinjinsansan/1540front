@@ -7,6 +7,12 @@ const translations = {
       termsTitle: "1540BO | Terms of Service",
       privacyTitle: "1540BO | Privacy Policy",
       helpTitle: "1540BO | Help Center",
+      helpAccountTitle: "1540BO | Account Help",
+      helpTradingTitle: "1540BO | Trading Help",
+      helpDepositTitle: "1540BO | Deposit Help",
+      helpWithdrawalTitle: "1540BO | Withdrawal Help",
+      helpAffiliateTitle: "1540BO | Affiliate Help",
+      helpOtherTitle: "1540BO | Resources",
     },
     nav: {
       login: "Log in",
@@ -101,7 +107,8 @@ const translations = {
         article3: {
           label: "Article 3",
           heading: "Affiliate obligations and marketing conduct",
-          intro: "Affiliates must promote our services honestly and lawfully, and must not undertake activities that damage the brand or violate public order. The following actions are prohibited.",
+          intro:
+            "Affiliates must promote our services honestly and lawfully, and must not undertake activities that damage the brand or violate public order. The following actions are prohibited.",
           items: [
             "Targeting or appealing to minors (persons under the legal age in their jurisdiction).",
             "Sending spam emails, indiscriminate direct messages, or any outreach deemed harassing.",
@@ -109,7 +116,8 @@ const translations = {
             "Infringing the intellectual property rights of us or any third party.",
             "Misrepresenting oneself as 1540bo.io or implying official endorsement.",
           ],
-          outro: "All promotional activity must comply with every applicable law, regulation, and guideline in relevant jurisdictions, including advertising and gaming requirements.",
+          outro:
+            "All promotional activity must comply with every applicable law, regulation, and guideline in relevant jurisdictions, including advertising and gaming requirements.",
         },
         article4: {
           label: "Article 4",
@@ -158,7 +166,8 @@ const translations = {
             "Artificial inflation: coordinating with referred players to place abnormal bets or abuse bonuses purely to generate rewards.",
             "Any action we deem fraudulent.",
           ],
-          outro: "If such misconduct is detected, we may immediately terminate the affiliate status, forfeit unpaid rewards, and reclaim previously paid amounts.",
+          outro:
+            "If such misconduct is detected, we may immediately terminate the affiliate status, forfeit unpaid rewards, and reclaim previously paid amounts.",
         },
         article7: {
           label: "Article 7",
@@ -242,8 +251,7 @@ const translations = {
         summary: {
           label: "Rewards",
           heading: "20 ranks & four payout streams",
-          text:
-            "Baseline percentages apply to cash wagering and net loss. As you climb, daily rakeback, weekly and monthly cashback, and rank-up bonuses increase dramatically.",
+          text: "Baseline percentages apply to cash wagering and net loss. As you climb, daily rakeback, weekly and monthly cashback, and rank-up bonuses increase dramatically.",
           note: "Displayed percentages exclude active boost adjustments; see the program rules for boost details.",
         },
         table: {
@@ -257,26 +265,186 @@ const translations = {
             monthly: "Monthly cashback",
           },
           rows: [
-            { rank: "1", tier: "Bronze 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
-            { rank: "2", tier: "Bronze 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
-            { rank: "3", tier: "Bronze 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
-            { rank: "4", tier: "Bronze 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
-            { rank: "5", tier: "Silver 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
-            { rank: "6", tier: "Silver 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
-            { rank: "7", tier: "Silver 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
-            { rank: "8", tier: "Silver 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
-            { rank: "9", tier: "Gold 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
-            { rank: "10", tier: "Gold 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
-            { rank: "11", tier: "Gold 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
-            { rank: "12", tier: "Gold 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
-            { rank: "13", tier: "Platinum 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
-            { rank: "14", tier: "Platinum 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
-            { rank: "15", tier: "Platinum 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
-            { rank: "16", tier: "Platinum 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
-            { rank: "17", tier: "Diamond 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
-            { rank: "18", tier: "Diamond 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
-            { rank: "19", tier: "Diamond 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
-            { rank: "20", tier: "Diamond 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+            {
+              rank: "1",
+              tier: "Bronze 1",
+              requirement: "$0",
+              bonus: "-",
+              daily: "0.10%",
+              weekly: "3.5%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "2",
+              tier: "Bronze 2",
+              requirement: "$2,500",
+              bonus: "$2.5",
+              daily: "0.12%",
+              weekly: "4.0%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "3",
+              tier: "Bronze 3",
+              requirement: "$5,000",
+              bonus: "$2.5",
+              daily: "0.14%",
+              weekly: "4.5%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "4",
+              tier: "Bronze 4",
+              requirement: "$10,000",
+              bonus: "$5",
+              daily: "0.16%",
+              weekly: "5.0%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "5",
+              tier: "Silver 1",
+              requirement: "$25,000",
+              bonus: "$15",
+              daily: "0.18%",
+              weekly: "5.5%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "6",
+              tier: "Silver 2",
+              requirement: "$50,000",
+              bonus: "$25",
+              daily: "0.20%",
+              weekly: "6.0%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "7",
+              tier: "Silver 3",
+              requirement: "$100,000",
+              bonus: "$50",
+              daily: "0.23%",
+              weekly: "6.5%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "8",
+              tier: "Silver 4",
+              requirement: "$200,000",
+              bonus: "$100",
+              daily: "0.26%",
+              weekly: "7.0%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "9",
+              tier: "Gold 1",
+              requirement: "$350,000",
+              bonus: "$150",
+              daily: "0.30%",
+              weekly: "7.5%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "10",
+              tier: "Gold 2",
+              requirement: "$500,000",
+              bonus: "$150",
+              daily: "0.34%",
+              weekly: "8.0%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "11",
+              tier: "Gold 3",
+              requirement: "$750,000",
+              bonus: "$250",
+              daily: "0.38%",
+              weekly: "8.5%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "12",
+              tier: "Gold 4",
+              requirement: "$1,000,000",
+              bonus: "$250",
+              daily: "0.42%",
+              weekly: "9.0%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "13",
+              tier: "Platinum 1",
+              requirement: "$1,500,000",
+              bonus: "$500",
+              daily: "0.46%",
+              weekly: "9.5%",
+              monthly: "4.5%",
+            },
+            {
+              rank: "14",
+              tier: "Platinum 2",
+              requirement: "$2,000,000",
+              bonus: "$500",
+              daily: "0.50%",
+              weekly: "10.0%",
+              monthly: "5.0%",
+            },
+            {
+              rank: "15",
+              tier: "Platinum 3",
+              requirement: "$3,000,000",
+              bonus: "$1,000",
+              daily: "0.55%",
+              weekly: "10.5%",
+              monthly: "5.5%",
+            },
+            {
+              rank: "16",
+              tier: "Platinum 4",
+              requirement: "$5,000,000",
+              bonus: "$2,000",
+              daily: "0.60%",
+              weekly: "11.0%",
+              monthly: "6.0%",
+            },
+            {
+              rank: "17",
+              tier: "Diamond 1",
+              requirement: "$7,500,000",
+              bonus: "$2,500",
+              daily: "0.65%",
+              weekly: "11.5%",
+              monthly: "6.5%",
+            },
+            {
+              rank: "18",
+              tier: "Diamond 2",
+              requirement: "$10,000,000",
+              bonus: "$2,500",
+              daily: "0.70%",
+              weekly: "12.0%",
+              monthly: "7.0%",
+            },
+            {
+              rank: "19",
+              tier: "Diamond 3",
+              requirement: "$15,000,000",
+              bonus: "$5,000",
+              daily: "0.75%",
+              weekly: "13.0%",
+              monthly: "7.5%",
+            },
+            {
+              rank: "20",
+              tier: "Diamond 4",
+              requirement: "$25,000,000",
+              bonus: "$10,000",
+              daily: "0.80%",
+              weekly: "14.0%",
+              monthly: "8.0%",
+            },
           ],
         },
       },
@@ -285,7 +453,8 @@ const translations = {
         active: {
           label: "Rule 1",
           heading: "Active boost",
-          intro: "Consistent trading activity unlocks additional cashback percentages on top of the baseline table values.",
+          intro:
+            "Consistent trading activity unlocks additional cashback percentages on top of the baseline table values.",
           weekly: {
             title: "Weekly active boost",
             detail:
@@ -300,14 +469,16 @@ const translations = {
         downgrade: {
           label: "Rule 2",
           heading: "Rank maintenance",
-          intro: "Rank promotions are instant once lifetime wagering meets the requirement. Maintenance is reviewed monthly per level.",
+          intro:
+            "Rank promotions are instant once lifetime wagering meets the requirement. Maintenance is reviewed monthly per level.",
           bullets: [
             "Promotion occurs immediately when cumulative wagering satisfies the next rank threshold.",
             "Tier protection: once you enter a tier (Bronze, Silver, Gold, Platinum, Diamond) you never drop to a lower tier.",
             "Level maintenance is evaluated on the first day of each month using the previous month's wagering volume.",
             "If the maintenance requirement is missed, the level decreases within the current tier, but never below Level 1 of that tier.",
           ],
-          reminder: "Maintenance is calculated on cash wagering only. Level 1 within the reached tier is the minimum floor after review.",
+          reminder:
+            "Maintenance is calculated on cash wagering only. Level 1 within the reached tier is the minimum floor after review.",
         },
         maintenanceTable: {
           headers: {
@@ -341,7 +512,8 @@ const translations = {
       },
       terms: {
         heading: "VIP program terms",
-        subtitle: "Participating in the VIP program constitutes acceptance of these terms and the general site terms.",
+        subtitle:
+          "Participating in the VIP program constitutes acceptance of these terms and the general site terms.",
         articles: [
           {
             label: "Article 1",
@@ -452,7 +624,8 @@ const translations = {
             },
             article2: {
               heading: "Article 2 (Definitions)",
-              intro: "The defined terms used in the Terms have the following meanings.",
+              intro:
+                "The defined terms used in the Terms have the following meanings.",
               items: [
                 "Binary options trading: Transactions that predict whether the price of a designated underlying asset will be above or below the strike price at a specified future time.",
                 "Underlying asset: The financial instrument that serves as the target of a binary options trade.",
@@ -507,9 +680,7 @@ const translations = {
           articles: {
             article7: {
               heading: "Article 7 (Types of trades)",
-              body: [
-                "The service offers the following contract types.",
-              ],
+              body: ["The service offers the following contract types."],
               items: [
                 "Binary BTC",
                 "ETH Channel",
@@ -693,7 +864,8 @@ const translations = {
               ],
             },
             {
-              title: "Information collected automatically when the service is used",
+              title:
+                "Information collected automatically when the service is used",
               items: [
                 "Trading history and account balances recorded on 1540bo.io.",
                 "IP addresses, cookie identifiers, device information, and similar technical telemetry.",
@@ -727,8 +899,7 @@ const translations = {
             "When cooperation with national or local governmental bodies is required to execute matters prescribed by law, and obtaining consent could impede such execution.",
             "When advance notice or publication of prescribed matters has been made and a notification has been filed with the Personal Information Protection Commission.",
           ],
-          note:
-            "Any provision of personal data to third parties will be carried out strictly in accordance with the Act on the Protection of Personal Information and related regulations.",
+          note: "Any provision of personal data to third parties will be carried out strictly in accordance with the Act on the Protection of Personal Information and related regulations.",
         },
         section6: {
           label: "Section 6",
@@ -771,8 +942,7 @@ const translations = {
             "When we receive a request from a user to disclose, correct, add to, delete, suspend the use of, or erase personal data, we will respond without delay after confirming the requester’s identity, unless an exemption under law applies.",
             "If we determine that we are not obligated to respond under applicable law, we will notify the requester accordingly.",
           ],
-          fee:
-            "A handling fee of JPY 1,000 (tax inclusive) is charged for each disclosure request.",
+          fee: "A handling fee of JPY 1,000 (tax inclusive) is charged for each disclosure request.",
         },
         section9: {
           label: "Section 9",
@@ -806,121 +976,388 @@ const translations = {
       },
     },
     help: {
-      hero: {
-        badge: "Help Center",
-        title: "Resolve questions fast and trade with confidence",
-        subtitle:
-          "Step-by-step guidance for onboarding, deposits, withdrawals, and risk management.",
-        ctaPrimary: "Contact support",
-        ctaSecondary: "Read FAQs",
-        highlights: [
-          "First response target: under 12 hours",
-          "Native Japanese & English desk coverage",
-          "Service updates posted daily inside the app",
-        ],
-        card: {
-          title: "Support status",
-          subtitle: "Core channels · JST",
-          stats: [
-            "Average email reply: 12h",
-            "Live chat: 10:00–02:00 JST",
-            "Emergency wallet freeze: 24/7",
+      detail: {
+        back: "Back to Help index",
+      },
+      index: {
+        hero: {
+          badge: "Help Center",
+          title: "Browse every 1540BO guide in one place",
+          subtitle:
+            "Start here, then jump straight into the workflow you need—registration, trading, wallet ops, or partner growth.",
+          note: "Content mirrors the latest top-game lobby build and is refreshed after each production deployment.",
+          meta: "Last review: 11 Dec 2025 · Ops owner: JP Compliance",
+          cta: "View category list",
+        },
+        panel: {
+          title: "How to use this library",
+          items: [
+            "Choose a category below to open its child page with checklists and escalation routes.",
+            "Links inside each child page map directly to the live dashboards (auth, trade ticket, wallet, affiliate).",
+            "Escalation contacts stay pinned at the bottom so you always know where to raise a ticket.",
           ],
-          note: "Always include your UID, registered email, and latest login time when contacting support.",
+          note: "Need access to https://1540bo.io/auth/login? Prepare your UID, registered email, and recaptcha tokens before contacting ops.",
+        },
+        catalog: {
+          heading: "Table of contents",
+          subtitle:
+            "Six child pages keep onboarding, trading, wallet flows, and partner work separated.",
+        },
+        cards: {
+          account: {
+            eyebrow: "Account",
+            title: "Account registration & security",
+            body: "KYC checklist, device hygiene, and recovery contacts for 1540BO.",
+            cta: "Open playbook",
+          },
+          trading: {
+            eyebrow: "Trading",
+            title: "Binary options flow",
+            body: "Top-game layout tour plus ticket-building and risk routines.",
+            cta: "See guide",
+          },
+          deposit: {
+            eyebrow: "Wallet",
+            title: "Deposits & credits",
+            body: "Supported rails, confirmation logic, and troubleshooting tips.",
+            cta: "Review steps",
+          },
+          withdrawal: {
+            eyebrow: "Wallet",
+            title: "Withdrawals & compliance",
+            body: "Requirements, timing, and what to send if funds are on hold.",
+            cta: "Follow checklist",
+          },
+          affiliate: {
+            eyebrow: "Partners",
+            title: "Affiliate operations",
+            body: "Application criteria, tracking, payouts, and compliance guardrails.",
+            cta: "Read playbook",
+          },
+          other: {
+            eyebrow: "Resources",
+            title: "Other tools & notices",
+            body: "Top-game lobby tips, status feeds, and responsible trading assets.",
+            cta: "Explore",
+          },
+        },
+        support: {
+          heading: "Still need personalised help?",
+          body: "Ops monitors the help inbox 24/7. Include screenshots, TXIDs, and timestamps for the fastest resolution.",
+          cta: "Email support desk",
+          secondary: "See contact roster",
         },
       },
-      steps: {
-        heading: "Get started in three guided flows",
-        subtitle: "Follow the same checklist most traders complete during their first week.",
-        items: [
+      account: {
+        hero: {
+          badge: "Account",
+          title: "Account registration & verification checklist",
+          subtitle:
+            "Use this before loading funds—every step matches the top-game lobby signup flow.",
+          meta: "Desktop + mobile web",
+        },
+        sections: [
           {
-            badge: "Step 1",
-            title: "Open and secure your account",
-            text: "Complete onboarding and lock down security controls before moving funds.",
-            bullets: [
-              "Upload ID + selfie for KYC directly inside the dashboard.",
-              "Enable two-factor authentication for both logins and withdrawals.",
-              "Bookmark status.1540bo.io to monitor system health notices.",
+            heading: "Requirements before you register",
+            text: "Gather these items so onboarding takes under five minutes.",
+            items: [
+              "Government ID + selfie that matches the residence country you select.",
+              "Unique email/phone that has never been used inside 1540BO.",
+              "Authenticator app on a clean device for two-factor approvals.",
             ],
           },
           {
-            badge: "Step 2",
-            title: "Deposit and verify balances",
-            text: "Use on-chain transfers and keep the transaction hash handy for tracing.",
-            bullets: [
-              "Supported assets: USDT-TRC20, BTC, ETH, TRX, XRP, LTC.",
-              "Copy a fresh deposit address every time—addresses may rotate for security.",
-              "If funds are missing after 30 minutes, submit the TXID via live chat.",
+            heading: "Create your account in the right order",
+            text: "Follow the same flow inside https://1540bo.io/auth/login (tap “Create account”).",
+            items: [
+              "Click “Create account”, enter email + password, accept the risk disclosure.",
+              "Verify the email OTP within 10 minutes to avoid session expiry.",
+              "Complete the short profile form (country, referral code, timezone).",
+              "Enable 2FA immediately—withdrawal pages stay locked until you do.",
             ],
           },
           {
-            badge: "Step 3",
-            title: "Escalate issues the smart way",
-            text: "Collect evidence so the desk can resolve cases without back-and-forth.",
-            bullets: [
-              "Log the exact timestamp, asset/pair, payout ID, and screenshots.",
-              "Pause trading if you notice price mismatches until support responds.",
-              "Follow up by email only when chat has been silent for 2+ hours.",
+            heading: "Harden login security",
+            text: "Keep attackers away from balances and referral rewards.",
+            items: [
+              "Add at least two trusted devices and review the list monthly.",
+              "Use passkeys/biometrics on mobile Safari or Chrome when prompted.",
+              "Never paste API keys or session cookies into third-party tools.",
+            ],
+          },
+          {
+            heading: "Verification timeline & statuses",
+            text: "Know exactly when each feature unlocks.",
+            items: [
+              "Level 1 (email + phone) unlocks demo trading instantly.",
+              "Level 2 (ID + selfie) unlocks deposits/withdrawals within ~15 minutes.",
+              "Level 3 (proof of address) only required once monthly volume exceeds 50,000 USDT.",
             ],
           },
         ],
+        callout: {
+          title: "Manual KYC review needed?",
+          body: "Send your UID, registered email, and a secure download link for documents to speed up checks.",
+          cta: "Contact the KYC desk",
+        },
       },
-      faq: {
-        heading: "Frequently asked questions",
-        subtitle: "Short answers to the incidents we see most often.",
-        items: [
+      trading: {
+        hero: {
+          badge: "Trading",
+          title: "Binary options trading flow",
+          subtitle:
+            "Map every step from asset selection to post-trade audits on the top-game interface.",
+          meta: "Ticket version 4.2 · desktop + mobile",
+        },
+        sections: [
           {
-            question: "My deposit hash shows \"success\" but the balance is still zero. What should I do?",
-            answer:
-              "Confirm you used the correct network (e.g., TRC20 for USDT). Share the TXID, token, amount, and destination address—the wallet credits automatically after one block confirmation.",
+            heading: "Understand the layout",
+            text: "The top-game UI splits information across three columns.",
+            items: [
+              "Left rail: asset list, favourites, and volatility tags.",
+              "Center: price pulse, expiry selector, and call/put buttons.",
+              "Right rail: position log with settle status, multiplier, and UID.",
+            ],
           },
           {
-            question: "How long do withdrawals take?",
-            answer:
-              "Security checks finish within 5–30 minutes. After approval, blockchain confirmation times apply. Requests above 10,000 USDT may require a quick video call.",
+            heading: "Build a precise ticket",
+            text: "Apply these rules before pressing Buy.",
+            items: [
+              "Choose expiry first (15s, 30s, 60s, or custom windows).",
+              "Set stake size, confirm projected payout %, then pick call/put.",
+              "Use the sentiment meter and depth widget to avoid one-sided books.",
+            ],
           },
           {
-            question: "How can I keep my account safe?",
-            answer:
-              "Enable 2FA, avoid logging in from shared devices, never reuse passwords, and do not approve unknown API keys. Support will never ask for your password or seed phrase.",
+            heading: "Apply risk controls",
+            text: "Protect bankroll and audit trails.",
+            items: [
+              "Risk <2% of session bankroll per ticket.",
+              "Use Notes > Strategy tag so you can filter profitable setups later.",
+              "Pause when platform latency exceeds 300 ms (latency pill turns amber).",
+            ],
           },
           {
-            question: "Are option outcomes audited?",
-            answer:
-              "Yes. Price feeds are aggregated from multiple liquidity partners and every expiry is hashed with a timestamp. You can request the settlement log through support at any time.",
+            heading: "Audit every session",
+            text: "Keep disputes painless.",
+            items: [
+              "Download CSV from History > Export at the end of each day.",
+              "Cross-check expiry hash IDs with the transparency feed if something feels off.",
+              "Escalate anomalies via support@1540bo.io within 12 hours.",
+            ],
           },
         ],
+        callout: {
+          title: "Ready to scale limits?",
+          body: "VIP desk can unlock higher stakes, custom expiries, and dedicated risk reviews.",
+          cta: "Review VIP rewards",
+        },
       },
-      support: {
-        heading: "Support channels",
-        subtitle: "Pick the lane that matches your urgency.",
-        channels: [
+      deposit: {
+        hero: {
+          badge: "Wallet",
+          title: "Deposit & crediting guide",
+          subtitle: "Use on-chain rails safely and keep traces ready for ops.",
+          meta: "Applies to wallet v3",
+        },
+        sections: [
           {
-            label: "Live chat",
-            detail: "In-app widget / LINE mini app",
-            hours: "10:00–02:00 JST (daily)",
-            response: "Average wait 2–5 minutes",
+            heading: "Supported rails",
+            text: "Pick the rail that matches your custody setup.",
+            items: [
+              "Crypto: USDT-TRC20, BTC, ETH, TRX, XRP, LTC.",
+              "Fiat/stable on-ramps via approved OTC desks (contact ops).",
+              "Minimum deposit 10 USDT or equivalent.",
+            ],
           },
           {
-            label: "Email",
-            detail: "support@1540bo.io",
-            hours: "24/7 intake",
-            response: "First reply under 12 hours",
+            heading: "Deposit flow",
+            text: "Always copy a fresh address from Wallet > Deposit.",
+            items: [
+              "Pick the asset + network, generate a one-time address.",
+              "Send funds from your personal wallet and capture the TXID.",
+              "Wait for the required confirmations (1 block for TRON, 2 for ETH).",
+              "Balance updates automatically; no need to open a ticket unless 30 minutes pass.",
+            ],
           },
           {
-            label: "LINE / Telegram alert",
-            detail: "@1540bo_support / @bo1540_alert",
-            hours: "24/7 automated",
-            response: "Instant maintenance notices",
+            heading: "Best practices",
+            text: "Reduce manual reviews and delays.",
+            items: [
+              "Only send from wallets you control—exchanges sometimes batch and delay hashes.",
+              "Never mix networks; USDT-ERC20 sent to a TRC20 address is irrecoverable.",
+              "For large transfers, send a small test first, then the remainder.",
+            ],
+          },
+          {
+            heading: "If credits are late",
+            text: "Have the following ready before contacting ops.",
+            items: [
+              "TXID + chain explorer screenshot + asset amount.",
+              "Wallet screenshot that shows “Sent” with timestamp.",
+              "Whether the deposit address was reused from a previous session.",
+            ],
           },
         ],
-        note: "Always attach your UID, registered email, transaction hash, and screenshots to speed up investigations.",
-        escalation: {
-          title: "When to escalate",
-          steps: [
-            "If there is no update after 12 hours, reply to the ticket with “/status” plus your UID.",
-            "For urgent freezes, email security@1540bo.io with subject “URGENT FREEZE” and include your UID, TXID, and reason.",
-          ],
+        callout: {
+          title: "Need to whitelist a desk wallet?",
+          body: "Share the cold-wallet address, ownership letter, and desired daily cap so ops can approve it.",
+          cta: "Contact wallet team",
+        },
+      },
+      withdrawal: {
+        hero: {
+          badge: "Wallet",
+          title: "Withdrawal & compliance guide",
+          subtitle: "Know the prerequisites before requesting funds.",
+          meta: "Applies to standard tier users",
+        },
+        sections: [
+          {
+            heading: "Before you request",
+            text: "Complete the required safeguards first.",
+            items: [
+              "Level 2 KYC approved with a current address.",
+              "2FA + withdrawal password enabled.",
+              "Personal wallet address ready (no exchange deposit links).",
+            ],
+          },
+          {
+            heading: "Submit the withdrawal",
+            text: "Wallet > Withdraw follows these steps.",
+            items: [
+              "Select asset + network, paste destination address (and memo/tag if required).",
+              "Enter amount; system displays network fee before confirmation.",
+              "Approve via 2FA + email OTP.",
+            ],
+          },
+          {
+            heading: "Timing & limits",
+            text: "Understand the SLA before chasing support.",
+            items: [
+              "Standard review window: 5–30 minutes.",
+              "Requests above 10,000 USDT may trigger a quick video call.",
+              "Daily withdrawal cap resets at 00:00 UTC (based on VIP tier).",
+            ],
+          },
+          {
+            heading: "If funds are on hold",
+            text: "Respond with evidence to avoid long delays.",
+            items: [
+              "Check email for compliance questions (ID refresh, source of funds, etc.).",
+              "Reply with requested documents within 24 hours to keep your spot in queue.",
+              "Escalate via payout@1540bo.io only after 12 hours of no update.",
+            ],
+          },
+        ],
+        callout: {
+          title: "Need a fast-lane review?",
+          body: "VIP rank 10+ clients can request a dedicated payout lane with pre-approved addresses.",
+          cta: "Email payout desk",
+        },
+      },
+      affiliate: {
+        hero: {
+          badge: "Partners",
+          title: "Affiliate operations playbook",
+          subtitle:
+            "Align your campaigns with the official program before sending traffic.",
+          meta: "Bet-share model · nine ranks",
+        },
+        sections: [
+          {
+            heading: "Before you apply",
+            text: "Prepare proof that you can drive compliant traffic.",
+            items: [
+              "Read the partner terms published on the Affiliate page.",
+              "List the media channels you control (web, social, paid).",
+              "Confirm you can geofence or exclude restricted jurisdictions.",
+            ],
+          },
+          {
+            heading: "Tracking & assets",
+            text: "Keep everything aligned with brand guidelines.",
+            items: [
+              "Grab tracking links from the affiliate dashboard; never reuse someone else’s link.",
+              "Host banners via the official CDN so updates propagate automatically.",
+              "Embed the compliance badge and disclaimer near every CTA.",
+            ],
+          },
+          {
+            heading: "Reporting & payouts",
+            text: "Know how revenue is calculated.",
+            items: [
+              "Daily bet-share report posts at 08:00 UTC (T+2).",
+              "Reconcile deposit counts with your CRM so ranks stay accurate.",
+              "Set your payout wallet and minimum threshold from the Partner > Wallet tab.",
+            ],
+          },
+          {
+            heading: "Compliance guardrails",
+            text: "Violations lead to clawbacks.",
+            items: [
+              "No claims of guaranteed profit or risk-free trading.",
+              "Do not target minors or blocked geos in ads.",
+              "Submit new creatives for review 48 hours before launch.",
+            ],
+          },
+        ],
+        callout: {
+          title: "Need co-marketing assets?",
+          body: "Partner studio can localise video, EDM, and landing pages that match the top-game visual language.",
+          cta: "Email partners@1540bo.io",
+        },
+      },
+      other: {
+        hero: {
+          badge: "Resources",
+          title: "Other operations resources",
+          subtitle:
+            "Everything that doesn’t fit elsewhere: top-game tips, status feeds, and responsible trading tools.",
+          meta: "Live ops reference",
+        },
+        sections: [
+          {
+            heading: "Top-game lobby tips",
+            text: "Get more from https://1540bo.io/top-game.",
+            items: [
+              "Use the Top Game toggle to jump between featured rooms without leaving the chart.",
+              "Tournament cards refresh hourly—check them before promoting nightly pushes.",
+              "Mobile bottom navigation mirrors desktop, so scripts remain identical.",
+            ],
+          },
+          {
+            heading: "Status & maintenance",
+            text: "Keep downtime predictable for your users.",
+            items: [
+              "Bookmark status.1540bo.io and subscribe to notifications.",
+              "Join @bo1540_alert on Telegram/LINE for instant pushes.",
+              "Review maintenance change logs posted after each window.",
+            ],
+          },
+          {
+            heading: "Responsible trading toolkit",
+            text: "Help players control pace and exposure.",
+            items: [
+              "Enable daily loss caps inside Settings > Limits.",
+              "Turn on reality-check popups every 30 minutes in the top-game lobby.",
+              "Share the risk education microsite in every onboarding email.",
+            ],
+          },
+          {
+            heading: "Support toolkit",
+            text: "Faster debugging for ops teams.",
+            items: [
+              "Use the in-app chat uploader for HAR files and screenshots.",
+              "Tag tickets with “/status” plus UID so ops can find them instantly.",
+              "Escalate emergencies via security@1540bo.io with full context.",
+            ],
+          },
+        ],
+        callout: {
+          title: "Stay informed",
+          body: "VIP broadcast channel posts ops notes, promo calendars, and emergency bulletins first.",
+          cta: "Open VIP news",
         },
       },
     },
@@ -1014,7 +1451,8 @@ const translations = {
     },
     testimonials: {
       title: "Crypto NEWS",
-      subtitle: "Check Bloomberg, CoinTelegraph, CoinMarketCap, and other crypto news sources",
+      subtitle:
+        "Check Bloomberg, CoinTelegraph, CoinMarketCap, and other crypto news sources",
       items: {
         one: {
           text: "“Execution speed is unreal—hedging my FX exposure now takes seconds, not minutes.”",
@@ -1031,7 +1469,8 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      disclaimer:
+        "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "Terms",
         privacy: "Privacy",
@@ -1048,6 +1487,12 @@ const translations = {
       termsTitle: "1540BO｜利用規約",
       privacyTitle: "1540BO｜プライバシーポリシー",
       helpTitle: "1540BO｜ヘルプセンター",
+      helpAccountTitle: "1540BO｜アカウントヘルプ",
+      helpTradingTitle: "1540BO｜取引ヘルプ",
+      helpDepositTitle: "1540BO｜入金ヘルプ",
+      helpWithdrawalTitle: "1540BO｜出金ヘルプ",
+      helpAffiliateTitle: "1540BO｜アフィリエイトヘルプ",
+      helpOtherTitle: "1540BO｜運営リソース",
     },
     nav: {
       login: "ログイン",
@@ -1142,7 +1587,8 @@ const translations = {
         article3: {
           label: "第3条",
           heading: "アフィリエイターの義務とマーケティング活動",
-          intro: "アフィリエイターは誠実かつ合法的な方法で当社サービスを宣伝し、ブランド価値や公序良俗を損なう行為を行ってはなりません。以下の活動は禁止されています。",
+          intro:
+            "アフィリエイターは誠実かつ合法的な方法で当社サービスを宣伝し、ブランド価値や公序良俗を損なう行為を行ってはなりません。以下の活動は禁止されています。",
           items: [
             "未成年者（居住国の法定年齢未満）を対象とする、または未成年者にアピールするマーケティング。",
             "スパムメール、無差別ダイレクトメッセージなど迷惑行為とみなされる宣伝。",
@@ -1150,7 +1596,8 @@ const translations = {
             "当社または第三者の知的財産権を侵害する行為。",
             "アフィリエイター自身が当社であるかのように誤認させる行為。",
           ],
-          outro: "すべての宣伝活動は、関連する法域の法律・規制・ガイドライン（広告表示規制、ギャンブル規制等）に準拠する必要があります。",
+          outro:
+            "すべての宣伝活動は、関連する法域の法律・規制・ガイドライン（広告表示規制、ギャンブル規制等）に準拠する必要があります。",
         },
         article4: {
           label: "第4条",
@@ -1199,7 +1646,8 @@ const translations = {
             "報酬の不正な水増し：被紹介者と共謀し、報酬発生のみを目的とする異常なベットやボーナス乱用。",
             "その他、当社が不正と判断する一切の行為。",
           ],
-          outro: "上記不正行為が発覚した場合、当社はアフィリエイター資格の即時剥奪、未払い報酬の没収、過去に支払った報酬の返還請求を行う権利を有します。",
+          outro:
+            "上記不正行為が発覚した場合、当社はアフィリエイター資格の即時剥奪、未払い報酬の没収、過去に支払った報酬の返還請求を行う権利を有します。",
         },
         article7: {
           label: "第7条",
@@ -1283,8 +1731,7 @@ const translations = {
         summary: {
           label: "Rewards",
           heading: "20ランクと4種類の報酬ストリーム",
-          text:
-            "還元率は現金ベットと純損失を基準に計算され、ランクが上がるほどデイリー・ウィークリー・マンスリーのキャッシュバックと昇格ボーナスが増加します。",
+          text: "還元率は現金ベットと純損失を基準に計算され、ランクが上がるほどデイリー・ウィークリー・マンスリーのキャッシュバックと昇格ボーナスが増加します。",
           note: "表示パーセンテージはアクティブブースト適用前の数値です。詳細は下記ルールをご確認ください。",
         },
         table: {
@@ -1298,26 +1745,186 @@ const translations = {
             monthly: "マンスリー（負け額）",
           },
           rows: [
-            { rank: "1", tier: "ブロンズ 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
-            { rank: "2", tier: "ブロンズ 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
-            { rank: "3", tier: "ブロンズ 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
-            { rank: "4", tier: "ブロンズ 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
-            { rank: "5", tier: "シルバー 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
-            { rank: "6", tier: "シルバー 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
-            { rank: "7", tier: "シルバー 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
-            { rank: "8", tier: "シルバー 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
-            { rank: "9", tier: "ゴールド 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
-            { rank: "10", tier: "ゴールド 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
-            { rank: "11", tier: "ゴールド 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
-            { rank: "12", tier: "ゴールド 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
-            { rank: "13", tier: "プラチナ 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
-            { rank: "14", tier: "プラチナ 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
-            { rank: "15", tier: "プラチナ 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
-            { rank: "16", tier: "プラチナ 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
-            { rank: "17", tier: "ダイアモンド 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
-            { rank: "18", tier: "ダイアモンド 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
-            { rank: "19", tier: "ダイアモンド 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
-            { rank: "20", tier: "ダイアモンド 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+            {
+              rank: "1",
+              tier: "ブロンズ 1",
+              requirement: "$0",
+              bonus: "-",
+              daily: "0.10%",
+              weekly: "3.5%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "2",
+              tier: "ブロンズ 2",
+              requirement: "$2,500",
+              bonus: "$2.5",
+              daily: "0.12%",
+              weekly: "4.0%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "3",
+              tier: "ブロンズ 3",
+              requirement: "$5,000",
+              bonus: "$2.5",
+              daily: "0.14%",
+              weekly: "4.5%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "4",
+              tier: "ブロンズ 4",
+              requirement: "$10,000",
+              bonus: "$5",
+              daily: "0.16%",
+              weekly: "5.0%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "5",
+              tier: "シルバー 1",
+              requirement: "$25,000",
+              bonus: "$15",
+              daily: "0.18%",
+              weekly: "5.5%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "6",
+              tier: "シルバー 2",
+              requirement: "$50,000",
+              bonus: "$25",
+              daily: "0.20%",
+              weekly: "6.0%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "7",
+              tier: "シルバー 3",
+              requirement: "$100,000",
+              bonus: "$50",
+              daily: "0.23%",
+              weekly: "6.5%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "8",
+              tier: "シルバー 4",
+              requirement: "$200,000",
+              bonus: "$100",
+              daily: "0.26%",
+              weekly: "7.0%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "9",
+              tier: "ゴールド 1",
+              requirement: "$350,000",
+              bonus: "$150",
+              daily: "0.30%",
+              weekly: "7.5%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "10",
+              tier: "ゴールド 2",
+              requirement: "$500,000",
+              bonus: "$150",
+              daily: "0.34%",
+              weekly: "8.0%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "11",
+              tier: "ゴールド 3",
+              requirement: "$750,000",
+              bonus: "$250",
+              daily: "0.38%",
+              weekly: "8.5%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "12",
+              tier: "ゴールド 4",
+              requirement: "$1,000,000",
+              bonus: "$250",
+              daily: "0.42%",
+              weekly: "9.0%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "13",
+              tier: "プラチナ 1",
+              requirement: "$1,500,000",
+              bonus: "$500",
+              daily: "0.46%",
+              weekly: "9.5%",
+              monthly: "4.5%",
+            },
+            {
+              rank: "14",
+              tier: "プラチナ 2",
+              requirement: "$2,000,000",
+              bonus: "$500",
+              daily: "0.50%",
+              weekly: "10.0%",
+              monthly: "5.0%",
+            },
+            {
+              rank: "15",
+              tier: "プラチナ 3",
+              requirement: "$3,000,000",
+              bonus: "$1,000",
+              daily: "0.55%",
+              weekly: "10.5%",
+              monthly: "5.5%",
+            },
+            {
+              rank: "16",
+              tier: "プラチナ 4",
+              requirement: "$5,000,000",
+              bonus: "$2,000",
+              daily: "0.60%",
+              weekly: "11.0%",
+              monthly: "6.0%",
+            },
+            {
+              rank: "17",
+              tier: "ダイアモンド 1",
+              requirement: "$7,500,000",
+              bonus: "$2,500",
+              daily: "0.65%",
+              weekly: "11.5%",
+              monthly: "6.5%",
+            },
+            {
+              rank: "18",
+              tier: "ダイアモンド 2",
+              requirement: "$10,000,000",
+              bonus: "$2,500",
+              daily: "0.70%",
+              weekly: "12.0%",
+              monthly: "7.0%",
+            },
+            {
+              rank: "19",
+              tier: "ダイアモンド 3",
+              requirement: "$15,000,000",
+              bonus: "$5,000",
+              daily: "0.75%",
+              weekly: "13.0%",
+              monthly: "7.5%",
+            },
+            {
+              rank: "20",
+              tier: "ダイアモンド 4",
+              requirement: "$25,000,000",
+              bonus: "$10,000",
+              daily: "0.80%",
+              weekly: "14.0%",
+              monthly: "8.0%",
+            },
           ],
         },
       },
@@ -1326,7 +1933,8 @@ const translations = {
         active: {
           label: "ルール1",
           heading: "アクティブブースト",
-          intro: "一定の稼働日数を満たすことで、ウィークリー／マンスリーのキャッシュバック率に上乗せが発生します。",
+          intro:
+            "一定の稼働日数を満たすことで、ウィークリー／マンスリーのキャッシュバック率に上乗せが発生します。",
           weekly: {
             title: "ウィークリー・アクティブブースト",
             detail: "1週間のうち5日以上（1日$0.1以上のベット）で+0.5%を加算。",
@@ -1339,14 +1947,16 @@ const translations = {
         downgrade: {
           label: "ルール2",
           heading: "ランク維持と降格判定",
-          intro: "昇格は累計ベット額を達成した時点で即時に行われ、維持判定は毎月1日に実施されます。",
+          intro:
+            "昇格は累計ベット額を達成した時点で即時に行われ、維持判定は毎月1日に実施されます。",
           bullets: [
             "累計ベット額が条件を満たした時点で即時昇格。",
             "一度到達したティア（ブロンズ〜ダイアモンド）から下位ティアへ降格することはありません。",
             "毎月1日に前月のベット額を基準として各レベルの維持判定を実施します。",
             "条件未達の場合は同一ティア内で降格し、レベル1が最低ラインとなります。",
           ],
-          reminder: "判定は現金ベット額を基準とし、各ティアのレベル1が降格後の下限となります。",
+          reminder:
+            "判定は現金ベット額を基準とし、各ティアのレベル1が降格後の下限となります。",
         },
         maintenanceTable: {
           headers: {
@@ -1380,7 +1990,8 @@ const translations = {
       },
       terms: {
         heading: "VIPプログラム利用規約",
-        subtitle: "本プログラムへの参加には、本規約および一般利用規約への同意が必要です。",
+        subtitle:
+          "本プログラムへの参加には、本規約および一般利用規約への同意が必要です。",
         articles: [
           {
             label: "第1条",
@@ -1397,7 +2008,7 @@ const translations = {
             items: [
               "本プログラムは20段階のランクで構成され、ティア（ブロンズ〜ダイアモンド）とレベル（各ティア1〜4）で表されます。",
               "累計ベット額が条件を満たすと、ランクは即時昇格します。",
-              "一度到達したティアから下位ティアへ降格することはありません。", 
+              "一度到達したティアから下位ティアへ降格することはありません。",
               "各レベルの維持判定は毎月1日に前月のベット額を基準に実施します。",
             ],
           },
@@ -1720,7 +2331,8 @@ const translations = {
         section3: {
           label: "第3条",
           heading: "個人情報の取得方法",
-          intro: "当社は、適法かつ公正な手段により個人情報を取得し、偽りその他不正の手段による取得は行いません。主な取得情報は次のとおりです。",
+          intro:
+            "当社は、適法かつ公正な手段により個人情報を取得し、偽りその他不正の手段による取得は行いません。主な取得情報は次のとおりです。",
           groups: [
             {
               title: "利用者から直接ご提供いただく情報",
@@ -1757,7 +2369,8 @@ const translations = {
         section5: {
           label: "第5条",
           heading: "個人情報の第三者提供",
-          intro: "当社は、以下の場合または法令で認められる場合を除き、あらかじめ利用者の同意を得ることなく個人情報を第三者に提供しません。",
+          intro:
+            "当社は、以下の場合または法令で認められる場合を除き、あらかじめ利用者の同意を得ることなく個人情報を第三者に提供しません。",
           items: [
             "人の生命、身体または財産の保護のために必要がある場合で本人の同意を得ることが困難なとき。",
             "公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合で本人の同意を得ることが困難なとき。",
@@ -1841,121 +2454,389 @@ const translations = {
       },
     },
     help: {
-      hero: {
-        badge: "ヘルプセンター",
-        title: "疑問をすぐに解決し、安心して1540BOを使う",
-        subtitle:
-          "口座開設・入金・出金・リスク管理まで一連の手順を日本語で案内します。",
-        ctaPrimary: "サポートに連絡する",
-        ctaSecondary: "FAQを見る",
-        highlights: [
-          "初回回答目標：12時間以内",
-          "日本語／英語デスクが常駐",
-          "日次で稼働状況をアプリ内に掲示",
-        ],
-        card: {
-          title: "サポート稼働情報",
-          subtitle: "主要チャネル（JST）",
-          stats: [
-            "メール平均返信：12時間",
-            "ライブチャット：10:00〜02:00",
-            "緊急ウォレット凍結：24時間受付",
+      detail: {
+        back: "ヘルプ目次に戻る",
+      },
+      index: {
+        hero: {
+          badge: "ヘルプセンター",
+          title: "1540BOの手順を1か所で確認",
+          subtitle:
+            "口座開設・取引・ウォレット・パートナー業務まで、必要なフローをすぐ開けます。",
+          note: "トップゲームロビー最新版に合わせて随時更新しています。",
+          meta: "最終更新：2025年12月11日／担当：JPオペレーション",
+          cta: "カテゴリ一覧を見る",
+        },
+        panel: {
+          title: "使い方",
+          items: [
+            "以下のカテゴリから子ページを開き、チェックリストと連絡先を確認します。",
+            "子ページ内のリンクはログイン／トレード／ウォレット／アフィリエイト各ダッシュボードに直結しています。",
+            "ページ末尾にエスカレーション先を固定しているので、迷わず連絡できます。",
           ],
-          note: "お問い合わせ時は必ず UID・登録メール・直近ログイン時刻を添えてください。",
+          note: "https://1540bo.io/auth/login へアクセスする際は UID・登録メール・recaptcha 情報を事前に準備してください。",
+        },
+        catalog: {
+          heading: "目次",
+          subtitle:
+            "6つの子ページでオンボーディング／取引／ウォレット／パートナー情報を整理しています。",
+        },
+        cards: {
+          account: {
+            eyebrow: "アカウント",
+            title: "登録とセキュリティ",
+            body: "KYC手順、デバイス衛生、復旧連絡先をまとめました。",
+            cta: "詳細を見る",
+          },
+          trading: {
+            eyebrow: "取引",
+            title: "バイナリーオプションの流れ",
+            body: "トップゲーム画面の導線、チケット作成、リスク管理を解説。",
+            cta: "ガイドを開く",
+          },
+          deposit: {
+            eyebrow: "ウォレット",
+            title: "入金・反映手順",
+            body: "対応チェーン、確認回数、遅延時のチェックを掲載。",
+            cta: "手順を見る",
+          },
+          withdrawal: {
+            eyebrow: "ウォレット",
+            title: "出金・コンプライアンス",
+            body: "必要条件、処理時間、保留時の対応を整理。",
+            cta: "チェックリスト",
+          },
+          affiliate: {
+            eyebrow: "パートナー",
+            title: "アフィリエイト運用",
+            body: "申請条件、トラッキング、精算、遵守事項を網羅。",
+            cta: "プレイブック",
+          },
+          other: {
+            eyebrow: "リソース",
+            title: "その他の運営情報",
+            body: "トップゲーム活用術、ステータス、責任ある取引ツール。",
+            cta: "リソース",
+          },
+        },
+        support: {
+          heading: "個別サポートが必要ですか？",
+          body: "Opsチームは24時間インボックスを監視しています。スクショ・TXID・時刻を添えると回答が早くなります。",
+          cta: "support@1540bo.io へメール",
+          secondary: "連絡先一覧を見る",
         },
       },
-      steps: {
-        heading: "3つのステップで迷わずスタート",
-        subtitle: "多くのトレーダーが初週に完了するチェックリストです。",
-        items: [
+      account: {
+        hero: {
+          badge: "アカウント",
+          title: "登録・本人確認チェックリスト",
+          subtitle:
+            "資金を入れる前にこの手順を実施してください。トップゲームのサインアップ画面と同じ流れです。",
+          meta: "デスクトップ／モバイル共通",
+        },
+        sections: [
           {
-            badge: "STEP 1",
-            title: "口座を作成しセキュリティを強化",
-            text: "資金を動かす前に本人確認と保護設定を完了させます。",
-            bullets: [
-              "ダッシュボードから本人確認書類＋セルフィーを提出。",
-              "ログインと出金の両方に二段階認証を設定。",
-              "status.1540bo.io をブックマークしシステム状況を把握。",
+            heading: "登録前に準備するもの",
+            text: "5分以内に完了させるために、以下を事前に用意しましょう。",
+            items: [
+              "居住国と一致する本人確認書類＋セルフィー。",
+              "1540BOで未使用のメールアドレス／電話番号。",
+              "2FA用の認証アプリをインストールした安全なデバイス。",
             ],
           },
           {
-            badge: "STEP 2",
-            title: "入金して残高を確認",
-            text: "オンチェーン送金を行い、追跡用にトランザクションハッシュを控えます。",
-            bullets: [
-              "対応通貨：USDT(TRC20)／BTC／ETH／TRX／XRP／LTC。",
-              "安全のため入金アドレスは毎回コピーし直してください。",
-              "30分以上反映しない場合はTXIDを添えてチャットで報告。",
+            heading: "正しい順序でアカウントを作成",
+            text: "https://1540bo.io/auth/login で「Create account」を選んで進めます。",
+            items: [
+              "メール・パスワードを入力し、リスク開示に同意。",
+              "メールOTPを10分以内に入力してセッション期限を回避。",
+              "国・紹介コード・タイムゾーンを入力する簡易プロフィールを完了。",
+              "2FAを即時有効化。未設定のままだと出金ページがロックされます。",
             ],
           },
           {
-            badge: "STEP 3",
-            title: "問題発生時はスマートにエスカレーション",
-            text: "証跡を揃えてから連絡するとやり取りが最小限で済みます。",
-            bullets: [
-              "発生日時・銘柄・配当ID・スクリーンショットを控える。",
-              "価格乖離に気付いたら返信が来るまで一旦取引を停止。",
-              "チャットが2時間以上無応答のときのみメールで追跡。",
+            heading: "ログインセキュリティを強化",
+            text: "残高と紹介報酬を守るための基本施策です。",
+            items: [
+              "信頼済みデバイスを2台以上登録し、毎月見直す。",
+              "モバイルSafari／Chromeで提示されるパスキー・生体認証を活用。",
+              "APIキーやセッショントークンを外部ツールに貼り付けない。",
+            ],
+          },
+          {
+            heading: "本人確認レベルと開放タイミング",
+            text: "どの機能がいつ解放されるか把握しておきましょう。",
+            items: [
+              "レベル1（メール＋電話）でデモ取引が即時利用可能。",
+              "レベル2（ID＋セルフィー）で15分程度で入出金が解放。",
+              "レベル3（住所確認）は月間5万USDT超の取引のみ必須。",
             ],
           },
         ],
+        callout: {
+          title: "手動審査が必要な場合",
+          body: "UID・登録メール・ドキュメントの安全な共有リンクを添えて連絡すると処理が早まります。",
+          cta: "KYCデスクへメール",
+        },
       },
-      faq: {
-        heading: "よくある質問",
-        subtitle: "問い合わせ頻度の高いトピックを簡潔にまとめました。",
-        items: [
+      trading: {
+        hero: {
+          badge: "取引",
+          title: "バイナリーオプション取引フロー",
+          subtitle:
+            "銘柄選択から約定後の監査まで、トップゲーム画面に沿って確認できます。",
+          meta: "チケットver 4.2",
+        },
+        sections: [
           {
-            question: "入金がブロックチェーンで成功になっているのに残高が増えません。",
-            answer:
-              "送金ネットワーク（例：USDTはTRC20）を確認し、TXID・通貨・金額・送付先アドレスを共有してください。1ブロック確認後に自動で残高へ反映されます。",
+            heading: "画面レイアウトを把握",
+            text: "トップゲームUIは3カラムで情報を区切っています。",
+            items: [
+              "左：銘柄リスト／お気に入り／ボラティリティタグ。",
+              "中央：価格パルス、満期選択、Call/Putボタン。",
+              "右：ポジション履歴（決済状況・倍率・UID）。",
+            ],
           },
           {
-            question: "出金にはどれくらい時間がかかりますか？",
-            answer:
-              "セキュリティ審査は通常5〜30分で完了し、その後はチェーンの確認時間次第です。1万USDT以上の出金はビデオ通話での確認をお願いする場合があります。",
+            heading: "正確なチケットを作成",
+            text: "購入ボタンを押す前に以下を徹底してください。",
+            items: [
+              "まず満期（15秒／30秒／60秒／カスタム）を決定。",
+              "ベット額を入力し、想定ペイアウト％を確認してからCall/Putを選択。",
+              "センチメントメーターと板情報で片寄りがないか確認。",
+            ],
           },
           {
-            question: "アカウントを安全に保つには？",
-            answer:
-              "二段階認証を有効化し、共有端末でのログインを避け、パスワードの使い回しをしないでください。不明なAPIキーの承認もしないでください。サポートがパスワードやシードを要求することはありません。",
+            heading: "リスクコントロール",
+            text: "セッション資金を守り、検証を容易にします。",
+            items: [
+              "1チケットあたりセッション資金の2％以下に制限。",
+              "Notes > Strategyタグで勝ちパターンをフィルタ可能に。",
+              "レイテンシが300msを超えたら（表示がアンバーに変化）一時停止。",
+            ],
           },
           {
-            question: "オプションの判定は本当に公正ですか？",
-            answer:
-              "はい。複数の流動性プロバイダーから価格を取得し、各判定はタイムスタンプ付きでハッシュ化されています。サポートに依頼すれば決済ログをいつでも提供します。",
+            heading: "毎セッションの監査",
+            text: "トラブル時の証跡を常に残します。",
+            items: [
+              "History > Exportから日次でCSVをダウンロード。",
+              "決済ハッシュIDをトランスペアレンシーフィードと照合。",
+              "異常を発見したら12時間以内に support@1540bo.io へ連絡。",
+            ],
           },
         ],
+        callout: {
+          title: "取引上限を引き上げたいですか？",
+          body: "VIPデスクが高額ステークやカスタム満期、専任リスクレビューを提供します。",
+          cta: "VIP特典を確認",
+        },
       },
-      support: {
-        heading: "サポート窓口",
-        subtitle: "緊急度に合わせて連絡チャネルを選択してください。",
-        channels: [
+      deposit: {
+        hero: {
+          badge: "ウォレット",
+          title: "入金・反映ガイド",
+          subtitle:
+            "オンチェーン送金を安全に行い、証跡を確保するための手順です。",
+          meta: "ウォレットv3",
+        },
+        sections: [
           {
-            label: "ライブチャット",
-            detail: "アプリ内ウィジェット／LINEミニアプリ",
-            hours: "毎日 10:00〜02:00（JST）",
-            response: "平均待ち時間 2〜5分",
+            heading: "対応レール",
+            text: "運用環境に合わせて最適なレールを選択。",
+            items: [
+              "暗号資産：USDT-TRC20／BTC／ETH／TRX／XRP／LTC。",
+              "法定通貨・ステーブル対応のOTCデスク（要問い合わせ）。",
+              "最小入金額：10 USDT相当。",
+            ],
           },
           {
-            label: "メール",
-            detail: "support@1540bo.io",
-            hours: "24時間受付",
-            response: "初回返信は12時間以内",
+            heading: "入金フロー",
+            text: "Wallet > Deposit から必ず新しいアドレスを取得します。",
+            items: [
+              "資産とネットワークを選び、ワンタイムアドレスを生成。",
+              "自身のウォレットから送金し、TXIDを控える。",
+              "必要承認回数（TRONは1ブロック、ETHは2ブロック）を待機。",
+              "30分経過しても反映しない場合のみチケットを作成。",
+            ],
           },
           {
-            label: "LINE／Telegram通知",
-            detail: "@1540bo_support ／ @bo1540_alert",
-            hours: "24時間自動配信",
-            response: "メンテナンス情報を即時取得",
+            heading: "ベストプラクティス",
+            text: "レビューや遅延を最小限に抑えます。",
+            items: [
+              "必ず自身が管理するウォレットから送金（取引所はハッシュ発行が遅れる場合あり）。",
+              "ネットワークを混在させない（TRC20アドレスにERC20を送ると復旧不可）。",
+              "高額送金時はテスト送金→本送金の順で実施。",
+            ],
+          },
+          {
+            heading: "反映が遅いとき",
+            text: "以下を揃えてOpsに共有してください。",
+            items: [
+              "TXID・ブロックチェーンエクスプローラーのスクリーンショット・送金額。",
+              "ウォレット側で「Sent」になっている画面。",
+              "同じ入金アドレスを再利用していないか。",
+            ],
           },
         ],
-        note: "毎回 UID・登録メール・トランザクションハッシュ・スクショを添付すると調査が早く進みます。",
-        escalation: {
-          title: "エスカレーションが必要なケース",
-          steps: [
-            "12時間以上更新がない場合は、チケットに「/status」とUIDを追記して返信してください。",
-            "緊急でウォレット凍結が必要な場合は security@1540bo.io へ件名「URGENT FREEZE」で連絡し、UID・TXID・理由を記載してください。",
-          ],
+        callout: {
+          title: "デスクウォレットをホワイトリスト登録したい",
+          body: "コールドウォレットアドレス、所有証明、希望日次上限を添えてOpsへ連絡してください。",
+          cta: "ウォレットチームに連絡",
+        },
+      },
+      withdrawal: {
+        hero: {
+          badge: "ウォレット",
+          title: "出金・審査ガイド",
+          subtitle: "リクエスト前に必要条件とSLAを把握しましょう。",
+          meta: "標準利用者向け",
+        },
+        sections: [
+          {
+            heading: "申請前のチェック",
+            text: "以下を満たしているか確認してください。",
+            items: [
+              "レベル2 KYCが承認済み。",
+              "2FAと出金パスワードが有効。",
+              "本人管理のウォレットアドレス（取引所入金アドレス不可）。",
+            ],
+          },
+          {
+            heading: "出金リクエストの流れ",
+            text: "Wallet > Withdraw から実施します。",
+            items: [
+              "資産・ネットワークを選択し、宛先アドレス（必要に応じてMemo/Tag）を入力。",
+              "金額を入力し、表示されるネットワーク手数料を確認。",
+              "2FAとメールOTPで承認。",
+            ],
+          },
+          {
+            heading: "処理時間と上限",
+            text: "予めSLAを把握しておくと追跡がスムーズです。",
+            items: [
+              "標準処理時間：5〜30分。",
+              "1万USDT超はビデオ認証をお願いする場合あり。",
+              "日次上限はVIPティアに応じて0:00 UTCにリセット。",
+            ],
+          },
+          {
+            heading: "保留になった場合",
+            text: "迅速に回答することで優先順位を維持できます。",
+            items: [
+              "メールで追加確認（ID再提出・資金ソース等）が届いていないか確認。",
+              "求められた書類は24時間以内に返信。",
+              "12時間以上更新がない場合のみ payout@1540bo.io へエスカレーション。",
+            ],
+          },
+        ],
+        callout: {
+          title: "迅速な審査を希望",
+          body: "VIPランク10以上のクライアントは専用の出金レーンと事前承認アドレスを申請できます。",
+          cta: "payoutデスクにメール",
+        },
+      },
+      affiliate: {
+        hero: {
+          badge: "パートナー",
+          title: "アフィリエイト運用プレイブック",
+          subtitle:
+            "流入前に必ず公式ルールとチェックリストを確認してください。",
+          meta: "ベットシェア／9段階ランク",
+        },
+        sections: [
+          {
+            heading: "申請前の準備",
+            text: "コンプライアンス順守の証跡を用意します。",
+            items: [
+              "アフィリエイト規約を熟読。",
+              "保有する媒体（Web／SNS／広告枠）を一覧化。",
+              "制限地域を配信対象から除外できるか確認。",
+            ],
+          },
+          {
+            heading: "トラッキングとクリエイティブ",
+            text: "ブランドガイドラインに沿って展開します。",
+            items: [
+              "ダッシュボードで発行した自分専用リンクのみ使用。",
+              "CDN配信の最新バナーを利用し、自動更新に対応。",
+              "全CTA周辺にディスクレーマーとコンプライアンスバッジを設置。",
+            ],
+          },
+          {
+            heading: "レポートと精算",
+            text: "報酬計算式を把握しておきましょう。",
+            items: [
+              "日次ベットシェアレポートはUTC08:00（T+2）に反映。",
+              "自社CRMの入金件数と照合し、ランク判定を正確に。",
+              "Partner > Walletで支払いウォレットと最低支払額を設定。",
+            ],
+          },
+          {
+            heading: "コンプライアンスガードレール",
+            text: "違反すると没収・解約の対象です。",
+            items: [
+              "「必勝」「損失なし」などの表現は禁止。",
+              "未成年・制限地域への配信は禁止。",
+              "新規クリエイティブは公開48時間前までに審査申請。",
+            ],
+          },
+        ],
+        callout: {
+          title: "コラボ素材が必要",
+          body: "パートナースタジオがトップゲームのビジュアルに合わせた動画・メール・LPをローカライズします。",
+          cta: "partners@1540bo.io へ連絡",
+        },
+      },
+      other: {
+        hero: {
+          badge: "リソース",
+          title: "その他の運営リソース",
+          subtitle:
+            "トップゲームTIPS、ステータス情報、責任ある取引ツールなどをまとめています。",
+          meta: "Live Opsリファレンス",
+        },
+        sections: [
+          {
+            heading: "トップゲーム活用術",
+            text: "https://1540bo.io/top-game を最大限に活かしましょう。",
+            items: [
+              "Top Gameトグルで特集ルーム間をシームレスに移動。",
+              "トーナメントカードは毎時更新—夜間プロモ前に必ず確認。",
+              "モバイル下部ナビはデスクトップと同一構成。",
+            ],
+          },
+          {
+            heading: "ステータスとメンテナンス",
+            text: "ユーザーへの案内を前倒しで行えます。",
+            items: [
+              "status.1540bo.io をブックマークし通知に登録。",
+              "@bo1540_alert（Telegram/LINE）でリアルタイム通知を受信。",
+              "メンテナンス後に公開される変更履歴を必ず確認。",
+            ],
+          },
+          {
+            heading: "責任ある取引ツール",
+            text: "プレイヤーの進行ペースを適切に管理します。",
+            items: [
+              "Settings > Limits で日次損失上限を設定。",
+              "トップゲーム内のリアリティチェック通知を30分ごとに有効化。",
+              "オンボーディングメールにリスク教育用マイクロサイトを添付。",
+            ],
+          },
+          {
+            heading: "サポートツール",
+            text: "Opsが迅速にデバッグできるようにする工夫です。",
+            items: [
+              "アプリ内チャットのアップローダーでHARファイルとスクリーンショットを提出。",
+              "チケットに「/status」＋UIDを記載し検索しやすくする。",
+              "緊急時は security@1540bo.io へ十分な状況説明とともに連絡。",
+            ],
+          },
+        ],
+        callout: {
+          title: "最新情報を逃さない",
+          body: "VIPブロードキャストチャンネルでOpsノート、施策カレンダー、緊急告知が最速共有されます。",
+          cta: "VIPニュースを開く",
         },
       },
     },
@@ -2049,7 +2930,8 @@ const translations = {
     },
     testimonials: {
       title: "暗号資産NEWS",
-      subtitle: "ブルームバーグ・コインテレグラフ・コインマーケットキャップ・その他の暗号資産NEWSをチェック",
+      subtitle:
+        "ブルームバーグ・コインテレグラフ・コインマーケットキャップ・その他の暗号資産NEWSをチェック",
       items: {
         one: {
           title: "ビットコイン、史上最高値を更新",
@@ -2072,7 +2954,8 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      disclaimer:
+        "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "利用規約",
         privacy: "プライバシー",
@@ -2089,6 +2972,12 @@ const translations = {
       termsTitle: "1540BO | ข้อกำหนดการให้บริการ",
       privacyTitle: "1540BO | นโยบายความเป็นส่วนตัว",
       helpTitle: "1540BO | ศูนย์ช่วยเหลือ",
+      helpAccountTitle: "1540BO | ศูนย์ช่วยเหลือบัญชี",
+      helpTradingTitle: "1540BO | ศูนย์ช่วยเหลือการเทรด",
+      helpDepositTitle: "1540BO | ศูนย์ช่วยเหลือการฝาก",
+      helpWithdrawalTitle: "1540BO | ศูนย์ช่วยเหลือการถอน",
+      helpAffiliateTitle: "1540BO | ศูนย์ช่วยเหลือพันธมิตร",
+      helpOtherTitle: "1540BO | ศูนย์ช่วยเหลืออื่นๆ",
     },
     nav: {
       login: "เข้าสู่ระบบ",
@@ -2103,6 +2992,391 @@ const translations = {
     cta: {
       demo: "ทดลองบัญชีเดโม",
       start: "เปิดบัญชีจริง",
+    },
+    help: {
+      detail: {
+        back: "กลับไปหน้าสารบัญศูนย์ช่วยเหลือ",
+      },
+      index: {
+        hero: {
+          badge: "ศูนย์ช่วยเหลือ",
+          title: "รวมคู่มือ 1540BO ไว้ที่เดียว",
+          subtitle:
+            "เริ่มจากหน้านี้แล้วไปยังเวิร์กโฟลว์ที่ต้องการทันที—สมัครบัญชี เทรด วอลเล็ต หรือทำงานกับพันธมิตร",
+          note: "อัปเดตตาม Top Game lobby เวอร์ชันล่าสุดทุกครั้งหลังปล่อย",
+          meta: "อัปเดตล่าสุด: 11 ธ.ค. 2025 · เจ้าของเนื้อหา: JP Ops",
+          cta: "ดูกลุ่มเนื้อหา",
+        },
+        panel: {
+          title: "วิธีใช้งาน",
+          items: [
+            "เลือกหมวดด้านล่างเพื่อเปิดหน้าลูกที่มีเช็กลิสต์และลิงก์สำคัญ",
+            "ทุกหน้าลูกลิงก์ไปยังแดชบอร์ดจริง (เข้าสู่ระบบ หน้าติ๊กเก็ต วอลเล็ต พันธมิตร)",
+            "ส่วนท้ายของแต่ละหน้าตรึงช่องทางเอสคาเลชันไว้เสมอ",
+          ],
+          note: "ก่อนเข้าหน้า https://1540bo.io/auth/login กรุณาเตรียม UID อีเมล และข้อมูล reCAPTCHA ให้พร้อม",
+        },
+        catalog: {
+          heading: "สารบัญ",
+          subtitle:
+            "แบ่งเป็น 6 หน้าลูกสำหรับการเริ่มต้น เทรด วอลเล็ต และงานพันธมิตร",
+        },
+        cards: {
+          account: {
+            eyebrow: "บัญชี",
+            title: "ลงทะเบียนและความปลอดภัย",
+            body: "รวม KYC การดูแลอุปกรณ์ และช่องทางรีเซ็ต",
+            cta: "เปิดดูรายละเอียด",
+          },
+          trading: {
+            eyebrow: "การเทรด",
+            title: "เวิร์กโฟลว์บอปชัน",
+            body: "แนะนำเลย์เอาท์ Top Game การสร้างตั๋ว และการควบคุมความเสี่ยง",
+            cta: "อ่านคู่มือ",
+          },
+          deposit: {
+            eyebrow: "วอลเล็ต",
+            title: "การฝากและการบันทึกยอด",
+            body: "เน็ตเวิร์กรองรับ วิธีคอนเฟิร์ม และขั้นตอนตามยอดค้าง",
+            cta: "ดูขั้นตอน",
+          },
+          withdrawal: {
+            eyebrow: "วอลเล็ต",
+            title: "การถอนและคอมพลายแอนซ์",
+            body: "เงื่อนไข เวลาประมวลผล และข้อมูลที่ต้องส่งเมื่อถูกถือ",
+            cta: "เช็กลิสต์",
+          },
+          affiliate: {
+            eyebrow: "พันธมิตร",
+            title: "การดำเนินงานพันธมิตร",
+            body: "เกณฑ์สมัคร การติดตาม รายงาน และข้อห้าม",
+            cta: "เปิดเพลย์บุ๊ก",
+          },
+          other: {
+            eyebrow: "ทรัพยากร",
+            title: "เครื่องมืออื่นๆ",
+            body: "ทิปส์ Top Game สถานะระบบ และเครื่องมือจัดการความรับผิดชอบ",
+            cta: "ดูทั้งหมด",
+          },
+        },
+        support: {
+          heading: "ยังต้องการความช่วยเหลือแบบส่วนตัว?",
+          body: "ทีม Ops เฝ้าอินบ็อกซ์ 24/7 โปรดแนบสกรีนช็อต TXID และเวลาที่เกิดเหตุเพื่อให้ตอบเร็ว",
+          cta: "อีเมล support@1540bo.io",
+          secondary: "ดูช่องทางติดต่อ",
+        },
+      },
+      account: {
+        hero: {
+          badge: "บัญชี",
+          title: "เช็กลิสต์สมัครและยืนยันตัวตน",
+          subtitle:
+            "ทำขั้นตอนเหล่านี้ก่อนเติมเงิน ทุกขั้นตรงกับ flow บนหน้าท็อปเกม",
+          meta: "เดสก์ท็อปและโมบาย",
+        },
+        sections: [
+          {
+            heading: "สิ่งที่ต้องเตรียม",
+            text: "เตรียมครบ onboarding จะใช้เวลาไม่ถึง 5 นาที",
+            items: [
+              "บัตรประชาชน/พาสปอร์ตที่ตรงกับประเทศที่เลือกและรูปเซลฟี",
+              "อีเมลหรือเบอร์ที่ไม่เคยใช้ใน 1540BO",
+              "แอปยืนยันตัวตนบนอุปกรณ์ที่ปลอดภัย",
+            ],
+          },
+          {
+            heading: "สมัครตามลำดับที่ถูกต้อง",
+            text: "ทำตาม flow เดียวกับ https://1540bo.io/auth/login (กด “Create account”)",
+            items: [
+              "กรอกอีเมล+รหัสผ่านและยอมรับประกาศความเสี่ยง",
+              "กรอกรหัส OTP ภายใน 10 นาทีเพื่อไม่ให้เซสชันหมด",
+              "กรอกโปรไฟล์สั้น ๆ (ประเทศ โค้ดแนะนำ ไทม์โซน)",
+              "เปิด 2FA ทันที มิฉะนั้นหน้าถอนจะถูกล็อก",
+            ],
+          },
+          {
+            heading: "ยกระดับความปลอดภัย",
+            text: "ป้องกันยอดเงินและรางวัลอ้างอิง",
+            items: [
+              "ลงทะเบียนอุปกรณ์ที่เชื่อถือได้อย่างน้อย 2 เครื่องและทบทวนทุกเดือน",
+              "ใช้ passkey/ไบโอเมตริกบน Safari หรือ Chrome เมื่อระบบแนะนำ",
+              "ไม่แชร์ API key หรือคุกกี้เซสชันกับเครื่องมือภายนอก",
+            ],
+          },
+          {
+            heading: "ลำดับการปลดล็อกฟีเจอร์",
+            text: "รู้ว่าแต่ละระดับให้สิทธิ์อะไร",
+            items: [
+              "ระดับ 1 (อีเมล+โทร) ใช้เดโมได้ทันที",
+              "ระดับ 2 (เอกสาร+เซลฟี) ปลดล็อกฝาก/ถอนภายใน ~15 นาที",
+              "ระดับ 3 (หลักฐานที่อยู่) ต้องใช้เมื่อมียอดเกิน 50,000 USDT ต่อเดือน",
+            ],
+          },
+        ],
+        callout: {
+          title: "ต้องการให้ทีมตรวจ KYC แบบแมนนวล?",
+          body: "แนบ UID อีเมล และลิงก์ไฟล์ที่เข้ารหัสเพื่อให้ตรวจได้รวดเร็ว",
+          cta: "อีเมลทีม KYC",
+        },
+      },
+      trading: {
+        hero: {
+          badge: "การเทรด",
+          title: "เวิร์กโฟลว์ไบนารี่ออปชัน",
+          subtitle:
+            "ผูกทุกขั้นตั้งแต่เลือกสินทรัพย์ไปจนถึง audit หลังจบตามหน้าท็อปเกม",
+          meta: "Ticket v4.2 · เดสก์ท็อป/โมบาย",
+        },
+        sections: [
+          {
+            heading: "เข้าใจเลย์เอาท์",
+            text: "UI Top Game แบ่งข้อมูลเป็น 3 คอลัมน์",
+            items: [
+              "ซ้าย: รายการสินทรัพย์ รายการโปรด และแท็กความผันผวน",
+              "กลาง: กราฟ pulse ตัวเลือกหมดอายุ และปุ่ม Call/Put",
+              "ขวา: ประวัติโพสิชันพร้อมสถานะปิด มัลติเพลเยอร์ และ UID",
+            ],
+          },
+          {
+            heading: "สร้างตั๋วอย่างแม่นยำ",
+            text: "ตรวจเช็กกฎเหล่านี้ก่อนกดซื้อ",
+            items: [
+              "เลือกเวลาหมดอายุก่อน (15/30/60 วินาทีหรือกำหนดเอง)",
+              "ใส่จำนวนเงิน ตรวจสอบ % ผลตอบแทน แล้วค่อยเลือก Call/Put",
+              "ใช้ sentiment meter และ depth เพื่อเลี่ยงฝั่งที่หนาแน่นผิดปกติ",
+            ],
+          },
+          {
+            heading: "ควบคุมความเสี่ยง",
+            text: "รักษา bankroll และข้อมูลตรวจสอบ",
+            items: [
+              "จำกัดความเสี่ยงไม่เกิน 2% ของทุนแต่ละเซสชันต่อโพสิชัน",
+              "ติดป้าย Notes > Strategy เพื่อคัดกรองกลยุทธ์ที่เวิร์ก",
+              "พักทันทีเมื่อ latency เกิน 300 มิลลิวินาที (ตัวบอกสถานะเป็นสีเหลือง)",
+            ],
+          },
+          {
+            heading: "ตรวจสอบทุกเซสชัน",
+            text: "ทำให้การโต้แย้งง่ายและเร็ว",
+            items: [
+              "ดาวน์โหลด CSV จาก History > Export เมื่อจบวัน",
+              "เทียบรหัสแฮชการตัดสินกับ transparency feed หากพบความผิดปกติ",
+              "ถ้ามี anomaly ให้ส่งอีเมล support@1540bo.io ภายใน 12 ชม.",
+            ],
+          },
+        ],
+        callout: {
+          title: "อยากขยายลิมิตหรือกำหนดหมดอายุพิเศษ?",
+          body: "VIP desk ช่วยปลดลิมิต เพิ่ม stake สูง และจัดรีวิวความเสี่ยงแบบเจาะจง",
+          cta: "ดูสิทธิ์ VIP",
+        },
+      },
+      deposit: {
+        hero: {
+          badge: "วอลเล็ต",
+          title: "คู่มือการฝากและการบันทึกยอด",
+          subtitle: "ใช้ช่องทาง on-chain อย่างปลอดภัยและเตรียมหลักฐานให้พร้อม",
+          meta: "Wallet v3",
+        },
+        sections: [
+          {
+            heading: "ช่องทางที่รองรับ",
+            text: "เลือกวิธีที่ตรงกับการดูแลสินทรัพย์ของคุณ",
+            items: [
+              "คริปโต: USDT-TRC20, BTC, ETH, TRX, XRP, LTC",
+              "ฟิอัต/สเตเบิล ผ่าน OTC ที่ได้รับอนุมัติ (ติดต่อทีม)",
+              "ขั้นต่ำ 10 USDT หรือเทียบเท่า",
+            ],
+          },
+          {
+            heading: "ขั้นตอนฝาก",
+            text: "ทุกครั้งต้องคัดลอกที่อยู่ใหม่จาก Wallet > Deposit",
+            items: [
+              "เลือกสินทรัพย์และเครือข่าย สร้างที่อยู่ใช้ครั้งเดียว",
+              "ส่งจากวอลเล็ตของคุณเองและบันทึก TXID",
+              "รอจำนวนคอนเฟิร์มที่ระบบกำหนด (TRON 1 บล็อก / ETH 2 บล็อก)",
+              "หาก 30 นาทีแล้วยังไม่เข้า ค่อยเปิดเคส",
+            ],
+          },
+          {
+            heading: "แนวทางที่ดีที่สุด",
+            text: "ลดการตรวจสอบและความล่าช้า",
+            items: [
+              "โอนจากวอลเล็ตที่ควบคุมเองเท่านั้น—exchange บางแห่งปล่อยแฮชช้า",
+              "อย่าส่งข้ามเครือข่าย (ERC20 ไป TRC20 จะกู้คืนไม่ได้)",
+              "ยอดใหญ่ควรทำธุรกรรมทดสอบเล็กก่อน",
+            ],
+          },
+          {
+            heading: "เมื่อยอดยังไม่อัปเดต",
+            text: "เตรียมข้อมูลเหล่านี้ก่อนคุยกับทีม Ops",
+            items: [
+              "TXID + สกรีนช็อตจาก blockchain explorer + จำนวนเงิน",
+              "สกรีนช็อตวอลเล็ตที่แสดงสถานะ Sent พร้อมเวลา",
+              "ยืนยันว่าที่อยู่ฝากรอบล่าสุดเป็นที่อยู่ใหม่",
+            ],
+          },
+        ],
+        callout: {
+          title: "ต้องการ whitelist วอลเล็ตดีลเลอร์?",
+          body: "ส่งที่อยู่ cold wallet หลักฐานการเป็นเจ้าของ และเพดานรายวันที่ต้องการให้ทีม Ops อนุมัติ",
+          cta: "ติดต่อทีมวอลเล็ต",
+        },
+      },
+      withdrawal: {
+        hero: {
+          badge: "วอลเล็ต",
+          title: "คู่มือการถอนและการตรวจสอบ",
+          subtitle: "รู้เงื่อนไขและ SLA ก่อนส่งคำร้อง",
+          meta: "ผู้ใช้ระดับมาตรฐาน",
+        },
+        sections: [
+          {
+            heading: "ตรวจสอบก่อนยื่น",
+            text: "ต้องครบถ้วนก่อนระบบจะอนุมัติ",
+            items: [
+              "KYC ระดับ 2 ผ่านแล้ว",
+              "เปิด 2FA และตั้งรหัสถอน",
+              "มีที่อยู่วอลเล็ตส่วนตัว (ไม่ใช่ที่อยู่ฝากของ exchange)",
+            ],
+          },
+          {
+            heading: "ขั้นตอนส่งคำขอ",
+            text: "ทำใน Wallet > Withdraw",
+            items: [
+              "เลือกสินทรัพย์+เครือข่าย กรอกที่อยู่ (และ Memo/Tag หากต้องใช้)",
+              "ใส่จำนวน ตรวจสอบค่าธรรมเนียมที่ระบบแสดง",
+              "ยืนยันผ่าน 2FA และรหัส OTP ที่ส่งอีเมล",
+            ],
+          },
+          {
+            heading: "เวลาและลิมิต",
+            text: "เข้าใจ SLA ก่อนติดตาม",
+            items: [
+              "เวลาตรวจมาตรฐาน 5–30 นาที",
+              "คำขอเกิน 10,000 USDT อาจต้องวิดีโอคอลยืนยัน",
+              "ลิมิตถอนได้ต่อวันรีเซ็ต 00:00 UTC ตามระดับ VIP",
+            ],
+          },
+          {
+            heading: "ถ้าถูกถือ",
+            text: "ตอบกลับไวเพื่อรักษาคิว",
+            items: [
+              "ตรวจอีเมลว่ามีคำขอเอกสารหรือไม่ (ID / source of funds)",
+              "ส่งเอกสารที่ขอภายใน 24 ชั่วโมง",
+              "หาก 12 ชม. ยังไม่คืบหน้า ค่อยอีเมล payout@1540bo.io",
+            ],
+          },
+        ],
+        callout: {
+          title: "อยากใช้เลนตรวจแบบด่วน?",
+          body: "ลูกค้า VIP ระดับ 10 ขึ้นไปสามารถขอเลนถอนเฉพาะและที่อยู่ที่อนุมัติล่วงหน้า",
+          cta: "อีเมลทีม payout",
+        },
+      },
+      affiliate: {
+        hero: {
+          badge: "พันธมิตร",
+          title: "เพลย์บุ๊กการดำเนินงานพันธมิตร",
+          subtitle: "ทบทวนกฎและเช็กลิสต์ก่อนส่งทราฟฟิกเข้า 1540BO",
+          meta: "Bet-share · 9 ระดับ",
+        },
+        sections: [
+          {
+            heading: "เตรียมตัวก่อนสมัคร",
+            text: "พิสูจน์ว่าคุณส่งทราฟฟิกได้อย่างถูกกฎหมาย",
+            items: [
+              "อ่านข้อกำหนดพันธมิตรฉบับเต็ม",
+              "ลิสต์ช่องทางที่คุณควบคุม (เว็บ โซเชียล สื่อโฆษณา)",
+              "ยืนยันว่าปิดกั้นพื้นที่ต้องห้ามได้",
+            ],
+          },
+          {
+            heading: "การติดตามและแอสเซท",
+            text: "ปฏิบัติตามไกด์ไลน์แบรนด์",
+            items: [
+              "ใช้ลิงก์ติดตามที่ออกจากแดชบอร์ดของคุณเองเท่านั้น",
+              "โหลดแบนเนอร์จาก CDN อย่างเป็นทางการเพื่อรับอัปเดตอัตโนมัติ",
+              "วาง badge คอมพลายแอนซ์และดีสคลเมอร์ข้าง CTA ทุกครั้ง",
+            ],
+          },
+          {
+            heading: "รายงานและการจ่าย",
+            text: "รู้สูตรคำนวณรายได้",
+            items: [
+              "รายงาน bet-share รายวันอัปเดต 08:00 UTC (T+2)",
+              "เทียบจำนวนฝากกับ CRM ของคุณให้ตรงกับเกณฑ์ระดับ",
+              "ตั้งวอลเล็ตและยอดขั้นต่ำได้ที่ Partner > Wallet",
+            ],
+          },
+          {
+            heading: "รั้วคอมพลายแอนซ์",
+            text: "ฝ่าฝืนมีสิทธิโดนยึดรายได้",
+            items: [
+              "ห้ามใช้คำโฆษณาเช่น “การันตีชนะ” หรือ “ไร้ความเสี่ยง”",
+              "ห้ามยิงโฆษณาไปยังผู้เยาว์หรือประเทศที่ถูกบล็อก",
+              "ส่งครีเอทีฟใหม่ให้ตรวจอย่างน้อย 48 ชม. ก่อนปล่อย",
+            ],
+          },
+        ],
+        callout: {
+          title: "ต้องการสื่อร่วมทำการตลาด?",
+          body: "Partner Studio สามารถโลคัลไลซ์วิดีโอ อีเมล และแลนดิ้งเพจให้ตรงกับสไตล์ Top Game",
+          cta: "อีเมล partners@1540bo.io",
+        },
+      },
+      other: {
+        hero: {
+          badge: "ทรัพยากร",
+          title: "ทรัพยากรการปฏิบัติงานอื่น ๆ",
+          subtitle:
+            "รวมทิปส์ Top Game ฟีดสถานะ และเครื่องมือส่งเสริมการเทรดอย่างรับผิดชอบ",
+          meta: "Live Ops Reference",
+        },
+        sections: [
+          {
+            heading: "ทิปส์สำหรับ Top Game",
+            text: "ใช้ https://1540bo.io/top-game ให้เต็มประสิทธิภาพ",
+            items: [
+              "ใช้ตัวสลับ Top Game เพื่อย้ายห้องแนะนำได้ทันที",
+              "การ์ดทัวร์นาเมนต์อัปเดตรายชั่วโมง—ตรวจทุกครั้งก่อนโปรโมต",
+              "เมนูด้านล่างบนมือถือมี layout เหมือนเดสก์ท็อป",
+            ],
+          },
+          {
+            heading: "สถานะและการบำรุงรักษา",
+            text: "แจ้งผู้เล่นล่วงหน้าได้ง่าย",
+            items: [
+              "บุ๊กมาร์ก status.1540bo.io และสมัครรับการแจ้งเตือน",
+              "เข้าร่วม @bo1540_alert (Telegram/LINE) เพื่อรับ push",
+              "ตรวจ log การเปลี่ยนแปลงหลังเมนเทนทุกครั้ง",
+            ],
+          },
+          {
+            heading: "ชุดเครื่องมือความรับผิดชอบ",
+            text: "ช่วยผู้เล่นควบคุมจังหวะ",
+            items: [
+              "ตั้งลิมิตขาดทุนต่อวันใน Settings > Limits",
+              "เปิดการเตือน reality check ทุก 30 นาทีในหน้าท็อปเกม",
+              "แทรกลิงก์ microsite ความเสี่ยงในอีเมล onboarding",
+            ],
+          },
+          {
+            heading: "ชุดเครื่องมือซัพพอร์ต",
+            text: "ให้ Ops ดีบักได้รวดเร็ว",
+            items: [
+              "ใช้ตัวอัปโหลดในแชทเพื่อส่ง HAR และสกรีนช็อต",
+              'ติดแท็กตั๋วด้วย "/status" + UID เพื่อค้นหาได้ไว',
+              "เหตุฉุกเฉินให้ส่งรายละเอียดไป security@1540bo.io",
+            ],
+          },
+        ],
+        callout: {
+          title: "อัปเดตข่าวสารให้ทัน",
+          body: "VIP broadcast channel แชร์ Ops note ปฏิทินแคมเปญ และประกาศฉุกเฉินก่อนใคร",
+          cta: "เปิดข่าว VIP",
+        },
+      },
     },
     affiliate: {
       cta: {
@@ -2183,15 +3457,17 @@ const translations = {
         article3: {
           label: "มาตรา 3",
           heading: "หน้าที่และแนวทางการตลาดของพันธมิตร",
-          intro: "พันธมิตรต้องโปรโมตบริการอย่างสุจริตและถูกกฎหมาย ห้ามดำเนินการที่ทำลายภาพลักษณ์หรือขัดต่อความสงบเรียบร้อย การกระทำต่อไปนี้ถือว่าถูกห้าม.",
+          intro:
+            "พันธมิตรต้องโปรโมตบริการอย่างสุจริตและถูกกฎหมาย ห้ามดำเนินการที่ทำลายภาพลักษณ์หรือขัดต่อความสงบเรียบร้อย การกระทำต่อไปนี้ถือว่าถูกห้าม.",
           items: [
             "การกำหนดเป้าหมายหรือสื่อสารกับผู้เยาว์ (ผู้ที่อายุต่ำกว่ากฎหมายในถิ่นพำนัก).",
             "การส่งอีเมลสแปม ข้อความโดยไม่เลือก หรือการติดต่อที่ถือว่าเป็นการรบกวน.",
-            "การใช้ข้อความเกินจริง เช่น \"รับประกันชนะ\" หรือ \"ไร้ความเสี่ยง\".",
+            'การใช้ข้อความเกินจริง เช่น "รับประกันชนะ" หรือ "ไร้ความเสี่ยง".',
             "การละเมิดทรัพย์สินทางปัญญาของบริษัทหรือบุคคลที่สาม.",
             "การแสดงตนเสมือนเป็น 1540bo.io หรืออ้างความเกี่ยวข้องโดยไม่มีสิทธิ์.",
           ],
-          outro: "กิจกรรมโปรโมตทั้งหมดต้องปฏิบัติตามกฎหมาย ระเบียบ และแนวปฏิบัติที่เกี่ยวข้องในทุกเขตอำนาจ รวมถึงข้อกำหนดด้านโฆษณาและการพนัน.",
+          outro:
+            "กิจกรรมโปรโมตทั้งหมดต้องปฏิบัติตามกฎหมาย ระเบียบ และแนวปฏิบัติที่เกี่ยวข้องในทุกเขตอำนาจ รวมถึงข้อกำหนดด้านโฆษณาและการพนัน.",
         },
         article4: {
           label: "มาตรา 4",
@@ -2240,7 +3516,8 @@ const translations = {
             "ห้ามสมรู้ร่วมคิดกับผู้เล่นที่แนะนำเพื่อวางเดิมพันผิดปกติหรือใช้โบนัสในทางที่ผิดเพื่อเพิ่มค่าตอบแทน.",
             "การกระทำใด ๆ ที่บริษัทเห็นว่าเป็นการทุจริต.",
           ],
-          outro: "หากตรวจพบการทุจริต บริษัทมีสิทธิตัดสิทธิ์พันธมิตรทันที ริบค่าตอบแทนที่ยังไม่จ่าย และเรียกคืนค่าตอบแทนที่เคยจ่ายไป.",
+          outro:
+            "หากตรวจพบการทุจริต บริษัทมีสิทธิตัดสิทธิ์พันธมิตรทันที ริบค่าตอบแทนที่ยังไม่จ่าย และเรียกคืนค่าตอบแทนที่เคยจ่ายไป.",
         },
         article7: {
           label: "มาตรา 7",
@@ -2324,8 +3601,7 @@ const translations = {
         summary: {
           label: "Rewards",
           heading: "20 ระดับ & 4 ช่องทางรางวัล",
-          text:
-            "อัตราที่แสดงคำนวณจากยอดเดิมพันเงินสดและผลขาดทุนสุทธิ ยิ่งระดับสูง ยิ่งได้รับเงินคืนรายวัน รายสัปดาห์ รายเดือน และโบนัสเลื่อนระดับมากขึ้น",
+          text: "อัตราที่แสดงคำนวณจากยอดเดิมพันเงินสดและผลขาดทุนสุทธิ ยิ่งระดับสูง ยิ่งได้รับเงินคืนรายวัน รายสัปดาห์ รายเดือน และโบนัสเลื่อนระดับมากขึ้น",
           note: "เปอร์เซ็นต์ที่แสดงยังไม่รวม Active Boost โปรดอ่านกฎโปรแกรมสำหรับรายละเอียด",
         },
         table: {
@@ -2339,26 +3615,186 @@ const translations = {
             monthly: "เงินคืนรายเดือน",
           },
           rows: [
-            { rank: "1", tier: "บรอนซ์ 1", requirement: "$0", bonus: "-", daily: "0.10%", weekly: "3.5%", monthly: "1.5%" },
-            { rank: "2", tier: "บรอนซ์ 2", requirement: "$2,500", bonus: "$2.5", daily: "0.12%", weekly: "4.0%", monthly: "1.5%" },
-            { rank: "3", tier: "บรอนซ์ 3", requirement: "$5,000", bonus: "$2.5", daily: "0.14%", weekly: "4.5%", monthly: "2.0%" },
-            { rank: "4", tier: "บรอนซ์ 4", requirement: "$10,000", bonus: "$5", daily: "0.16%", weekly: "5.0%", monthly: "2.0%" },
-            { rank: "5", tier: "ซิลเวอร์ 1", requirement: "$25,000", bonus: "$15", daily: "0.18%", weekly: "5.5%", monthly: "2.5%" },
-            { rank: "6", tier: "ซิลเวอร์ 2", requirement: "$50,000", bonus: "$25", daily: "0.20%", weekly: "6.0%", monthly: "2.5%" },
-            { rank: "7", tier: "ซิลเวอร์ 3", requirement: "$100,000", bonus: "$50", daily: "0.23%", weekly: "6.5%", monthly: "3.0%" },
-            { rank: "8", tier: "ซิลเวอร์ 4", requirement: "$200,000", bonus: "$100", daily: "0.26%", weekly: "7.0%", monthly: "3.0%" },
-            { rank: "9", tier: "โกลด์ 1", requirement: "$350,000", bonus: "$150", daily: "0.30%", weekly: "7.5%", monthly: "3.5%" },
-            { rank: "10", tier: "โกลด์ 2", requirement: "$500,000", bonus: "$150", daily: "0.34%", weekly: "8.0%", monthly: "3.5%" },
-            { rank: "11", tier: "โกลด์ 3", requirement: "$750,000", bonus: "$250", daily: "0.38%", weekly: "8.5%", monthly: "4.0%" },
-            { rank: "12", tier: "โกลด์ 4", requirement: "$1,000,000", bonus: "$250", daily: "0.42%", weekly: "9.0%", monthly: "4.0%" },
-            { rank: "13", tier: "แพลทินัม 1", requirement: "$1,500,000", bonus: "$500", daily: "0.46%", weekly: "9.5%", monthly: "4.5%" },
-            { rank: "14", tier: "แพลทินัม 2", requirement: "$2,000,000", bonus: "$500", daily: "0.50%", weekly: "10.0%", monthly: "5.0%" },
-            { rank: "15", tier: "แพลทินัม 3", requirement: "$3,000,000", bonus: "$1,000", daily: "0.55%", weekly: "10.5%", monthly: "5.5%" },
-            { rank: "16", tier: "แพลทินัม 4", requirement: "$5,000,000", bonus: "$2,000", daily: "0.60%", weekly: "11.0%", monthly: "6.0%" },
-            { rank: "17", tier: "ไดมอนด์ 1", requirement: "$7,500,000", bonus: "$2,500", daily: "0.65%", weekly: "11.5%", monthly: "6.5%" },
-            { rank: "18", tier: "ไดมอนด์ 2", requirement: "$10,000,000", bonus: "$2,500", daily: "0.70%", weekly: "12.0%", monthly: "7.0%" },
-            { rank: "19", tier: "ไดมอนด์ 3", requirement: "$15,000,000", bonus: "$5,000", daily: "0.75%", weekly: "13.0%", monthly: "7.5%" },
-            { rank: "20", tier: "ไดมอนด์ 4", requirement: "$25,000,000", bonus: "$10,000", daily: "0.80%", weekly: "14.0%", monthly: "8.0%" },
+            {
+              rank: "1",
+              tier: "บรอนซ์ 1",
+              requirement: "$0",
+              bonus: "-",
+              daily: "0.10%",
+              weekly: "3.5%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "2",
+              tier: "บรอนซ์ 2",
+              requirement: "$2,500",
+              bonus: "$2.5",
+              daily: "0.12%",
+              weekly: "4.0%",
+              monthly: "1.5%",
+            },
+            {
+              rank: "3",
+              tier: "บรอนซ์ 3",
+              requirement: "$5,000",
+              bonus: "$2.5",
+              daily: "0.14%",
+              weekly: "4.5%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "4",
+              tier: "บรอนซ์ 4",
+              requirement: "$10,000",
+              bonus: "$5",
+              daily: "0.16%",
+              weekly: "5.0%",
+              monthly: "2.0%",
+            },
+            {
+              rank: "5",
+              tier: "ซิลเวอร์ 1",
+              requirement: "$25,000",
+              bonus: "$15",
+              daily: "0.18%",
+              weekly: "5.5%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "6",
+              tier: "ซิลเวอร์ 2",
+              requirement: "$50,000",
+              bonus: "$25",
+              daily: "0.20%",
+              weekly: "6.0%",
+              monthly: "2.5%",
+            },
+            {
+              rank: "7",
+              tier: "ซิลเวอร์ 3",
+              requirement: "$100,000",
+              bonus: "$50",
+              daily: "0.23%",
+              weekly: "6.5%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "8",
+              tier: "ซิลเวอร์ 4",
+              requirement: "$200,000",
+              bonus: "$100",
+              daily: "0.26%",
+              weekly: "7.0%",
+              monthly: "3.0%",
+            },
+            {
+              rank: "9",
+              tier: "โกลด์ 1",
+              requirement: "$350,000",
+              bonus: "$150",
+              daily: "0.30%",
+              weekly: "7.5%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "10",
+              tier: "โกลด์ 2",
+              requirement: "$500,000",
+              bonus: "$150",
+              daily: "0.34%",
+              weekly: "8.0%",
+              monthly: "3.5%",
+            },
+            {
+              rank: "11",
+              tier: "โกลด์ 3",
+              requirement: "$750,000",
+              bonus: "$250",
+              daily: "0.38%",
+              weekly: "8.5%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "12",
+              tier: "โกลด์ 4",
+              requirement: "$1,000,000",
+              bonus: "$250",
+              daily: "0.42%",
+              weekly: "9.0%",
+              monthly: "4.0%",
+            },
+            {
+              rank: "13",
+              tier: "แพลทินัม 1",
+              requirement: "$1,500,000",
+              bonus: "$500",
+              daily: "0.46%",
+              weekly: "9.5%",
+              monthly: "4.5%",
+            },
+            {
+              rank: "14",
+              tier: "แพลทินัม 2",
+              requirement: "$2,000,000",
+              bonus: "$500",
+              daily: "0.50%",
+              weekly: "10.0%",
+              monthly: "5.0%",
+            },
+            {
+              rank: "15",
+              tier: "แพลทินัม 3",
+              requirement: "$3,000,000",
+              bonus: "$1,000",
+              daily: "0.55%",
+              weekly: "10.5%",
+              monthly: "5.5%",
+            },
+            {
+              rank: "16",
+              tier: "แพลทินัม 4",
+              requirement: "$5,000,000",
+              bonus: "$2,000",
+              daily: "0.60%",
+              weekly: "11.0%",
+              monthly: "6.0%",
+            },
+            {
+              rank: "17",
+              tier: "ไดมอนด์ 1",
+              requirement: "$7,500,000",
+              bonus: "$2,500",
+              daily: "0.65%",
+              weekly: "11.5%",
+              monthly: "6.5%",
+            },
+            {
+              rank: "18",
+              tier: "ไดมอนด์ 2",
+              requirement: "$10,000,000",
+              bonus: "$2,500",
+              daily: "0.70%",
+              weekly: "12.0%",
+              monthly: "7.0%",
+            },
+            {
+              rank: "19",
+              tier: "ไดมอนด์ 3",
+              requirement: "$15,000,000",
+              bonus: "$5,000",
+              daily: "0.75%",
+              weekly: "13.0%",
+              monthly: "7.5%",
+            },
+            {
+              rank: "20",
+              tier: "ไดมอนด์ 4",
+              requirement: "$25,000,000",
+              bonus: "$10,000",
+              daily: "0.80%",
+              weekly: "14.0%",
+              monthly: "8.0%",
+            },
           ],
         },
       },
@@ -2367,27 +3803,32 @@ const translations = {
         active: {
           label: "กฎข้อที่ 1",
           heading: "Active Boost",
-          intro: "การมีกิจกรรมต่อเนื่องช่วยเพิ่มเปอร์เซ็นต์เงินคืนให้สูงกว่าตารางพื้นฐาน",
+          intro:
+            "การมีกิจกรรมต่อเนื่องช่วยเพิ่มเปอร์เซ็นต์เงินคืนให้สูงกว่าตารางพื้นฐาน",
           weekly: {
             title: "Weekly Active Boost",
-            detail: "วางเดิมพันอย่างน้อย $0.1 ใน 5 วันขึ้นไปภายในสัปดาห์เดียว จะได้รับ +0.5% เพิ่มเติมในเงินคืนรายสัปดาห์",
+            detail:
+              "วางเดิมพันอย่างน้อย $0.1 ใน 5 วันขึ้นไปภายในสัปดาห์เดียว จะได้รับ +0.5% เพิ่มเติมในเงินคืนรายสัปดาห์",
           },
           monthly: {
             title: "Monthly Active Boost",
-            detail: "วางเดิมพันอย่างน้อย $0.1 ใน 20 วันขึ้นไปภายในเดือน จะได้รับ +1.0% เพิ่มเติมในเงินคืนรายเดือน",
+            detail:
+              "วางเดิมพันอย่างน้อย $0.1 ใน 20 วันขึ้นไปภายในเดือน จะได้รับ +1.0% เพิ่มเติมในเงินคืนรายเดือน",
           },
         },
         downgrade: {
           label: "กฎข้อที่ 2",
           heading: "การรักษาระดับ",
-          intro: "เมื่อยอดเดิมพันสะสมถึงเกณฑ์ จะเลื่อนระดับทันที แต่การรักษาระดับจะตรวจสอบรายเดือน",
+          intro:
+            "เมื่อยอดเดิมพันสะสมถึงเกณฑ์ จะเลื่อนระดับทันที แต่การรักษาระดับจะตรวจสอบรายเดือน",
           bullets: [
             "เลื่อนระดับทันทีเมื่อยอดเดิมพันสะสมถึงเกณฑ์ถัดไป",
             "สิทธิ์ช่วงชั้นได้รับการคุ้มครอง เมื่อเข้าช่วงชั้นแล้วจะไม่ถูกลดลง",
             "ตรวจสอบสถานะในวันแรกของเดือนโดยใช้ยอดเดิมพันเดือนก่อนหน้า",
             "หากไม่ถึงเกณฑ์ จะลดระดับเฉพาะภายในช่วงชั้นนั้น และระดับ 1 คือขั้นต่ำ",
           ],
-          reminder: "คำนวณเฉพาะยอดเดิมพันเงินสด ระดับ 1 ในช่วงชั้นที่เข้าถึงแล้วคือจุดต่ำสุดหลังการประเมิน",
+          reminder:
+            "คำนวณเฉพาะยอดเดิมพันเงินสด ระดับ 1 ในช่วงชั้นที่เข้าถึงแล้วคือจุดต่ำสุดหลังการประเมิน",
         },
         maintenanceTable: {
           headers: {
@@ -2421,7 +3862,8 @@ const translations = {
       },
       terms: {
         heading: "ข้อกำหนดโปรแกรม VIP",
-        subtitle: "การเข้าร่วมโปรแกรมแสดงว่าคุณยอมรับข้อกำหนดนี้และข้อกำหนดการใช้งานเว็บไซต์",
+        subtitle:
+          "การเข้าร่วมโปรแกรมแสดงว่าคุณยอมรับข้อกำหนดนี้และข้อกำหนดการใช้งานเว็บไซต์",
         articles: [
           {
             label: "มาตรา 1",
@@ -2587,9 +4029,7 @@ const translations = {
           articles: {
             article7: {
               heading: "มาตรา 7 (ประเภทของสัญญา)",
-              body: [
-                "บริการนี้มีสัญญาให้เลือกดังต่อไปนี้.",
-              ],
+              body: ["บริการนี้มีสัญญาให้เลือกดังต่อไปนี้."],
               items: [
                 "Binary BTC",
                 "ETH Channel",
@@ -2668,9 +4108,7 @@ const translations = {
           articles: {
             article15: {
               heading: "มาตรา 15 (การกระทำที่ห้าม)",
-              body: [
-                "เมื่อใช้บริการ ผู้ใช้ต้องไม่กระทำการดังต่อไปนี้.",
-              ],
+              body: ["เมื่อใช้บริการ ผู้ใช้ต้องไม่กระทำการดังต่อไปนี้."],
               items: [
                 "การกระทำที่ผิดกฎหมายหรือขัดต่อความสงบเรียบร้อย",
                 "การกระทำที่เกี่ยวข้องกับอาชญากรรม",
@@ -2761,7 +4199,8 @@ const translations = {
         section3: {
           label: "มาตรา 3",
           heading: "วิธีการเก็บข้อมูลส่วนบุคคล",
-          intro: "บริษัทจะเก็บข้อมูลผ่านวิธีที่ชอบด้วยกฎหมายและเป็นธรรมเท่านั้น และจะไม่ใช้วิธีการหลอกลวงหรือไม่สุจริต ข้อมูลหลักที่ได้รับมีดังนี้",
+          intro:
+            "บริษัทจะเก็บข้อมูลผ่านวิธีที่ชอบด้วยกฎหมายและเป็นธรรมเท่านั้น และจะไม่ใช้วิธีการหลอกลวงหรือไม่สุจริต ข้อมูลหลักที่ได้รับมีดังนี้",
           groups: [
             {
               title: "ข้อมูลที่ผู้ใช้ส่งให้โดยตรง",
@@ -2798,7 +4237,8 @@ const translations = {
         section5: {
           label: "มาตรา 5",
           heading: "การเปิดเผยข้อมูลให้บุคคลที่สาม",
-          intro: "บริษัทจะไม่เปิดเผยข้อมูลส่วนบุคคลให้บุคคลที่สามโดยไม่ได้รับความยินยอมจากผู้ใช้ ยกเว้นกรณีต่อไปนี้หรือในกรณีที่กฎหมายอนุญาต.",
+          intro:
+            "บริษัทจะไม่เปิดเผยข้อมูลส่วนบุคคลให้บุคคลที่สามโดยไม่ได้รับความยินยอมจากผู้ใช้ ยกเว้นกรณีต่อไปนี้หรือในกรณีที่กฎหมายอนุญาต.",
           items: [
             "เมื่อจำเป็นเพื่อคุ้มครองชีวิต ร่างกาย หรือทรัพย์สินของบุคคล และไม่สามารถขอความยินยอมได้.",
             "เมื่อจำเป็นอย่างยิ่งต่อการส่งเสริมสุขภาพสาธารณะหรือการเลี้ยงดูเด็กให้เติบโตอย่างเหมาะสม และไม่สามารถขอความยินยอมได้.",
@@ -2810,7 +4250,8 @@ const translations = {
         section6: {
           label: "มาตรา 6",
           heading: "การใช้ข้อมูลร่วมกัน",
-          intro: "บริษัทอาจใช้ข้อมูลส่วนบุคคลร่วมกับหน่วยงานในเครือภายใต้ขอบเขตดังต่อไปนี้.",
+          intro:
+            "บริษัทอาจใช้ข้อมูลส่วนบุคคลร่วมกับหน่วยงานในเครือภายใต้ขอบเขตดังต่อไปนี้.",
           groups: [
             {
               title: "รายการข้อมูลที่ใช้ร่วมกัน",
@@ -2971,7 +4412,8 @@ const translations = {
     },
     testimonials: {
       title: "ข่าวคริปโต",
-      subtitle: "ตรวจสอบ Bloomberg, CoinTelegraph, CoinMarketCap และแหล่งข่าวคริปโตอื่นๆ",
+      subtitle:
+        "ตรวจสอบ Bloomberg, CoinTelegraph, CoinMarketCap และแหล่งข่าวคริปโตอื่นๆ",
       items: {
         one: {
           text: "“ความเร็วในการส่งคำสั่งสุดยอด ทำให้การป้องกันความเสี่ยง FX ใช้เวลาเพียงไม่กี่วินาที”",
@@ -2988,7 +4430,8 @@ const translations = {
       },
     },
     footer: {
-      disclaimer: "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      disclaimer:
+        "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
       links: {
         terms: "ข้อกำหนด",
         privacy: "นโยบายความเป็นส่วนตัว",
@@ -3024,14 +4467,70 @@ function getStoredLanguagePreference() {
 }
 
 const assets = [
-  { pair: "BTC/USD", price: 63250.23, change: 1.24, decimals: 2, volatility: 0.0018, categoryKey: "rates.categories.crypto" },
-  { pair: "ETH/USD", price: 3420.58, change: -0.74, decimals: 2, volatility: 0.0024, categoryKey: "rates.categories.crypto" },
-  { pair: "XRP/USD", price: 0.54, change: 0.32, decimals: 4, volatility: 0.0032, categoryKey: "rates.categories.crypto" },
-  { pair: "ADA/USD", price: 0.68, change: -0.15, decimals: 4, volatility: 0.0036, categoryKey: "rates.categories.crypto" },
-  { pair: "SOL/USD", price: 148.37, change: 1.82, decimals: 2, volatility: 0.004, categoryKey: "rates.categories.crypto" },
-  { pair: "BNB/USD", price: 575.9, change: 0.55, decimals: 2, volatility: 0.0021, categoryKey: "rates.categories.crypto" },
-  { pair: "DOGE/USD", price: 0.16, change: -0.48, decimals: 4, volatility: 0.0045, categoryKey: "rates.categories.crypto" },
-  { pair: "LTC/USD", price: 86.42, change: 0.64, decimals: 2, volatility: 0.0025, categoryKey: "rates.categories.crypto" },
+  {
+    pair: "BTC/USD",
+    price: 63250.23,
+    change: 1.24,
+    decimals: 2,
+    volatility: 0.0018,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "ETH/USD",
+    price: 3420.58,
+    change: -0.74,
+    decimals: 2,
+    volatility: 0.0024,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "XRP/USD",
+    price: 0.54,
+    change: 0.32,
+    decimals: 4,
+    volatility: 0.0032,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "ADA/USD",
+    price: 0.68,
+    change: -0.15,
+    decimals: 4,
+    volatility: 0.0036,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "SOL/USD",
+    price: 148.37,
+    change: 1.82,
+    decimals: 2,
+    volatility: 0.004,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "BNB/USD",
+    price: 575.9,
+    change: 0.55,
+    decimals: 2,
+    volatility: 0.0021,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "DOGE/USD",
+    price: 0.16,
+    change: -0.48,
+    decimals: 4,
+    volatility: 0.0045,
+    categoryKey: "rates.categories.crypto",
+  },
+  {
+    pair: "LTC/USD",
+    price: 86.42,
+    change: 0.64,
+    decimals: 2,
+    volatility: 0.0025,
+    categoryKey: "rates.categories.crypto",
+  },
 ];
 
 const API_ENDPOINT = window.TICKER_API_ENDPOINT ?? null;
@@ -3043,11 +4542,17 @@ function translate(key, lang = currentLang) {
   const fallback = translations.en;
   const target = translations[lang] || fallback;
   const path = key.split(".");
-  let value = path.reduce((acc, segment) => (acc ? acc[segment] : undefined), target);
+  let value = path.reduce(
+    (acc, segment) => (acc ? acc[segment] : undefined),
+    target,
+  );
   if (value !== undefined) {
     return value;
   }
-  return path.reduce((acc, segment) => (acc ? acc[segment] : undefined), fallback) ?? key;
+  return (
+    path.reduce((acc, segment) => (acc ? acc[segment] : undefined), fallback) ??
+    key
+  );
 }
 
 function applyTranslations(lang) {
@@ -3075,7 +4580,10 @@ function formatPrice(price, decimals) {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   };
-  return price.toLocaleString(currentLang === "th" ? "th-TH" : currentLang === "ja" ? "ja-JP" : "en-US", options);
+  return price.toLocaleString(
+    currentLang === "th" ? "th-TH" : currentLang === "ja" ? "ja-JP" : "en-US",
+    options,
+  );
 }
 
 function formatChange(change) {
@@ -3093,7 +4601,15 @@ function renderVipContent(lang) {
       rewardTableBody.innerHTML = "";
       rows.forEach((row) => {
         const tr = document.createElement("tr");
-        ["rank", "tier", "requirement", "bonus", "daily", "weekly", "monthly"].forEach((key) => {
+        [
+          "rank",
+          "tier",
+          "requirement",
+          "bonus",
+          "daily",
+          "weekly",
+          "monthly",
+        ].forEach((key) => {
           const td = document.createElement("td");
           td.textContent = row && row[key] !== undefined ? row[key] : "";
           tr.appendChild(td);
@@ -3103,7 +4619,9 @@ function renderVipContent(lang) {
     }
   }
 
-  const maintenanceTableBody = document.querySelector("#vip-maintenance-table tbody");
+  const maintenanceTableBody = document.querySelector(
+    "#vip-maintenance-table tbody",
+  );
   if (maintenanceTableBody) {
     const rows = translate("vip.rules.maintenanceTable.rows", lang);
     if (Array.isArray(rows)) {
@@ -3192,9 +4710,11 @@ async function fetchLiveRates() {
 }
 
 function syncLangActiveState(lang) {
-  document.querySelectorAll(".lang-switch button, .mobile-lang-switch button").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.lang === lang);
-  });
+  document
+    .querySelectorAll(".lang-switch button, .mobile-lang-switch button")
+    .forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
 }
 
 function initLanguageSwitcher() {
@@ -3252,7 +4772,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenuToggle.addEventListener("click", () => {
       mobileMenuToggle.classList.toggle("active");
       mobileMenu.classList.toggle("active");
-      document.body.classList.toggle("locked-scroll", mobileMenu.classList.contains("active"));
+      document.body.classList.toggle(
+        "locked-scroll",
+        mobileMenu.classList.contains("active"),
+      );
     });
 
     mobileNavLinks.forEach((link) => {
@@ -3264,7 +4787,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 980 && document.body.classList.contains("locked-scroll")) {
+      if (
+        window.innerWidth > 980 &&
+        document.body.classList.contains("locked-scroll")
+      ) {
         mobileMenuToggle.classList.remove("active");
         mobileMenu.classList.remove("active");
         document.body.classList.remove("locked-scroll");
