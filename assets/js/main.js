@@ -1113,262 +1113,333 @@ const translations = {
         },
       },
       trading: {
-        hero: {
-          badge: "Trading",
-          title: "Binary options trading flow",
-          subtitle:
-            "Map every step from asset selection to post-trade audits on the top-game interface.",
-          meta: "Ticket version 4.2 · desktop + mobile",
+        title: "Trading - Binary Options Flow",
+        intro:
+          "1540BO's binary options trading features simple and intuitive operations. This guide explains the entire flow from basic Top Game screen usage to creating trading tickets and risk management.",
+        updated: "Last updated: December 08, 2025",
+        overview: {
+          title: "Top Game Screen Overview",
+          intro:
+            "After logging in, the 'Top Game' screen is displayed first. All information necessary for trading is consolidated here.",
+          table: {
+            elementHeader: "Element",
+            descriptionHeader: "Description",
+            row1: {
+              label: "Trading Pairs",
+              content:
+                "Select cryptocurrency pairs to trade, such as BTC/USDT or ETH/USDT. Real-time prices are displayed.",
+            },
+            row2: {
+              label: "Price Chart",
+              content:
+                "Visually check price movements of selected trading pairs. Analyze past price trends to predict future prices.",
+            },
+            row3: {
+              label: "Expiry Time",
+              content:
+                "Select the time when trade judgment occurs. Various options are available, from ultra-short-term of tens of seconds to long-term of several hours.",
+            },
+            row4: {
+              label: "Trading History",
+              content:
+                "Check past trading results (win/loss), bet amounts, payout amounts, etc.",
+            },
+          },
         },
-        sections: [
-          {
-            heading: "Understand the layout",
-            text: "The top-game UI splits information across three columns.",
-            items: [
-              "Left rail: asset list, favourites, and volatility tags.",
-              "Center: price pulse, expiry selector, and call/put buttons.",
-              "Right rail: position log with settle status, multiplier, and UID.",
-            ],
+        ticket: {
+          title: "Creating Trading Tickets",
+          intro: "Creating a trading ticket is completed in just 3 steps.",
+          steps: [
+            "Select Trading Pair: Choose the cryptocurrency pair you want to trade.",
+            "Select Expiry Time: Set the time to end the trade (expiry).",
+            "Predict Direction and Bet: Click the 'Call' button if you predict the price will rise. Click the 'Put' button if you predict the price will fall. Enter the bet amount and confirm the trade.",
+          ],
+          note: {
+            label: "Point:",
+            text: "1540BO visualizes the sentiment (market psychology) of traders worldwide with a heatmap. You can develop trading strategies by referencing other traders' movements.",
           },
-          {
-            heading: "Build a precise ticket",
-            text: "Apply these rules before pressing Buy.",
-            items: [
-              "Choose expiry first (15s, 30s, 60s, or custom windows).",
-              "Set stake size, confirm projected payout %, then pick call/put.",
-              "Use the sentiment meter and depth widget to avoid one-sided books.",
-            ],
-          },
-          {
-            heading: "Apply risk controls",
-            text: "Protect bankroll and audit trails.",
-            items: [
-              "Risk <2% of session bankroll per ticket.",
-              "Use Notes > Strategy tag so you can filter profitable setups later.",
-              "Pause when platform latency exceeds 300 ms (latency pill turns amber).",
-            ],
-          },
-          {
-            heading: "Audit every session",
-            text: "Keep disputes painless.",
-            items: [
-              "Download CSV from History > Export at the end of each day.",
-              "Cross-check expiry hash IDs with the transparency feed if something feels off.",
-              "Escalate anomalies via support@1540bo.io within 12 hours.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Ready to scale limits?",
-          body: "VIP desk can unlock higher stakes, custom expiries, and dedicated risk reviews.",
-          cta: "Review VIP rewards",
+        },
+        risk: {
+          title: "Risk Management and Payout",
+          intro:
+            "Binary options have fixed payout rates, making risk management easy. Before starting a trade, you can accurately grasp potential profits and losses.",
+          items: [
+            "Payout Rate: The percentage of profit obtained when a trade succeeds. Payout rates vary depending on the trading pair and market conditions.",
+            "Risk: If a trade fails, losses are limited to the bet amount. Losses exceeding the bet amount will not occur.",
+          ],
+          outro:
+            "Practice responsible trading and trade based on your own fund management plan.",
+        },
+        contact: {
+          title: "Contact Us",
+          text: "If you have any questions about trading, please feel free to contact our 24-hour support team.",
+          email: "Support Email: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          account: "Account - Registration and Security",
+          deposit: "Wallet - Deposit Procedures",
         },
       },
       deposit: {
-        hero: {
-          badge: "Wallet",
-          title: "Deposit & crediting guide",
-          subtitle: "Use on-chain rails safely and keep traces ready for ops.",
-          meta: "Applies to wallet v3",
+        title: "Wallet - Deposit & Crediting Guide",
+        intro:
+          "1540BO enables fast and secure deposits using multiple cryptocurrencies. This page details supported blockchains, how to check deposit addresses, and what to do if deposits are delayed.",
+        updated: "Last updated: December 08, 2025",
+        supported: {
+          title: "Supported Cryptocurrencies and Networks",
+          intro:
+            "Our platform supports the following major cryptocurrencies and networks (blockchains). When making a deposit, be sure to select the correct network. If you send to the wrong network, your assets may be lost.",
+          table: {
+            cryptoHeader: "Cryptocurrency",
+            networkHeader: "Supported Networks",
+            row1: { crypto: "USDT", network: "ERC20 (Ethereum), TRC20 (TRON)" },
+            row2: { crypto: "BTC", network: "Bitcoin" },
+            row3: { crypto: "ETH", network: "ERC20 (Ethereum)" },
+            row4: { crypto: "TRX", network: "TRC20 (TRON)" },
+            row5: { crypto: "LTC", network: "Litecoin" },
+            row6: { crypto: "XRP", network: "Ripple" },
+          },
         },
-        sections: [
-          {
-            heading: "Supported rails",
-            text: "Pick the rail that matches your custody setup.",
-            items: [
-              "Crypto: USDT-TRC20, BTC, ETH, TRX, XRP, LTC.",
-              "Fiat/stable on-ramps via approved OTC desks (contact ops).",
-              "Minimum deposit 10 USDT or equivalent.",
-            ],
+        steps: {
+          title: "Deposit Procedure",
+          items: [
+            "Go to Wallet Page: After logging in, access the 'Wallet' section from the dashboard.",
+            "Select Deposit: Choose the 'Deposit' tab and select the cryptocurrency you want to deposit.",
+            "Select Network: Choose the corresponding network (e.g., ERC20, TRC20).",
+            "Check Deposit Address: Copy the displayed dedicated deposit address or scan the QR code. Send cryptocurrency from your external wallet or exchange to this address.",
+          ],
+          note: {
+            label: "Important:",
+            text: "Each cryptocurrency has its own dedicated deposit address. Be sure to send to the correct address.",
           },
-          {
-            heading: "Deposit flow",
-            text: "Always copy a fresh address from Wallet > Deposit.",
-            items: [
-              "Pick the asset + network, generate a one-time address.",
-              "Send funds from your personal wallet and capture the TXID.",
-              "Wait for the required confirmations (1 block for TRON, 2 for ETH).",
-              "Balance updates automatically; no need to open a ticket unless 30 minutes pass.",
-            ],
-          },
-          {
-            heading: "Best practices",
-            text: "Reduce manual reviews and delays.",
-            items: [
-              "Only send from wallets you control—exchanges sometimes batch and delay hashes.",
-              "Never mix networks; USDT-ERC20 sent to a TRC20 address is irrecoverable.",
-              "For large transfers, send a small test first, then the remainder.",
-            ],
-          },
-          {
-            heading: "If credits are late",
-            text: "Have the following ready before contacting ops.",
-            items: [
-              "TXID + chain explorer screenshot + asset amount.",
-              "Wallet screenshot that shows “Sent” with timestamp.",
-              "Whether the deposit address was reused from a previous session.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Need to whitelist a desk wallet?",
-          body: "Share the cold-wallet address, ownership letter, and desired daily cap so ops can approve it.",
-          cta: "Contact wallet team",
+        },
+        timing: {
+          title: "Confirmations and Reflection Time",
+          intro:
+            "Blockchain transactions are approved through multiple 'confirmations'. The time until deposits are reflected in your account varies depending on network congestion and required confirmations.",
+          items: [
+            "Standard Reflection Time: Normally reflected in your account within 5 to 30 minutes after sending.",
+            "Confirmation Count: Deposit completes when the confirmation count set by each network is reached.",
+          ],
+        },
+        troubleshooting: {
+          title: "Deposit Delay Troubleshooting",
+          intro:
+            "If your deposit is not reflected after 30 minutes, please check the following:",
+          steps: [
+            "Check Sending Status: Confirm in your external wallet or exchange that the transfer completed successfully.",
+            "Check Transaction ID (TXID): Use a blockchain explorer (e.g., Etherscan, Tronscan) to track the transaction status with the Transaction ID (TXID).",
+            "Reconfirm Address and Network: Double-check that the destination address and selected network were correct.",
+          ],
+          contact:
+            "If the problem persists after checking the above, please contact our support team with the following information:",
+          items2: [
+            "Transaction ID (TXID)",
+            "Type and amount of cryptocurrency sent",
+            "Date and time of transfer",
+          ],
+          email: "Support Email: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          withdrawal: "Wallet - Withdrawal & Compliance",
+          trading: "Trading Guide",
         },
       },
       withdrawal: {
-        hero: {
-          badge: "Wallet",
-          title: "Withdrawal & compliance guide",
-          subtitle: "Know the prerequisites before requesting funds.",
-          meta: "Applies to standard tier users",
+        title: "Wallet - Withdrawal & Compliance",
+        intro:
+          "At 1540BO, safe and fast withdrawal processing is our top priority. This page explains withdrawal requirements, processing times, and important compliance information.",
+        updated: "Last updated: December 08, 2025",
+        requirements: {
+          title: "Withdrawal Requirements",
+          intro:
+            "For smooth withdrawal processing, please confirm that you meet the following conditions in advance:",
+          table: {
+            conditionHeader: "Condition",
+            detailHeader: "Details",
+            row1: {
+              condition: "Complete KYC Verification",
+              detail:
+                "All users must complete KYC verification before their first withdrawal. This prevents fraud and ensures account security.",
+            },
+            row2: {
+              condition: "Minimum Withdrawal Amount",
+              detail:
+                "Each cryptocurrency has a set minimum withdrawal amount. Withdrawal requests cannot be below this amount.",
+            },
+            row3: {
+              condition: "Trading Volume Requirements",
+              detail:
+                "In certain conditions, such as receiving bonuses, you may need to meet minimum trading volume requirements. See promotion terms for details.",
+            },
+          },
         },
-        sections: [
-          {
-            heading: "Before you request",
-            text: "Complete the required safeguards first.",
-            items: [
-              "Level 2 KYC approved with a current address.",
-              "2FA + withdrawal password enabled.",
-              "Personal wallet address ready (no exchange deposit links).",
-            ],
+        timing: {
+          title: "Withdrawal Processing Time",
+          intro:
+            "Withdrawal requests are processed sequentially by our finance team. After security checks are completed, cryptocurrency is sent to the specified wallet address.",
+          items: [
+            "Standard Processing Time: Normally completed within 24 hours of withdrawal request.",
+            "Network Time: Depending on blockchain network conditions, arrival may take additional time.",
+          ],
+          note: {
+            label: "Same-day Withdrawal:",
+            text: "1540BO supports same-day withdrawals, and in most cases, withdrawal processing is completed within a few hours.",
           },
-          {
-            heading: "Submit the withdrawal",
-            text: "Wallet > Withdraw follows these steps.",
-            items: [
-              "Select asset + network, paste destination address (and memo/tag if required).",
-              "Enter amount; system displays network fee before confirmation.",
-              "Approve via 2FA + email OTP.",
-            ],
-          },
-          {
-            heading: "Timing & limits",
-            text: "Understand the SLA before chasing support.",
-            items: [
-              "Standard review window: 5–30 minutes.",
-              "Requests above 10,000 USDT may trigger a quick video call.",
-              "Daily withdrawal cap resets at 00:00 UTC (based on VIP tier).",
-            ],
-          },
-          {
-            heading: "If funds are on hold",
-            text: "Respond with evidence to avoid long delays.",
-            items: [
-              "Check email for compliance questions (ID refresh, source of funds, etc.).",
-              "Reply with requested documents within 24 hours to keep your spot in queue.",
-              "Escalate via payout@1540bo.io only after 12 hours of no update.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Need a fast-lane review?",
-          body: "VIP rank 10+ clients can request a dedicated payout lane with pre-approved addresses.",
-          cta: "Email payout desk",
+        },
+        holds: {
+          title: "Responding to Withdrawal Holds",
+          intro:
+            "Withdrawal requests may have a 'Hold' status. This occurs when additional security verification is needed or when there are issues with registration information.",
+          reasons: "Main Hold Reasons:",
+          items: [
+            "High-value withdrawal requests",
+            "Access from unusual IP addresses",
+            "Registration information and withdrawal wallet information don't match",
+          ],
+          contact:
+            "If your withdrawal is held, our support team will contact you at your registered email address. Please follow instructions and provide the necessary information.",
+        },
+        fees: {
+          title: "Withdrawal Fees",
+          text: "Withdrawals incur fees (miner fees) paid to the blockchain network. These fees vary depending on network congestion. You can check the latest fees on the withdrawal request screen.",
+        },
+        contact: {
+          title: "Contact Us",
+          text: "If you have questions or issues regarding withdrawals, please contact our support team anytime.",
+          email: "Support Email: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          deposit: "Wallet - Deposit Procedures",
+          account: "Account - Registration and Security",
         },
       },
       affiliate: {
-        hero: {
-          badge: "Partners",
-          title: "Affiliate operations playbook",
-          subtitle:
-            "Align your campaigns with the official program before sending traffic.",
-          meta: "Bet-share model · nine ranks",
+        title: "Partners - Affiliate Operations Playbook",
+        intro:
+          "1540BO's affiliate program offers industry-leading compensation and a highly transparent tracking system. This playbook supports you from application through operations to revenue maximization.",
+        updated: "Last updated: December 08, 2025",
+        overview: {
+          title: "Affiliate Program Overview",
+          intro:
+            "By joining this program, you can earn ongoing commissions based on referred users' trading activity. This program is ideal for anyone engaged in digital marketing, including bloggers, influencers, and website operators.",
+          table: {
+            featureHeader: "Feature",
+            detailHeader: "Details",
+            row1: {
+              feature: "High Commission Rates",
+              detail:
+                "Competitive compensation based on referred users' trading volume.",
+            },
+            row2: {
+              feature: "Real-time Tracking",
+              detail:
+                "View clicks, registrations, active traders, and generated commissions in real-time on a dedicated dashboard.",
+            },
+            row3: {
+              feature: "Abundant Marketing Materials",
+              detail:
+                "Freely use high-conversion marketing materials including banners, landing pages, and promotional articles.",
+            },
+            row4: {
+              feature: "Dedicated Support",
+              detail:
+                "A dedicated account manager supports questions and consultations regarding affiliate operations.",
+            },
+          },
         },
-        sections: [
-          {
-            heading: "Before you apply",
-            text: "Prepare proof that you can drive compliant traffic.",
-            items: [
-              "Read the partner terms published on the Affiliate page.",
-              "List the media channels you control (web, social, paid).",
-              "Confirm you can geofence or exclude restricted jurisdictions.",
-            ],
+        flow: {
+          title: "Operations Flow",
+          steps: [
+            "Application and Review: Submit the application form from the official website's affiliate page. Our team will review your application and contact you with results, usually within 3 business days.",
+            "Tracking and Promotion: After approval, you'll receive your dedicated affiliate code (tracking link). Share this link on websites, blogs, SNS, etc. to direct new users to 1540BO.",
+            "Earning and Settlement of Commissions: When referred users start trading, commissions are generated based on their trading volume. Commissions are totaled monthly and automatically paid to your specified cryptocurrency wallet.",
+          ],
+        },
+        compliance: {
+          title: "Compliance Requirements",
+          intro:
+            "For healthy program operation, please comply with the following:",
+          items: [
+            "Prohibition of False/Exaggerated Advertising: Expressions that mislead users or promotions guaranteeing profits are strictly prohibited.",
+            "Prohibition of Spam: Spam activities such as indiscriminate email sending or commenting on unrelated websites are prohibited.",
+            "Prohibition of Self-Affiliate: You cannot earn commissions on your own trades.",
+          ],
+          warning: {
+            label: "Note:",
+            text: "If violations are confirmed, measures such as suspension of affiliate status or confiscation of generated commissions may be taken.",
           },
-          {
-            heading: "Tracking & assets",
-            text: "Keep everything aligned with brand guidelines.",
-            items: [
-              "Grab tracking links from the affiliate dashboard; never reuse someone else’s link.",
-              "Host banners via the official CDN so updates propagate automatically.",
-              "Embed the compliance badge and disclaimer near every CTA.",
-            ],
-          },
-          {
-            heading: "Reporting & payouts",
-            text: "Know how revenue is calculated.",
-            items: [
-              "Daily bet-share report posts at 08:00 UTC (T+2).",
-              "Reconcile deposit counts with your CRM so ranks stay accurate.",
-              "Set your payout wallet and minimum threshold from the Partner > Wallet tab.",
-            ],
-          },
-          {
-            heading: "Compliance guardrails",
-            text: "Violations lead to clawbacks.",
-            items: [
-              "No claims of guaranteed profit or risk-free trading.",
-              "Do not target minors or blocked geos in ads.",
-              "Submit new creatives for review 48 hours before launch.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Need co-marketing assets?",
-          body: "Partner studio can localise video, EDM, and landing pages that match the top-game visual language.",
-          cta: "Email partners@1540bo.io",
+        },
+        contact: {
+          title: "Contact Us",
+          text: "For questions about the affiliate program, please contact:",
+          email: "Affiliate Support: partners@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          resources: "Resources - Other Operational Information",
         },
       },
       other: {
-        hero: {
-          badge: "Resources",
-          title: "Other operations resources",
-          subtitle:
-            "Everything that doesn’t fit elsewhere: top-game tips, status feeds, and responsible trading tools.",
-          meta: "Live ops reference",
+        title: "Resources - Other Operational Information",
+        intro:
+          "This page provides additional information and tools to maximize your use of 1540BO, along with our support structure to help you trade with confidence.",
+        updated: "Last updated: December 08, 2025",
+        tips: {
+          title: "Top Game Usage Tips",
+          intro:
+            "Strategic approaches are essential for success in binary options trading. Below are basic tips useful for everyone from beginners to advanced traders:",
+          items: [
+            "Trend Following Strategy: A basic strategy where you analyze price charts and select 'Call' or 'Put' in the direction of clear upward or downward trends.",
+            "Using Technical Analysis: Use technical indicators like Moving Average or RSI to judge market overheating and turning points.",
+            "Monitoring Economic News: Major economic indicator releases and financial news can significantly impact market prices. Make it a habit to check the economic calendar before trading.",
+          ],
         },
-        sections: [
-          {
-            heading: "Top-game lobby tips",
-            text: "Get more from https://1540bo.io/top-game.",
-            items: [
-              "Use the Top Game toggle to jump between featured rooms without leaving the chart.",
-              "Tournament cards refresh hourly—check them before promoting nightly pushes.",
-              "Mobile bottom navigation mirrors desktop, so scripts remain identical.",
-            ],
+        responsible: {
+          title: "Responsible Trading",
+          intro:
+            "1540BO promotes 'responsible trading' so customers can continue healthy trading activities. Please use the following tools and resources so trading doesn't negatively impact your life:",
+          table: {
+            toolHeader: "Tool/Resource",
+            descHeader: "Description",
+            row1: {
+              tool: "Self-Limitation Tools",
+              desc: "Set upper limits on daily trading amounts or loss amounts. Prevents emotional trading and supports planned fund management.",
+            },
+            row2: {
+              tool: "Temporary Account Suspension",
+              desc: "If you want to take a break from trading for a period, you can use the option to temporarily suspend your account.",
+            },
+            row3: {
+              tool: "Consultation Services",
+              desc: "If you have concerns about trading, we recommend consulting specialized counseling organizations. Contact our support team for details.",
+            },
           },
-          {
-            heading: "Status & maintenance",
-            text: "Keep downtime predictable for your users.",
-            items: [
-              "Bookmark status.1540bo.io and subscribe to notifications.",
-              "Join @bo1540_alert on Telegram/LINE for instant pushes.",
-              "Review maintenance change logs posted after each window.",
-            ],
+          warning: {
+            label: "Warning:",
+            text: "Binary options trading can offer high returns but also carries the risk of losing your investment principal. Trade carefully within your surplus funds.",
           },
-          {
-            heading: "Responsible trading toolkit",
-            text: "Help players control pace and exposure.",
-            items: [
-              "Enable daily loss caps inside Settings > Limits.",
-              "Turn on reality-check popups every 30 minutes in the top-game lobby.",
-              "Share the risk education microsite in every onboarding email.",
-            ],
-          },
-          {
-            heading: "Support toolkit",
-            text: "Faster debugging for ops teams.",
-            items: [
-              "Use the in-app chat uploader for HAR files and screenshots.",
-              "Tag tickets with “/status” plus UID so ops can find them instantly.",
-              "Escalate emergencies via security@1540bo.io with full context.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Stay informed",
-          body: "VIP broadcast channel posts ops notes, promo calendars, and emergency bulletins first.",
-          cta: "Open VIP news",
+        },
+        support: {
+          title: "Support Structure",
+          intro:
+            "To quickly resolve customer issues and questions, 1540BO provides 24-hour customer support.",
+          tips: "Tips for Inquiries:",
+          text: "To resolve issues faster, please provide the following information when possible:",
+          items: [
+            "Screenshots: Capture of the screen where the problem occurred",
+            "Transaction ID (TXID): For deposit/withdrawal issues",
+            "Date and Time of Occurrence: Exact time the problem occurred",
+          ],
+          email: "Support Email: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          faq: "FAQ (Frequently Asked Questions)",
+          terms: "Terms of Service",
         },
       },
     },
@@ -2500,34 +2571,337 @@ const translations = {
             cta: "詳細を見る",
           },
           trading: {
-            eyebrow: "取引",
-            title: "バイナリーオプションの流れ",
-            body: "トップゲーム画面の導線、チケット作成、リスク管理を解説。",
-            cta: "ガイドを開く",
+            title: "取引 - バイナリーオプションの流れ",
+            intro:
+              "1540BOのバイナリーオプション取引は、シンプルで直感的な操作性が特徴です。このガイドでは、トップゲーム画面の基本的な使い方から、取引チケットの作成、リスク管理までの一連の流れを解説します。",
+            updated: "最終更新日: 2025年12月08日",
+            overview: {
+              title: "トップゲーム画面の概要",
+              intro:
+                "ログイン後、最初に表示されるのが「トップゲーム」画面です。ここには、取引に必要なすべての情報が集約されています。",
+              table: {
+                elementHeader: "要素",
+                descriptionHeader: "説明",
+                row1: {
+                  label: "取引ペア",
+                  content:
+                    "BTC/USDT、ETH/USDTなど、取引対象となる暗号資産のペアを選択します。リアルタイムの価格が表示されます。",
+                },
+                row2: {
+                  label: "価格チャート",
+                  content:
+                    "選択した取引ペアの価格変動を視覚的に確認できます。過去の価格動向を分析し、将来の価格を予測します。",
+                },
+                row3: {
+                  label: "満期時間",
+                  content:
+                    "取引の判定が行われる時間を選択します。数十秒の超短期から、数時間の長期まで、様々なオプションが用意されています。",
+                },
+                row4: {
+                  label: "取引履歴",
+                  content:
+                    "過去の取引結果（勝ち/負け）、ベット額、ペイアウト額などを確認できます。",
+                },
+              },
+            },
+            ticket: {
+              title: "取引チケットの作成",
+              intro: "取引チケットの作成は、わずか3ステップで完了します。",
+              steps: [
+                "取引ペアの選択: 取引したい暗号資産ペアを選びます。",
+                "満期時間の選択: 取引を終了する時間（満期）を設定します。",
+                "方向の予測とベット: 価格が上昇すると予測する場合は「コール（Call）」ボタンをクリックします。価格が下落すると予測する場合は「プット（Put）」ボタンをクリックします。ベット額を入力し、取引を確定します。",
+              ],
+              note: {
+                label: "ポイント:",
+                text: "1540BOでは、世界中のトレーダーのセンチメント（市場心理）をヒートマップで可視化しています。他のトレーダーの動向を参考に、取引戦略を立てることができます。",
+              },
+            },
+            risk: {
+              title: "リスク管理とペイアウト",
+              intro:
+                "バイナリーオプションは、ペイアウト率が固定されているため、リスク管理が容易です。取引を開始する前に、潜在的な利益と損失を正確に把握できます。",
+              items: [
+                "ペイアウト率: 取引が成功した場合に得られる利益の割合です。ペイアウト率は取引ペアや市場の状況によって変動します。",
+                "リスク: 取引が失敗した場合の損失は、ベット額に限定されます。ベット額以上の損失が発生することはありません。",
+              ],
+              outro:
+                "責任ある取引を心掛け、ご自身の資金管理計画に基づいて取引を行ってください。",
+            },
+            contact: {
+              title: "お問い合わせ",
+              text: "取引に関するご不明な点がございましたら、24時間対応のサポートチームまでお気軽にお問い合わせください。",
+              email: "サポートメール: support@1540bo.io",
+            },
+            relatedLinks: {
+              title: "関連リンク",
+              account: "アカウント - 登録とセキュリティ",
+              deposit: "ウォレット - 入金・反映手順",
+            },
           },
           deposit: {
-            eyebrow: "ウォレット",
-            title: "入金・反映手順",
-            body: "対応チェーン、確認回数、遅延時のチェックを掲載。",
-            cta: "手順を見る",
+            title: "ウォレット - 入金・反映手順",
+            intro:
+              "1540BOでは、複数の暗号資産（仮想通貨）を使用した迅速かつ安全な入金が可能です。このページでは、対応しているブロックチェーン、入金アドレスの確認方法、および入金が遅延した場合の対処法について詳しく説明します。",
+            updated: "最終更新日: 2025年12月08日",
+            supported: {
+              title: "対応暗号資産とネットワーク",
+              intro:
+                "当プラットフォームでは、以下の主要な暗号資産およびネットワーク（ブロックチェーン）に対応しています。入金を行う際は、必ず正しいネットワークを選択してください。誤ったネットワークに送金した場合、資産が失われる可能性があります。",
+              table: {
+                cryptoHeader: "暗号資産",
+                networkHeader: "対応ネットワーク",
+                row1: {
+                  crypto: "USDT",
+                  network: "ERC20 (Ethereum), TRC20 (TRON)",
+                },
+                row2: { crypto: "BTC", network: "Bitcoin" },
+                row3: { crypto: "ETH", network: "ERC20 (Ethereum)" },
+                row4: { crypto: "TRX", network: "TRC20 (TRON)" },
+                row5: { crypto: "LTC", network: "Litecoin" },
+                row6: { crypto: "XRP", network: "Ripple" },
+              },
+            },
+            steps: {
+              title: "入金手順",
+              items: [
+                "ウォレットページへ移動: ログイン後、ダッシュボードから「ウォレット」セクションにアクセスします。",
+                "入金を選択: 「入金」タブを選び、入金したい暗号資産を選択します。",
+                "ネットワークの選択: 対応するネットワーク（例: ERC20, TRC20）を選択します。",
+                "入金アドレスの確認: 表示された専用の入金アドレスをコピーするか、QRコードをスキャンします。このアドレス宛に、お持ちの外部ウォレットまたは取引所から暗号資産を送金してください。",
+              ],
+              note: {
+                label: "重要:",
+                text: "各暗号資産には、それぞれ専用の入金アドレスが割り当てられています。必ず正しいアドレスに送金してください。",
+              },
+            },
+            timing: {
+              title: "確認回数と反映時間",
+              intro:
+                "ブロックチェーン上での取引は、複数の「確認（Confirmation）」を経て承認されます。入金がお客様のアカウントに反映されるまでの時間は、ネットワークの混雑状況や必要な確認回数によって異なります。",
+              items: [
+                "標準的な反映時間: 通常、送金後5分から30分程度でアカウントに反映されます。",
+                "確認回数: 各ネットワークで定められた確認回数に達すると、入金が完了します。",
+              ],
+            },
+            troubleshooting: {
+              title: "入金遅延時のトラブルシューティング",
+              intro:
+                "入金が30分以上経っても反映されない場合は、以下の点をご確認ください。",
+              steps: [
+                "送金ステータスの確認: ご利用の外部ウォレットや取引所で、送金が正常に完了しているか確認してください。",
+                "トランザクションID（TXID）の確認: ブロックチェーンエクスプローラー（例: Etherscan, Tronscan）を使用して、トランザクションID（TXID）で取引の状況を追跡します。",
+                "アドレスとネットワークの再確認: 送金先のアドレスと選択したネットワークが正しかったか、再度確認してください。",
+              ],
+              contact:
+                "上記を確認しても問題が解決しない場合は、以下の情報を添えてサポートチームまでご連絡ください。",
+              items2: [
+                "トランザクションID（TXID）",
+                "送金した暗号資産の種類と数量",
+                "送金日時",
+              ],
+              email: "サポートメール: support@1540bo.io",
+            },
+            relatedLinks: {
+              title: "関連リンク",
+              withdrawal: "ウォレット - 出金・コンプライアンス",
+              trading: "取引ガイド",
+            },
           },
           withdrawal: {
-            eyebrow: "ウォレット",
-            title: "出金・コンプライアンス",
-            body: "必要条件、処理時間、保留時の対応を整理。",
-            cta: "チェックリスト",
+            title: "ウォレット - 出金・コンプライアンス",
+            intro:
+              "1540BOでは、安全かつ迅速な出金処理を最優先事項としています。このページでは、出金の必要条件、処理時間、およびコンプライアンスに関する重要な情報について説明します。",
+            updated: "最終更新日: 2025年12月08日",
+            requirements: {
+              title: "出金の必要条件",
+              intro:
+                "スムーズな出金処理のため、以下の条件を満たしていることを事前にご確認ください。",
+              table: {
+                conditionHeader: "条件",
+                detailHeader: "詳細",
+                row1: {
+                  condition: "本人確認（KYC）の完了",
+                  detail:
+                    "すべてのユーザーは、初回の出金前に本人確認（KYC）手続きを完了する必要があります。これは、不正行為を防止し、アカウントのセキュリティを確保するためです。",
+                },
+                row2: {
+                  condition: "最小出金額",
+                  detail:
+                    "各暗号資産には、最小出金額が設定されています。出金申請額がこの額を下回ることはできません。",
+                },
+                row3: {
+                  condition: "取引量要件",
+                  detail:
+                    "ボーナスを受け取った場合など、特定の条件下で最低取引量を満たす必要がある場合があります。詳細はプロモーションの利用規約をご確認ください。",
+                },
+              },
+            },
+            timing: {
+              title: "出金処理時間",
+              intro:
+                "出金申請は、当社の財務チームによって順次処理されます。セキュリティチェック完了後、暗号資産は指定されたウォレットアドレスに送金されます。",
+              items: [
+                "標準処理時間: 通常、出金申請から24時間以内に処理が完了します。",
+                "ネットワーク時間: ブロックチェーンのネットワーク状況によっては、着金までにさらに時間がかかる場合があります。",
+              ],
+              note: {
+                label: "即日出金対応:",
+                text: "1540BOは即日出金に対応しており、ほとんどの場合、数時間以内に出金処理が完了します。",
+              },
+            },
+            holds: {
+              title: "出金保留時の対応",
+              intro:
+                "出金申請が「保留」ステータスになる場合があります。これは、追加のセキュリティ確認が必要な場合や、登録情報に不備がある場合などに発生します。",
+              reasons: "主な保留理由:",
+              items: [
+                "高額な出金申請",
+                "通常とは異なるIPアドレスからのアクセス",
+                "登録情報と出金先ウォレット情報が一致しない",
+              ],
+              contact:
+                "出金が保留された場合は、サポートチームから登録メールアドレス宛にご連絡いたします。指示に従い、必要な情報をご提供ください。",
+            },
+            fees: {
+              title: "出金手数料",
+              text: "出金時には、ブロックチェーンネットワークに支払うための手数料（マイナーフィー）が発生します。この手数料は、ネットワークの混雑状況に応じて変動します。出金申請画面にて、最新の手数料をご確認いただけます。",
+            },
+            contact: {
+              title: "お問い合わせ",
+              text: "出金に関するご質問や問題が発生した場合は、いつでもサポートチームにご連絡ください。",
+              email: "サポートメール: support@1540bo.io",
+            },
+            relatedLinks: {
+              title: "関連リンク",
+              deposit: "ウォレット - 入金・反映手順",
+              account: "アカウント - 登録とセキュリティ",
+            },
           },
           affiliate: {
-            eyebrow: "パートナー",
-            title: "アフィリエイト運用",
-            body: "申請条件、トラッキング、精算、遵守事項を網羅。",
-            cta: "プレイブック",
+            title: "パートナー - アフィリエイト運用プレイブック",
+            intro:
+              "1540BOのアフィリエイトプログラムは、業界最高水準の報酬体系と、透明性の高いトラッキングシステムを提供します。このプレイブックでは、アフィリエイトの申請から運用、そして収益の最大化までをサポートします。",
+            updated: "最終更新日: 2025年12月08日",
+            overview: {
+              title: "アフィリエイトプログラムの概要",
+              intro:
+                "当プログラムに参加することで、紹介したユーザーの取引活動に応じて継続的なコミッションを得ることができます。ブロガー、インフルエンサー、ウェブサイト運営者など、デジタルマーケティングに携わるすべての方に最適なプログラムです。",
+              table: {
+                featureHeader: "特徴",
+                detailHeader: "詳細",
+                row1: {
+                  feature: "高いコミッション率",
+                  detail:
+                    "紹介されたユーザーの取引量に基づき、競争力のある報酬を提供します。",
+                },
+                row2: {
+                  feature: "リアルタイムトラッキング",
+                  detail:
+                    "専用ダッシュボードで、クリック数、登録者数、アクティブトレーダー数、そして発生したコミッションをリアルタイムで確認できます。",
+                },
+                row3: {
+                  feature: "豊富なマーケティング素材",
+                  detail:
+                    "バナー、ランディングページ、プロモーション記事など、コンバージョン率の高いマーケティング素材を自由にご利用いただけます。",
+                },
+                row4: {
+                  feature: "専任のサポート",
+                  detail:
+                    "アフィリエイト運用に関するご質問や相談に対応するため、専任のアカウントマネージャーがサポートします。",
+                },
+              },
+            },
+            flow: {
+              title: "運用フロー",
+              steps: [
+                "申請と審査: 公式サイトのアフィリエイトページから申請フォームを送信してください。当社のチームが申請内容を審査し、通常3営業日以内に結果をご連絡します。",
+                "トラッキングとプロモーション: 承認後、あなた専用のアフィリエイトコード（トラッキングリンク）が発行されます。ウェブサイト、ブログ、SNSなどでこのリンクを共有し、新規ユーザーを1540BOに誘導します。",
+                "コミッションの獲得と精算: 紹介したユーザーが取引を開始すると、その取引量に応じてコミッションが発生します。コミッションは毎月集計され、指定された暗号資産ウォレットに自動的に支払われます。",
+              ],
+            },
+            compliance: {
+              title: "遵守事項",
+              intro:
+                "アフィリエイトプログラムの健全な運営のため、以下の事項を遵守してください。",
+              items: [
+                "虚偽・誇大な広告の禁止: ユーザーを誤解させるような表現や、利益を保証するような宣伝は固く禁じられています。",
+                "スパム行為の禁止: 無差別なメール送信や、関連性のないウェブサイトへのコメント投稿など、スパムと見なされる行為は禁止です。",
+                "自己アフィリエイトの禁止: 自身の取引に対してコミッションを得ることはできません。",
+              ],
+              warning: {
+                label: "注意:",
+                text: "規約違反が確認された場合、アフィリエイト資格の停止や、発生したコミッションの没収といった措置が取られることがあります。",
+              },
+            },
+            contact: {
+              title: "お問い合わせ",
+              text: "アフィリエイトプログラムに関するご質問は、以下までお問い合わせください。",
+              email: "アフィリエイトサポート: partners@1540bo.io",
+            },
+            relatedLinks: {
+              title: "関連リンク",
+              resources: "リソース - その他の運営情報",
+            },
           },
           other: {
-            eyebrow: "リソース",
-            title: "その他の運営情報",
-            body: "トップゲーム活用術、ステータス、責任ある取引ツール。",
-            cta: "リソース",
+            title: "リソース - その他の運営情報",
+            intro:
+              "このページでは、1540BOを最大限に活用するための追加情報やツール、そしてお客様が安心して取引に取り組めるためのサポート体制についてご案内します。",
+            updated: "最終更新日: 2025年12月08日",
+            tips: {
+              title: "トップゲーム活用術",
+              intro:
+                "バイナリーオプション取引で成功を収めるためには、戦略的なアプローチが不可欠です。以下に、初心者から上級者まで役立つ基本的な活用術を紹介します。",
+              items: [
+                "トレンドフォロー戦略: 価格チャートを分析し、上昇トレンドまたは下降トレンドが明確な場合に、その方向に沿って「コール」または「プット」を選択する基本的な戦略です。",
+                "テクニカル分析の活用: 移動平均線（Moving Average）や相対力指数（RSI）などのテクニカル指標を利用して、市場の過熱感や転換点を判断します。",
+                "経済ニュースの注視: 主要な経済指標の発表や金融ニュースは、市場価格に大きな影響を与える可能性があります。取引前に経済カレンダーを確認する習慣をつけましょう。",
+              ],
+            },
+            responsible: {
+              title: "責任ある取引",
+              intro:
+                "1540BOは、お客様が健全な取引活動を継続できるよう、「責任ある取引」を推進しています。取引が生活に悪影響を及ぼすことがないよう、以下のツールやリソースをご活用ください。",
+              table: {
+                toolHeader: "ツール・リソース",
+                descHeader: "説明",
+                row1: {
+                  tool: "自己制限ツール",
+                  desc: "1日の取引額や損失額に上限を設定することができます。感情的な取引を防ぎ、計画的な資金管理をサポートします。",
+                },
+                row2: {
+                  tool: "アカウントの一時停止",
+                  desc: "一定期間、取引を休息したい場合は、アカウントを一時的に停止するオプションを利用できます。",
+                },
+                row3: {
+                  tool: "相談窓口",
+                  desc: "取引に関する悩みを抱えている場合は、専門のカウンセリング機関への相談をお勧めします。詳細はサポートチームまでお問い合わせください。",
+                },
+              },
+              warning: {
+                label: "警告:",
+                text: "バイナリーオプション取引は、高いリターンが期待できる一方で、投資元本を失うリスクも伴います。余剰資金の範囲内で、慎重に取引を行ってください。",
+              },
+            },
+            support: {
+              title: "サポート体制",
+              intro:
+                "お客様が抱える問題や疑問を迅速に解決するため、1540BOでは24時間体制のカスタマーサポートを提供しています。",
+              tips: "お問い合わせの際のヒント:",
+              text: "問題をより早く解決するために、お問い合わせの際は以下の情報を可能な限りご提供ください。",
+              items: [
+                "スクリーンショット: 問題が発生している画面のキャプチャ",
+                "トランザクションID（TXID）: 入出金に関する問題の場合",
+                "発生日時: 問題が起きた正確な時刻",
+              ],
+              email: "サポートメール: support@1540bo.io",
+            },
+            relatedLinks: {
+              title: "関連リンク",
+              faq: "よくある質問（FAQ）",
+              terms: "利用規約",
+            },
           },
         },
         support: {
