@@ -1049,56 +1049,67 @@ const translations = {
         },
       },
       account: {
-        hero: {
-          badge: "Account",
-          title: "Account registration & verification checklist",
-          subtitle:
-            "Use this before loading funds—every step matches the top-game lobby signup flow.",
-          meta: "Desktop + mobile web",
+        title: "Account - Registration and Security",
+        intro:
+          "To use the 1540BO platform safely, account registration and security settings are essential. This page details KYC (Know Your Customer) procedures, device security management, and account recovery contact settings.",
+        updated: "Last updated: December 08, 2025",
+        kyc: {
+          title: "KYC (Know Your Customer) Procedures",
+          intro:
+            "1540BO requires all users to complete KYC procedures in compliance with international regulatory standards to provide a secure trading environment. Completing KYC allows you to increase withdrawal limits and access all features.",
+          table: {
+            stepHeader: "Step",
+            contentHeader: "Content",
+            step1: {
+              label: "Step 1",
+              content:
+                "Identity Document Submission: From your account settings page, upload color photos of a valid government-issued ID (passport, driver's license, etc.).",
+            },
+            step2: {
+              label: "Step 2",
+              content:
+                "Proof of Address Submission: Submit a utility bill or bank statement issued within the last 3 months showing your name and current address.",
+            },
+            step3: {
+              label: "Step 3",
+              content:
+                "Review: Submitted documents will be reviewed by our compliance team. Reviews are typically completed within 24 hours.",
+            },
+          },
+          note: {
+            label: "Note:",
+            text: "All four corners of submitted documents must be visible, and text must be clearly legible. Blurred or edited images will not be approved.",
+          },
         },
-        sections: [
-          {
-            heading: "Requirements before you register",
-            text: "Gather these items so onboarding takes under five minutes.",
-            items: [
-              "Government ID + selfie that matches the residence country you select.",
-              "Unique email/phone that has never been used inside 1540BO.",
-              "Authenticator app on a clean device for two-factor approvals.",
-            ],
-          },
-          {
-            heading: "Create your account in the right order",
-            text: "Follow the same flow inside https://1540bo.io/auth/login (tap “Create account”).",
-            items: [
-              "Click “Create account”, enter email + password, accept the risk disclosure.",
-              "Verify the email OTP within 10 minutes to avoid session expiry.",
-              "Complete the short profile form (country, referral code, timezone).",
-              "Enable 2FA immediately—withdrawal pages stay locked until you do.",
-            ],
-          },
-          {
-            heading: "Harden login security",
-            text: "Keep attackers away from balances and referral rewards.",
-            items: [
-              "Add at least two trusted devices and review the list monthly.",
-              "Use passkeys/biometrics on mobile Safari or Chrome when prompted.",
-              "Never paste API keys or session cookies into third-party tools.",
-            ],
-          },
-          {
-            heading: "Verification timeline & statuses",
-            text: "Know exactly when each feature unlocks.",
-            items: [
-              "Level 1 (email + phone) unlocks demo trading instantly.",
-              "Level 2 (ID + selfie) unlocks deposits/withdrawals within ~15 minutes.",
-              "Level 3 (proof of address) only required once monthly volume exceeds 50,000 USDT.",
-            ],
-          },
-        ],
-        callout: {
-          title: "Manual KYC review needed?",
-          body: "Send your UID, registered email, and a secure download link for documents to speed up checks.",
-          cta: "Contact the KYC desk",
+        security: {
+          title: "Device Hygiene and Security",
+          intro:
+            "To protect your account from unauthorized access, we strongly recommend the following security measures:",
+          item1:
+            "Set a Strong Password: Use a complex password combining uppercase, lowercase, numbers, and symbols that is difficult to guess.",
+          item2:
+            "Enable Two-Factor Authentication (2FA): We recommend using an authenticator app like Google Authenticator to add an extra security layer during login.",
+          item3:
+            "Avoid Public Wi-Fi: Public Wi-Fi networks can be insecure. Use a trusted network when conducting financial transactions.",
+          item4:
+            "Regular Password Changes: Strengthen security by changing your password regularly, such as once every three months.",
+        },
+        recovery: {
+          title: "Account Recovery and Contacts",
+          intro:
+            "It's important to accurately register recovery contacts in case you forget your password or lose access to your account.",
+          item1:
+            "Email Address: Your registered email is used for password resets and important notifications. Always keep it up to date.",
+          item2:
+            "Phone Number: (Optional) Registering a phone number enables SMS-based account recovery.",
+          support:
+            "If you encounter any issues accessing your account, please contact our support desk immediately:",
+          contact: "Support Email: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "Related Links",
+          trading: "Trading Guide",
+          deposit: "Wallet Deposit Procedures",
         },
       },
       trading: {
@@ -2527,56 +2538,67 @@ const translations = {
         },
       },
       account: {
-        hero: {
-          badge: "アカウント",
-          title: "登録・本人確認チェックリスト",
-          subtitle:
-            "資金を入れる前にこの手順を実施してください。トップゲームのサインアップ画面と同じ流れです。",
-          meta: "デスクトップ／モバイル共通",
+        title: "アカウント - 登録とセキュリティ",
+        intro:
+          "1540BOプラットフォームを安全にご利用いただくため、アカウントの登録とセキュリティ設定は非常に重要です。このページでは、本人確認（KYC）手続き、デバイスのセキュリティ管理、およびアカウント復旧のための連絡先設定について詳しく解説します。",
+        updated: "最終更新日: 2025年12月08日",
+        kyc: {
+          title: "本人確認（KYC）手続き",
+          intro:
+            "1540BOでは、すべてのユーザーに安全な取引環境を提供するため、国際的な規制基準に準拠した本人確認（KYC）手続きを義務付けています。KYCを完了することで、出金上限額の引き上げや、すべての機能へのアクセスが可能になります。",
+          table: {
+            stepHeader: "手順",
+            contentHeader: "内容",
+            step1: {
+              label: "ステップ1",
+              content:
+                "身分証明書の提出: アカウント設定ページから、政府発行の有効な身分証明書（パスポート、運転免許証など）のカラー写真をアップロードしてください。",
+            },
+            step2: {
+              label: "ステップ2",
+              content:
+                "住所証明書の提出: 3ヶ月以内に発行された公共料金の請求書や銀行の取引明細書など、氏名と現住所が確認できる書類を提出してください。",
+            },
+            step3: {
+              label: "ステップ3",
+              content:
+                "審査: 提出された書類は、当社のコンプライアンスチームによって審査されます。通常、審査は24時間以内に完了します。",
+            },
+          },
+          note: {
+            label: "注意:",
+            text: "提出される書類は、四隅がすべて写っており、文字が鮮明に読み取れる必要があります。不鮮明な画像や加工された画像は承認されません。",
+          },
         },
-        sections: [
-          {
-            heading: "登録前に準備するもの",
-            text: "5分以内に完了させるために、以下を事前に用意しましょう。",
-            items: [
-              "居住国と一致する本人確認書類＋セルフィー。",
-              "1540BOで未使用のメールアドレス／電話番号。",
-              "2FA用の認証アプリをインストールした安全なデバイス。",
-            ],
-          },
-          {
-            heading: "正しい順序でアカウントを作成",
-            text: "https://1540bo.io/auth/login で「Create account」を選んで進めます。",
-            items: [
-              "メール・パスワードを入力し、リスク開示に同意。",
-              "メールOTPを10分以内に入力してセッション期限を回避。",
-              "国・紹介コード・タイムゾーンを入力する簡易プロフィールを完了。",
-              "2FAを即時有効化。未設定のままだと出金ページがロックされます。",
-            ],
-          },
-          {
-            heading: "ログインセキュリティを強化",
-            text: "残高と紹介報酬を守るための基本施策です。",
-            items: [
-              "信頼済みデバイスを2台以上登録し、毎月見直す。",
-              "モバイルSafari／Chromeで提示されるパスキー・生体認証を活用。",
-              "APIキーやセッショントークンを外部ツールに貼り付けない。",
-            ],
-          },
-          {
-            heading: "本人確認レベルと開放タイミング",
-            text: "どの機能がいつ解放されるか把握しておきましょう。",
-            items: [
-              "レベル1（メール＋電話）でデモ取引が即時利用可能。",
-              "レベル2（ID＋セルフィー）で15分程度で入出金が解放。",
-              "レベル3（住所確認）は月間5万USDT超の取引のみ必須。",
-            ],
-          },
-        ],
-        callout: {
-          title: "手動審査が必要な場合",
-          body: "UID・登録メール・ドキュメントの安全な共有リンクを添えて連絡すると処理が早まります。",
-          cta: "KYCデスクへメール",
+        security: {
+          title: "デバイスの衛生管理とセキュリティ",
+          intro:
+            "お客様のアカウントを不正アクセスから守るため、以下のセキュリティ対策を強く推奨します。",
+          item1:
+            "強力なパスワードの設定: 推測されにくい、大文字、小文字、数字、記号を組み合わせた複雑なパスワードを使用してください。",
+          item2:
+            "二段階認証（2FA）の有効化: Google Authenticatorなどの認証アプリを利用して、ログイン時に追加のセキュリティ層を設けることをお勧めします。",
+          item3:
+            "公共Wi-Fiの利用回避: 公共のWi-Fiネットワークはセキュリティが脆弱な場合があります。金融取引を行う際は、信頼できるネットワークをご利用ください。",
+          item4:
+            "定期的なパスワード変更: 3ヶ月に一度など、定期的にパスワードを変更することで、セキュリティを強化できます。",
+        },
+        recovery: {
+          title: "アカウント復旧と連絡先",
+          intro:
+            "パスワードを忘れた場合や、アカウントにアクセスできなくなった場合に備え、復旧用の連絡先を正確に登録しておくことが重要です。",
+          item1:
+            "メールアドレス: 登録されているメールアドレスは、パスワードリセットや重要なお知らせの通知に使用されます。常に最新の状態に保ってください。",
+          item2:
+            "電話番号: （オプション）電話番号を登録すると、SMSを利用したアカウント復旧が可能になります。",
+          support:
+            "万が一、アカウントへのアクセスに問題が発生した場合は、以下のサポート窓口まで速やかにご連絡ください。",
+          contact: "サポートメール: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "関連リンク",
+          trading: "取引ガイド",
+          deposit: "ウォレット入金手順",
         },
       },
       trading: {
