@@ -30,6 +30,39 @@ const translations = {
       demo: "Try demo",
       start: "Start trading",
     },
+    supportForm: {
+      badge: "24/7 desk",
+      title: "Contact support",
+      subtitle:
+        "Fill out the form and we'll open an email draft to support@1540bo.io with your details.",
+      fields: {
+        name: "Full name",
+        email: "Contact email",
+        account: "Account ID / UID (optional)",
+        topic: "Topic",
+        subject: "Subject (optional)",
+        message: "Message",
+      },
+      topics: {
+        general: "General question",
+        account: "Account access & KYC",
+        payments: "Deposits & withdrawals",
+        vip: "VIP & rewards",
+        provider: "Provider / licensing",
+      },
+      subjects: {
+        general: "General support request",
+        account: "Account assistance needed",
+        payments: "Payments support request",
+        vip: "VIP desk request",
+        provider: "Provider / licensing inquiry",
+      },
+      note: "Including TXIDs, timestamps, or screenshots speeds up investigations.",
+      disclaimer:
+        "Submitting opens your email client so you can review and send the message to support@1540bo.io.",
+      submit: "Open email draft",
+      close: "Close support form",
+    },
     affiliate: {
       cta: {
         join: "Join the program",
@@ -347,13 +380,13 @@ const translations = {
         note: "Need a custom jurisdictional review? Our compliance partners can scope it as a bundled engagement.",
         support: {
           heading: "Talk to the provider desk",
-          body: "Send your deck or business brief to providers@1540bo.io and we will schedule a workshop within 72 hours.",
+          body: "Send your deck or business brief to support@1540bo.io and we will schedule a workshop within 72 hours.",
         },
       },
       cta: {
         heading: "Ready to explore a provider agreement?",
         body: "Tell us about your market, expected monthly volume, and go-live timeline. We'll assemble the right modules and pricing.",
-        primary: "Contact providers@1540bo.io",
+        primary: "Contact support@1540bo.io",
         secondary: "View technical documentation",
       },
     },
@@ -1753,6 +1786,39 @@ const translations = {
       demo: "デモ口座を試す",
       start: "本番口座を開く",
     },
+    supportForm: {
+      badge: "24時間サポート",
+      title: "サポートへのお問い合わせ",
+      subtitle:
+        "以下のフォームに入力すると、support@1540bo.io 宛てのメール下書きが自動的に開きます。",
+      fields: {
+        name: "氏名",
+        email: "連絡用メールアドレス",
+        account: "アカウントID / UID（任意）",
+        topic: "カテゴリ",
+        subject: "件名（任意）",
+        message: "お問い合わせ内容",
+      },
+      topics: {
+        general: "一般的な質問",
+        account: "アカウント / KYC",
+        payments: "入出金 / キャッシャー",
+        vip: "VIP / リワード",
+        provider: "プロバイダー / ライセンス",
+      },
+      subjects: {
+        general: "一般サポート問い合わせ",
+        account: "アカウントサポートの依頼",
+        payments: "入出金に関するサポート依頼",
+        vip: "VIPデスクへの依頼",
+        provider: "プロバイダー / ライセンス相談",
+      },
+      note: "TXID・発生時刻・スクリーンショットを添付すると対応が早くなります。",
+      disclaimer:
+        "送信するとメールアプリが立ち上がり、support@1540bo.io 宛てに内容を確認して送信できます。",
+      submit: "メール下書きを開く",
+      close: "フォームを閉じる",
+    },
     affiliate: {
       cta: {
         join: "今すぐ参加",
@@ -2070,13 +2136,13 @@ const translations = {
         note: "特定法域の追加レビューも、提携コンプライアンス会社がワンストップで対応可能です。",
         support: {
           heading: "プロバイダーデスクへご相談ください",
-          body: "事業概要や想定ボリュームを providers@1540bo.io までお送りください。72時間以内にワークショップを調整します。",
+          body: "事業概要や想定ボリュームを support@1540bo.io までお送りください。72時間以内にワークショップを調整します。",
         },
       },
       cta: {
         heading: "プロバイダー契約をご検討ですか？",
         body: "マーケット・月次ボリューム・ローンチ希望時期を共有いただければ、最適なモジュールと見積を提示します。",
-        primary: "providers@1540bo.io へ連絡",
+        primary: "support@1540bo.io へ連絡",
         secondary: "技術ドキュメントを見る",
       },
     },
@@ -3482,6 +3548,39 @@ const translations = {
       demo: "ทดลองบัญชีเดโม",
       start: "เปิดบัญชีจริง",
     },
+    supportForm: {
+      badge: "ซัพพอร์ต 24/7",
+      title: "ติดต่อฝ่ายซัพพอร์ต",
+      subtitle:
+        "กรอกแบบฟอร์มนี้แล้วระบบจะเปิดอีเมลถึง support@1540bo.io พร้อมข้อมูลที่คุณระบุ",
+      fields: {
+        name: "ชื่อ-นามสกุล",
+        email: "อีเมลสำหรับติดต่อกลับ",
+        account: "Account ID / UID (ไม่บังคับ)",
+        topic: "หัวข้อ",
+        subject: "หัวข้อเพิ่มเติม (ไม่บังคับ)",
+        message: "รายละเอียดข้อความ",
+      },
+      topics: {
+        general: "คำถามทั่วไป",
+        account: "บัญชี / KYC",
+        payments: "การฝาก-ถอน",
+        vip: "VIP / รางวัล",
+        provider: "โปรแกรมผู้ให้บริการ",
+      },
+      subjects: {
+        general: "คำขอซัพพอร์ตทั่วไป",
+        account: "ขอความช่วยเหลือเกี่ยวกับบัญชี",
+        payments: "ขอความช่วยเหลือด้านการชำระเงิน",
+        vip: "คำขอถึง VIP Desk",
+        provider: "สอบถามโปรแกรมผู้ให้บริการ",
+      },
+      note: "การแนบ TXID เวลาที่เกิดเหตุ หรือสกรีนช็อตจะช่วยให้ตรวจสอบได้เร็วขึ้น",
+      disclaimer:
+        "เมื่อกดส่ง ระบบจะเปิดอีเมลไคลเอนต์เพื่อให้คุณตรวจและส่งข้อความไปยัง support@1540bo.io",
+      submit: "เปิดหน้าต่างอีเมล",
+      close: "ปิดฟอร์มซัพพอร์ต",
+    },
     help: {
       detail: {
         back: "กลับไปหน้าสารบัญศูนย์ช่วยเหลือ",
@@ -3918,13 +4017,13 @@ const translations = {
           note: "ต้องการรีวิวเชิงลึกสำหรับกฎท้องถิ่น? เราสามารถจัดทีมที่ปรึกษาให้ภายใต้สcope",
           support: {
             heading: "พูดคุยกับ Provider Desk",
-            body: "ส่งข้อมูลธุรกิจมายัง providers@1540bo.io แล้วเราจะนัดเวิร์กช็อปภายใน 72 ชั่วโมง",
+            body: "ส่งข้อมูลธุรกิจมายัง support@1540bo.io แล้วเราจะนัดเวิร์กช็อปภายใน 72 ชั่วโมง",
           },
         },
         cta: {
           heading: "พร้อมสำรวจสัญญาผู้ให้บริการหรือยัง?",
           body: "แจ้งตลาดเป้าหมาย ปริมาณต่อเดือน และไทม์ไลน์ go-live เพื่อรับโมดูลและราคาเหมาะสม",
-          primary: "ติดต่อ providers@1540bo.io",
+          primary: "ติดต่อ support@1540bo.io",
           secondary: "ดูเอกสารเทคนิค",
         },
       },
@@ -5045,6 +5144,8 @@ const translations = {
   },
 };
 
+const SUPPORT_EMAIL = "support@1540bo.io";
+
 const STORAGE_KEYS = {
   lang: "1540bo:lang",
 };
@@ -5347,11 +5448,184 @@ function initLanguageSwitcher() {
   });
 }
 
+function injectSupportFormModal() {
+  if (document.querySelector(".support-modal") || !document.body) return;
+  const modal = document.createElement("div");
+  modal.className = "support-modal";
+  modal.setAttribute("aria-hidden", "true");
+  modal.innerHTML = `
+    <div class="support-modal__overlay" data-support-close></div>
+    <div class="support-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="support-form-title">
+      <button class="support-modal__close" type="button" data-support-close>
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only" data-i18n="supportForm.close"></span>
+      </button>
+      <div class="support-modal__content">
+        <p class="support-modal__badge" data-i18n="supportForm.badge"></p>
+        <h2 id="support-form-title" data-i18n="supportForm.title"></h2>
+        <p class="support-modal__subtitle" data-i18n="supportForm.subtitle"></p>
+        <form id="support-form" class="support-form" novalidate>
+          <div class="support-form__fields">
+            <label class="support-form__field">
+              <span data-i18n="supportForm.fields.name"></span>
+              <input type="text" name="fullName" autocomplete="name" required />
+            </label>
+            <label class="support-form__field">
+              <span data-i18n="supportForm.fields.email"></span>
+              <input type="email" name="contactEmail" autocomplete="email" required />
+            </label>
+            <label class="support-form__field">
+              <span data-i18n="supportForm.fields.account"></span>
+              <input type="text" name="accountId" autocomplete="off" />
+            </label>
+            <label class="support-form__field">
+              <span data-i18n="supportForm.fields.topic"></span>
+              <select name="topic" required>
+                <option value="general" selected data-i18n="supportForm.topics.general"></option>
+                <option value="account" data-i18n="supportForm.topics.account"></option>
+                <option value="payments" data-i18n="supportForm.topics.payments"></option>
+                <option value="vip" data-i18n="supportForm.topics.vip"></option>
+                <option value="provider" data-i18n="supportForm.topics.provider"></option>
+              </select>
+            </label>
+            <label class="support-form__field support-form__field--full">
+              <span data-i18n="supportForm.fields.subject"></span>
+              <input type="text" name="customSubject" autocomplete="off" />
+            </label>
+            <label class="support-form__field support-form__field--full">
+              <span data-i18n="supportForm.fields.message"></span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+          </div>
+          <p class="support-form__note" data-i18n="supportForm.note"></p>
+          <p class="support-form__disclaimer" data-i18n="supportForm.disclaimer"></p>
+          <div class="support-form__actions">
+            <button type="submit" class="btn primary" data-i18n="supportForm.submit"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+function initSupportForm() {
+  const modal = document.querySelector(".support-modal");
+  if (!modal) return;
+  const form = modal.querySelector("#support-form");
+  if (!(form instanceof HTMLFormElement)) return;
+
+  const autoTriggerSelectors = [
+    'a[data-i18n="nav.support"]',
+    'a[data-i18n="footer.links.contact"]',
+    'button[data-i18n="vip.hero.ctaSecondary"]',
+    'a[data-i18n="help.index.support.cta"]',
+    'a[data-i18n="help.index.support.secondary"]',
+    'a[data-i18n="provider.hero.ctaPrimary"]',
+    'button[data-i18n="provider.hero.ctaPrimary"]',
+    'a[data-i18n="provider.cta.primary"]',
+  ];
+
+  autoTriggerSelectors.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((node) => {
+      node.dataset.supportTrigger = "true";
+      if (node instanceof HTMLButtonElement && !node.getAttribute("type")) {
+        node.type = "button";
+      }
+    });
+  });
+
+  const focusTarget = form.querySelector("input[name='fullName']");
+
+  const closeMobileMenu = () => {
+    const toggle = document.querySelector(".mobile-menu-toggle");
+    const menu = document.querySelector(".mobile-menu");
+    if (toggle?.classList.contains("active")) {
+      toggle.classList.remove("active");
+      menu?.classList.remove("active");
+      document.body.classList.remove("locked-scroll");
+    }
+  };
+
+  const openModal = () => {
+    closeMobileMenu();
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("locked-scroll");
+    focusTarget?.focus();
+  };
+
+  const closeModal = () => {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    const menuOpen = document
+      .querySelector(".mobile-menu")
+      ?.classList.contains("active");
+    if (!menuOpen) {
+      document.body.classList.remove("locked-scroll");
+    }
+  };
+
+  modal.querySelectorAll("[data-support-close]").forEach((element) => {
+    element.addEventListener("click", (event) => {
+      event.preventDefault();
+      closeModal();
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const trigger = event.target instanceof Element ? event.target.closest("[data-support-trigger]") : null;
+    if (!trigger) return;
+    event.preventDefault();
+    openModal();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("open")) {
+      closeModal();
+    }
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (typeof form.reportValidity === "function" && !form.reportValidity()) {
+      return;
+    }
+    const formData = new FormData(form);
+    const name = (formData.get("fullName") || "").toString().trim();
+    const email = (formData.get("contactEmail") || "").toString().trim();
+    const accountId = (formData.get("accountId") || "").toString().trim();
+    const topic = (formData.get("topic") || "general").toString();
+    const customSubject = (formData.get("customSubject") || "").toString().trim();
+    const message = (formData.get("message") || "").toString().trim();
+    const subjectKey = `supportForm.subjects.${topic}`;
+    const derivedSubject =
+      customSubject ||
+      translate(subjectKey, currentLang) ||
+      translate("supportForm.subjects.general", currentLang);
+    const topicLabel = translate(`supportForm.topics.${topic}`, currentLang);
+    const bodyLines = [
+      `Topic: ${topicLabel}`,
+      `Name: ${name || "-"}`,
+      `Email: ${email || "-"}`,
+      `Account: ${accountId || "-"}`,
+      "",
+      message || "(no message provided)",
+    ];
+    const mailtoURL = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(derivedSubject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+    window.location.href = mailtoURL;
+    form.reset();
+    closeModal();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const storedLang = getStoredLanguagePreference();
   if (storedLang && storedLang !== currentLang) {
     currentLang = storedLang;
   }
+  injectSupportFormModal();
+  initSupportForm();
   initLanguageSwitcher();
   applyTranslations(currentLang);
   syncLangActiveState(currentLang);
