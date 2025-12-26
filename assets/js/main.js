@@ -238,7 +238,7 @@ const translations = {
         subtitle:
           "Offer 1540BO liquidity, risk controls, and multilingual UX under your own label while we operate the core infrastructure.",
         bullets: [
-          "99.5%+ fill rate across 30+ crypto, FX, and metals pairs",
+          "Deep liquidity across the most demanded crypto pairs",
           "Multi-currency cashier with on-chain settlement rails",
           "Pre-integrated KYC/AML and responsible-trading workflows",
         ],
@@ -253,8 +253,8 @@ const translations = {
           },
           {
             label: "Markets",
-            value: "30+ pairs",
-            desc: "Crypto majors, FX, and metals",
+            value: "Top crypto pairs",
+            desc: "Focus on high-liquidity assets",
           },
           {
             label: "Locales",
@@ -1775,7 +1775,7 @@ const translations = {
       login: "ログイン",
       features: "特長",
       affiliate: "アフィリエイト",
-      provider: "ビジネス",
+      provider: "プロバイダー",
       vip: "VIPプログラム",
       terms: "利用規約",
       privacy: "プライバシーポリシー",
@@ -1994,7 +1994,7 @@ const translations = {
         subtitle:
           "1540BOの流動性・リスク管理・多言語UXを自社ラベルで提供し、基盤運用は当社が担います。",
         bullets: [
-          "30種類以上の暗号資産／FX／メタルで99.5%以上の約定率",
+          "人気暗号資産ペア取り扱い",
           "マルチカレンシー入出金とオンチェーン決済レール",
           "KYC/AML・責任ある取引ワークフローを標準搭載",
         ],
@@ -2009,8 +2009,8 @@ const translations = {
           },
           {
             label: "提供マーケット",
-            value: "30+ペア",
-            desc: "暗号資産／FX／メタル",
+            value: "人気暗号資産ペア",
+            desc: "需要の高い銘柄に特化",
           },
           {
             label: "対応言語",
@@ -3920,7 +3920,7 @@ const translations = {
           subtitle:
             "ยกเอาสภาพคล่อง การจัดการความเสี่ยง และ UX หลายภาษาของ 1540BO ไปใช้ภายใต้แบรนด์ของคุณ ทีมเราดูแลองค์ประกอบหลักให้ทั้งหมด",
           bullets: [
-            "อัตราเติมคำสั่ง 99.5%+ สำหรับคริปโต FX และโลหะมากกว่า 30 คู่",
+          "รองรับคู่คริปโตยอดนิยมที่มีสภาพคล่องสูง",
             "ระบบฝากถอนหลายสกุลพร้อมเรลล์ on-chain",
             "เวิร์กโฟลว์ KYC/AML และ Responsible Trading ที่ตั้งค่าเรียบร้อย",
           ],
@@ -3929,7 +3929,7 @@ const translations = {
           ctaSecondary: "ดาวน์โหลดเอกสารความสามารถ",
           metrics: [
             { label: "เวลา go-live", value: "เฉลี่ย 6 สัปดาห์", desc: "ตั้งค่าแบรนด์ แคชเชียร์ และ VIP" },
-            { label: "ตลาด", value: "30+ คู่", desc: "คริปโต / FX / โลหะ" },
+            { label: "ตลาด", value: "คู่คริปโตยอดนิยม", desc: "โฟกัสสินทรัพย์ที่มีดีมานด์สูง" },
             { label: "ภาษา", value: "3 ภาษา", desc: "EN / 日本語 / ไทย" },
           ],
         },
