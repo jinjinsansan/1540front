@@ -982,50 +982,50 @@ const translations = {
       index: {
         hero: {
           badge: "Help Center",
-          title: "Browse every 1540BO guide in one place",
+          title: "Find the right 1540BO guide in seconds.",
           subtitle:
-            "Start here, then jump straight into the workflow you need—registration, trading, wallet ops, or partner growth.",
-          note: "Content mirrors the latest top-game lobby build and is refreshed after each production deployment.",
-          meta: "Last review: 11 Dec 2025 · Ops owner: JP Compliance",
-          cta: "View category list",
+            "Step-by-step answers for registration, trading, wallet operations, and partner growth.",
+          note: "Pick a category below to open detailed checklists, screenshots, and escalation routes.",
+          meta: "Updated 11 Dec 2025 · EN / 日本語 / ไทย",
+          cta: "Browse guides",
         },
         panel: {
-          title: "How to use this library",
+          title: "Before contacting support",
           items: [
-            "Choose a category below to open its child page with checklists and escalation routes.",
-            "Links inside each child page map directly to the live dashboards (auth, trade ticket, wallet, affiliate).",
-            "Escalation contacts stay pinned at the bottom so you always know where to raise a ticket.",
+            "Confirm you are signed in to the correct account and network.",
+            "Gather screenshots, TXIDs, and timestamps so we can trace your request.",
+            "Use the dedicated child pages for KYC, deposits, withdrawals, or partner payouts.",
           ],
-          note: "Need access to https://1540bo.io/auth/login? Prepare your UID, registered email, and recaptcha tokens before contacting ops.",
+          note: "These steps resolve most questions without waiting for an agent.",
         },
         catalog: {
-          heading: "Table of contents",
+          heading: "Choose a help category",
           subtitle:
-            "Six child pages keep onboarding, trading, wallet flows, and partner work separated.",
+            "Each card opens a detailed article with checklists, FAQs, and escalation contacts.",
         },
         cards: {
           account: {
             eyebrow: "Account",
-            title: "Account registration & security",
-            body: "KYC checklist, device hygiene, and recovery contacts for 1540BO.",
+            title: "Registration & security",
+            body: "KYC walkthrough, device hygiene, and recovering locked accounts.",
             cta: "Open playbook",
           },
           trading: {
             eyebrow: "Trading",
             title: "Binary options flow",
-            body: "Top-game layout tour plus ticket-building and risk routines.",
+            body: "Top-game layout tour plus ticket building and risk routines.",
             cta: "See guide",
           },
           deposit: {
             eyebrow: "Wallet",
             title: "Deposits & credits",
-            body: "Supported rails, confirmation logic, and troubleshooting tips.",
+            body: "Supported currencies, confirmation times, and troubleshooting delays.",
             cta: "Review steps",
           },
           withdrawal: {
             eyebrow: "Wallet",
             title: "Withdrawals & compliance",
-            body: "Requirements, timing, and what to send if funds are on hold.",
+            body: "Requirements, timelines, and what to send if a payout stays on hold.",
             cta: "Follow checklist",
           },
           affiliate: {
@@ -1036,14 +1036,14 @@ const translations = {
           },
           other: {
             eyebrow: "Resources",
-            title: "Other tools & notices",
-            body: "Top-game lobby tips, status feeds, and responsible trading assets.",
+            title: "Additional tools",
+            body: "Responsible trading assets, status feeds, and in-app tips.",
             cta: "Explore",
           },
         },
         support: {
-          heading: "Still need personalised help?",
-          body: "Ops monitors the help inbox 24/7. Include screenshots, TXIDs, and timestamps for the fastest resolution.",
+          heading: "Still need personal help?",
+          body: "Our operations desk monitors support@1540bo.io 24/7. Include screenshots, TXIDs, and timestamps for the fastest resolution.",
           cta: "Email support desk",
           secondary: "See contact roster",
         },
@@ -2542,50 +2542,50 @@ const translations = {
       index: {
         hero: {
           badge: "ヘルプセンター",
-          title: "1540BOの手順を1か所で確認",
+          title: "1540BOのガイドを数秒で見つけましょう。",
           subtitle:
-            "口座開設・取引・ウォレット・パートナー業務まで、必要なフローをすぐ開けます。",
-          note: "トップゲームロビー最新版に合わせて随時更新しています。",
-          meta: "最終更新：2025年12月11日／担当：JPオペレーション",
-          cta: "カテゴリ一覧を見る",
+            "口座登録、取引、ウォレット運用、パートナー活動を手順付きで案内します。",
+          note: "カテゴリを選ぶと、チェックリストやスクリーンショット、エスカレーション経路が開きます。",
+          meta: "更新日: 2025年12月11日 ｜ 対応言語: EN / 日本語 / ไทย",
+          cta: "ガイドを表示",
         },
         panel: {
-          title: "使い方",
+          title: "サポートへ連絡する前に",
           items: [
-            "以下のカテゴリから子ページを開き、チェックリストと連絡先を確認します。",
-            "子ページ内のリンクはログイン／トレード／ウォレット／アフィリエイト各ダッシュボードに直結しています。",
-            "ページ末尾にエスカレーション先を固定しているので、迷わず連絡できます。",
+            "正しいアカウントとネットワークにログインしているか確認してください。",
+            "スクリーンショット・TXID・発生時刻を用意するとトレースが迅速になります。",
+            "KYC・入金・出金・パートナー精算は各子ページの手順を参照してください。",
           ],
-          note: "https://1540bo.io/auth/login へアクセスする際は UID・登録メール・recaptcha 情報を事前に準備してください。",
+          note: "これらを確認するだけで多くの問題が解決します。",
         },
         catalog: {
-          heading: "目次",
+          heading: "ヘルプカテゴリを選択",
           subtitle:
-            "6つの子ページでオンボーディング／取引／ウォレット／パートナー情報を整理しています。",
+            "各カードから詳細ガイド（チェックリスト／FAQ／連絡先）を開けます。",
         },
         cards: {
           account: {
             eyebrow: "アカウント",
             title: "登録とセキュリティ",
-            body: "KYC手順、デバイス衛生、復旧連絡先をまとめました。",
-            cta: "詳細を見る",
+            body: "KYC手順、デバイス衛生、ロックされたアカウントの復旧方法をまとめています。",
+            cta: "プレイブックを開く",
           },
           trading: {
             eyebrow: "取引",
             title: "バイナリーオプション手順",
-            body: "トップゲーム画面の使い方からチケット作成・リスク管理までを解説します。",
+            body: "トップゲーム画面のツアー、チケット作成、リスク手順を解説します。",
             cta: "ガイドを見る",
           },
           deposit: {
             eyebrow: "ウォレット",
             title: "入金と反映手順",
-            body: "対応チェーン、確認回数、遅延時のエスカレーション手順をまとめました。",
+            body: "対応通貨とネットワーク、確認時間、遅延時の対処法を案内します。",
             cta: "手順を読む",
           },
           withdrawal: {
             eyebrow: "ウォレット",
             title: "出金とコンプライアンス",
-            body: "必要条件、処理時間、保留時の追加書類を案内します。",
+            body: "必要条件、タイムライン、保留時に送るべき情報を確認できます。",
             cta: "チェックリストを見る",
           },
           affiliate: {
@@ -2596,14 +2596,14 @@ const translations = {
           },
           other: {
             eyebrow: "リソース",
-            title: "その他の運営情報",
-            body: "責任ある取引やサポート連絡先、補助ツールなどをまとめています。",
-            cta: "リソースを見る",
+            title: "追加ツール",
+            body: "責任ある取引リソース、ステータスフィード、アプリ内ヒントをまとめています。",
+            cta: "詳しく見る",
           },
         },
         support: {
           heading: "個別サポートが必要ですか？",
-          body: "Opsチームは24時間インボックスを監視しています。スクショ・TXID・時刻を添えると回答が早くなります。",
+          body: "Opsチームは support@1540bo.io を24時間監視しています。スクショ・TXID・時刻を添えると最速でご案内できます。",
           cta: "support@1540bo.io へメール",
           secondary: "連絡先一覧を見る",
         },
@@ -3165,50 +3165,50 @@ const translations = {
       index: {
         hero: {
           badge: "ศูนย์ช่วยเหลือ",
-          title: "รวมคู่มือ 1540BO ไว้ที่เดียว",
+          title: "หาคู่มือ 1540BO ที่ต้องการได้ภายในไม่กี่วินาที",
           subtitle:
-            "เริ่มจากหน้านี้แล้วไปยังเวิร์กโฟลว์ที่ต้องการทันที—สมัครบัญชี เทรด วอลเล็ต หรือทำงานกับพันธมิตร",
-          note: "อัปเดตตาม Top Game lobby เวอร์ชันล่าสุดทุกครั้งหลังปล่อย",
-          meta: "อัปเดตล่าสุด: 11 ธ.ค. 2025 · เจ้าของเนื้อหา: JP Ops",
-          cta: "ดูกลุ่มเนื้อหา",
+            "มีขั้นตอนทีละขั้นสำหรับการสมัคร การเทรด การจัดการวอลเล็ต และงานพันธมิตร",
+          note: "เลือกหมวดเพื่อเปิดเช็กลิสต์ ภาพหน้าจอ และเส้นทางเอสคาเลชันแบบละเอียด",
+          meta: "อัปเดต 11 ธ.ค. 2025 · รองรับ EN / 日本語 / ไทย",
+          cta: "เปิดดูคู่มือ",
         },
         panel: {
-          title: "วิธีใช้งาน",
+          title: "ก่อนติดต่อฝ่ายสนับสนุน",
           items: [
-            "เลือกหมวดด้านล่างเพื่อเปิดหน้าลูกที่มีเช็กลิสต์และลิงก์สำคัญ",
-            "ทุกหน้าลูกลิงก์ไปยังแดชบอร์ดจริง (เข้าสู่ระบบ หน้าติ๊กเก็ต วอลเล็ต พันธมิตร)",
-            "ส่วนท้ายของแต่ละหน้าตรึงช่องทางเอสคาเลชันไว้เสมอ",
+            "ตรวจสอบว่าเข้าสู่ระบบด้วยบัญชีและเน็ตเวิร์กที่ถูกต้อง",
+            "เตรียมสกรีนช็อต TXID และเวลาที่เกิดเหตุเพื่อให้ตรวจสอบได้เร็ว",
+            "ใช้หน้าลูกสำหรับ KYC ฝาก ถอน หรือรายได้พันธมิตร",
           ],
-          note: "ก่อนเข้าหน้า https://1540bo.io/auth/login กรุณาเตรียม UID อีเมล และข้อมูล reCAPTCHA ให้พร้อม",
+          note: "ทำตามนี้มักแก้ปัญหาได้โดยไม่ต้องรอเจ้าหน้าที่",
         },
         catalog: {
-          heading: "สารบัญ",
+          heading: "เลือกหมวดความช่วยเหลือ",
           subtitle:
-            "แบ่งเป็น 6 หน้าลูกสำหรับการเริ่มต้น เทรด วอลเล็ต และงานพันธมิตร",
+            "ทุกการ์ดเปิดบทความที่มีเช็กลิสต์ คำถามพบบ่อย และช่องทางเอสคาเลชัน",
         },
         cards: {
           account: {
             eyebrow: "บัญชี",
             title: "ลงทะเบียนและความปลอดภัย",
-            body: "รวม KYC การดูแลอุปกรณ์ และช่องทางรีเซ็ต",
+            body: "รวมขั้นตอน KYC การดูแลอุปกรณ์ และการกู้คืนบัญชีที่ถูกล็อก",
             cta: "เปิดดูรายละเอียด",
           },
           trading: {
             eyebrow: "การเทรด",
             title: "เวิร์กโฟลว์บอปชัน",
-            body: "แนะนำเลย์เอาท์ Top Game การสร้างตั๋ว และการควบคุมความเสี่ยง",
+            body: "ทัวร์เลย์เอาท์ Top Game พร้อมขั้นตอนสร้างตั๋วและการจัดการความเสี่ยง",
             cta: "อ่านคู่มือ",
           },
           deposit: {
             eyebrow: "วอลเล็ต",
             title: "การฝากและการบันทึกยอด",
-            body: "เน็ตเวิร์กรองรับ วิธีคอนเฟิร์ม และขั้นตอนตามยอดค้าง",
+            body: "สกุลเงิน/เน็ตเวิร์กที่รองรับ เวลาคอนเฟิร์ม และวิธีตามเคสดีเลย์",
             cta: "ดูขั้นตอน",
           },
           withdrawal: {
             eyebrow: "วอลเล็ต",
             title: "การถอนและคอมพลายแอนซ์",
-            body: "เงื่อนไข เวลาประมวลผล และข้อมูลที่ต้องส่งเมื่อถูกถือ",
+            body: "เงื่อนไข ไทม์ไลน์ และข้อมูลที่ต้องส่งเมื่อการถอนค้าง",
             cta: "เช็กลิสต์",
           },
           affiliate: {
@@ -3219,14 +3219,14 @@ const translations = {
           },
           other: {
             eyebrow: "ทรัพยากร",
-            title: "เครื่องมืออื่นๆ",
-            body: "ทิปส์ Top Game สถานะระบบ และเครื่องมือจัดการความรับผิดชอบ",
+            title: "เครื่องมือเพิ่มเติม",
+            body: "รวมทรัพยากรเพื่อการเทรดอย่างรับผิดชอบ ฟีดสถานะ และทิปในแอป",
             cta: "ดูทั้งหมด",
           },
         },
         support: {
           heading: "ยังต้องการความช่วยเหลือแบบส่วนตัว?",
-          body: "ทีม Ops เฝ้าอินบ็อกซ์ 24/7 โปรดแนบสกรีนช็อต TXID และเวลาที่เกิดเหตุเพื่อให้ตอบเร็ว",
+          body: "ทีม Ops เฝ้า support@1540bo.io ตลอด 24 ชม. โปรดแนบสกรีนช็อต TXID และเวลาเพื่อให้ตอบกลับเร็วที่สุด",
           cta: "อีเมล support@1540bo.io",
           secondary: "ดูช่องทางติดต่อ",
         },
