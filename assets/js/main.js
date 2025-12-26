@@ -13,11 +13,13 @@ const translations = {
       helpWithdrawalTitle: "1540BO | Withdrawal Help",
       helpAffiliateTitle: "1540BO | Affiliate Help",
       helpOtherTitle: "1540BO | Resources",
+      providerTitle: "1540BO | Provider Program",
     },
     nav: {
       login: "Log in",
       features: "Features",
       affiliate: "Affiliate",
+      provider: "Provider",
       vip: "VIP Program",
       terms: "Terms of Service",
       privacy: "Privacy Policy",
@@ -194,6 +196,165 @@ const translations = {
         label: "Last updated",
         date: "11 November 2025",
         note: "Terms may be amended without prior notice. Always consult our official channels for the latest information.",
+      },
+    },
+    provider: {
+      hero: {
+        badge: "Provider Program",
+        title: "Launch your own binary options brand in weeks.",
+        subtitle:
+          "Offer 1540BO liquidity, risk controls, and multilingual UX under your own label while we operate the core infrastructure.",
+        bullets: [
+          "99.5%+ fill rate across 30+ crypto, FX, and metals pairs",
+          "Multi-currency cashier with on-chain settlement rails",
+          "Pre-integrated KYC/AML and responsible-trading workflows",
+        ],
+        meta: "SLA-backed platform • SOC2-ready data flows",
+        ctaPrimary: "Book a provider demo",
+        ctaSecondary: "Download capability deck",
+        metrics: [
+          {
+            label: "Time to launch",
+            value: "6 weeks avg",
+            desc: "Branding, cashier, and VIP logic configured",
+          },
+          {
+            label: "Markets",
+            value: "30+ pairs",
+            desc: "Crypto majors, FX, and metals",
+          },
+          {
+            label: "Locales",
+            value: "3 languages",
+            desc: "EN / JP / TH interfaces ready",
+          },
+        ],
+      },
+      highlights: {
+        heading: "Why operators choose 1540BO as their provider",
+        cards: [
+          {
+            title: "Battle-tested execution stack",
+            body: "Millisecond routing, deep liquidity, and automated risk engines keep spreads tight even during volatile sessions.",
+          },
+          {
+            title: "Modular cashier & rewards",
+            body: "Plug in our wallet, VIP ladder, and promo toolkit or connect your existing systems via documented APIs.",
+          },
+          {
+            title: "White-glove compliance",
+            body: "KYC vendors, reporting templates, and escalation paths are bundled so you can satisfy regulators from day one.",
+          },
+        ],
+      },
+      architecture: {
+        heading: "Platform architecture you can license",
+        intro:
+          "Pick the modules you need—core trading engine, cashier, CRM, or marketing automation—and scale at your own pace.",
+        modules: [
+          {
+            title: "Trading core",
+            text: "Price feeds, ticket builder, and risk controls with configurable expiries (15s–4h).",
+            points: [
+              "Dedicated risk dashboard",
+              "Transparency feed + dispute audit",
+              "Latency monitoring & alerts",
+            ],
+          },
+          {
+            title: "Wallet & settlement",
+            text: "Multi-chain deposits, auto-converted balances, and withdrawal approval workflows.",
+            points: [
+              "USDT/TRX/BTC/ETH/LTC/XRP support",
+              "Cold-wallet policy templates",
+              "TXID reconciliation toolkit",
+            ],
+          },
+          {
+            title: "Growth & CRM",
+            text: "VIP tiers, missions, broadcast tools, and analytics to engage high-value players.",
+            points: [
+              "20-rank VIP ladder & bonuses",
+              "Campaign scheduler + segmentation",
+              "Partner & affiliate tracking",
+            ],
+          },
+        ],
+      },
+      onboarding: {
+        heading: "How provider onboarding works",
+        subtitle: "Clear milestones keep both teams aligned from scoping to launch.",
+        steps: [
+          {
+            title: "1. Discovery",
+            desc: "Define jurisdictions, product scope, and custom modules. Receive commercial & technical proposals within 5 business days.",
+          },
+          {
+            title: "2. Solution design",
+            desc: "Lock visual branding, cashier flows, and data integrations. Sandbox credentials issued for your QA team.",
+          },
+          {
+            title: "3. Compliance & training",
+            desc: "Set up KYC vendors, reporting templates, and operational runbooks. Staff training sessions included.",
+          },
+          {
+            title: "4. Launch & optimise",
+            desc: "Migrate players, enable live funding, and iterate on VIP or partner programs with dedicated TAM support.",
+          },
+        ],
+      },
+      tiers: {
+        heading: "Provider service tiers",
+        subtitle: "Choose the engagement model that fits your roadmap.",
+        table: {
+          headers: {
+            tier: "Tier",
+            focus: "Ideal for",
+            includes: "What’s included",
+          },
+          rows: [
+            {
+              tier: "Essential",
+              focus: "Startups launching their first brand",
+              includes:
+                "Core trading engine, cashier, VIP ladder, branded web app, standard SLA",
+            },
+            {
+              tier: "Growth",
+              focus: "Operators expanding into new regions",
+              includes:
+                "Everything in Essential + custom KYC routing, partner tracking, marketing automation",
+            },
+            {
+              tier: "Enterprise",
+              focus: "Groups needing bespoke integrations",
+              includes:
+                "Dedicated infrastructure, API extensions, compliance playbooks, 24/7 TAM, quarterly roadmap reviews",
+            },
+          ],
+        },
+      },
+      compliance: {
+        heading: "Built-in compliance & support",
+        intro:
+          "Stay ahead of regulatory expectations with our documented controls and shared monitoring tools.",
+        items: [
+          "Multi-vendor KYC/AML orchestration and watchlist screening",
+          "Responsible trading toolkit with configurable limits and reality checks",
+          "Audit-ready logs for dispute resolution and financial reporting",
+          "Security incident runbooks and 24/7 escalation desk",
+        ],
+        note: "Need a custom jurisdictional review? Our compliance partners can scope it as a bundled engagement.",
+        support: {
+          heading: "Talk to the provider desk",
+          body: "Send your deck or business brief to providers@1540bo.io and we will schedule a workshop within 72 hours.",
+        },
+      },
+      cta: {
+        heading: "Ready to explore a provider agreement?",
+        body: "Tell us about your market, expected monthly volume, and go-live timeline. We'll assemble the right modules and pricing.",
+        primary: "Contact providers@1540bo.io",
+        secondary: "View technical documentation",
       },
     },
     vip: {
@@ -1575,11 +1736,13 @@ const translations = {
       helpWithdrawalTitle: "1540BO｜出金ヘルプ",
       helpAffiliateTitle: "1540BO｜アフィリエイトヘルプ",
       helpOtherTitle: "1540BO｜運営リソース",
+      providerTitle: "1540BO｜ビジネスオーナー向け",
     },
     nav: {
       login: "ログイン",
       features: "特長",
       affiliate: "アフィリエイト",
+      provider: "ビジネス",
       vip: "VIPプログラム",
       terms: "利用規約",
       privacy: "プライバシーポリシー",
@@ -1756,6 +1919,165 @@ const translations = {
         label: "最終更新日",
         date: "2025年11月11日",
         note: "本規約内容は予告なく改定される場合があります。最新情報は常に当社公式チャネルでご確認ください。",
+      },
+    },
+    provider: {
+      hero: {
+        badge: "プロバイダープログラム",
+        title: "数週間で自社ブランドのバイナリーオプションをローンチ",
+        subtitle:
+          "1540BOの流動性・リスク管理・多言語UXを自社ラベルで提供し、基盤運用は当社が担います。",
+        bullets: [
+          "30種類以上の暗号資産／FX／メタルで99.5%以上の約定率",
+          "マルチカレンシー入出金とオンチェーン決済レール",
+          "KYC/AML・責任ある取引ワークフローを標準搭載",
+        ],
+        meta: "SLA保証のインフラ / SOC2対応のデータフロー",
+        ctaPrimary: "デモを予約",
+        ctaSecondary: "機能概要資料をダウンロード",
+        metrics: [
+          {
+            label: "平均ローンチ期間",
+            value: "約6週間",
+            desc: "ブランド・キャッシャー・VIPロジックを構築",
+          },
+          {
+            label: "提供マーケット",
+            value: "30+ペア",
+            desc: "暗号資産／FX／メタル",
+          },
+          {
+            label: "対応言語",
+            value: "3ロケール",
+            desc: "EN / 日本語 / ไทย UI",
+          },
+        ],
+      },
+      highlights: {
+        heading: "1540BOを選ぶビジネスオーナーの理由",
+        cards: [
+          {
+            title: "実績あるエグゼキューション",
+            body: "ミリ秒ルーティングと深い流動性、オートリスクエンジンでボラティリティ時でも安定したスプレッドを実現します。",
+          },
+          {
+            title: "モジュール型キャッシャー＆報酬",
+            body: "ウォレット、VIPラダー、プロモツールをそのまま活用することも、APIで既存システムと接続することも可能です。",
+          },
+          {
+            title: "コンプライアンス支援",
+            body: "KYCベンダー、レポート雛形、エスカレーションルートをセットで提供し、初日から規制対応を行えます。",
+          },
+        ],
+      },
+      architecture: {
+        heading: "ライセンス可能なアーキテクチャ",
+        intro:
+          "必要なモジュールだけを選択（取引エンジン／キャッシャー／CRM／マーケ）し、ロードマップに合わせて段階的に拡張できます。",
+        modules: [
+          {
+            title: "トレーディングコア",
+            text: "価格配信、チケットビルダー、リスク管理。15秒〜4時間までの有効期限を設定可能です。",
+            points: [
+              "専用リスクダッシュボード",
+              "透明性フィードとディスプート監査",
+              "レイテンシ監視とアラート",
+            ],
+          },
+          {
+            title: "ウォレット＆決済",
+            text: "マルチチェーン入金、自動残高換算、出金承認ワークフローを提供します。",
+            points: [
+              "USDT / TRX / BTC / ETH / LTC / XRP",
+              "コールドウォレット運用テンプレート",
+              "TXID突合ツール",
+            ],
+          },
+          {
+            title: "グロース＆CRM",
+            text: "VIPランク、ミッション、ブロードキャスト、アナリティクスで高価値プレイヤーを育成。",
+            points: [
+              "20ランクのVIPラダーとボーナス",
+              "キャンペーンスケジューラとセグメント配信",
+              "パートナー／アフィリエイトトラッキング",
+            ],
+          },
+        ],
+      },
+      onboarding: {
+        heading: "導入プロセス",
+        subtitle: "スコープ決定からローンチまで明確なマイルストーンで伴走します。",
+        steps: [
+          {
+            title: "1. ディスカバリー",
+            desc: "対象法域・商品範囲・カスタム要件を整理。5営業日以内に商用／技術提案を提示します。",
+          },
+          {
+            title: "2. ソリューション設計",
+            desc: "ブランドビジュアル、キャッシャーフロー、データ連携を確定。QA用サンドボックスを発行します。",
+          },
+          {
+            title: "3. コンプライアンス＆トレーニング",
+            desc: "KYCベンダー設定、レポートテンプレ、運用Runbookを整備。スタッフ向けトレーニングを実施します。",
+          },
+          {
+            title: "4. ローンチ＆最適化",
+            desc: "プレイヤー移行と資金有効化を行い、VIP/パートナープログラムを専任TAMと共に改善します。",
+          },
+        ],
+      },
+      tiers: {
+        heading: "サービスティア",
+        subtitle: "ロードマップに合わせた契約モデルを選択できます。",
+        table: {
+          headers: {
+            tier: "ティア",
+            focus: "適したお客様",
+            includes: "主な提供内容",
+          },
+          rows: [
+            {
+              tier: "Essential",
+              focus: "初めて自社ブランドを立ち上げる事業者",
+              includes:
+                "取引エンジン、キャッシャー、VIPラダー、ブランドWebアプリ、標準SLA",
+            },
+            {
+              tier: "Growth",
+              focus: "新地域へ拡大するオペレーター",
+              includes:
+                "Essentialに加えてカスタムKYCルーティング、パートナートラッキング、マーケ自動化を提供",
+            },
+            {
+              tier: "Enterprise",
+              focus: "専用連携が必要なグループ企業",
+              includes:
+                "専用インフラ、API拡張、コンプライアンスPlaybook、24/7 TAM、四半期レビュー",
+            },
+          ],
+        },
+      },
+      compliance: {
+        heading: "コンプライアンスとサポート",
+        intro:
+          "規制要件を満たすためのコントロールとモニタリングツールを標準で提供します。",
+        items: [
+          "マルチベンダーKYC/AMLオーケストレーションとウォッチリスト照合",
+          "設定可能なベット制限・リマインダーを備えた責任ある取引ツール",
+          "ディスプート・財務報告に備えた監査証跡",
+          "セキュリティインシデントRunbookと24/7エスカレーションデスク",
+        ],
+        note: "特定法域の追加レビューも、提携コンプライアンス会社がワンストップで対応可能です。",
+        support: {
+          heading: "プロバイダーデスクへご相談ください",
+          body: "事業概要や想定ボリュームを providers@1540bo.io までお送りください。72時間以内にワークショップを調整します。",
+        },
+      },
+      cta: {
+        heading: "プロバイダー契約をご検討ですか？",
+        body: "マーケット・月次ボリューム・ローンチ希望時期を共有いただければ、最適なモジュールと見積を提示します。",
+        primary: "providers@1540bo.io へ連絡",
+        secondary: "技術ドキュメントを見る",
       },
     },
     vip: {
@@ -3143,11 +3465,13 @@ const translations = {
       helpWithdrawalTitle: "1540BO | ศูนย์ช่วยเหลือการถอน",
       helpAffiliateTitle: "1540BO | ศูนย์ช่วยเหลือพันธมิตร",
       helpOtherTitle: "1540BO | ศูนย์ช่วยเหลืออื่นๆ",
+      providerTitle: "1540BO | โซลูชันผู้ให้บริการ",
     },
     nav: {
       login: "เข้าสู่ระบบ",
       features: "จุดเด่น",
       affiliate: "พันธมิตร",
+      provider: "ผู้ให้บริการ",
       vip: "โปรแกรมวีไอพี",
       terms: "ข้อกำหนดการใช้บริการ",
       privacy: "นโยบายความเป็นส่วนตัว",
@@ -3488,6 +3812,120 @@ const translations = {
           title: "ต้องการสื่อร่วมทำการตลาด?",
           body: "Partner Studio สามารถโลคัลไลซ์วิดีโอ อีเมล และแลนดิ้งเพจให้ตรงกับสไตล์ Top Game",
           cta: "อีเมล partners@1540bo.io",
+        },
+      },
+      provider: {
+        hero: {
+          badge: "โซลูชันผู้ให้บริการ",
+          title: "เปิดแบรนด์ไบนารี่ออปชันของคุณเองภายในไม่กี่สัปดาห์",
+          subtitle:
+            "ยกเอาสภาพคล่อง การจัดการความเสี่ยง และ UX หลายภาษาของ 1540BO ไปใช้ภายใต้แบรนด์ของคุณ ทีมเราดูแลองค์ประกอบหลักให้ทั้งหมด",
+          bullets: [
+            "อัตราเติมคำสั่ง 99.5%+ สำหรับคริปโต FX และโลหะมากกว่า 30 คู่",
+            "ระบบฝากถอนหลายสกุลพร้อมเรลล์ on-chain",
+            "เวิร์กโฟลว์ KYC/AML และ Responsible Trading ที่ตั้งค่าเรียบร้อย",
+          ],
+          meta: "มี SLA รับประกัน • กระบวนการพร้อม SOC2",
+          ctaPrimary: "จองเดโม",
+          ctaSecondary: "ดาวน์โหลดเอกสารความสามารถ",
+          metrics: [
+            { label: "เวลา go-live", value: "เฉลี่ย 6 สัปดาห์", desc: "ตั้งค่าแบรนด์ แคชเชียร์ และ VIP" },
+            { label: "ตลาด", value: "30+ คู่", desc: "คริปโต / FX / โลหะ" },
+            { label: "ภาษา", value: "3 ภาษา", desc: "EN / 日本語 / ไทย" },
+          ],
+        },
+        highlights: {
+          heading: "เหตุผลที่ผู้ประกอบการเลือกเรา",
+          cards: [
+            {
+              title: "สแตกการเทรดที่พิสูจน์แล้ว",
+              body: "รูตคำสั่งระดับมิลลิวินาที สภาพคล่องลึก และเอนจินบริหารความเสี่ยงช่วยคุมสเปรดช่วงผันผวน",
+            },
+            {
+              title: "โมดูลแคชเชียร์และรางวัล",
+              body: "ใช้วอลเล็ต VIP และเครื่องมือโปรโมตของเรา หรือเชื่อมระบบที่มีอยู่ผ่าน API",
+            },
+            {
+              title: "ที่ปรึกษาคอมพลายแอนซ์",
+              body: "มีผู้ให้บริการ KYC แบบฟอร์มรายงาน และเส้นทางเอสคาเลชันพร้อมใช้งาน",
+            },
+          ],
+        },
+        architecture: {
+          heading: "โมดูลที่ให้สิทธิ์ใช้งานได้",
+          intro: "เลือกเฉพาะส่วนที่ต้องการ ไม่ว่าจะเป็นเอนจินเทรด แคชเชียร์ CRM หรือมาร์เก็ตติ้ง แล้วขยายตามแผน",
+          modules: [
+            {
+              title: "แกนการเทรด",
+              text: "ฟีดราคา ตัวสร้างตั๋ว และการควบคุมความเสี่ยง ตั้งเวลาได้ 15 วินาทีถึง 4 ชั่วโมง",
+              points: [
+                "แดชบอร์ดความเสี่ยง",
+                "ฟีดความโปร่งใสและล็อกข้อพิพาท",
+                "มอนิเตอร์ latency พร้อมเตือน",
+              ],
+            },
+            {
+              title: "วอลเล็ตและการชำระเงิน",
+              text: "รองรับการฝากหลายเครือข่าย การคำนวณยอดอัตโนมัติ และเวิร์กโฟลว์อนุมัติถอน",
+              points: [
+                "USDT / TRX / BTC / ETH / LTC / XRP",
+                "เทมเพลตนโยบาย cold wallet",
+                "ชุดเทียบ TXID",
+              ],
+            },
+            {
+              title: "การเติบโต & CRM",
+              text: "VIP ลำดับ 20 ระดับ ภารกิจ และเครื่องมือ broadcast",
+              points: [
+                "VIP ladder + โบนัส",
+                "ตัวจัดตารางแคมเปญ",
+                "การติดตามพันธมิตร/แคมเปญ",
+              ],
+            },
+          ],
+        },
+        onboarding: {
+          heading: "ขั้นตอนการเริ่ม",
+          subtitle: "รู้ทุกไมล์สโตนตั้งแต่กำหนดสโคปจนเปิดให้บริการ",
+          steps: [
+            { title: "1. Discovery", desc: "กำหนดประเทศ สินค้า และโมดูลที่ต้องการ รับข้อเสนอภายใน 5 วันทำการ" },
+            { title: "2. Solution Design", desc: "ล็อกแบรนด์ แคชเชียร์ และข้อมูลเชื่อม พร้อม sandbox ให้ทีม QA" },
+            { title: "3. Compliance & Training", desc: "ตั้งค่า KYC เทมเพลตรายงาน และ runbook พร้อมอบรมทีม" },
+            { title: "4. Launch & Optimise", desc: "ย้ายผู้เล่น เปิดฝากถอนจริง และปรับโปรแกรมกับทีม TAM" },
+          ],
+        },
+        tiers: {
+          heading: "แพ็กเกจ",
+          subtitle: "เลือกโมเดลที่เหมาะกับแผนธุรกิจ",
+          table: {
+            headers: { tier: "แพ็กเกจ", focus: "เหมาะกับ", includes: "สิ่งที่ได้รับ" },
+            rows: [
+              { tier: "Essential", focus: "สตาร์ทอัปที่เปิดแบรนด์ครั้งแรก", includes: "เอนจินเทรด แคชเชียร์ VIP Web App และ SLA มาตรฐาน" },
+              { tier: "Growth", focus: "ผู้ประกอบการที่ขยายภูมิภาค", includes: "ทุกอย่างใน Essential เพิ่มการจัดเส้นทาง KYC ระบบพันธมิตร และมาร์เก็ตติ้งอัตโนมัติ" },
+              { tier: "Enterprise", focus: "กลุ่มธุรกิจที่ต้องการการเชื่อมต่อเฉพาะ", includes: "โครงสร้างพื้นฐานเฉพาะ ส่วนขยาย API playbook คอมพลายแอนซ์ และ TAM 24/7" },
+            ],
+          },
+        },
+        compliance: {
+          heading: "คอมพลายแอนซ์ในตัว",
+          intro: "เครื่องมือและเทมเพลตช่วยให้ผ่านข้อกำหนดได้เร็ว",
+          items: [
+            "การประสาน KYC/AML หลายผู้ให้บริการและการตรวจรายชื่อ",
+            "เครื่องมือ Responsible Trading ที่ตั้งลิมิตและการเตือนได้",
+            "ล็อกพร้อมตรวจสอบสำหรับข้อพิพาทและรายงาน",
+            "runbook ด้านความปลอดภัยและทีมเอสคาเลชัน 24/7",
+          ],
+          note: "ต้องการรีวิวเชิงลึกสำหรับกฎท้องถิ่น? เราสามารถจัดทีมที่ปรึกษาให้ภายใต้สcope",
+          support: {
+            heading: "พูดคุยกับ Provider Desk",
+            body: "ส่งข้อมูลธุรกิจมายัง providers@1540bo.io แล้วเราจะนัดเวิร์กช็อปภายใน 72 ชั่วโมง",
+          },
+        },
+        cta: {
+          heading: "พร้อมสำรวจสัญญาผู้ให้บริการหรือยัง?",
+          body: "แจ้งตลาดเป้าหมาย ปริมาณต่อเดือน และไทม์ไลน์ go-live เพื่อรับโมดูลและราคาเหมาะสม",
+          primary: "ติดต่อ providers@1540bo.io",
+          secondary: "ดูเอกสารเทคนิค",
         },
       },
       other: {
