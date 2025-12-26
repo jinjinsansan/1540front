@@ -1406,8 +1406,8 @@ const translations = {
             toolHeader: "Tool/Resource",
             descHeader: "Description",
             row1: {
-              tool: "Self-Limitation Tools",
-              desc: "Set upper limits on daily trading amounts or loss amounts. Prevents emotional trading and supports planned fund management.",
+              tool: "Bankroll Planning Guide",
+              desc: "Use a downloadable checklist to define daily or weekly trading caps and review them regularly with your account manager.",
             },
             row2: {
               tool: "Temporary Account Suspension",
@@ -2968,8 +2968,8 @@ const translations = {
             toolHeader: "ツール・リソース",
             descHeader: "説明",
             row1: {
-              tool: "自己制限ツール",
-              desc: "1日の取引額や損失額に上限を設定することができます。感情的な取引を防ぎ、計画的な資金管理をサポートします。",
+              tool: "資金管理ガイド",
+              desc: "日次・週次の取引上限を自分で決めるためのチェックリストです。担当マネージャーと共有し、計画的に見直しましょう。",
             },
             row2: {
               tool: "アカウントの一時停止",
