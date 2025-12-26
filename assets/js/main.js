@@ -1747,11 +1747,16 @@ const translations = {
     footer: {
       disclaimer:
         "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      column: {
+        navigate: "Navigate",
+        contact: "Talk to our team",
+        contactText: "Our multilingual desk is on standby 24/7 for partners and operators.",
+      },
       links: {
         terms: "Terms",
         privacy: "Privacy",
         security: "Security",
-        contact: "Contact",
+        contact: "Contact support",
       },
     },
   },
@@ -3509,11 +3514,16 @@ const translations = {
     footer: {
       disclaimer:
         "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      column: {
+        navigate: "ナビゲーション",
+        contact: "サポートデスク",
+        contactText: "マルチリンガルの専任スタッフが24時間365日サポートします。",
+      },
       links: {
         terms: "利用規約",
         privacy: "プライバシー",
         security: "セキュリティ",
-        contact: "お問い合わせ",
+        contact: "サポートに連絡",
       },
     },
   },
@@ -5134,11 +5144,16 @@ const translations = {
     footer: {
       disclaimer:
         "Galactic-triablazers Ltd\nSea Urchin Street, San Pedro, Ambergris Caye, Belize\nRegulated by BVP-FX-23Q2-K7N9-M3",
+      column: {
+        navigate: "เมนูหลัก",
+        contact: "ฝ่ายบริการ",
+        contactText: "ทีมสนับสนุนหลายภาษาพร้อมช่วยเหลือตลอด 24 ชั่วโมง",
+      },
       links: {
         terms: "ข้อกำหนด",
         privacy: "นโยบายความเป็นส่วนตัว",
         security: "ความปลอดภัย",
-        contact: "ติดต่อเรา",
+        contact: "ติดต่อฝ่ายซัพพอร์ต",
       },
     },
   },

@@ -190,16 +190,36 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-copy">
-          <a class="brand" href="./index.html">
-            <img src="./1540bo-logo.png" alt="1540bo logo" />
-          </a>
-          <p data-i18n="footer.disclaimer"></p>
-        </div>
-        <div class="footer-links">
-          <a href="./terms.html" data-i18n="footer.links.terms"></a>
-          <a href="./privacy.html" data-i18n="footer.links.privacy"></a>
-          <a href="./index.html#support" data-i18n="footer.links.contact"></a>
+        <div class="footer-grid">
+          <div class="footer-branding">
+            <a class="brand" href="./index.html">
+              <img src="./1540bo-logo.png" alt="1540bo logo" />
+            </a>
+            <p data-i18n="footer.disclaimer"></p>
+          </div>
+          <div class="footer-nav">
+            <h4 data-i18n="footer.column.navigate"></h4>
+            <ul class="footer-nav-list">
+              <li><a href="./index.html#login" data-i18n="nav.login"></a></li>
+              <li><a href="./affiliate.html" data-i18n="nav.affiliate"></a></li>
+              <li><a href="./provider.html" data-i18n="nav.provider"></a></li>
+              <li><a href="./vip.html" data-i18n="nav.vip"></a></li>
+              <li><a href="./terms.html" data-i18n="nav.terms"></a></li>
+              <li><a href="./privacy.html" data-i18n="nav.privacy"></a></li>
+              <li><a href="./help.html" data-i18n="nav.help"></a></li>
+              <li><a href="./index.html#support" data-i18n="nav.support"></a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4 data-i18n="footer.column.contact"></h4>
+            <p data-i18n="footer.column.contactText"></p>
+            <button
+              type="button"
+              class="btn primary"
+              data-support-trigger="true"
+              data-i18n="footer.links.contact"
+            ></button>
+          </div>
         </div>
       </div>
     </footer>
