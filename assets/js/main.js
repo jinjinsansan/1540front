@@ -1487,6 +1487,13 @@ const translations = {
           ],
           email: "Support Email: support@1540bo.io",
         },
+        figures: {
+          dashboard: "Dashboard with the '入出金' (Deposit / Withdraw) entry highlighted in the left sidebar.",
+          modalInitial: "Step 1 — Deposit modal with the cryptocurrency chips.",
+          networkDropdown: "Step 2 — Network dropdown expanded for USDT.",
+          addressShown: "Step 3 — Deposit address, QR, and contract information (USDT on Polygon).",
+          history: "Transactions page filtered by the Deposit tab.",
+        },
         relatedLinks: {
           title: "Related Links",
           withdrawal: "Wallet - Withdrawal & Compliance",
@@ -1670,6 +1677,16 @@ const translations = {
           title: "Contact Us",
           text: "For any questions or issues related to withdrawals, please contact our support team at any time.",
           email: "Support Email: support@1540bo.io",
+        },
+        figures: {
+          kycStatus: "Authentication page listing the four KYC items.",
+          addressMgmt: "Empty 'Withdrawal address management' page — start by tapping 'Add new'.",
+          addressForm: "Withdrawal address settings dialog with USDT / POLYGON pre-selected.",
+          emailVerify: "Email verification code dialog shown after saving an address.",
+          withdrawTop: "Withdraw tab with the cryptocurrency dropdown ready for selection.",
+          amountError: "Amount entered without a registered address — the inline error '出金アドレスを入力してください。' appears.",
+          processingInfo: "In-app reference describing processing time, same-day support, and hold rules.",
+          history: "Transactions page filtered by the Withdraw tab.",
         },
         relatedLinks: {
           title: "Related Links",
@@ -3411,6 +3428,13 @@ const translations = {
           ],
           email: "サポートメール: support@1540bo.io",
         },
+        figures: {
+          dashboard: "左サイドバーの「入出金」エントリ。ここから入金モーダルを開きます。",
+          modalInitial: "ステップ1 — 暗号資産チップが並ぶ入金モーダル。",
+          networkDropdown: "ステップ2 — USDT 用に展開したネットワーク選択ドロップダウン。",
+          addressShown: "ステップ3 — 入金アドレス、QR、契約情報（USDT on Polygon）。",
+          history: "「取引内容」ページで「入金」タブを選択した状態。",
+        },
         relatedLinks: {
           title: "関連リンク",
           withdrawal: "ウォレット - 出金・コンプライアンス",
@@ -3594,6 +3618,16 @@ const translations = {
           title: "お問い合わせ",
           text: "出金に関するご質問や問題が発生した場合は、いつでもサポートチームにご連絡ください。",
           email: "サポートメール: support@1540bo.io",
+        },
+        figures: {
+          kycStatus: "KYC 4 項目が並ぶ「認証手続き」ページ。",
+          addressMgmt: "空の「出金アドレス管理」ページ。「新規追加」から開始します。",
+          addressForm: "USDT / POLYGON を選んだ「出金アドレス設定」ダイアログ。",
+          emailVerify: "アドレス保存後に表示されるメール認証コード入力ダイアログ。",
+          withdrawTop: "通貨選択ドロップダウンを操作する直前の「出金」タブ。",
+          amountError: "アドレス未登録のまま金額を入力した状態。「出金アドレスを入力してください。」のエラーが表示されます。",
+          processingInfo: "処理時間・即日対応・保留ルールについての画面内リファレンス。",
+          history: "「取引内容」ページで「出金」タブを選択した状態。",
         },
         relatedLinks: {
           title: "関連リンク",
@@ -4210,6 +4244,13 @@ const translations = {
           ],
           email: "อีเมลซัพพอร์ต: support@1540bo.io",
         },
+        figures: {
+          dashboard: "เมนู「入出金」(ฝาก / ถอน) ที่ไฮไลต์อยู่ในแถบเมนูซ้ายของแดชบอร์ด",
+          modalInitial: "ขั้นที่ 1 — หน้าต่างฝากแสดงชิปคริปโตที่เลือกได้",
+          networkDropdown: "ขั้นที่ 2 — ดรอปดาวน์เลือกเครือข่ายของ USDT ถูกเปิด",
+          addressShown: "ขั้นที่ 3 — ที่อยู่ฝาก, QR และข้อมูลสัญญา (USDT บน Polygon)",
+          history: "หน้า「取引内容」เมื่อเลือกแท็บ「入金」",
+        },
         relatedLinks: {
           title: "ลิงก์ที่เกี่ยวข้อง",
           withdrawal: "วอลเล็ต - การถอนและคอมพลายแอนซ์",
@@ -4393,6 +4434,16 @@ const translations = {
           title: "ติดต่อเรา",
           text: "หากมีคำถามหรือปัญหาเกี่ยวกับการถอน กรุณาติดต่อทีมซัพพอร์ตได้ตลอดเวลา",
           email: "อีเมลซัพพอร์ต: support@1540bo.io",
+        },
+        figures: {
+          kycStatus: "หน้า「認証手続き」ที่แสดงรายการ KYC 4 รายการ",
+          addressMgmt: "หน้า「出金アドレス管理」ที่ว่างเปล่า เริ่มต้นโดยกดปุ่ม「新規追加」",
+          addressForm: "ไดอะล็อก「出金アドレス設定」ที่เลือก USDT / POLYGON ไว้",
+          emailVerify: "ไดอะล็อกป้อนรหัสยืนยันอีเมลหลังบันทึกที่อยู่",
+          withdrawTop: "แท็บ「出金」ก่อนเลือกสินทรัพย์จากดรอปดาวน์",
+          amountError: "ป้อนจำนวนโดยที่ยังไม่มีที่อยู่ลงทะเบียน — มีข้อความ「出金アドレスを入力してください。」แสดง",
+          processingInfo: "อ้างอิงในแอปเกี่ยวกับเวลาประมวลผล การถอนภายในวัน และกฎการถูกถือ",
+          history: "หน้า「取引内容」เมื่อเลือกแท็บ「出金」",
         },
         relatedLinks: {
           title: "ลิงก์ที่เกี่ยวข้อง",
