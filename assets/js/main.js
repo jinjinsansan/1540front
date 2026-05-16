@@ -1378,60 +1378,112 @@ const translations = {
       deposit: {
         title: "Wallet - Deposit & Crediting Guide",
         intro:
-          "1540BO enables fast and secure deposits using multiple cryptocurrencies. This page details supported blockchains, how to check deposit addresses, and what to do if deposits are delayed.",
-        updated: "Last updated: December 08, 2025",
+          "1540BO enables fast and secure deposits using multiple cryptocurrencies. This page details supported blockchains, how to open the deposit screen, how to copy your deposit address, how to check deposit history, and what to do if a deposit is delayed.",
+        updated: "Last updated: 2026-05-16",
         supported: {
           title: "Supported Cryptocurrencies and Networks",
           intro:
-            "Our platform supports the following major cryptocurrencies and networks (blockchains). When making a deposit, be sure to select the correct network. If you send to the wrong network, your assets may be lost.",
+            "1540BO supports the following cryptocurrencies. When depositing, you must select the correct network from the dropdown. Available networks differ by asset.",
           table: {
             cryptoHeader: "Cryptocurrency",
-            networkHeader: "Supported Networks",
-            row1: { crypto: "USDT", network: "ERC20 (Ethereum), TRC20 (TRON)" },
-            row2: { crypto: "BTC", network: "Bitcoin" },
-            row3: { crypto: "ETH", network: "ERC20 (Ethereum)" },
-            row4: { crypto: "TRX", network: "TRC20 (TRON)" },
-            row5: { crypto: "LTC", network: "Litecoin" },
-            row6: { crypto: "XRP", network: "Ripple" },
+            networkHeader: "Available Networks",
+            row1: { crypto: "USDT", network: "Polygon POS / Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row2: { crypto: "BTC", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row3: { crypto: "ETH", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row4: { crypto: "TRX", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20) / Tron (TRC20)" },
+            row5: { crypto: "LTC", network: "BNB Smart Chain (BEP20)" },
+            row6: { crypto: "XRP", network: "BNB Smart Chain (BEP20)" },
           },
+          warning: {
+            label: "Warning:",
+            text: "Sending to the wrong network is irreversible and the funds may be unrecoverable. Always verify the network on both the sending wallet and 1540BO before transferring.",
+          },
+        },
+        access: {
+          title: "Opening the Deposit Screen",
+          intro:
+            "The deposit modal can be opened from anywhere inside the trading dashboard.",
+          items: [
+            "Log in to your account and open the dashboard.",
+            "Click 'Deposit / Withdraw' (入出金) from the left sidebar menu.",
+            "The deposit & withdrawal modal opens. Make sure the 'Deposit' (入金) tab is selected at the top.",
+          ],
         },
         steps: {
           title: "Deposit Procedure",
+          intro:
+            "After opening the deposit modal, follow these 5 steps to generate a deposit address and complete a transfer.",
           items: [
-            "Go to Wallet Page: After logging in, access the 'Wallet' section from the dashboard.",
-            "Select Deposit: Choose the 'Deposit' tab and select the cryptocurrency you want to deposit.",
-            "Select Network: Choose the corresponding network (e.g., ERC20, TRC20).",
-            "Check Deposit Address: Copy the displayed dedicated deposit address or scan the QR code. Send cryptocurrency from your external wallet or exchange to this address.",
+            {
+              title: "Select cryptocurrency:",
+              text: "Under '1. Select cryptocurrency', choose the asset you want to deposit from USDT / BTC / ETH / TRX / LTC / XRP.",
+            },
+            {
+              title: "Select network:",
+              text: "Under '2. Select network', open the dropdown and choose the blockchain you will send from. Available networks depend on the asset (see the table above).",
+            },
+            {
+              title: "Copy the deposit address:",
+              text: "Under '3. Deposit address', a QR code and a unique address are displayed. Tap the copy icon to copy the address, or scan the QR with your sending wallet.",
+            },
+            {
+              title: "Send from your external wallet or exchange:",
+              text: "Initiate the transfer using the copied address. For USDT, also verify the contract information (the contract address shown below the deposit address) matches the token in your wallet.",
+            },
+            {
+              title: "Tap 'Check deposit now':",
+              text: "After sending, tap the 'Check deposit now' (入金をすぐ確認する) button. The system will poll for incoming transactions and update your balance once the required confirmations are reached.",
+            },
           ],
           note: {
             label: "Important:",
-            text: "Each cryptocurrency has its own dedicated deposit address. Be sure to send to the correct address.",
+            text: "Each cryptocurrency + network combination has its own unique deposit address. Never reuse an address generated for a different asset or network.",
           },
         },
-        timing: {
-          title: "Confirmations and Reflection Time",
+        confirm: {
+          title: "Contract Information for Tokenised Assets",
           intro:
-            "Blockchain transactions are approved through multiple 'confirmations'. The time until deposits are reflected in your account varies depending on network congestion and required confirmations.",
+            "For tokens that run on smart-contract networks (USDT, plus wrapped BTC/ETH/XRP/LTC on BSC or Polygon, etc.), the 'Contract information' field below the deposit address shows the token contract address. Use this to verify your wallet is sending the correct token.",
           items: [
-            "Standard Reflection Time: Normally reflected in your account within 5 to 30 minutes after sending.",
-            "Confirmation Count: Deposit completes when the confirmation count set by each network is reached.",
+            "If your sending wallet asks you to add a custom token, paste the contract address into the token field.",
+            "Mismatched contract addresses are the most common cause of deposits not appearing — always double-check.",
+          ],
+        },
+        history: {
+          title: "Checking Deposit History",
+          intro:
+            "All deposit transactions are recorded under the 'Transactions' section of your account.",
+          items: [
+            "From the left sidebar, click 'Transactions' (取引内容).",
+            "Select the 'Deposit' (入金) tab.",
+            "Each row shows asset/datetime, amount, currency, network, address, and TxID once the deposit is recorded.",
+          ],
+          note: "If a deposit has been sent but is not yet visible here, the transaction is likely still waiting for blockchain confirmations.",
+        },
+        timing: {
+          title: "Confirmations and Crediting Time",
+          intro:
+            "Blockchain transactions require multiple 'confirmations' before being credited. Time-to-credit depends on network congestion and the required number of confirmations.",
+          items: [
+            "Standard crediting time: typically reflected within 5–30 minutes of sending.",
+            "Confirmation count: a deposit is credited once the confirmation threshold defined per network is reached.",
           ],
         },
         troubleshooting: {
           title: "Deposit Delay Troubleshooting",
           intro:
-            "If your deposit is not reflected after 30 minutes, please check the following:",
+            "If your deposit is not reflected after 30 minutes, please check the following before contacting support:",
           steps: [
-            "Check Sending Status: Confirm in your external wallet or exchange that the transfer completed successfully.",
-            "Check Transaction ID (TXID): Use a blockchain explorer (e.g., Etherscan, Tronscan) to track the transaction status with the Transaction ID (TXID).",
-            "Reconfirm Address and Network: Double-check that the destination address and selected network were correct.",
+            "Sending status: confirm in your external wallet/exchange that the transfer was actually broadcast.",
+            "Transaction ID (TXID): use a blockchain explorer (e.g., Etherscan, BscScan, PolygonScan, Tronscan) to verify the transaction is confirmed on-chain.",
+            "Address and network: double-check that the destination address and selected network matched what 1540BO displayed at send time.",
           ],
           contact:
-            "If the problem persists after checking the above, please contact our support team with the following information:",
+            "If the problem persists after the checks above, please contact support with the following information:",
           items2: [
             "Transaction ID (TXID)",
             "Type and amount of cryptocurrency sent",
-            "Date and time of transfer",
+            "Date and time of transfer (with timezone)",
           ],
           email: "Support Email: support@1540bo.io",
         },
@@ -1444,65 +1496,179 @@ const translations = {
       withdrawal: {
         title: "Wallet - Withdrawal & Compliance",
         intro:
-          "At 1540BO, safe and fast withdrawal processing is our top priority. This page explains withdrawal requirements, processing times, and important compliance information.",
-        updated: "Last updated: December 08, 2025",
-        requirements: {
-          title: "Withdrawal Requirements",
+          "Withdrawals on 1540BO are processed through a two-step flow: pre-register a withdrawal address, then submit the withdrawal request. This page covers KYC requirements, the full address registration flow, withdrawal execution, processing times, and how to respond to holds.",
+        updated: "Last updated: 2026-05-16",
+        flow: {
+          title: "Withdrawal Flow Overview (2 Steps)",
           intro:
-            "For smooth withdrawal processing, please confirm that you meet the following conditions in advance:",
+            "Before you can withdraw, you must pre-register the destination wallet address. This is a one-time setup per address.",
+          steps: [
+            {
+              title: "Step 1 — Register your withdrawal address:",
+              text: "From the 'Withdrawal address management' page, add the address you want to withdraw to. Email verification is required.",
+            },
+            {
+              title: "Step 2 — Execute the withdrawal:",
+              text: "Open the Deposit / Withdraw modal, switch to the 'Withdraw' tab, choose the cryptocurrency and the registered address, enter the amount, then tap 'Withdraw money'.",
+            },
+          ],
+          note: {
+            label: "Note:",
+            text: "Until at least one address is registered, withdrawal requests will fail with 'Please enter a withdrawal address' (出金アドレスを入力してください).",
+          },
+        },
+        requirements: {
+          title: "Withdrawal Requirements (KYC)",
+          intro:
+            "All four authentication items must be completed before your first withdrawal. You can check your status under 'Authentication' (認証手続き) in the left sidebar.",
           table: {
-            conditionHeader: "Condition",
+            conditionHeader: "Verification Item",
             detailHeader: "Details",
             row1: {
-              condition: "Complete KYC Verification",
+              condition: "Email address verification",
               detail:
-                "All users must complete KYC verification before their first withdrawal. This prevents fraud and ensures account security.",
+                "Confirm the email used at sign-up by clicking the verification link sent to your inbox.",
             },
             row2: {
-              condition: "Minimum Withdrawal Amount",
+              condition: "Phone number verification",
               detail:
-                "Each cryptocurrency has a set minimum withdrawal amount. Withdrawal requests cannot be below this amount.",
+                "Add and verify your mobile number with a one-time SMS code.",
             },
             row3: {
-              condition: "Trading Volume Requirements",
+              condition: "Personal information registration",
               detail:
-                "In certain conditions, such as receiving bonuses, you may need to meet minimum trading volume requirements. See promotion terms for details.",
+                "Register your full name, date of birth, address, and other personal details.",
+            },
+            row4: {
+              condition: "Identification card",
+              detail:
+                "Upload a government-issued photo ID (passport, driver's license, or national ID).",
+            },
+          },
+          note: "Each cryptocurrency also has a minimum withdrawal amount, and bonus-credited balances may have trading-volume requirements. See the relevant promotion terms for details.",
+        },
+        register: {
+          title: "Step 1: Registering a Withdrawal Address",
+          intro:
+            "Withdrawal addresses must be pre-registered. Each registration requires email verification.",
+          items: [
+            {
+              title: "Open the address management page:",
+              text: "From the deposit/withdraw modal, switch to the 'Withdraw' tab and click 'Withdrawal address registration' (出金アドレス登録) — this opens the 'Withdrawal address management' (出金アドレス管理) page.",
+            },
+            {
+              title: "Click 'Add new':",
+              text: "Press the green 'Add new' (新規追加) button. The 'Withdrawal address settings' (出金アドレス設定) dialog opens.",
+            },
+            {
+              title: "Select cryptocurrency:",
+              text: "Choose the asset you want to register an address for (e.g., USDT).",
+            },
+            {
+              title: "Select network:",
+              text: "Choose the blockchain that matches the destination wallet (e.g., POLYGON for USDT on Polygon). The network must match exactly — sending USDT-ERC20 to a Polygon address is not recoverable.",
+            },
+            {
+              title: "Enter address and label:",
+              text: "Paste your receiving wallet address into 'Withdrawal address', then type any label of your choice into 'Management name' (e.g., 'Binance USDT' or 'Cold wallet'). Click 'Save' (保存する).",
+            },
+            {
+              title: "Verify with email code:",
+              text: "A code is sent to your registered email. Enter it in the 'Withdrawal address settings' dialog and click 'Verify' (認証する). The address is then saved to your address book.",
+            },
+          ],
+          note: {
+            label: "Security:",
+            text: "Email verification is required every time you add a new address. Never share the verification code with anyone — 1540BO support will never ask for it.",
+          },
+        },
+        execute: {
+          title: "Step 2: Executing a Withdrawal",
+          intro:
+            "Once at least one address is registered, withdrawals can be submitted from the 'Withdraw' tab of the deposit/withdraw modal.",
+          items: [
+            {
+              title: "Open the Withdraw tab:",
+              text: "From the dashboard, open 'Deposit / Withdraw' (入出金), then switch to the 'Withdraw' (出金) tab at the top.",
+            },
+            {
+              title: "Select cryptocurrency:",
+              text: "Under '1. Cryptocurrency', open the dropdown and pick the asset to withdraw. Your registered address for that asset is then loaded automatically.",
+            },
+            {
+              title: "Enter withdrawal amount:",
+              text: "Under '2. Withdrawal Amount', type the amount. Make sure it is at or above the minimum and below your available balance.",
+            },
+            {
+              title: "Click 'Withdraw money':",
+              text: "Submit the request with the 'Withdraw money' button. The withdrawal enters our review queue and the status appears under 'Transactions' > Withdraw.",
+            },
+          ],
+        },
+        errors: {
+          title: "Common Errors",
+          intro:
+            "If a withdrawal cannot be submitted, the most likely causes are below.",
+          table: {
+            errorHeader: "Message",
+            causeHeader: "Cause / Resolution",
+            row1: {
+              error: "Please enter a withdrawal address (出金アドレスを入力してください)",
+              cause: "No address is registered for the selected cryptocurrency. Register one from the 'Withdrawal address registration' link.",
+            },
+            row2: {
+              error: "Authentication incomplete",
+              cause: "One or more KYC items are still 'Incomplete'. Visit 'Authentication' from the left sidebar and complete all four items.",
+            },
+            row3: {
+              error: "Amount below minimum / above balance",
+              cause: "Make sure the entered amount is at least the per-asset minimum and not greater than your available wallet balance.",
             },
           },
         },
         timing: {
           title: "Withdrawal Processing Time",
           intro:
-            "Withdrawal requests are processed sequentially by our finance team. After security checks are completed, cryptocurrency is sent to the specified wallet address.",
+            "Withdrawal requests are processed sequentially by our finance team. After security checks complete, cryptocurrency is sent to the specified wallet address.",
           items: [
-            "Standard Processing Time: Normally completed within 24 hours of withdrawal request.",
-            "Network Time: Depending on blockchain network conditions, arrival may take additional time.",
+            "Standard Processing Time: typically completed within 24 hours of submission.",
+            "Network Time: blockchain congestion may add additional time before the funds arrive.",
           ],
           note: {
-            label: "Same-day Withdrawal:",
-            text: "1540BO supports same-day withdrawals, and in most cases, withdrawal processing is completed within a few hours.",
+            label: "Same-day withdrawals:",
+            text: "1540BO supports same-day withdrawals — in most cases, processing is completed within a few hours of submission.",
           },
         },
         holds: {
           title: "Responding to Withdrawal Holds",
           intro:
-            "Withdrawal requests may have a 'Hold' status. This occurs when additional security verification is needed or when there are issues with registration information.",
-          reasons: "Main Hold Reasons:",
+            "A request may move to 'Hold' status when additional security verification is required, or when registration information needs to be checked.",
+          reasons: "Main reasons for a hold:",
           items: [
             "High-value withdrawal requests",
             "Access from unusual IP addresses",
-            "Registration information and withdrawal wallet information don't match",
+            "Mismatch between registration information and withdrawal wallet information",
           ],
           contact:
-            "If your withdrawal is held, our support team will contact you at your registered email address. Please follow instructions and provide the necessary information.",
+            "If your withdrawal is held, our support team will contact you at your registered email address. Please follow the instructions and provide the requested information.",
+        },
+        history: {
+          title: "Checking Withdrawal History",
+          intro:
+            "All withdrawal transactions are recorded under the 'Transactions' section of your account.",
+          items: [
+            "From the left sidebar, click 'Transactions' (取引内容).",
+            "Select the 'Withdraw' (出金) tab.",
+            "Each row shows asset/datetime, amount, currency, network, destination address, and TxID once broadcast.",
+          ],
         },
         fees: {
           title: "Withdrawal Fees",
-          text: "Withdrawals incur fees (miner fees) paid to the blockchain network. These fees vary depending on network congestion. You can check the latest fees on the withdrawal request screen.",
+          text: "Withdrawals incur a network fee (miner fee) paid to the blockchain. Fees vary with network congestion and are displayed on the withdrawal screen before submission.",
         },
         contact: {
           title: "Contact Us",
-          text: "If you have questions or issues regarding withdrawals, please contact our support team anytime.",
+          text: "For any questions or issues related to withdrawals, please contact our support team at any time.",
           email: "Support Email: support@1540bo.io",
         },
         relatedLinks: {
@@ -3136,63 +3302,112 @@ const translations = {
       deposit: {
         title: "ウォレット - 入金・反映手順",
         intro:
-          "1540BOでは、複数の暗号資産（仮想通貨）を使用した迅速かつ安全な入金が可能です。このページでは、対応しているブロックチェーン、入金アドレスの確認方法、および入金が遅延した場合の対処法について詳しく説明します。",
-        updated: "最終更新日: 2025年12月08日",
+          "1540BOでは複数の暗号資産での迅速かつ安全な入金が可能です。このページでは、対応している通貨とネットワーク、入金画面の開き方、入金アドレスのコピー手順、入金履歴の確認方法、入金が遅延した場合の対処法を詳しく説明します。",
+        updated: "最終更新日: 2026年5月16日",
         supported: {
           title: "対応暗号資産とネットワーク",
           intro:
-            "当プラットフォームでは、以下の主要な暗号資産およびネットワーク（ブロックチェーン）に対応しています。入金を行う際は、必ず正しいネットワークを選択してください。誤ったネットワークに送金した場合、資産が失われる可能性があります。",
+            "1540BOは以下の暗号資産に対応しています。入金時は必ずドロップダウンから正しいネットワークを選択してください。選べるネットワークは通貨ごとに異なります。",
           table: {
             cryptoHeader: "暗号資産",
-            networkHeader: "対応ネットワーク",
-            row1: {
-              crypto: "USDT",
-              network: "ERC20 (Ethereum), TRC20 (TRON)",
-            },
-            row2: { crypto: "BTC", network: "Bitcoin" },
-            row3: { crypto: "ETH", network: "ERC20 (Ethereum)" },
-            row4: { crypto: "TRX", network: "TRC20 (TRON)" },
-            row5: { crypto: "LTC", network: "Litecoin" },
-            row6: { crypto: "XRP", network: "Ripple" },
+            networkHeader: "選択可能なネットワーク",
+            row1: { crypto: "USDT", network: "Polygon POS / Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row2: { crypto: "BTC", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row3: { crypto: "ETH", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row4: { crypto: "TRX", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20) / Tron (TRC20)" },
+            row5: { crypto: "LTC", network: "BNB Smart Chain (BEP20)" },
+            row6: { crypto: "XRP", network: "BNB Smart Chain (BEP20)" },
           },
+          warning: {
+            label: "重要:",
+            text: "誤ったネットワークに送金すると資産は復旧できません。送金前に、送金元ウォレットと1540BOの両方でネットワークを必ず確認してください。",
+          },
+        },
+        access: {
+          title: "入金画面の開き方",
+          intro:
+            "入金モーダルはダッシュボードのどこからでも開くことができます。",
+          items: [
+            "アカウントにログインしてダッシュボードを開きます。",
+            "左サイドバーの「入出金」をクリックします。",
+            "入出金モーダルが開きます。画面上部で「入金」タブが選択されていることを確認します。",
+          ],
         },
         steps: {
           title: "入金手順",
+          intro:
+            "入金モーダルを開いたら、以下の5ステップで入金アドレスを生成して送金します。",
           items: [
-            "ウォレットページへ移動: ログイン後、ダッシュボードから「ウォレット」セクションにアクセスします。",
-            "入金を選択: 「入金」タブを選び、入金したい暗号資産を選択します。",
-            "ネットワークの選択: 対応するネットワーク（例: ERC20, TRC20）を選択します。",
-            "入金アドレスの確認: 表示された専用の入金アドレスをコピーするか、QRコードをスキャンします。このアドレス宛に、お持ちの外部ウォレットまたは取引所から暗号資産を送金してください。",
+            {
+              title: "暗号資産を選択:",
+              text: "「1. 暗号資産を選択」で、USDT / BTC / ETH / TRX / LTC / XRP の中から入金したい通貨を選びます。",
+            },
+            {
+              title: "ネットワークを選択:",
+              text: "「2. ネットワーク選択」でドロップダウンを開き、送金元のブロックチェーンを選びます。選択肢は通貨ごとに異なります（上の表を参照）。",
+            },
+            {
+              title: "入金アドレスをコピー:",
+              text: "「3. 入金アドレス」に QR コードと専用アドレスが表示されます。コピーアイコンをタップしてアドレスをコピーするか、QR を送金元ウォレットでスキャンします。",
+            },
+            {
+              title: "外部ウォレット／取引所から送金:",
+              text: "コピーしたアドレス宛に送金を実行します。USDT の場合は、アドレス下部に表示される「契約情報（コントラクトアドレス）」が送金元ウォレットのトークンと一致しているかも確認してください。",
+            },
+            {
+              title: "「入金をすぐ確認する」をタップ:",
+              text: "送金後、「入金をすぐ確認する」ボタンをタップします。システムがチェーン上の入金を確認し、必要な承認数に達すると残高に反映されます。",
+            },
           ],
           note: {
-            label: "重要:",
-            text: "各暗号資産には、それぞれ専用の入金アドレスが割り当てられています。必ず正しいアドレスに送金してください。",
+            label: "注意:",
+            text: "暗号資産とネットワークの組み合わせごとに専用の入金アドレスが発行されます。別の通貨やネットワークで生成したアドレスを再利用しないでください。",
           },
+        },
+        confirm: {
+          title: "トークン資産の契約情報について",
+          intro:
+            "スマートコントラクト上のトークン（USDT、BSC や Polygon 上のラップド BTC / ETH / XRP / LTC など）の場合、入金アドレスの下に「契約情報」としてトークンのコントラクトアドレスが表示されます。送金元ウォレットで正しいトークンを送るための照合に使ってください。",
+          items: [
+            "送金元ウォレットがカスタムトークンの追加を求めてきた場合、この契約アドレスを貼り付けます。",
+            "コントラクトアドレスの不一致は入金が反映されない最も多い原因です。必ずダブルチェックしてください。",
+          ],
+        },
+        history: {
+          title: "入金履歴の確認",
+          intro:
+            "すべての入金トランザクションはアカウントの「取引内容」に記録されます。",
+          items: [
+            "左サイドバーから「取引内容」をクリックします。",
+            "「入金」タブを選択します。",
+            "資産／日時、金額、通貨、ネットワーク、アドレス、TxID が入金ごとに表示されます。",
+          ],
+          note: "送金は完了しているのにここに表示されない場合は、まだブロックチェーン上の承認待ちの可能性が高いです。",
         },
         timing: {
           title: "確認回数と反映時間",
           intro:
-            "ブロックチェーン上での取引は、複数の「確認（Confirmation）」を経て承認されます。入金がお客様のアカウントに反映されるまでの時間は、ネットワークの混雑状況や必要な確認回数によって異なります。",
+            "ブロックチェーン上の取引は複数の「承認（Confirmation）」を経て確定します。反映までの時間はネットワークの混雑状況と必要な承認回数によって異なります。",
           items: [
-            "標準的な反映時間: 通常、送金後5分から30分程度でアカウントに反映されます。",
-            "確認回数: 各ネットワークで定められた確認回数に達すると、入金が完了します。",
+            "標準的な反映時間: 通常、送金後5〜30分程度でアカウントに反映されます。",
+            "確認回数: ネットワークごとに定められた確認数に達した時点で入金が完了します。",
           ],
         },
         troubleshooting: {
           title: "入金遅延時のトラブルシューティング",
           intro:
-            "入金が30分以上経っても反映されない場合は、以下の点をご確認ください。",
+            "入金が30分以上経っても反映されない場合は、サポートに連絡する前に以下を確認してください。",
           steps: [
-            "送金ステータスの確認: ご利用の外部ウォレットや取引所で、送金が正常に完了しているか確認してください。",
-            "トランザクションID（TXID）の確認: ブロックチェーンエクスプローラー（例: Etherscan, Tronscan）を使用して、トランザクションID（TXID）で取引の状況を追跡します。",
-            "アドレスとネットワークの再確認: 送金先のアドレスと選択したネットワークが正しかったか、再度確認してください。",
+            "送金ステータスの確認: 外部ウォレットや取引所側で送金が実際にブロードキャストされているか確認します。",
+            "トランザクションID (TXID) の確認: ブロックチェーンエクスプローラー（例: Etherscan, BscScan, PolygonScan, Tronscan）で取引が承認済みか確認します。",
+            "アドレスとネットワークの再確認: 送金先アドレスと選択したネットワークが、送金時に1540BOで表示されたものと一致していたか確認します。",
           ],
           contact:
-            "上記を確認しても問題が解決しない場合は、以下の情報を添えてサポートチームまでご連絡ください。",
+            "上記を確認しても解決しない場合は、以下の情報を添えてサポートチームまでご連絡ください。",
           items2: [
-            "トランザクションID（TXID）",
+            "トランザクションID (TXID)",
             "送金した暗号資産の種類と数量",
-            "送金日時",
+            "送金日時（タイムゾーン込み）",
           ],
           email: "サポートメール: support@1540bo.io",
         },
@@ -3205,61 +3420,175 @@ const translations = {
       withdrawal: {
         title: "ウォレット - 出金・コンプライアンス",
         intro:
-          "1540BOでは、安全かつ迅速な出金処理を最優先事項としています。このページでは、出金の必要条件、処理時間、およびコンプライアンスに関する重要な情報について説明します。",
-        updated: "最終更新日: 2025年12月08日",
-        requirements: {
-          title: "出金の必要条件",
+          "1540BOの出金は「出金アドレスの事前登録 → 出金実行」の2段階で処理されます。このページでは KYC 要件、アドレス登録の全フロー、出金実行手順、処理時間、そして保留時の対応方法を説明します。",
+        updated: "最終更新日: 2026年5月16日",
+        flow: {
+          title: "出金の流れ（2段階）",
           intro:
-            "スムーズな出金処理のため、以下の条件を満たしていることを事前にご確認ください。",
+            "出金前に、送金先となるウォレットアドレスを必ず事前登録してください。アドレスごとに一度だけ必要な作業です。",
+          steps: [
+            {
+              title: "ステップ1 — 出金アドレスの登録:",
+              text: "「出金アドレス管理」ページから、出金したいアドレスを追加します。メール認証が必要です。",
+            },
+            {
+              title: "ステップ2 — 出金の実行:",
+              text: "入出金モーダルを開き「出金」タブに切り替え、通貨と登録済みアドレスを選び、金額を入力して「Withdraw money」ボタンをタップします。",
+            },
+          ],
+          note: {
+            label: "注意:",
+            text: "アドレスが一つも登録されていない状態で出金しようとすると、「出金アドレスを入力してください。」というエラーが表示されます。",
+          },
+        },
+        requirements: {
+          title: "出金の必要条件（KYC）",
+          intro:
+            "初回出金の前に、以下の4項目すべての認証を完了する必要があります。ステータスは左サイドバーの「認証手続き」から確認できます。",
           table: {
-            conditionHeader: "条件",
+            conditionHeader: "認証項目",
             detailHeader: "詳細",
             row1: {
-              condition: "本人確認（KYC）の完了",
+              condition: "メールアドレス認証",
               detail:
-                "すべてのユーザーは、初回の出金前に本人確認（KYC）手続きを完了する必要があります。これは、不正行為を防止し、アカウントのセキュリティを確保するためです。",
+                "登録時に送信される認証リンクをクリックして、登録メールアドレスを確認します。",
             },
             row2: {
-              condition: "最小出金額",
+              condition: "電話番号認証",
               detail:
-                "各暗号資産には、最小出金額が設定されています。出金申請額がこの額を下回ることはできません。",
+                "携帯電話番号を登録し、SMS で届く認証コードで認証します。",
             },
             row3: {
-              condition: "取引量要件",
+              condition: "個人情報登録",
               detail:
-                "ボーナスを受け取った場合など、特定の条件下で最低取引量を満たす必要がある場合があります。詳細はプロモーションの利用規約をご確認ください。",
+                "氏名、生年月日、住所などの個人情報を登録します。",
+            },
+            row4: {
+              condition: "本人確認書類",
+              detail:
+                "政府発行の写真付き身分証明書（パスポート、運転免許証、マイナンバーカードなど）をアップロードします。",
+            },
+          },
+          note: "また、各暗号資産には最小出金額が設定されており、ボーナス由来の残高には取引量要件がかかる場合があります。詳細は対象プロモーションの利用規約をご確認ください。",
+        },
+        register: {
+          title: "ステップ1: 出金アドレスの登録",
+          intro:
+            "出金アドレスは事前登録制です。登録ごとにメール認証が必要となります。",
+          items: [
+            {
+              title: "アドレス管理ページを開く:",
+              text: "入出金モーダルで「出金」タブに切り替え、「出金アドレス登録」をクリックして「出金アドレス管理」ページを開きます。",
+            },
+            {
+              title: "「新規追加」をクリック:",
+              text: "緑色の「新規追加」ボタンをクリックすると、「出金アドレス設定」ダイアログが開きます。",
+            },
+            {
+              title: "暗号資産を選択:",
+              text: "アドレスを登録したい通貨（例: USDT）を選択します。",
+            },
+            {
+              title: "ネットワークを選択:",
+              text: "送金先ウォレットと完全に一致するブロックチェーンを選択します（例: Polygon 上の USDT なら POLYGON）。ネットワークを間違えるとUSDT-ERC20をPolygonアドレスに送るような事態となり復旧できません。",
+            },
+            {
+              title: "アドレスと管理名を入力:",
+              text: "「出金アドレス」に受取ウォレットのアドレスを貼り付け、「管理名」に任意のラベル（例: 「Binance USDT」「コールドウォレット」など）を入力して「保存する」をクリックします。",
+            },
+            {
+              title: "メール認証コードで承認:",
+              text: "登録メールアドレスに認証コードが届きます。「出金アドレス設定」ダイアログにコードを入力し「認証する」をクリックすると、アドレスがアドレス帳に保存されます。",
+            },
+          ],
+          note: {
+            label: "セキュリティ:",
+            text: "新しいアドレスを追加するたびにメール認証が必要です。認証コードを他人に教えないでください。1540BOのサポートがコードを尋ねることは絶対にありません。",
+          },
+        },
+        execute: {
+          title: "ステップ2: 出金の実行",
+          intro:
+            "アドレスが一つでも登録されていれば、入出金モーダルの「出金」タブから出金申請ができます。",
+          items: [
+            {
+              title: "「出金」タブを開く:",
+              text: "ダッシュボードから「入出金」を開き、画面上部の「出金」タブに切り替えます。",
+            },
+            {
+              title: "暗号資産を選択:",
+              text: "「1. Cryptocurrency」でドロップダウンを開き、出金する通貨を選びます。その通貨に対応する登録済みアドレスが自動的に読み込まれます。",
+            },
+            {
+              title: "出金額を入力:",
+              text: "「2. Withdrawal Amount」に金額を入力します。最小出金額以上、利用可能残高以下であることを確認してください。",
+            },
+            {
+              title: "「Withdraw money」をクリック:",
+              text: "「Withdraw money」ボタンで申請を送信します。出金は審査キューに入り、ステータスは「取引内容」>「出金」で確認できます。",
+            },
+          ],
+        },
+        errors: {
+          title: "よくあるエラー",
+          intro:
+            "出金が送信できない場合、よくある原因は以下のとおりです。",
+          table: {
+            errorHeader: "メッセージ",
+            causeHeader: "原因・対処",
+            row1: {
+              error: "出金アドレスを入力してください。",
+              cause: "選択した通貨に対応するアドレスが登録されていません。「出金アドレス登録」リンクからアドレスを登録してください。",
+            },
+            row2: {
+              error: "認証が未完了です",
+              cause: "KYCの4項目のいずれかが「Incomplete」のままです。左サイドバーの「認証手続き」から4項目すべてを完了してください。",
+            },
+            row3: {
+              error: "金額が最小出金額未満／残高超過",
+              cause: "入力金額が各通貨の最小出金額以上で、かつ利用可能残高以下であることを確認してください。",
             },
           },
         },
         timing: {
           title: "出金処理時間",
           intro:
-            "出金申請は、当社の財務チームによって順次処理されます。セキュリティチェック完了後、暗号資産は指定されたウォレットアドレスに送金されます。",
+            "出金申請は当社の財務チームが順次処理します。セキュリティチェック完了後、指定のウォレットアドレスに暗号資産が送金されます。",
           items: [
             "標準処理時間: 通常、出金申請から24時間以内に処理が完了します。",
-            "ネットワーク時間: ブロックチェーンのネットワーク状況によっては、着金までにさらに時間がかかる場合があります。",
+            "ネットワーク時間: ブロックチェーンの混雑状況によっては、着金までにさらに時間がかかる場合があります。",
           ],
           note: {
             label: "即日出金対応:",
-            text: "1540BOは即日出金に対応しており、ほとんどの場合、数時間以内に出金処理が完了します。",
+            text: "1540BOは即日出金に対応しており、ほとんどの場合、申請から数時間以内に処理が完了します。",
           },
         },
         holds: {
           title: "出金保留時の対応",
           intro:
-            "出金申請が「保留」ステータスになる場合があります。これは、追加のセキュリティ確認が必要な場合や、登録情報に不備がある場合などに発生します。",
+            "出金申請が「保留」ステータスになる場合があります。これは追加のセキュリティ確認が必要な場合や、登録情報の照合が必要な場合に発生します。",
           reasons: "主な保留理由:",
           items: [
             "高額な出金申請",
             "通常とは異なるIPアドレスからのアクセス",
-            "登録情報と出金先ウォレット情報が一致しない",
+            "登録情報と出金先ウォレット情報の不一致",
           ],
           contact:
-            "出金が保留された場合は、サポートチームから登録メールアドレス宛にご連絡いたします。指示に従い、必要な情報をご提供ください。",
+            "出金が保留された場合、サポートチームから登録メールアドレス宛にご連絡します。指示に従い、求められた情報を提供してください。",
+        },
+        history: {
+          title: "出金履歴の確認",
+          intro:
+            "すべての出金トランザクションはアカウントの「取引内容」に記録されます。",
+          items: [
+            "左サイドバーから「取引内容」をクリックします。",
+            "「出金」タブを選択します。",
+            "ブロードキャスト後、資産／日時、金額、通貨、ネットワーク、送金先アドレス、TxID が出金ごとに表示されます。",
+          ],
         },
         fees: {
           title: "出金手数料",
-          text: "出金時には、ブロックチェーンネットワークに支払うための手数料（マイナーフィー）が発生します。この手数料は、ネットワークの混雑状況に応じて変動します。出金申請画面にて、最新の手数料をご確認いただけます。",
+          text: "出金時には、ブロックチェーンに支払うネットワーク手数料（マイナーフィー）が発生します。手数料はネットワークの混雑状況に応じて変動し、出金申請画面で送信前に確認できます。",
         },
         contact: {
           title: "お問い合わせ",
@@ -3770,106 +4099,305 @@ const translations = {
         },
       },
       deposit: {
-        hero: {
-          badge: "วอลเล็ต",
-          title: "คู่มือการฝากและการบันทึกยอด",
-          subtitle: "ใช้ช่องทาง on-chain อย่างปลอดภัยและเตรียมหลักฐานให้พร้อม",
-          meta: "Wallet v3",
+        title: "วอลเล็ต - คู่มือการฝากและการเครดิตยอด",
+        intro:
+          "1540BO รองรับการฝากที่รวดเร็วและปลอดภัยด้วยคริปโตเคอเรนซีหลายชนิด หน้านี้อธิบายบล็อกเชนที่รองรับ วิธีเปิดหน้าจอฝาก วิธีคัดลอกที่อยู่ฝาก วิธีตรวจสอบประวัติ และสิ่งที่ต้องทำเมื่อเงินฝากล่าช้า",
+        updated: "อัปเดตล่าสุด: 16 พฤษภาคม 2026",
+        supported: {
+          title: "คริปโตและเครือข่ายที่รองรับ",
+          intro:
+            "1540BO รองรับคริปโตต่อไปนี้ เมื่อฝากต้องเลือกเครือข่ายที่ถูกต้องจากดรอปดาวน์ เครือข่ายที่เลือกได้จะแตกต่างกันไปตามสินทรัพย์",
+          table: {
+            cryptoHeader: "สินทรัพย์",
+            networkHeader: "เครือข่ายที่เลือกได้",
+            row1: { crypto: "USDT", network: "Polygon POS / Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row2: { crypto: "BTC", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row3: { crypto: "ETH", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20)" },
+            row4: { crypto: "TRX", network: "Ethereum (ERC20) / BNB Smart Chain (BEP20) / Tron (TRC20)" },
+            row5: { crypto: "LTC", network: "BNB Smart Chain (BEP20)" },
+            row6: { crypto: "XRP", network: "BNB Smart Chain (BEP20)" },
+          },
+          warning: {
+            label: "คำเตือน:",
+            text: "การส่งไปยังเครือข่ายที่ไม่ถูกต้องไม่สามารถย้อนกลับได้และอาจกู้คืนเงินไม่ได้ ตรวจสอบเครือข่ายทั้งฝั่งวอลเล็ตที่ส่งและ 1540BO ก่อนโอนทุกครั้ง",
+          },
         },
-        sections: [
-          {
-            heading: "ช่องทางที่รองรับ",
-            text: "เลือกวิธีที่ตรงกับการดูแลสินทรัพย์ของคุณ",
-            items: [
-              "คริปโต: USDT-TRC20, BTC, ETH, TRX, XRP, LTC",
-              "ฟิอัต/สเตเบิล ผ่าน OTC ที่ได้รับอนุมัติ (ติดต่อทีม)",
-              "ขั้นต่ำ 10 USDT หรือเทียบเท่า",
-            ],
+        access: {
+          title: "วิธีเปิดหน้าจอฝาก",
+          intro:
+            "หน้าต่างฝากสามารถเปิดได้จากทุกที่ในแดชบอร์ดเทรด",
+          items: [
+            "เข้าสู่ระบบและเปิดแดชบอร์ด",
+            "คลิก「入出金」(ฝาก / ถอน) จากเมนูแถบด้านซ้าย",
+            "หน้าต่างฝาก/ถอนจะเปิดขึ้น ตรวจสอบให้แน่ใจว่าแท็บ「入金」(ฝาก) ที่ด้านบนถูกเลือกอยู่",
+          ],
+        },
+        steps: {
+          title: "ขั้นตอนการฝาก",
+          intro:
+            "หลังจากเปิดหน้าต่างฝาก ทำตาม 5 ขั้นตอนต่อไปนี้เพื่อสร้างที่อยู่ฝากและทำการโอน",
+          items: [
+            {
+              title: "เลือกสินทรัพย์:",
+              text: "ที่หัวข้อ「1. 暗号資産を選択」(เลือกสินทรัพย์) เลือกเหรียญที่ต้องการฝากจาก USDT / BTC / ETH / TRX / LTC / XRP",
+            },
+            {
+              title: "เลือกเครือข่าย:",
+              text: "ที่หัวข้อ「2. ネットワーク選択」(เลือกเครือข่าย) เปิดดรอปดาวน์และเลือกบล็อกเชนที่จะใช้ส่ง เครือข่ายที่เลือกได้ขึ้นอยู่กับสินทรัพย์ (ดูตารางด้านบน)",
+            },
+            {
+              title: "คัดลอกที่อยู่ฝาก:",
+              text: "ที่หัวข้อ「3. 入金アドレス」(ที่อยู่ฝาก) จะแสดง QR และที่อยู่เฉพาะ แตะไอคอนคัดลอกเพื่อคัดลอกที่อยู่ หรือสแกน QR ด้วยวอลเล็ตที่ส่ง",
+            },
+            {
+              title: "ส่งจากวอลเล็ตหรือ exchange ภายนอก:",
+              text: "ใช้ที่อยู่ที่คัดลอกเพื่อทำการโอน หากเป็น USDT ให้ตรวจสอบ「契約情報」(ข้อมูลสัญญา / contract address) ที่แสดงด้านล่างที่อยู่ฝากว่าตรงกับโทเค็นในวอลเล็ตของคุณ",
+            },
+            {
+              title: "แตะ「入金をすぐ確認する」:",
+              text: "หลังจากส่งแล้ว แตะปุ่ม「入金をすぐ確認する」(ตรวจสอบการฝากทันที) ระบบจะตรวจสอบธุรกรรมขาเข้าและอัปเดตยอดเมื่อถึงจำนวนคอนเฟิร์มที่กำหนด",
+            },
+          ],
+          note: {
+            label: "สำคัญ:",
+            text: "การจับคู่ระหว่างสินทรัพย์และเครือข่ายแต่ละแบบมีที่อยู่ฝากเฉพาะ อย่านำที่อยู่ที่สร้างสำหรับสินทรัพย์/เครือข่ายอื่นมาใช้ซ้ำ",
           },
-          {
-            heading: "ขั้นตอนฝาก",
-            text: "ทุกครั้งต้องคัดลอกที่อยู่ใหม่จาก Wallet > Deposit",
-            items: [
-              "เลือกสินทรัพย์และเครือข่าย สร้างที่อยู่ใช้ครั้งเดียว",
-              "ส่งจากวอลเล็ตของคุณเองและบันทึก TXID",
-              "รอจำนวนคอนเฟิร์มที่ระบบกำหนด (TRON 1 บล็อก / ETH 2 บล็อก)",
-              "หาก 30 นาทีแล้วยังไม่เข้า ค่อยเปิดเคส",
-            ],
-          },
-          {
-            heading: "แนวทางที่ดีที่สุด",
-            text: "ลดการตรวจสอบและความล่าช้า",
-            items: [
-              "โอนจากวอลเล็ตที่ควบคุมเองเท่านั้น—exchange บางแห่งปล่อยแฮชช้า",
-              "อย่าส่งข้ามเครือข่าย (ERC20 ไป TRC20 จะกู้คืนไม่ได้)",
-              "ยอดใหญ่ควรทำธุรกรรมทดสอบเล็กก่อน",
-            ],
-          },
-          {
-            heading: "เมื่อยอดยังไม่อัปเดต",
-            text: "เตรียมข้อมูลเหล่านี้ก่อนคุยกับทีม Ops",
-            items: [
-              "TXID + สกรีนช็อตจาก blockchain explorer + จำนวนเงิน",
-              "สกรีนช็อตวอลเล็ตที่แสดงสถานะ Sent พร้อมเวลา",
-              "ยืนยันว่าที่อยู่ฝากรอบล่าสุดเป็นที่อยู่ใหม่",
-            ],
-          },
-        ],
-        callout: {
-          title: "ต้องการ whitelist วอลเล็ตดีลเลอร์?",
-          body: "ส่งที่อยู่ cold wallet หลักฐานการเป็นเจ้าของ และเพดานรายวันที่ต้องการให้ทีม Ops อนุมัติ",
-          cta: "ติดต่อทีมวอลเล็ต",
+        },
+        confirm: {
+          title: "ข้อมูลสัญญาสำหรับโทเค็น",
+          intro:
+            "สำหรับโทเค็นที่ทำงานบนเครือข่ายสัญญาอัจฉริยะ (USDT รวมถึง wrapped BTC/ETH/XRP/LTC บน BSC หรือ Polygon ฯลฯ) ฟิลด์「契約情報」ใต้ที่อยู่ฝากจะแสดง contract address ของโทเค็น ใช้เพื่อตรวจสอบว่าวอลเล็ตของคุณส่งโทเค็นที่ถูกต้อง",
+          items: [
+            "หากวอลเล็ตที่ส่งต้องการให้เพิ่มโทเค็นกำหนดเอง ให้วาง contract address ในฟิลด์โทเค็น",
+            "contract address ที่ไม่ตรงเป็นสาเหตุที่พบบ่อยที่สุดของการฝากที่ไม่ปรากฏ ตรวจสอบให้ดีทุกครั้ง",
+          ],
+        },
+        history: {
+          title: "ตรวจสอบประวัติการฝาก",
+          intro:
+            "ธุรกรรมฝากทั้งหมดจะถูกบันทึกในส่วน「取引内容」(Transactions) ของบัญชี",
+          items: [
+            "จากแถบเมนูด้านซ้าย คลิก「取引内容」",
+            "เลือกแท็บ「入金」(ฝาก)",
+            "แต่ละแถวจะแสดงสินทรัพย์/วันเวลา จำนวน สกุล เครือข่าย ที่อยู่ และ TxID เมื่อบันทึกการฝากแล้ว",
+          ],
+          note: "หากส่งเงินฝากแล้วแต่ยังไม่ปรากฏที่นี่ ธุรกรรมน่าจะยังรอการคอนเฟิร์มจากบล็อกเชน",
+        },
+        timing: {
+          title: "จำนวนคอนเฟิร์มและเวลาในการเครดิต",
+          intro:
+            "ธุรกรรมบล็อกเชนต้องมี「คอนเฟิร์ม」หลายครั้งก่อนจะเครดิตเข้าบัญชี เวลาขึ้นอยู่กับความหนาแน่นของเครือข่ายและจำนวนคอนเฟิร์มที่ต้องการ",
+          items: [
+            "เวลาเครดิตมาตรฐาน: ปกติเข้าภายใน 5–30 นาทีหลังส่ง",
+            "จำนวนคอนเฟิร์ม: เครดิตเข้าบัญชีเมื่อถึงเกณฑ์คอนเฟิร์มของแต่ละเครือข่าย",
+          ],
+        },
+        troubleshooting: {
+          title: "แก้ไขปัญหาเงินฝากล่าช้า",
+          intro:
+            "หากเงินฝากยังไม่เข้าหลังจาก 30 นาที กรุณาตรวจสอบสิ่งต่อไปนี้ก่อนติดต่อทีมซัพพอร์ต",
+          steps: [
+            "สถานะการส่ง: ตรวจสอบในวอลเล็ต/exchange ภายนอกว่าการโอนถูกบรอดแคสต์จริง",
+            "Transaction ID (TXID): ใช้ block explorer (เช่น Etherscan, BscScan, PolygonScan, Tronscan) เพื่อยืนยันว่าธุรกรรมคอนเฟิร์มบนเชนแล้ว",
+            "ที่อยู่และเครือข่าย: ยืนยันว่าที่อยู่ปลายทางและเครือข่ายที่เลือกตรงกับที่ 1540BO แสดงในตอนที่ส่ง",
+          ],
+          contact:
+            "หากปัญหายังไม่หาย กรุณาติดต่อซัพพอร์ตพร้อมข้อมูลต่อไปนี้",
+          items2: [
+            "Transaction ID (TXID)",
+            "ชนิดและจำนวนคริปโตที่ส่ง",
+            "วันและเวลาที่ส่ง (พร้อมไทม์โซน)",
+          ],
+          email: "อีเมลซัพพอร์ต: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "ลิงก์ที่เกี่ยวข้อง",
+          withdrawal: "วอลเล็ต - การถอนและคอมพลายแอนซ์",
+          trading: "คู่มือการเทรด",
         },
       },
       withdrawal: {
-        hero: {
-          badge: "วอลเล็ต",
-          title: "คู่มือการถอนและการตรวจสอบ",
-          subtitle: "รู้เงื่อนไขและ SLA ก่อนส่งคำร้อง",
-          meta: "ผู้ใช้ระดับมาตรฐาน",
+        title: "วอลเล็ต - การถอนและคอมพลายแอนซ์",
+        intro:
+          "การถอนของ 1540BO ดำเนินการผ่านขั้นตอน 2 ขั้น: ลงทะเบียนที่อยู่ถอนล่วงหน้า จากนั้นส่งคำขอถอน หน้านี้ครอบคลุมข้อกำหนด KYC ขั้นตอนลงทะเบียนที่อยู่ทั้งหมด การดำเนินการถอน เวลาประมวลผล และวิธีตอบสนองเมื่อถูกถือ",
+        updated: "อัปเดตล่าสุด: 16 พฤษภาคม 2026",
+        flow: {
+          title: "ภาพรวมของขั้นตอนถอน (2 ขั้น)",
+          intro:
+            "ก่อนถอน ต้องลงทะเบียนที่อยู่ปลายทางล่วงหน้า เป็นการตั้งค่าครั้งเดียวต่อหนึ่งที่อยู่",
+          steps: [
+            {
+              title: "ขั้น 1 — ลงทะเบียนที่อยู่ถอน:",
+              text: "จากหน้า「出金アドレス管理」(จัดการที่อยู่ถอน) เพิ่มที่อยู่ที่ต้องการถอน ต้องยืนยันด้วยอีเมล",
+            },
+            {
+              title: "ขั้น 2 — ดำเนินการถอน:",
+              text: "เปิดหน้าต่างฝาก/ถอน สลับไปแท็บ「出金」(ถอน) เลือกสินทรัพย์และที่อยู่ที่ลงทะเบียน ใส่จำนวน แล้วแตะ「Withdraw money」",
+            },
+          ],
+          note: {
+            label: "หมายเหตุ:",
+            text: "ถ้ายังไม่มีที่อยู่ลงทะเบียน คำขอถอนจะไม่สำเร็จและแสดงข้อความ「出金アドレスを入力してください。」(โปรดป้อนที่อยู่ถอน)",
+          },
         },
-        sections: [
-          {
-            heading: "ตรวจสอบก่อนยื่น",
-            text: "ต้องครบถ้วนก่อนระบบจะอนุมัติ",
-            items: [
-              "KYC ระดับ 2 ผ่านแล้ว",
-              "เปิด 2FA และตั้งรหัสถอน",
-              "มีที่อยู่วอลเล็ตส่วนตัว (ไม่ใช่ที่อยู่ฝากของ exchange)",
-            ],
+        requirements: {
+          title: "ข้อกำหนดการถอน (KYC)",
+          intro:
+            "ต้องทำการยืนยันตัวตน 4 รายการให้ครบก่อนถอนครั้งแรก สถานะตรวจสอบได้ที่「認証手続き」(การยืนยันตัวตน) ในแถบเมนูซ้าย",
+          table: {
+            conditionHeader: "รายการยืนยัน",
+            detailHeader: "รายละเอียด",
+            row1: {
+              condition: "ยืนยันอีเมล",
+              detail:
+                "ยืนยันอีเมลที่ใช้สมัครโดยคลิกลิงก์ยืนยันที่ส่งไปยังอินบอกซ์",
+            },
+            row2: {
+              condition: "ยืนยันเบอร์โทรศัพท์",
+              detail:
+                "เพิ่มและยืนยันเบอร์มือถือด้วยรหัส SMS แบบใช้ครั้งเดียว",
+            },
+            row3: {
+              condition: "ลงทะเบียนข้อมูลส่วนตัว",
+              detail:
+                "ลงทะเบียนชื่อ-นามสกุล วันเกิด ที่อยู่ และข้อมูลส่วนตัวอื่นๆ",
+            },
+            row4: {
+              condition: "บัตรประจำตัว",
+              detail:
+                "อัปโหลดบัตรประจำตัวที่มีรูปออกโดยรัฐบาล (พาสปอร์ต ใบขับขี่ หรือบัตรประชาชน)",
+            },
           },
-          {
-            heading: "ขั้นตอนส่งคำขอ",
-            text: "ทำใน Wallet > Withdraw",
-            items: [
-              "เลือกสินทรัพย์+เครือข่าย กรอกที่อยู่ (และ Memo/Tag หากต้องใช้)",
-              "ใส่จำนวน ตรวจสอบค่าธรรมเนียมที่ระบบแสดง",
-              "ยืนยันผ่าน 2FA และรหัส OTP ที่ส่งอีเมล",
-            ],
+          note: "นอกจากนี้ คริปโตแต่ละชนิดยังมีจำนวนถอนขั้นต่ำ และยอดที่ได้จากโบนัสอาจมีข้อกำหนดเรื่องปริมาณการเทรด ดูรายละเอียดในข้อกำหนดของโปรโมชั่นนั้นๆ",
+        },
+        register: {
+          title: "ขั้นที่ 1: การลงทะเบียนที่อยู่ถอน",
+          intro:
+            "ที่อยู่ถอนต้องลงทะเบียนล่วงหน้า การลงทะเบียนแต่ละครั้งต้องยืนยันด้วยอีเมล",
+          items: [
+            {
+              title: "เปิดหน้าจัดการที่อยู่:",
+              text: "จากหน้าต่างฝาก/ถอน สลับไปแท็บ「出金」และคลิก「出金アドレス登録」(ลงทะเบียนที่อยู่ถอน) เพื่อเปิดหน้า「出金アドレス管理」",
+            },
+            {
+              title: "คลิก「新規追加」:",
+              text: "กดปุ่มสีเขียว「新規追加」(เพิ่มใหม่) ไดอะล็อก「出金アドレス設定」(ตั้งค่าที่อยู่ถอน) จะเปิดขึ้น",
+            },
+            {
+              title: "เลือกสินทรัพย์:",
+              text: "เลือกเหรียญที่ต้องการลงทะเบียนที่อยู่ (เช่น USDT)",
+            },
+            {
+              title: "เลือกเครือข่าย:",
+              text: "เลือกบล็อกเชนที่ตรงกับวอลเล็ตปลายทาง (เช่น POLYGON สำหรับ USDT บน Polygon) เครือข่ายต้องตรงทุกประการ การส่ง USDT-ERC20 ไปยังที่อยู่ Polygon ไม่สามารถกู้คืนได้",
+            },
+            {
+              title: "ป้อนที่อยู่และชื่อกำกับ:",
+              text: "วางที่อยู่วอลเล็ตปลายทางใน「出金アドレス」และพิมพ์ป้ายกำกับใดๆ ใน「管理名」(เช่น 'Binance USDT' หรือ 'Cold wallet') แล้วคลิก「保存する」",
+            },
+            {
+              title: "ยืนยันด้วยรหัสอีเมล:",
+              text: "รหัสจะถูกส่งไปยังอีเมลที่ลงทะเบียน ป้อนรหัสในไดอะล็อก「出金アドレス設定」และคลิก「認証する」(ยืนยัน) ที่อยู่จะถูกบันทึกในสมุดที่อยู่",
+            },
+          ],
+          note: {
+            label: "ความปลอดภัย:",
+            text: "ต้องยืนยันด้วยอีเมลทุกครั้งที่เพิ่มที่อยู่ใหม่ ห้ามแชร์รหัสยืนยันกับใคร — ทีมซัพพอร์ต 1540BO จะไม่ขอรหัสนี้",
           },
-          {
-            heading: "เวลาและลิมิต",
-            text: "เข้าใจ SLA ก่อนติดตาม",
-            items: [
-              "เวลาตรวจมาตรฐาน 5–30 นาที",
-              "คำขอเกิน 10,000 USDT อาจต้องวิดีโอคอลยืนยัน",
-              "ลิมิตถอนได้ต่อวันรีเซ็ต 00:00 UTC ตามระดับ VIP",
-            ],
+        },
+        execute: {
+          title: "ขั้นที่ 2: การดำเนินการถอน",
+          intro:
+            "เมื่อมีที่อยู่ลงทะเบียนอย่างน้อยหนึ่งรายการ สามารถส่งคำขอถอนได้จากแท็บ「出金」ของหน้าต่างฝาก/ถอน",
+          items: [
+            {
+              title: "เปิดแท็บถอน:",
+              text: "จากแดชบอร์ดเปิด「入出金」จากนั้นสลับไปแท็บ「出金」ที่ด้านบน",
+            },
+            {
+              title: "เลือกสินทรัพย์:",
+              text: "ที่「1. Cryptocurrency」เปิดดรอปดาวน์และเลือกสินทรัพย์ที่จะถอน ที่อยู่ที่ลงทะเบียนไว้สำหรับสินทรัพย์นั้นจะถูกโหลดอัตโนมัติ",
+            },
+            {
+              title: "ป้อนจำนวนที่ถอน:",
+              text: "ที่「2. Withdrawal Amount」พิมพ์จำนวน ตรวจสอบให้แน่ใจว่าไม่ต่ำกว่าขั้นต่ำและไม่เกินยอดคงเหลือ",
+            },
+            {
+              title: "คลิก「Withdraw money」:",
+              text: "ส่งคำขอด้วยปุ่ม「Withdraw money」คำขอจะเข้าคิวตรวจสอบและสถานะจะปรากฏใน「取引内容」>「出金」",
+            },
+          ],
+        },
+        errors: {
+          title: "ข้อผิดพลาดที่พบบ่อย",
+          intro:
+            "หากไม่สามารถส่งคำขอถอนได้ สาเหตุที่พบบ่อยมีดังนี้",
+          table: {
+            errorHeader: "ข้อความ",
+            causeHeader: "สาเหตุ / วิธีแก้ไข",
+            row1: {
+              error: "出金アドレスを入力してください。(โปรดป้อนที่อยู่ถอน)",
+              cause: "ไม่มีที่อยู่ลงทะเบียนสำหรับสินทรัพย์ที่เลือก ลงทะเบียนจากลิงก์「出金アドレス登録」",
+            },
+            row2: {
+              error: "การยืนยันตัวตนยังไม่ครบ",
+              cause: "มีรายการ KYC ที่ยังเป็น「Incomplete」ไปที่「認証手続き」จากแถบเมนูซ้ายและทำให้ครบทั้ง 4 รายการ",
+            },
+            row3: {
+              error: "จำนวนต่ำกว่าขั้นต่ำ / เกินยอดคงเหลือ",
+              cause: "ตรวจสอบให้แน่ใจว่าจำนวนที่ใส่อยู่ที่หรือสูงกว่าขั้นต่ำของสินทรัพย์ และไม่เกินยอดคงเหลือที่ใช้ได้",
+            },
           },
-          {
-            heading: "ถ้าถูกถือ",
-            text: "ตอบกลับไวเพื่อรักษาคิว",
-            items: [
-              "ตรวจอีเมลว่ามีคำขอเอกสารหรือไม่ (ID / source of funds)",
-              "ส่งเอกสารที่ขอภายใน 24 ชั่วโมง",
-              "หาก 12 ชม. ยังไม่คืบหน้า ค่อยอีเมล payout@1540bo.io",
-            ],
+        },
+        timing: {
+          title: "เวลาประมวลผลการถอน",
+          intro:
+            "คำขอถอนจะถูกประมวลผลตามลำดับโดยทีมการเงินของเรา หลังจากการตรวจสอบความปลอดภัยเสร็จสิ้น คริปโตจะถูกส่งไปยังที่อยู่วอลเล็ตที่ระบุ",
+          items: [
+            "เวลาประมวลผลมาตรฐาน: ปกติเสร็จสิ้นภายใน 24 ชั่วโมงหลังส่งคำขอ",
+            "เวลาเครือข่าย: ความหนาแน่นของบล็อกเชนอาจทำให้ใช้เวลาเพิ่มเติมก่อนเงินถึง",
+          ],
+          note: {
+            label: "ถอนภายในวันเดียว:",
+            text: "1540BO รองรับการถอนภายในวันเดียว ในกรณีส่วนใหญ่ การประมวลผลเสร็จสิ้นภายในไม่กี่ชั่วโมงหลังส่งคำขอ",
           },
-        ],
-        callout: {
-          title: "อยากใช้เลนตรวจแบบด่วน?",
-          body: "ลูกค้า VIP ระดับ 10 ขึ้นไปสามารถขอเลนถอนเฉพาะและที่อยู่ที่อนุมัติล่วงหน้า",
-          cta: "อีเมลทีม payout",
+        },
+        holds: {
+          title: "การตอบสนองเมื่อถูกถือ",
+          intro:
+            "คำขออาจเข้าสถานะ「ถูกถือ」เมื่อต้องการการยืนยันความปลอดภัยเพิ่มเติม หรือเมื่อต้องตรวจสอบข้อมูลลงทะเบียน",
+          reasons: "สาเหตุหลักของการถูกถือ:",
+          items: [
+            "คำขอถอนมูลค่าสูง",
+            "เข้าถึงจาก IP ที่ไม่ปกติ",
+            "ข้อมูลลงทะเบียนกับข้อมูลวอลเล็ตถอนไม่ตรงกัน",
+          ],
+          contact:
+            "หากการถอนของคุณถูกถือ ทีมซัพพอร์ตจะติดต่อทางอีเมลที่ลงทะเบียน กรุณาปฏิบัติตามคำแนะนำและส่งข้อมูลที่ขอ",
+        },
+        history: {
+          title: "ตรวจสอบประวัติการถอน",
+          intro:
+            "ธุรกรรมการถอนทั้งหมดจะถูกบันทึกในส่วน「取引内容」ของบัญชี",
+          items: [
+            "จากแถบเมนูด้านซ้าย คลิก「取引内容」",
+            "เลือกแท็บ「出金」(ถอน)",
+            "แต่ละแถวจะแสดงสินทรัพย์/วันเวลา จำนวน สกุล เครือข่าย ที่อยู่ปลายทาง และ TxID เมื่อบรอดแคสต์แล้ว",
+          ],
+        },
+        fees: {
+          title: "ค่าธรรมเนียมการถอน",
+          text: "การถอนมีค่าธรรมเนียมเครือข่าย (miner fee) ที่จ่ายให้บล็อกเชน ค่าธรรมเนียมเปลี่ยนแปลงตามความหนาแน่นของเครือข่ายและแสดงในหน้าจอถอนก่อนส่ง",
+        },
+        contact: {
+          title: "ติดต่อเรา",
+          text: "หากมีคำถามหรือปัญหาเกี่ยวกับการถอน กรุณาติดต่อทีมซัพพอร์ตได้ตลอดเวลา",
+          email: "อีเมลซัพพอร์ต: support@1540bo.io",
+        },
+        relatedLinks: {
+          title: "ลิงก์ที่เกี่ยวข้อง",
+          deposit: "วอลเล็ต - คู่มือการฝาก",
+          account: "บัญชี - การสมัครและความปลอดภัย",
         },
       },
       affiliate: {
